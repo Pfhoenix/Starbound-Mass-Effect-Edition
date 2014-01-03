@@ -1,0 +1,24 @@
+{
+  "objectName" : "n7cicstation2",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : "1000",
+
+  "description" : "A CIC double seated station commonly used in alliance ship.",
+  "shortdescription" : "Double seated CIC station",
+  "race" : "n7human",
+  
+  "inventoryIcon" : "n7cicstation2icon.png",
+  "orientations" : [
+    {
+      "image" : "n7cicstation2.png:<color>.<frame>",
+      "imagePosition" : [-16, -0],
+      "frames" : 3,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id" : "n7humantutorial.gearup",
+  "title" : "^#9be3d6;Welcome to N7 Forces",
+  "text" : "Earth has been ripped apart. You have been in search of a new home for some time. Finally your ship has run out of fuel in orbit of an unknown planet. Before setting out in search of fuel, ^green;search your ship's storage for a ^pink;Omnitool O-1^white;. Press ^green;E ^white;to interact with objects.",
+  "completionText" : "Well done! The Omni-Tool O-1 allows you to manipulate almost anything in the gameworld.",
+  "conditions" : [
+    { "kind" : "gather", "item" : [ "omnitool1", 1] }
+  ],
+  "moneyRange" : [10, 10],
+  "rewards" : [
+    [ [ "omnitool1", 1] ]
+  ],
+  "planetMode" : "none",
+  "questDungeons" : [ ],
+  "followUp" : "tutorial2.gearup"
+}

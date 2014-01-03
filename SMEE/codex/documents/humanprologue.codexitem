@@ -1,0 +1,9 @@
+{
+  "codexId" : "humanprologue",
+  "title" : "Human Journey",
+  "codexkind" : "codex",
+  "itemName" : "humanprologueCodex",
+  "rarity" : "common",
+  "description" : "A Human feels remorse. Sort of.",
+  "shortdescription" : "Human Prologue"
+}

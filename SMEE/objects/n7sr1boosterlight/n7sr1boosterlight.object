@@ -1,0 +1,33 @@
+{
+  "objectName" : "n7sr1boosterlight",
+  "rarity" : "Common",
+  "description" : "Strip lighting, for use on a spaceship.",
+  "shortdescription" : "Ship Light",
+  "race" : "floran",
+
+  "category" : "light",
+  "price" : "500",
+  "lightColor" : [59, 183, 255],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+  
+  "apexDescription" : "Lights.",
+  "avianDescription" : "Lights.",
+  "floranDescription" : "Bright lights.",
+  "glitchDescription" : "Statement. Lights.",
+  "humanDescription" : "Lights.",
+  "hylotlDescription" : "Lights.",
+
+  "inventoryIcon" : "n7sr1boosterlight.png",
+  "orientations" : [
+    {
+      "image" : "n7sr1boosterlight.png:<color>.<frame>",
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.3,
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

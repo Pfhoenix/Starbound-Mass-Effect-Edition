@@ -1,0 +1,12 @@
+{
+  "itemName" : "n7shipwall",
+  "rarity" : "Common",
+  "inventoryIcon" : "n7shipwall.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A wall panel used by alliance ships.",
+  "shortdescription" : "N7 Wall Panel",
+  "glitchdescription" : "Analysis. A wall panel.",
+  "florandescription" : "Wall.",
+
+  "materialId" : 002
+}

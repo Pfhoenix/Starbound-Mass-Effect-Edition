@@ -1,0 +1,19 @@
+{
+	"__merge" : [],
+
+   "n7humanStarterTreasure" : [
+    [0, {
+        "fill" : [
+          "omnitool1",
+          "flashlight",
+          [ "torch", 10],
+          [ "cornseed", 3],
+          [ "wheatseed", 3],
+          [ "n7omniblade1", 1]
+        ],
+        "levelVariance" : [0, 0],
+        "allowDuplication" : false
+      } ]
+  ]
+
+}

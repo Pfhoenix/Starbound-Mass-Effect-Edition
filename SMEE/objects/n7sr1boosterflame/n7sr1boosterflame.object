@@ -1,0 +1,73 @@
+{
+  "objectName" : "n7sr1boosterflame",
+  "rarity" : "Common",
+  "objectType" : "engine",
+  "description" : "I wonder how quickly that would cook a burger.",
+  "shortdescription" : "Booster Flame",
+  "race" : "generic",
+
+  "apexDescription" : "A booster. These have been known to malfunction and explode.",
+  "avianDescription" : "A booster, the wings of a ship.",
+  "floranDescription" : "Ssscary fire.",
+  "glitchDescription" : "Analyse. Temperature too high to measure.",
+  "humanDescription" : "This thing eats through fuel.",
+  "hylotlDescription" : "Propulsion.",
+
+  "category" : "light",
+  "lightColor" : [59, 183, 255],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "particleEmitter" : {
+    "emissionRate" : 0.4,
+    "emissionVariance" : 0.5,
+    "pixelOrigin" : [-30, 0],
+
+    "particle" : {
+      "type" : "ember",
+      "size" : "1.0",
+      "color" : [94, 184, 236, 255],
+      "light" : [94, 184, 236],
+      "fade" : 0.9,
+      "initialVelocity" : [-10, 0],
+      "finalVelocity" : [-5, 0],
+      "approach" : [4, 0],
+      "timeToLive" : 1.0,
+      "layer" : "middle"
+    },
+
+    "particleVariance" : {
+      "initialVelocity" : [1.5, 5.0]
+    }
+  },
+
+  "inventoryIcon" : "torchicon.png",
+  "orientations" : [
+    {
+      "image" : "n7sr1boosterflame.png:<color>.<frame>",
+      "imagePosition" : [-48, -32],
+      "frames" : 4,
+      "animationCycle" : 1.0,
+
+      "spaces" : [ [-3, 2], [-3, 1], [-3, 0], [-3, -1], [-3, -2], [-3, -3], [-2, 2], [-2, 1], [-2, 0], [-2, -1], [-2, -2], [-2, -3], [-1, 2], [-1, 1], [-1, 0], [-1, -1], [-1, -2], [-1, -3], [0, 2], [0, 1], [0, 0], [0, -1], [0, -2], [0, -3] ],
+      "anchors" : [ "right" ]
+    }
+  ],
+
+  "engineOnOrientations" : [
+    {
+      "image" : "/mods/N7/objects/generic/n7sr1boosterflame/n7sr1boosterflame.png:<color>.<frame>",
+      "imagePosition" : [-48, -32],
+      "frames" : 3,
+      "animationCycle" : 0.3,
+
+      "spaces" : [ [-3, 2], [-3, 1], [-3, 0], [-3, -1], [-3, -2], [-3, -3], [-2, 2], [-2, 1], [-2, 0], [-2, -1], [-2, -2], [-2, -3], [-1, 2], [-1, 1], [-1, 0], [-1, -1], [-1, -2], [-1, -3], [0, 2], [0, 1], [0, 0], [0, -1], [0, -2], [0, -3] ],
+      "anchors" : [ "right" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/boosterflame.wav",
+  "soundEffectRadius" : 60
+
+}

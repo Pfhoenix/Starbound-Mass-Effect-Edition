@@ -1,0 +1,9 @@
+{
+  "codexId" : "humanescape",
+  "title" : "Human Escape",
+  "codexkind" : "codex",
+  "itemName" : "humanescapeCodex",
+  "rarity" : "common",
+  "description" : "The Problem with Tentacles.",
+  "shortdescription" : "Human Escape"
+}

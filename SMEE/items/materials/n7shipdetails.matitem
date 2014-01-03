@@ -1,0 +1,12 @@
+{
+  "itemName" : "n7shipdetails",
+  "rarity" : "Common",
+  "inventoryIcon" : "n7shipdetails.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A little bit of metal.",
+  "shortdescription" : "N7 Metal object",
+  "glitchdescription" : "Statement. A small bit of metal.",
+  "florandescription" : "Sssteel.",
+
+  "materialId" : 7001
+}

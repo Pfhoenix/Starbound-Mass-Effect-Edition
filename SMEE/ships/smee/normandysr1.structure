@@ -1,0 +1,224 @@
+{
+  "config" : {
+    "fuelMax" : 1000
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "normandysr1.png",
+      "position" : [0, -1]
+    }
+  ],
+
+  "blockKey" : [
+    {
+      "value" : [255, 255, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : false
+    },
+
+    {
+      "value" : [0, 0, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true
+    },
+
+    {
+      "value" : [255, 0, 0, 255],
+      "foregroundBlock" : true,
+      "backgroundBlock" : true
+    },
+
+	{
+      "value" : [240, 240, 240, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "invisiblelight",
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+	
+	{
+      "value" : [230, 230, 230, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "n7sr1boosterlight",
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+	
+	{
+      "value" : [255, 255, 0, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "n7sr1boosterflame",
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+
+    {
+      "value" : [255, 255, 125, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "n7sr1boosterflamesmall",
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+	
+	{
+      "value" : [156, 0, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "teleporter",
+      "flags" : [ "playerSpawn" ],
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+
+	{
+      "value" : [0, 255, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "n7captainschair",
+      "objectDirection" : "left",
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+
+	{
+      "value" : [0, 255, 0, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "apexfuelhatch",
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+	
+    {
+      "value" : [0, 200, 0, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "n7shipwall",
+      "object" : "n7shiplocker",
+      "objectParameters" : {
+        "treasurePools" : [ "n7humanStarterTreasure" ],
+        "level" : 1,
+        "unbreakable" : true
+      }
+    },
+
+    {
+      "value" : [0, 160, 0, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "n7shipwall",
+      "object" : "n7techstation",
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+
+    {
+      "value" : [255, 255, 150, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "apexshiplight"
+    },
+	
+	{
+      "value" : [255, 255, 160, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "n7shipdetails",
+	  "object" : "apexshiplight"
+    },
+
+	{
+      "value" : [255, 0, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "n7shipdetails",
+	  "object" : "apexshiplight"
+    },
+
+    {
+      "value" : [255, 102, 0, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "apexshipdoor"
+    },
+	
+	{
+      "value" : [130, 130, 130, 255],
+      "foregroundBlock" : true,
+      "backgroundBlock" : true,
+      "foregroundMat" : "apexshipplatformplatform"
+    },
+
+	{
+      "value" : [255, 0, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "n7shipdetails"
+    },
+	
+	{
+      "value" : [255, 177, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "n7shipwall"
+    },
+    
+	{
+      "value" : [0, 174, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "n7shipdetails",
+	  "object" : "n7cicstation1"
+    },
+	
+	{
+      "value" : [67, 195, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "n7shipdetails",
+	  "object" : "n7cicstation2"
+    },
+
+
+   
+
+    {
+      "value" : [174, 137, 81, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "shipengine",
+      "objectParameters" : {
+        "unbreakable" : true
+      }
+    },
+
+	
+    
+
+   
+
+    
+
+    {
+      "value" : [255, 117, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "apexshipsupport"
+    }
+  ],
+
+  "blockImage" : "normandysr1block.png"
+}

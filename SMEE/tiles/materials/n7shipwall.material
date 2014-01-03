@@ -1,0 +1,15 @@
+{
+  "materialId" : 7002,
+  "materialName" : "n7shipwall",
+  "frames" : "n7shipwall.png",
+  "particleColor" : [110, 110, 110, 255],
+  "variants" : 1,
+  "itemDrop" : "n7shipwall",
+  "description" : "A wall panel used by alliance ships.",
+  "shortdescription" : "N7 Wall Panel",
+  "glitchdescription" : "Analysis. A wall panel.",
+  "florandescription" : "Wall.",
+  "multicolored" : false,
+  "footstepSound" : "/sfx/blocks/footstep_composite.wav",
+  "health" : 20
+}
