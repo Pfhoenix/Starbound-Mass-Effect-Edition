@@ -1,0 +1,18 @@
+{
+  "script" : "biotic-lift.lua",
+  "actions" : [ "biotic lift" ],
+  //"animator" : "blink.animation",
+
+  "energyUsage" : 25
+
+  //"blinkCollisionCheckDiameter" : 4,
+  //"blinkVerticalGroundCheck" : 10,
+
+  // Specific to humanoid
+  //"blinkFootOffset" : -2.5,
+
+  //"blinkOutTime" : 0.15,
+  //"blinkInTime" : 0.15,
+
+  //"blinkMode" : "cursor"
+}

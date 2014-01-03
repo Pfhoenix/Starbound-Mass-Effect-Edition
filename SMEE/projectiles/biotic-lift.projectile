@@ -1,0 +1,18 @@
+{
+  "projectileName" : "biotic-lift",
+  "frames" : "biotic-lift.png",
+  "animationCycle" : 0.5,
+  "level" : 3,
+  "frameNumber" : 4,
+  "pointLight" : true,
+  "speed" : 50,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/pulsecannonexplosion/pulsecannonexplosion.config"
+    }
+  ],
+  "power" : 0.00001,
+  "damageKind" : "default",
+  "lightColor" : [78, 202, 223]
+}
