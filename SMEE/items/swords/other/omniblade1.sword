@@ -1,5 +1,5 @@
 {
-  "itemName" : "n7omniblade1",
+  "itemName" : "omniblade1",
   "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
   "maxStack" : 1,
   "level" : 1,
@@ -9,7 +9,7 @@
   "inspectionKind" : "sword",
   "kind" : "Broadsword",
 
-  "image" : "n7omniblade1.png",
+  "image" : "omniblade1.png",
   "firePosition" : [15.5, 4.5],
   "fireTime" : 0.8,
   "fireAfterWindup" : true,
@@ -43,7 +43,7 @@
   ],
 
   "primaryStances" : {
-    "projectileType" : "omnibladeswoosh",
+    "projectileType" : "omniblade1swoosh",
     "projectile" : {
       "speed" : 0.1,
       "power" : 3

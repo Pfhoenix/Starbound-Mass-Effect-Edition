@@ -1,0 +1,13 @@
+{
+  "materialId" : 7002,
+  "materialName" : "sr1shipwall",
+  "frames" : "sr1shipwall.png",
+  "particleColor" : [110, 110, 110, 255],
+  "variants" : 1,
+  "itemDrop" : "sr1shipwall",
+  "description" : "A wall panel used by Alliance ships.",
+  "shortdescription" : "Alliance Wall Panel",
+  "multicolored" : false,
+  "footstepSound" : "/sfx/blocks/footstep_composite.wav",
+  "health" : 20
+}

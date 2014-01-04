@@ -1,0 +1,13 @@
+{
+  "materialId" : 7001,
+  "materialName" : "sr1shipdetails",
+  "frames" : "sr1shipdetails.png",
+  "particleColor" : [110, 110, 110, 255],
+  "variants" : 6,
+  "itemDrop" : "sr1shipdetails",
+  "description" : "A little bit of metal with some LEDs.",
+  "shortdescription" : "Alliance Metal object",
+  "multicolored" : false,
+  "footstepSound" : "/sfx/blocks/footstep_composite.wav",
+  "health" : 20
+}

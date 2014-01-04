@@ -1,0 +1,26 @@
+{
+  "objectName" : "sr1boosterlight",
+  "rarity" : "Common",
+  "description" : "Booster Light.",
+  "shortdescription" : "Booster Light",
+  "race" : "generic",
+
+  "category" : "light",
+  "price" : "500",
+  "lightColor" : [59, 183, 255],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+  
+  "inventoryIcon" : "sr1boosterlight.png",
+  "orientations" : [
+    {
+      "image" : "sr1boosterlight.png:<color>.<frame>",
+      "imagePosition" : [-0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.3,
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "sr1shipwall",
+  "rarity" : "Common",
+  "inventoryIcon" : "sr1shipwall.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A wall panel used by Alliance ships.",
+  "shortdescription" : "Alliance Wall Panel",
+ 
+  "materialId" : 7002
+}

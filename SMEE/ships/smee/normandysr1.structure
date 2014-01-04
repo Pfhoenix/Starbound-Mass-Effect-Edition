@@ -43,7 +43,7 @@
       "value" : [230, 230, 230, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "object" : "n7sr1boosterlight",
+      "object" : "sr1boosterlight",
       "objectParameters" : {
         "unbreakable" : true
       }
@@ -53,7 +53,7 @@
       "value" : [255, 255, 0, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "object" : "n7sr1boosterflame",
+      "object" : "sr1boosterflame",
       "objectParameters" : {
         "unbreakable" : true
       }
@@ -63,7 +63,7 @@
       "value" : [255, 255, 125, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "object" : "n7sr1boosterflamesmall",
+      "object" : "sr1boosterflamesmall",
       "objectParameters" : {
         "unbreakable" : true
       }
@@ -84,7 +84,7 @@
       "value" : [0, 255, 255, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "object" : "n7captainschair",
+      "object" : "sr1captainschair",
       "objectDirection" : "left",
       "objectParameters" : {
         "unbreakable" : true
@@ -105,8 +105,8 @@
       "value" : [0, 200, 0, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "backgroundMat" : "n7shipwall",
-      "object" : "n7shiplocker",
+      "backgroundMat" : "sr1shipwall",
+      "object" : "sr1shiplocker",
       "objectParameters" : {
         "treasurePools" : [ "n7humanStarterTreasure" ],
         "level" : 1,
@@ -118,8 +118,8 @@
       "value" : [0, 160, 0, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "backgroundMat" : "n7shipwall",
-      "object" : "n7techstation",
+      "backgroundMat" : "sr1shipwall",
+      "object" : "sr1techstation",
       "objectParameters" : {
         "unbreakable" : true
       }
@@ -136,7 +136,7 @@
       "value" : [255, 255, 160, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "backgroundMat" : "n7shipdetails",
+      "backgroundMat" : "sr1shipdetails",
 	  "object" : "apexshiplight"
     },
 
@@ -144,7 +144,7 @@
       "value" : [255, 0, 255, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "backgroundMat" : "n7shipdetails",
+      "backgroundMat" : "sr1shipdetails",
 	  "object" : "apexshiplight"
     },
 
@@ -166,30 +166,30 @@
       "value" : [255, 0, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "backgroundMat" : "n7shipdetails"
+      "backgroundMat" : "sr1shipdetails"
     },
 	
 	{
       "value" : [255, 177, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "backgroundMat" : "n7shipwall"
+      "backgroundMat" : "sr1shipwall"
     },
     
 	{
       "value" : [0, 174, 255, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "backgroundMat" : "n7shipdetails",
-	  "object" : "n7cicstation1"
+      "backgroundMat" : "sr1shipdetails",
+	  "object" : "sr1cicstation1"
     },
 	
 	{
       "value" : [67, 195, 255, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "backgroundMat" : "n7shipdetails",
-	  "object" : "n7cicstation2"
+      "backgroundMat" : "sr1shipdetails",
+	  "object" : "sr1cicstation2"
     },
 
 

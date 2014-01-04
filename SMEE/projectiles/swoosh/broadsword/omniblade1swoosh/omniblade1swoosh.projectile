@@ -1,6 +1,6 @@
 {
-  "projectileName" : "omnibladeswoosh",
-  "frames" : "omnibladeswoosh.png",
+  "projectileName" : "omniblade1swoosh",
+  "frames" : "omniblade1swoosh.png",
   "animationCycle" : 0.3,
   "level" : 1,
   "frameNumber" : 4,

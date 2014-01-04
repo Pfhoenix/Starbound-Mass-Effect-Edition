@@ -1,0 +1,10 @@
+{
+  "itemName" : "sr1shipdetails",
+  "rarity" : "Common",
+  "inventoryIcon" : "sr1shipdetails.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A little bit of metal with some LEDs.",
+  "shortdescription" : "Alliance Metal object",
+
+  "materialId" : 7001
+}

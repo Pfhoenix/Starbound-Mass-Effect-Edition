@@ -1,5 +1,5 @@
 {
-  "objectName" : "n7cicstation1",
+  "objectName" : "sr1cicstation1",
   "rarity" : "Common",
   "category" : "decorative",
   "price" : "1000",
@@ -8,10 +8,10 @@
   "shortdescription" : "CIC station",
   "race" : "n7human",
 
-  "inventoryIcon" : "n7cicstation1icon.png",
+  "inventoryIcon" : "sr1cicstation1icon.png",
   "orientations" : [
     {
-      "image" : "n7cicstation1.png:<color>.<frame>",
+      "image" : "sr1cicstation1.png:<color>.<frame>",
       "imagePosition" : [-8, -0],
       "frames" : 3,
       "animationCycle" : 1.5,
