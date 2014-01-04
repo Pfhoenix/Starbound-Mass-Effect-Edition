@@ -8,10 +8,10 @@
   "race" : "n7human",
   "category" : "furniture",
 
-  "inventoryIcon" : "n7captainschairicon.png",
+  "inventoryIcon" : "sr1captainschairicon.png",
   "orientations" : [
     {
-      "dualImage" : "n7captainschair.png:<color>",
+      "dualImage" : "sr1captainschair.png:<color>",
 
       "imagePosition" : [-12, 0],
       "frames" : 1,

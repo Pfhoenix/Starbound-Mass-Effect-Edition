@@ -90,12 +90,23 @@
         "unbreakable" : true
       }
     },
+	
+	{
+      "value" : [0, 148, 148, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "object" : "sr1galaxyconsole",
+      "objectDirection" : "right",
+      "objectParameters" : {
+        "unbreakable" : true
+	  }
+    },
 
 	{
       "value" : [0, 255, 0, 255],
       "foregroundBlock" : false,
       "backgroundBlock" : true,
-      "object" : "apexfuelhatch",
+      "object" : "sr1fuelhatch",
       "objectParameters" : {
         "unbreakable" : true
       }
@@ -159,9 +170,26 @@
       "value" : [130, 130, 130, 255],
       "foregroundBlock" : true,
       "backgroundBlock" : true,
-      "foregroundMat" : "apexshipplatformplatform"
+      "foregroundMat" : "steelplatform"
     },
 
+	{
+      "value" : [100, 100, 100, 255],
+      "foregroundBlock" : true,
+      "backgroundBlock" : true,
+      "backgroundMat" : "sr1shipdetails",
+	  "foregroundMat" : "steelplatform"
+    },
+
+	{
+      "value" : [85, 85, 85, 255],
+      "foregroundBlock" : true,
+      "backgroundBlock" : true,
+      "backgroundMat" : "sr1shipwall",
+      "foregroundMat" : "steelplatform"
+    },
+
+	
 	{
       "value" : [255, 0, 255],
       "foregroundBlock" : false,
@@ -176,6 +204,13 @@
       "backgroundMat" : "sr1shipwall"
     },
     
+	{
+      "value" : [255, 214, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "lightmetal"
+    },
+   	
 	{
       "value" : [0, 174, 255, 255],
       "foregroundBlock" : false,
@@ -193,8 +228,7 @@
     },
 
 
-   
-
+// dont know what this is for...
     {
       "value" : [174, 137, 81, 255],
       "foregroundBlock" : false,
@@ -203,20 +237,6 @@
       "objectParameters" : {
         "unbreakable" : true
       }
-    },
-
-	
-    
-
-   
-
-    
-
-    {
-      "value" : [255, 117, 255],
-      "foregroundBlock" : false,
-      "backgroundBlock" : true,
-      "backgroundMat" : "apexshipsupport"
     }
   ],
 

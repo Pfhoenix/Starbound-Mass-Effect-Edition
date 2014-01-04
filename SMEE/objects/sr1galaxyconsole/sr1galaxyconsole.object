@@ -1,0 +1,29 @@
+{
+  "objectName" : "sr1galaxyconsole",
+  "rarity" : "Common",
+ // "objectType" : "interactable",
+ // "interactAction" : "openCockpitInterface",
+  
+  "category" : "decorative",
+  "price" : "2500",
+  
+  "description" : "A holographic view of the galaxy",
+  "shortdescription" : "Holographic Galaxy Map",
+  "race" : "n7human",
+
+  "inventoryIcon" : "sr1galaxyconsoleicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "sr1galaxyconsole.png:<color>.<frame>",
+      "imagePosition" : [-11, 0],
+      "frames" : 3,
+      "animationCycle" : 0.8,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+  
+//  "sitFlipDirection" : true,
+//  "sitPosition" : [-16, 30]
+  
+}
