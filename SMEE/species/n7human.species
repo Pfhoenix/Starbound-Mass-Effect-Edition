@@ -1,7 +1,7 @@
 {
   "kind" : "n7human",
   "index" : 6,
-  "nameGen" : [ "/species/n7humannamegen.config:names", "/species/n7humannamegen.config:names" ],
+  "nameGen" : [ "/species/n7humannamegenmale.config:names", "/species/n7humannamegenfemale.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.wav", "/sfx/humanoid/humanhurt_female1.wav" ],
   "charGenTextLabels" : [ "SKIN COLOR", "HAIR STYLE", "SHIRT", "PANTS", "UNDY COLOR", "HAIR COLOR", "SHIRT COLOR", "PANTS COLOR", "HUMAN", "PERSONALITY" ],
   "defaultBlueprints" : {
