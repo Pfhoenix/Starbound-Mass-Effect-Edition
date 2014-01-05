@@ -1,11 +1,11 @@
 {
   "objectName" : "sr1galaxyconsole",
   "rarity" : "Common",
- // "objectType" : "interactable",
- // "interactAction" : "openCockpitInterface",
+  "objectType" : "interactable",
+  "interactAction" : "openCockpitInterface",
   
   "category" : "decorative",
-  "price" : "2500",
+  "price" : "1000",
   
   "description" : "A holographic view of the galaxy",
   "shortdescription" : "Holographic Galaxy Map",
@@ -21,9 +21,35 @@
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
-  ]
+  ],
   
-//  "sitFlipDirection" : true,
-//  "sitPosition" : [-16, 30]
+  "lightColor" : [142, 202, 249],
+  "flickerDistance" : 0.8,
+  "flickerStrength" : 0.1,
+
+  "particleEmitter" : {
+    "emissionRate" : 1.0,
+    "emissionVariance" : 0.5,
+	"pixelOrigin" : [18, 5],
+
+    "particle" : {
+      "type" : "ember",
+      "size" : "1.0",
+      "color" : [202, 230, 252, 255],
+      "light" : [202, 230, 252],
+      "fade" : 0.9,
+      "initialVelocity" : [0.0, 4.0],
+      "finalVelocity" : [0.0, 1.0],
+      "approach" : [0, 20],
+      "timeToLive" : 2,
+      "layer" : "middle"
+    },
+
+    "particleVariance" : {
+      "initialVelocity" : [0.5, 2.0]
+    }
+  },
+  "sitFlipDirection" : false,
+  "sitPosition" : [-21, 25]
   
 }
