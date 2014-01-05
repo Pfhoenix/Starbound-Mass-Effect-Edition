@@ -1,0 +1,38 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "active" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+          },
+          "on" : {
+            "frames" : 5,
+            "cycle" : 0.3,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+    
+    "parts" : {
+      "whole" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 0,
+          "back" : true
+        },
+
+        "partStates" : {
+          "active" : {
+  	    "on" : {
+  	      "properties" : {
+                "image" : "biotic-slow.png:on.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

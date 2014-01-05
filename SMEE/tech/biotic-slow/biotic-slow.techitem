@@ -1,0 +1,10 @@
+{
+  "itemName" : "biotic-slow",
+  "rarity" : "Legendary",
+  "inventoryIcon" : "/tech/biotic-slow.png",
+  "description" : "Hold S to slow your fall",
+  "shortdescription" : "Biotic Power : Slow",
+  "inspectionKind" : "tech",
+
+  "techModule" : "biotic-slow.tech"
+}
