@@ -18,7 +18,11 @@ function input(args)
 end
 
 function update(args)
+	local energyusage = 0
 	if args.actions["biotic-lift"] then
+		if tech.parameter("energyUsage") > args.availableEnergy then
+			return 0
+		end
 		local dir = {}
 		local pos = tech.position()
 		dir[1] = args.aimPosition[1] - pos[1]
@@ -32,6 +36,7 @@ function update(args)
 		local ppos = world.entityPosition(pid)
 		-- format is entityId of projectile, last position of the projectile, time to live for the lifting effect, and the list of lifted entities
 		table.insert(data.projIds, { id = pid, pos = ppos, ttl = 3, lifted = nil })
+		energyusage = tech.parameter("energyUsage")
 	end
 	
 	local cpos
@@ -81,4 +86,6 @@ function update(args)
 			proj.pos = world.entityPosition(proj.id)
 		end
 	end
+	
+	return energyusage
 end
