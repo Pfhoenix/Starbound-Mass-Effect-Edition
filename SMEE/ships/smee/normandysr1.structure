@@ -226,6 +226,46 @@
       "backgroundMat" : "sr1shipdetails",
 	  "object" : "sr1cicstation2"
     },
+	
+	{
+      "value" : [139, 218, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "sr1shipwall",
+	  "object" : "smeedecalalliance1"
+    },
+	
+	{
+      "value" : [124, 213, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "sr1shipwall",
+	  "object" : "smeedecalcic"
+    },
+	
+	{
+      "value" : [108, 208, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "lightmetal",
+	  "object" : "smeedecalmedbay"
+    },
+	
+	{
+      "value" : [81, 199, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "sr1shipwall",
+	  "object" : "smeedecalnormandy"
+    },
+	
+	{
+      "value" : [95, 204, 255, 255],
+      "foregroundBlock" : false,
+      "backgroundBlock" : true,
+      "backgroundMat" : "sr1shipwall",
+	  "object" : "smeedecalsr1"
+    },
 
 
 // dont know what this is for...

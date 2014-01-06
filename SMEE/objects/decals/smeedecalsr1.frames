@@ -1,0 +1,14 @@
+{
+
+  "frameGrid" : {
+    "size" : [24, 8],
+    "dimensions" : [1, 5],
+    "names" : [
+      [ "default" ],
+      [ "black" ],
+      [ "red" ],
+      [ "white" ],
+      [ "blue" ]
+    ]
+  }
+}

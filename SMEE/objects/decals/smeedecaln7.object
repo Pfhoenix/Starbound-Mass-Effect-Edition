@@ -1,0 +1,21 @@
+{
+  "objectName" : "smeedecaln7",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : "50",
+  "description" : "N7 sign.",
+  "shortdescription" : "N7 sign",
+  "race" : "n7human",
+  
+  "inventoryIcon" : "smeedecaln7icon.png",
+  "orientations" : [
+    {
+      "image" : "smeedecaln7.png:<color>",
+      "frames" : 1,
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

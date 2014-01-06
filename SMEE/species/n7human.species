@@ -28,7 +28,8 @@
       { "item" : "bread" },
       { "item" : "sweetcorn" },
       { "item" : "candyapple" },
-      { "item" : "icecream" }
+      { "item" : "icecream" },
+	  { "item" : "flagn7human" }
     ],
     "tier2" : [
       { "item" : "humantier2hammer" },
