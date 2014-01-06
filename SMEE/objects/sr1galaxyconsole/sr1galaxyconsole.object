@@ -4,7 +4,7 @@
   "objectType" : "interactable",
   "interactAction" : "openCockpitInterface",
   
-  "category" : "decorative",
+  "category" : "light",
   "price" : "1000",
   
   "description" : "A holographic view of the galaxy",
@@ -16,17 +16,19 @@
     {
       "dualImage" : "sr1galaxyconsole.png:<color>.<frame>",
       "imagePosition" : [-11, 0],
-      "frames" : 3,
-      "animationCycle" : 0.8,
+      "frames" : 6,
+      "animationCycle" : 1.2,
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
   ],
   
   "lightColor" : [142, 202, 249],
-  "flickerDistance" : 0.8,
-  "flickerStrength" : 0.1,
-
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 1,
+  "unlit" : true,
+  
   "particleEmitter" : {
     "emissionRate" : 1.0,
     "emissionVariance" : 0.5,
@@ -41,7 +43,7 @@
       "initialVelocity" : [0.0, 4.0],
       "finalVelocity" : [0.0, 1.0],
       "approach" : [0, 20],
-      "timeToLive" : 2,
+      "timeToLive" : 1.5,
       "layer" : "middle"
     },
 
