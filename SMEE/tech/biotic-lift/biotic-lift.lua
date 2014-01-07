@@ -1,8 +1,7 @@
 function init()
-  data.mode = "none"
-  data.timer = 0
-  data.targetPosition = nil
-  data.projIds = {}
+	data.liftVelocity = tech.parameter("liftVelocity")
+	data.liftAcceleration = tech.parameter("liftAcceleration")
+	data.projIds = {}
 end
 
 function uninit()
@@ -60,7 +59,7 @@ function update(args)
 					for l,e in ipairs(proj.lifted) do
 						if world.entityExists(e) then
 							stillgood = true
-							world.callScriptedEntity(e, "entity.setVelocity", {0, 10})
+							world.callScriptedEntity(e, "entity.setVelocity", {0, data.liftVelocity})
 						else table.remove(proj.lifted, l)
 						end
 					end
@@ -77,7 +76,7 @@ function update(args)
 				else
 					-- disable normal movement, freeze animations, and capture rotation stuff to make them rotate slight
 					--[[for l,v in ipairs(proj.lifted) do
-						world.logInfo("Lifted #%s : %s", l, world.entityType(v))
+						world.logInfo("Lifted %s going at %s", v, world.callScriptedEntity(v, "entity.velocity"))
 					end]]--
 				end
 			end
