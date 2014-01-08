@@ -13,18 +13,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "coldprotection",
-      "amount" : "1"
+      "kind" : "ColdProtection",
+      "amount" : "3"
     },
 
     {
       "kind" : "protection",
-      "amount" : 3
+      "amount" : 6
     },
 
     {
       "kind" : "energyregenmodifier",
-      "amount" : 0.15
+      "amount" : 0.35
     }
   ]
 }
