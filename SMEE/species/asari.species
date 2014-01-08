@@ -12,9 +12,6 @@
       { "item" : "humantier1spear" },
       { "item" : "humantier1axe" },
       { "item" : "humantier1dagger" },
-      { "item" : "n7tier1head" },
-      { "item" : "n7tier1chest" },
-      { "item" : "n7tier1pants" },
       { "item" : "conceptchest" },
       { "item" : "conceptlegs" },
       { "item" : "coolchest" },
@@ -28,8 +25,7 @@
       { "item" : "bread" },
       { "item" : "sweetcorn" },
       { "item" : "candyapple" },
-      { "item" : "icecream" },
-	  { "item" : "l1implant" }
+      { "item" : "icecream" }
     ],
     "tier2" : [
       { "item" : "humantier2hammer" },
@@ -41,8 +37,7 @@
       { "item" : "humantier2head" },
       { "item" : "humantier2chest" },
       { "item" : "humantier2pants" },
-      { "item" : "spawnerhuman" },
-	  { "item" : "l2implant" }
+      { "item" : "spawnerhuman" }
     ],
     "tier3" : [
       { "item" : "humantier3head" },
@@ -53,8 +48,7 @@
       { "item" : "humantier3broadsword" },
       { "item" : "humantier3spear" },
       { "item" : "humantier3axe" },
-      { "item" : "humantier3dagger" },
-	  { "item" : "l3implant" }
+      { "item" : "humantier3dagger" }
     ],
     "tier4" : [
       { "item" : "humantier4head" },
@@ -65,8 +59,7 @@
       { "item" : "humantier4broadsword" },
       { "item" : "humantier4spear" },
       { "item" : "humantier4axe" },
-      { "item" : "humantier4dagger" },
-	  { "item" : "l3-rimplant" }
+      { "item" : "humantier4dagger" }
     ],
     "level32" : [
       { "item" : "humantier5head" },
@@ -77,8 +70,7 @@
       { "item" : "humantier5broadsword" },
       { "item" : "humantier5spear" },
       { "item" : "humantier5axe" },
-      { "item" : "humantier5dagger" },
-	  { "item" : "l3-ximplant" }
+      { "item" : "humantier5dagger" }
     ],
     "level33" : [
       { "item" : "humantier6head" },
@@ -89,8 +81,7 @@
       { "item" : "humantier6broadsword" },
       { "item" : "humantier6spear" },
       { "item" : "humantier6axe" },
-      { "item" : "humantier6dagger" },
-	  { "item" : "l3-x1implant" }
+      { "item" : "humantier6dagger" }
     ],
     "level34" : [
       { "item" : "humantier7head" },
@@ -101,8 +92,7 @@
       { "item" : "humantier7broadsword" },
       { "item" : "humantier7spear" },
       { "item" : "humantier7axe" },
-      { "item" : "humantier7dagger" },
-	  { "item" : "l4implant" }
+      { "item" : "humantier7dagger" }
     ],
     "level35" : [
       { "item" : "humantier8head" },
@@ -113,8 +103,7 @@
       { "item" : "humantier8broadsword" },
       { "item" : "humantier8spear" },
       { "item" : "humantier8axe" },
-      { "item" : "humantier8dagger" },
-	  { "item" : "l5-ximplant" }
+      { "item" : "humantier8dagger" }
     ],
     "level36" : [
       { "item" : "humantier9head" },
@@ -125,8 +114,7 @@
       { "item" : "humantier9broadsword" },
       { "item" : "humantier9spear" },
       { "item" : "humantier9axe" },
-      { "item" : "humantier9dagger" },
-	  { "item" : "l5-nimplant" }
+      { "item" : "humantier9dagger" }
     ],
     "level37" : [
       { "item" : "humantier10head" },
@@ -137,8 +125,7 @@
       { "item" : "humantier10broadsword" },
       { "item" : "humantier10spear" },
       { "item" : "humantier10axe" },
-      { "item" : "humantier10dagger" },
-	  { "item" : "lx-9000implant" }
+      { "item" : "humantier10dagger" }
     ]
   },
   "altOptionAsUndyColor" : true,
@@ -180,16 +167,16 @@
   ],
 	
   "undyColor" : [
-    { "f32200" : "DBF4B8", "dc1f00" : "A4D66B", "be1b00" : "6F9E47", "951500" : "426D26" },
-    { "f32200" : "B8F4BB", "dc1f00" : "72DD7E", "be1b00" : "4AA559", "951500" : "266535" },
-    { "f32200" : "F1EABB", "dc1f00" : "D8D077", "be1b00" : "A09E4E", "951500" : "5F6229" },
-    { "f32200" : "B8F4D9", "dc1f00" : "72DDB3", "be1b00" : "4AA586", "951500" : "266554" },
-    { "f32200" : "B1F1FE", "dc1f00" : "5DD1EC", "be1b00" : "3491AA", "951500" : "196072" },
-    { "f32200" : "b5c2fa", "dc1f00" : "758bf8", "be1b00" : "4a5ba5", "951500" : "272665" },
-    { "f32200" : "E2B2FF", "dc1f00" : "B374D4", "be1b00" : "7C4992", "951500" : "4B2655" },
-    { "f32200" : "ffffff", "dc1f00" : "d7d5db", "be1b00" : "8e8e9b", "951500" : "6d6d6d" },
-    { "f32200" : "9E9E9E", "dc1f00" : "696969", "be1b00" : "434343", "951500" : "191919" },
-    { "f32200" : "F9D9DA", "dc1f00" : "EAB2B5", "be1b00" : "CC8288", "951500" : "A55B61" }
+    { "BE1B00" : "FF0000", "dc1f00" : "FF0000", "BF1900" : "FF0000", "951500" : "7F0000" }, //red
+    { "BE1B00" : "4CFF00", "dc1f00" : "4CFF00", "BF1900" : "4CFF00", "951500" : "267F00" }, //green
+    { "BE1B00" : "00FF90", "dc1f00" : "00FF90", "BF1900" : "00FF90", "951500" : "007F7F" }, //lightblue
+    { "BE1B00" : "0094FF", "dc1f00" : "0094FF", "BF1900" : "0094FF", "951500" : "004A7F" }, //darkblue
+    { "BE1B00" : "4800FF", "dc1f00" : "4800FF", "BF1900" : "4800FF", "951500" : "21007F" }, //purple
+    { "BE1B00" : "FF00DC", "dc1f00" : "FF00DC", "BF1900" : "FF00DC", "951500" : "7F006E" }, //pink
+    { "BE1B00" : "4C1E00", "dc1f00" : "4C1E00", "BF1900" : "4C1E00", "951500" : "4C1E00" }, //brown
+    { "BE1B00" : "000000", "dc1f00" : "000000", "BF1900" : "000000", "951500" : "030303" }, //black
+    { "BE1B00" : "FFFFFF", "dc1f00" : "FFFFFF", "BF1900" : "FFFFFF", "951500" : "C0C0C0" }, //white
+    { "BE1B00" : "FFD800", "dc1f00" : "FFD800", "BF1900" : "FFD800", "951500" : "A55B61" }  //yellow
   ],
   
   "hairColor" : [

@@ -1,34 +1,19 @@
 {
 	"__merge" : [],
 	
-    "asariStarterTreasure" : [
+	"n7humanStarterTreasure" : [
     [0, {
         "fill" : [
-          "beamaxe",
+          "omnitool1",
           "flashlight",
-          [ "humanstarter", 1 ],
-          [ "torch", 10 ],
-          [ "pussplumseed", 3],
-          [ "neonmelonseed", 3] 
-        ],
-        "levelVariance" : [0, 0],
-        "allowDuplication" : false
-      } ]
-  ],
-
-  "turianStarterTreasure" : [
-    [0, {
-        "fill" : [
-          "beamaxe",
-          "flashlight",
-          [ "humanstarter", 1 ],
-          [ "torch", 10 ],
-          [ "pussplumseed", 3],
-          [ "neonmelonseed", 3] 
+                  [ "flagn7human", 1],
+          [ "torch", 10],
+          [ "cornseed", 3],
+          [ "wheatseed", 3],
+          [ "omniblade1", 1]
         ],
         "levelVariance" : [0, 0],
         "allowDuplication" : false
       } ]
   ]
-
 }
