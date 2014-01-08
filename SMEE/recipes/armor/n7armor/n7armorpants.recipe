@@ -1,8 +1,6 @@
 {
   "input" : [
-    { "item" : "ironbar", "count" : 12 },
-    { "item" : "copperarmorpants", "count" : 1 },
-    { "item" : "money", "count" : 150 }
+    { "item" : "Rubiumbar", "count" : 12 }
   ],
   "output" : { "item" : "n7armorpants", "count" : 1 },
   "groups" : [ "smee", "mod", "anvil", "armors", "all" ]

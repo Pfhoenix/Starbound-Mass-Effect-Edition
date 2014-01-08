@@ -1,8 +1,8 @@
 {
   "input" : [
-    { "item" : "ironbar", "count" : 35 },
-    { "item" : "copperarmorchest", "count" : 1 },
-    { "item" : "money", "count" : 350 }
+    { "item" : "steelbar", "count" : 35 },
+    { "item" : "silverarmorchest", "count" : 1 },
+    { "item" : "money", "count" : 1200 }
   ],
   "output" : { "item" : "agentarmorchest", "count" : 1 },
   "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
