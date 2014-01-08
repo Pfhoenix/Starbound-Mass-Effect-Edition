@@ -1,0 +1,9 @@
+{
+  "codexId" : "turiandirective",
+  "title" : "Turian Directive",
+  "codexkind" : "codex",
+  "itemName" : "turiandirectiveCodex",
+  "rarity" : "common",
+  "description" : "The Turian military is the center of their society.",
+  "shortdescription" : "Turian Directive"
+}
