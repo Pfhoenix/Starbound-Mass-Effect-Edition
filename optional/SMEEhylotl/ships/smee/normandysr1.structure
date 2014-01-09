@@ -1,0 +1,18 @@
+{
+	"__merge" : [],
+
+	"blockKey" : [ 
+		{
+			"value" : [0, 200, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall",
+			"object" : "sr1shiplocker",
+			"objectParameters" : {
+				"treasurePools" : [ "hylotlStarterTreasure" ],
+				"level" : 1,
+				"unbreakable" : true
+			}
+		}
+	]
+}
