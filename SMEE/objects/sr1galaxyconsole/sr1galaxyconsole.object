@@ -52,6 +52,6 @@
     }
   },
   "sitFlipDirection" : false,
-  "sitPosition" : [-21, 25]
-  
+  "sitPosition" : [-18, 28],
+  "sitOrientation" : "lay"
 }
