@@ -3,6 +3,7 @@
   "actions" : [ "biotic lift" ],
 
   "energyUsage" : 50,
+  "liftTime" : 4,
   "liftVelocity" : 2.5,
   "liftAcceleration" : 2
 }

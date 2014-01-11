@@ -1,0 +1,30 @@
+{
+  "itemName" : "m98widow",
+  "inventoryIcon" : "m98widowicon.png",
+  "shortdescription" : "M-98 Widow",
+  "description" : "M-98 Widow",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m98widow.png",
+  "recoilTime" : 0.2,
+  "handPosition" : [-13, 0],
+  "firePosition" : [23, 4],
+  
+  "fireTime" : 1.0,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 0.5,
+
+  "projectileType" : "bullet-1",
+  "projectile" : {
+	"power" : 4800,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
+    "fireSound" : [ { "file" : "/sfx/gun/rocketblast2.wav" } ]
+  }
+}
