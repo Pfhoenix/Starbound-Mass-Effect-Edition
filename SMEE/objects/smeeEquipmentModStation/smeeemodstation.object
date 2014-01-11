@@ -1,0 +1,41 @@
+{
+	"objectName" : "smeeemodstation",
+	"rarity" : "Common",
+	"objectType" : "wire",
+	
+	// TODO this is right now in the lua file. We need to get it back in here.
+	//"interactData" : {
+	//	"config" : "/interface/windowconfig/smeeemodstation.config",
+	//	"filter" : [ "craftingtable", "plain", "smee" ]
+	//},
+	
+	"printable" : false,
+	"description" : "For crafting and modifying",
+	"shortdescription" : "Equipment Mod Station",
+	"race" : "generic",
+	"category" : "crafting",
+	"price" : "200",
+
+	"inventoryIcon" : "smeeemodstationicon.png",
+	"orientations" : [
+		{
+			"dualImage" : "smeeemodstation.png:<color>.<frame>",
+			"frames" : 25,
+			"animationCycle" : 2.0,
+
+			"imagePosition" : [-8, 0],
+		
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ]
+		}
+	],
+	  
+	"scripts" : [ "smeeemodstation.lua" ],
+	"scriptDelta" : 5,
+	"animation" : "smeeemodstation.animation",
+	"animationParts" : {
+		"smeeemodstation" : "smeeemodstation.png"
+	},
+	"animationPosition" : [-8, 0],
+	"detectRadius" : 8
+}

@@ -2,9 +2,9 @@
   "objectName" : "sr1boosterflamesmall",
   "rarity" : "Common",
   "objectType" : "engine",
-  "description" : "I wonder how quickly that would cook a burger.",
-  "shortdescription" : "Booster Flame",
-  "race" : "generic",
+  "description" : "Any vessel caught behind them will melt like wax in a blowtorch.",
+  "shortdescription" : "Antiproton Thrusters",
+  "race" : "n7human",
 
   "category" : "light",
   "lightColor" : [59, 183, 255],
