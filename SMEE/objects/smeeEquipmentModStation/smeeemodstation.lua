@@ -8,7 +8,8 @@ end
 
 
 function isPowerOn()	
-	return entity.animationState("stationState") == "on" or entity.animationState("stationState") == "turnOn"
+	return entity.animationState("stationState") == "on" 
+			or entity.animationState("stationState") == "turnOn"
 end
 
 
@@ -31,7 +32,10 @@ end
 function onInteraction(args)
 	turnPowerOn()
 	-- TODO find a we put this in object file entity.configParameter
-	return { "OpenCraftingInterface", { config = "/interface/windowconfig/smeeemodstation.config", filter = { "craftingtable", "plain", "smee" }} }
+	return { "OpenCraftingInterface", { 
+			config = "/interface/windowconfig/smeeemodstation.config", 
+			filter = { "craftingtable", "plain", "smee" }} 
+		}
 end
 
 
@@ -59,7 +63,11 @@ function main()
   
 	-- detect everything that runs around
 	local radius = entity.configParameter("detectRadius")
-	local entityIds = world.entityQuery(entity.position(), radius, { notAnObject = true })	
+	local entityIds = world.entityQuery(
+			entity.position(), 
+			radius, 
+			{ notAnObject = true }
+		)	
 	if not isPowerOn() then
 		if #entityIds > 0 then
 			turnPowerOn()
