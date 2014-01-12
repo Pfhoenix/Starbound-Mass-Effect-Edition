@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 2200 },
+    { "item" : "imperviumbar", "count" : 10 }
+  ],
+  "output" : { "item" : "m76revenant", "count" : 1 },
+  "groups" : [ "craftingtable", "weapons", "all" ]
+}

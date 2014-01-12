@@ -1,0 +1,7 @@
+{
+  "frames" : "gethmuzzle.png",
+  "variants" : 3,
+  "frameNumber" : 2,
+  "animationCycle" : 0.03,
+  "offset" : [-3, 0]
+}

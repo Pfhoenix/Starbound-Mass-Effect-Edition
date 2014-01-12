@@ -1,0 +1,30 @@
+{
+  "itemName" : "m76revenant",
+  "inventoryIcon" : "m76revenanticon.png",
+  "shortdescription" : "M-76 Revenant",
+  "description" : "M-76 Revenant",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m76revenant.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-11, 0],
+  "firePosition" : [20, 4],
+  
+  "fireTime" : 0.10,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 0.5,
+
+  "projectileType" : "bullet-4",
+  "projectile" : {
+	"power" : 420,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
+    "fireSound" : [ { "file" : "/sfx/gun/sniper3.wav" } ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "itemName" : "m97viper",
+  "inventoryIcon" : "m97vipericon.png",
+  "shortdescription" : "M-97 Viper",
+  "description" : "M-97 Viper",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m97viper.png",
+  "recoilTime" : 0.2,
+  "handPosition" : [-14, 0],
+  "firePosition" : [25, 4],
+  
+  "fireTime" : 0.30,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 0.5,
+
+  "projectileType" : "bullet-3",
+  "projectile" : {
+	"power" : 475,
+	"speed" : 75
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
+    "fireSound" : [ { "file" : "/sfx/gun/ar3.wav" } ]
+  }
+}
