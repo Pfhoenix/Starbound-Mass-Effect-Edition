@@ -1,9 +1,0 @@
-{
-  "input" : [
-     //{ "item" : "Ceruliumbar", "count" : 1 },
-	{ "item" : "money", "count" : 5 },
-	{ "item" : "omniblade3", "count" : 1 }
-  ],
-  "output" : { "item" : "omniblade4", "count" : 1 },
-  "groups" : [ "mod", "smee", "plain", "weapons", "tools", "all" ]
-}

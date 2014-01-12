@@ -1,0 +1,58 @@
+{
+	"itemName" : "smeeomniblade4",
+	"dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+	"maxStack" : 1,
+	"level" : 1,
+	"rarity" : "uncommon",
+	"description" : "S.P.E.C.T.R.E. Omni-blade. Sharp and reliable.",
+	"shortdescription" : "Omni-Blade B-4",
+	"inspectionKind" : "sword",
+	"kind" : "Shortsword",
+
+	"image" : "smeeomniblade4.png",
+	"firePosition" : [22, -12],
+	"fireTime" : 0.6,
+	"fireAfterWindup" : true,
+	"soundEffect" : { "fireSound" : [ { "file" : "/sfx/melee/swing_onehanded.wav" } ] },
+
+	"primaryStances" : {
+		"projectileType" : "smeeomniblade1swoosh",
+		"projectile" : {
+			"speed" : 0.1,
+			"power" : 280
+		},
+		
+		"idle" : {
+			"twoHanded" : false,
+			"armAngle" : -90,
+			"swordAngle" : -90,
+			"handPosition" : [-4.0, -15.5],
+			"armFrameOverride" : "idleMelee",
+			"duration" : 0.1
+		},
+    
+		"windup" : {
+			"twoHanded" : false,
+			"armAngle" : -30,
+			"swordAngle" : -90,
+			"handPosition" : [-2, -22],
+			"duration" : 0.2,
+			"statusEffects" : [
+				{ "kind" : "shieldsuppressed", "duration" : 0.1 },
+				{ "kind" : "smeeomniglow", "amount" : 0.5, "color" : [169, 230, 255]} 
+			]
+		},
+    
+		"cooldown" : {
+			"twoHanded" : false,
+			"armAngle" : -100,
+			"swordAngle" : -90,
+			"handPosition" : [-3.0, -13],
+			"duration" : 0.4,
+			"statusEffects" : [
+				{ "kind" : "shieldsuppressed", "duration" : 0.1 },
+				{ "kind" : "smeeomniglow", "amount" : 0.5, "color" : [169, 230, 255]} 
+			]
+		}
+	}
+}

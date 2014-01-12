@@ -1,0 +1,8 @@
+{
+	"input" : [
+		{ "item" : "ironbar", "count" : 10 },
+		{ "item" : "money", "count" : 30 }
+	],
+	"output" : { "item" : "smeeomniblade1", "count" : 1 },
+	"groups" : [ "mod", "smee", "plain", "weapons", "tools", "all" ]
+}

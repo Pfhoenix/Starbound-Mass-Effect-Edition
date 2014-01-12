@@ -1,0 +1,14 @@
+{
+  "projectileName" : "smeeomniblade4swoosh",
+  "frames" : "smeeomniblade4swoosh.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 5,
+  "level" : 1,
+  "speed" : 0,
+  "orientationLocked" : true,
+  "damagePoly" : [ [-35, 9.5], [2, 9.5], [13, 6.5], [20, 1.5], [20, -1.5], [17, -4.5], [1, -9.5], [-35, -9.5] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "1hsword"
+}
