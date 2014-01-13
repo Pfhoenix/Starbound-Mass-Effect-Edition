@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 900 },
+    { "item" : "durasteelbar", "count" : 15 }
+  ],
+  "output" : { "item" : "m92mantis", "count" : 1 },
+  "groups" : [ "craftingtable", "weapons", "all" ]
+}

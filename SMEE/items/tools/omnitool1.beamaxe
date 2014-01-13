@@ -4,7 +4,7 @@
   "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
   "rarity" : "Legendary",
   "maxStack" : 1,
-  "description" : "Civilian version of an omni-tool. Manipulates anything that matters.",
+  "description" : "Civilian version of an omni-tool. Manipulates matter.",
   "shortdescription" : "Omni-Tool O-1",
   "largeImage" : "omnitool1.png",
   "inspectionKind" : "tool",

@@ -1,0 +1,11 @@
+{
+	"input" : [
+		// TODO needs adjustment
+		{ "item" : "ironbar", "count" : 10 }
+	],
+	"output" : {
+		"item" : "smeeemodstation",
+		"count" : 1
+	},
+	"groups" : [ "mod", "smee", "plain", "objects", "all" ]
+}

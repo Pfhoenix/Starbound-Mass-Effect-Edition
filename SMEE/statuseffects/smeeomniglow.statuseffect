@@ -1,0 +1,6 @@
+{
+  "kind" : "smeeomniglow",
+  "primitives" : [
+    { "name" : "glow" }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+	"config" : {
+		"fuelMax" : 1000
+	},
+
+	"backgroundOverlays" : [
+		{
+			"image" : "normandysr1.png",
+			"position" : [0, -1]
+		}
+	],
+
+	"blockKey" : [
+		{
+			"value" : [255, 255, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : false
+		},
+
+		{
+			"value" : [0, 0, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true
+		},
+
+		{
+			"value" : [255, 0, 0, 255],
+			"foregroundBlock" : true,
+			"backgroundBlock" : true
+		},
+
+		{
+			"value" : [240, 240, 240, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "invisiblelight",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [230, 230, 230, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1boosterlight",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [255, 255, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1boosterflame",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [255, 255, 125, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1boosterflamesmall",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [156, 0, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "teleporter",
+			"flags" : [ "playerSpawn" ],
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [0, 255, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1captainschair",
+			"objectDirection" : "left",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [0, 148, 148, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1galaxyconsole",
+			"objectDirection" : "right",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+		
+		{
+			"value" : [1, 139, 1, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "smeeemodstation",
+			"objectDirection" : "right"
+		},
+
+		{
+			"value" : [0, 255, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1fuelhatch",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+		
+		{
+			"value" : [0, 220, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1tantaluscore",
+			"objectDirection" : "right",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [0, 200, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall",
+			"object" : "sr1shiplocker",
+			"objectParameters" : {
+			"treasurePools" : [ "apexStarterTreasure" ],
+			"level" : 1,
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [0, 160, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall",
+			"object" : "sr1techstation",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+
+		{
+			"value" : [255, 255, 150, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "apexshiplight"
+		},
+
+		{
+			"value" : [255, 255, 160, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "apexshiplight"
+		},
+
+		{
+			"value" : [255, 0, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "apexshiplight"
+		},
+
+		{
+			"value" : [255, 102, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "apexshipdoor"
+		},
+
+		{
+			"value" : [130, 130, 130, 255],
+			"foregroundBlock" : true,
+			"backgroundBlock" : true,
+			"foregroundMat" : "steelplatform"
+		},
+
+		{
+			"value" : [100, 100, 100, 255],
+			"foregroundBlock" : true,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"foregroundMat" : "steelplatform"
+		},
+
+		{
+			"value" : [85, 85, 85, 255],
+			"foregroundBlock" : true,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall",
+			"foregroundMat" : "steelplatform"
+		},
+
+		{
+			"value" : [255, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails"
+		},
+
+		{
+			"value" : [255, 177, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall"
+		},
+
+		{
+			"value" : [255, 214, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "lightmetal"
+		},
+
+		{
+			"value" : [0, 174, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "sr1cicstation1"
+		},
+
+		{
+			"value" : [67, 195, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "sr1cicstation2"
+		},
+
+		{
+			"value" : [139, 218, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall",
+			"object" : "smeedecalalliance1"
+		},
+
+		{
+			"value" : [124, 213, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall",
+			"object" : "smeedecalcic"
+		},
+
+		{
+			"value" : [108, 208, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "lightmetal",
+			"object" : "smeedecalmedbay"
+		},
+
+		{
+			"value" : [81, 199, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall",
+			"object" : "smeedecalnormandy"
+		},
+
+		{
+			"value" : [95, 204, 255, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipwall",
+			"object" : "smeedecalsr1"
+		},
+
+
+		// dont know what this is for...
+		{
+			"value" : [174, 137, 81, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "shipengine",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		}
+	],
+
+	"blockImage" : "normandysr1block.png"
+}

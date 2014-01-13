@@ -1,0 +1,25 @@
+{
+  "objectName" : "flagn7human",
+  "rarity" : "Common",
+
+  "category" : "crafting",
+  "price" : "100",
+
+  "description" : "The flag of the Earth Alliance. Salute!",
+  "shortdescription" : "Alliance Human Flag",
+  "race" : "n7human",
+
+  "inventoryIcon" : "flagn7humanicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "flagn7human.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 6,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

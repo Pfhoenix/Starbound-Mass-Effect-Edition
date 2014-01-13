@@ -1,0 +1,22 @@
+{
+  "objectName" : "smeedecalalliance1",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : "50",
+  "description" : "A small Earth Alliance sign.",
+  "shortdescription" : "Earth Alliance sign",
+  "race" : "n7human",
+  
+  "multicolored" : true,
+  "inventoryIcon" : "smeedecalalliance1icon.png",
+  "orientations" : [
+    {
+      "image" : "smeedecalalliance1.png:<color>",
+      "frames" : 1,
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

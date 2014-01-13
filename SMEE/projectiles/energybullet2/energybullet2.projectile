@@ -1,0 +1,18 @@
+{
+  "projectileName" : "energybullet2",
+  "frames" : "energybullet2.png",
+  "animationCycle" : 0.25,
+  "level" : 3,
+  "frameNumber" : 1,
+  "damageKindImage" : "energybulleticon.png",
+  "pointLight" : true,
+  "color" : [0, 25, 255],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "damageKind" : "default"
+}

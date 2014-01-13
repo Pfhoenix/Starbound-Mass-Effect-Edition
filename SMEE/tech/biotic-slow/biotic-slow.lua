@@ -13,10 +13,6 @@ function input(args)
 		return nil
 	end
 	
-	if args.moves["special"] > 0 then
-		world.logInfo("Specials are %s", args.moves["special"])
-	end
-	
 	if args.moves["down"] then
 		return "biotic-slow"
 	end

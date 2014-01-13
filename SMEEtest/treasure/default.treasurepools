@@ -1,0 +1,22 @@
+{
+	"__merge" : [],
+
+	"n7humanStarterTreasure" : [
+		[0, {
+			"__merge" : [],
+			"fill" : [
+				// additional test tresure
+				["ironbar", 10],
+				
+				// original treasure
+				"omnitool1",
+				"flashlight",
+				[ "flagn7human", 1],
+				[ "torch", 10],
+				[ "cornseed", 3],
+				[ "wheatseed", 3],
+				[ "smeeomniblade1", 1]
+			]
+		}]
+	]
+}
