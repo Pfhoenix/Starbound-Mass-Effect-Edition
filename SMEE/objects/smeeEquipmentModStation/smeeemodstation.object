@@ -10,7 +10,7 @@
 	//},
 	
 	"printable" : false,
-	"description" : "For crafting and modifying",
+	"description" : "For crafting and modifications.",
 	"shortdescription" : "Equipment Mod Station",
 	"race" : "generic",
 	"category" : "crafting",
