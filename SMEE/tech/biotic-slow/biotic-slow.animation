@@ -9,7 +9,10 @@
           "on" : {
             "frames" : 5,
             "cycle" : 0.3,
-            "mode" : "loop"
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/tech/biotic-slow.wav"
+            }
           }
         }
       }
