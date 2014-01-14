@@ -1,7 +1,9 @@
 {
   "input" : [
     { "item" : "money", "count" : 500 },
-    { "item" : "durasteelbar", "count" : 5 }
+    { "item" : "copperbar", "count" : 1 },
+    { "item" : "ironbar", "count" : 3 },
+    { "item" : "diamond", "count" : 1 }
   ],
   "output" : { "item" : "m3predator", "count" : 1 },
   "groups" : [ "craftingtable", "weapons", "all" ]

@@ -14,12 +14,12 @@
   
   "fireTime" : 0.20,
   "twoHanded" : false,
-  "level" : 10,
+  "level" : 1,
   "classMultiplier" : 0.5,
 
   "projectileType" : "energybullet",
   "projectile" : {
-	"power" : 20,
+	"power" : 2,
 	"speed" : 85,
   "color" : [ 0, 255, 255]
   },
