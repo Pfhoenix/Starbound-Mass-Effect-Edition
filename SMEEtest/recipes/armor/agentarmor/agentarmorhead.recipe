@@ -3,5 +3,5 @@
     { "item" : "money", "count" : 1 }
   ],
   "output" : { "item" : "agentarmorhead", "count" : 1 },
-  "groups" : [ "smee", "mod", "plain", "armors", "all" ]
+  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
 }

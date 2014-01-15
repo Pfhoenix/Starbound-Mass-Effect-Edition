@@ -2,6 +2,6 @@
   "input" : [
     { "item" : "money", "count" : 1 }
   ],
-  "output" : { "item" : "n7armorchest", "count" : 1 },
+  "output" : { "item" : "berserkerarmorchest", "count" : 1 },
   "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
 }

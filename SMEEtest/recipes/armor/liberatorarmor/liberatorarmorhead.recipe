@@ -2,6 +2,6 @@
   "input" : [
     { "item" : "money", "count" : 1 }
   ],
-  "output" : { "item" : "agentarmorpants", "count" : 1 },
+  "output" : { "item" : "liberatorarmorhead", "count" : 1 },
   "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
 }

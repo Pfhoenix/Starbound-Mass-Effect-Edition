@@ -3,5 +3,5 @@
     { "item" : "money", "count" : 1 }
   ],
   "output" : { "item" : "n7armorpants", "count" : 1 },
-  "groups" : [ "smee", "mod", "plain", "armors", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
 }
