@@ -15,17 +15,22 @@
   "statusEffects" : [
     {
       "kind" : "ColdProtection",
-      "amount" : "4.5"
+      "amount" : "7.5"
     },
 
     {
-      "kind" : "protection",
-      "amount" : 9
+      "kind" : "Protection",
+      "level" : 25,
+      "amount" : 16.5
     },
 
     {
       "kind" : "energyincrease",
-      "amount" : 35
-    }
+      "amount" : 70
+    },
+	
+	{
+	  "kind" : "breathprotection"
+	}
   ]
 }

@@ -3,5 +3,5 @@
     { "item" : "Rubiumbar", "count" : 35 }
   ],
   "output" : { "item" : "n7armorchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
 }

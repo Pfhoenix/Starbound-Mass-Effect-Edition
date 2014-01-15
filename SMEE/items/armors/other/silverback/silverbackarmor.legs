@@ -1,0 +1,30 @@
+{
+  "itemName" : "silverbackarmorpants",
+  "inventoryIcon" : "icons.png:pants",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "These pants are favoured by the Turian for the tight fit.",
+  "shortdescription" : "Silverback Pants",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "11"
+    },
+
+    {
+      "kind" : "Protection",
+      "amount" : 36
+    },
+
+    {
+      "kind" : "energyregenmodifier",
+      "amount" : 1.75
+    }
+  ]
+}

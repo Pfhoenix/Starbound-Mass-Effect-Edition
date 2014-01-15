@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "money", "count" : 1 }
-  ],
-  "output" : { "item" : "n7armorchest", "count" : 1 },
-  "groups" : [ "mod", "plain", "objects", "all" ]
-}

@@ -23,17 +23,18 @@
   "statusEffects" : [
     {
       "kind" : "ColdProtection",
-      "amount" : "7.5"
+      "amount" : "12.5"
     },
 
     {
       "kind" : "Protection",
-      "amount" : 15
+      "level" : 25,
+      "amount" : 27.5
     },
 
     {
       "kind" : "healthincrease",
-      "amount" : 35
+      "amount" : 70
     }
   ]
 }

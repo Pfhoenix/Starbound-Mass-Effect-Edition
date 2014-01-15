@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "aegisaltbar", "count" : 20 }
+  ],
+  "output" : { "item" : "scorpionarmorhead", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

@@ -133,7 +133,7 @@
   "genders" : [
     {
       "name" : "male",
-      "image" : "/interface/title/female.png",
+      "image" : "/interface/title/asarigender.png",
       "characterImage" : "/interface/title/asarimale.png",
       "hair" : [ "male1"],
       "shirt" : [ "workoutchest", "coolchest", "conceptchest", "sweatervestchest" ],
@@ -145,7 +145,7 @@
     },
     {
       "name" : "female",
-      "image" : "/interface/title/female.png",
+      "image" : "/interface/title/asarigender.png",
       "characterImage" : "/interface/title/asarifem.png",
       "hair" : [ "fem1" ],
       "shirt" : [ "workoutchest", "coolchest", "conceptchest", "sweatervestchest" ],

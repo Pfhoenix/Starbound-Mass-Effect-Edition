@@ -1,9 +1,9 @@
 {
   "input" : [
-    { "item" : "steelbar", "count" : 35 },
-    { "item" : "silverarmorchest", "count" : 1 },
-    { "item" : "money", "count" : 1200 }
+    { "item" : "titaniumbar", "count" : 35 },
+    { "item" : "goldarmorchest", "count" : 1 },
+    { "item" : "money", "count" : 1400 }
   ],
   "output" : { "item" : "agentarmorchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
 }

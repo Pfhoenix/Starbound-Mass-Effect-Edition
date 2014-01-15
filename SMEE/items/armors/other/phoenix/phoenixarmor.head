@@ -26,6 +26,10 @@
     {
       "kind" : "energyincrease",
       "amount" : 15
-    }
+    },
+	
+	{
+	  "kind" : "breathprotection"
+	}
   ]
 }
