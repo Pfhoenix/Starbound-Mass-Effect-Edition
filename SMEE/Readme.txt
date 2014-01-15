@@ -66,13 +66,15 @@ Thanks to:
 Chucklefish for making Starbound.
 Bioware for making the Mass Effect series.
 nathiesk, from the playstarbound forums, for her work on the Mass Effect guns.
-
+derektye05 and shadee, from deviantart, for source Title Race face Sprites.
+Troondon80, from deviantart, for source Mass Relay loading sprites.
+some Wiki sources, for some placeholder codex entries.  
 
 ================================================================================
 	Team SMEE
 ================================================================================
 
-G4M5T3R - 
+G4M5T3R - The newb of the bunch. :)
 Pfhoenix - 
 TohKlidan - 
 
