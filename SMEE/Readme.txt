@@ -6,7 +6,8 @@
 		Mod Version: 0.1.0
 		Starbound Version: Beta v. Angry Koala
 		
-		URL: TODO Chucklefish mod url
+--------------------------------------------------------------------------------
+http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -23,9 +24,11 @@ races. Wield awesome Biotic Powers.
 ================================================================================
 
 Simply copy the entire mod directory into your "Starbound/mods" directory,
-commonly at "c:\Program Files (x86)\Steam\SteamApps\common\Starbound\mods". If 
-you wish to use one of the original Starbound races with SMEE, it is recommended
-that you download and use one of the SMEE versions in the optional race package.
+commonly at "c:\Program Files (x86)\Steam\SteamApps\common\Starbound\mods". 
+
+If you wish to use one of the original Starbound races with SMEE, it is 
+recommended that you download and use one or more of the SMEE versions in the 
+optional race package. But you still need to install SMEE first.
 
 
 ================================================================================
