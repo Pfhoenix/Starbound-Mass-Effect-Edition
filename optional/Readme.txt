@@ -14,7 +14,9 @@ http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edi
 	Important
 ================================================================================
 
-If you downloaded only this package you need to download the core package first!
+If you downloaded only this package you will need to download the core package 
+first before you can continue!
+
 This package contains only optional "patch mods" and nothing inside here runs
 without SMEE!
 
@@ -24,7 +26,6 @@ without SMEE!
 	Team SMEE
 ================================================================================
 
-G4M5T3R - The newb of the bunch. :)
-Pfhoenix - 
-TohKlidan - 
-
+G4M5T3R - Mad Scientist (races and armors)
+Pfhoenix - Biotic God (biotic and tech powers)
+TohKlidan - Tinkerer (ships and crafting)

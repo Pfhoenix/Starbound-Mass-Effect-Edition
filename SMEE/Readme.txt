@@ -28,12 +28,14 @@ commonly at "c:\Program Files (x86)\Steam\SteamApps\common\Starbound\mods".
 
 If you wish to use one of the original Starbound races with SMEE, it is 
 recommended that you download and use one or more of the SMEE versions in the 
-optional race package. But you still need to install SMEE first.
+optional race package. But you still need to install SMEE first. And the place a 
+mod from the optional package alongside SMEE into the mod folder.
 
 
 ================================================================================
 	Dependencies
 ================================================================================
+
 You need a custom character mod : either Kawa's Xbawks Mode Character Creator or
 Simple Extended Character Creation Mod.
 	
@@ -41,16 +43,18 @@ Simple Extended Character Creation Mod.
 ================================================================================
 	Conflicts
 ================================================================================
+
 If you use a mod with the same tile/material ids there will be a conflict.
 
 SMEE tile/material id list:
 7001 -- normandy ship wall
-7002 -- nromandy ship detail
+7002 -- normandy ship detail
 
 
 ================================================================================
 	Compatibility
 ================================================================================
+
 - Kawa's Xbawks Mode Character Creator:
 	http://community.playstarbound.com/index.php?resources/kawas-xbawks-mode-character-creator.81/
 	
@@ -64,6 +68,7 @@ SMEE tile/material id list:
 ================================================================================
 	Credits
 ================================================================================
+
 Thanks to:
 
 Chucklefish for making Starbound.
@@ -77,7 +82,8 @@ some Wiki sources, for some placeholder codex entries.
 	Team SMEE
 ================================================================================
 
-G4M5T3R - The newb of the bunch. :)
-Pfhoenix - 
-TohKlidan - 
+G4M5T3R - Mad Scientist (races and armors)
+Pfhoenix - Biotic God (biotic and tech powers)
+TohKlidan - Tinkerer (ships and crafting)
+
 
