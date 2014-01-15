@@ -26,19 +26,24 @@ races. Wield awesome Biotic Powers.
 Simply copy the entire mod directory into your "Starbound/mods" directory,
 commonly at "c:\Program Files (x86)\Steam\SteamApps\common\Starbound\mods". 
 
-If you wish to use one of the original Starbound races with SMEE, it is 
-recommended that you download and use one or more of the SMEE versions in the 
-optional race package. But you still need to install SMEE first. And the place a 
-mod from the optional package alongside SMEE into the mod folder.
+If you wish to use one of the original Starbound races with SMEE and have access
+to the Normandy, it is recommended that you download and use one or more of the 
+SMEE versions in the optional race package. You will need to install SMEE first 
+and then place a mod from the optional package alongside SMEE into your 
+Starbound/mods directory.
 
 
 ================================================================================
 	Dependencies
 ================================================================================
 
-You need a custom character mod : either Kawa's Xbawks Mode Character Creator or
-Simple Extended Character Creation Mod.
-	
+You will need a custom character mod. We recommend one of the following :
+
+Kawa's Xbawks Mode Character Creator
+Simple Extended Character Creation Mod
+
+See the Compatibility section for URLs.
+
 
 ================================================================================
 	Conflicts
@@ -61,7 +66,7 @@ SMEE tile/material id list:
 - Simple Extended Character Creation Mod:
 	http://community.playstarbound.com/index.php?resources/simple-extended-character-creation-mod-now-even-easier.218/
 	
-- Tabularasa:
+- Tabula Rasa:
 	http://community.playstarbound.com/index.php?resources/the-tabula-rasa.114/
 	
 
@@ -71,12 +76,12 @@ SMEE tile/material id list:
 
 Thanks to:
 
-Chucklefish for making Starbound.
-Bioware for making the Mass Effect series.
-nathiesk, from the playstarbound forums, for her work on the Mass Effect guns.
-derektye05 and shadee, from deviantart, for source Title Race face Sprites.
-Troondon80, from deviantart, for source Mass Relay loading sprites.
-some Wiki sources, for some placeholder codex entries.  
+- Chucklefish for making Starbound.
+- Bioware for making the Mass Effect series.
+- nathiesk, from the playstarbound forums, for her work on the Mass Effect guns.
+- derektye05 and shadee, from deviantart, for source Title Race face Sprites.
+- Troondon80, from deviantart, for source Mass Relay loading sprites.
+- Some Wiki sources, for some placeholder codex entries.  
 
 ================================================================================
 	Team SMEE
@@ -84,6 +89,6 @@ some Wiki sources, for some placeholder codex entries.
 
 G4M5T3R - Mad Scientist (races and armors)
 Pfhoenix - Biotic God (biotic and tech powers)
-TohKlidan - Tinkerer (ships and crafting)
+TohKlidan - Expert Tinkerer (ships and crafting)
 
 
