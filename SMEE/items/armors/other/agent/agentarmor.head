@@ -1,0 +1,36 @@
+{
+  "itemName" : "agentarmorhead",
+  "inventoryIcon" : "icons.png:head",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A mercenaries choice of armor.",
+  "shortdescription" : "Agent Helm",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "7.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 25,
+      "amount" : 16.5
+    },
+
+    {
+      "kind" : "energyincrease",
+      "amount" : 70
+    },
+	
+	{
+	  "kind" : "breathprotection"
+	}
+  ]
+}

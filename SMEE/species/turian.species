@@ -1,0 +1,183 @@
+{
+  "kind" : "turian",
+  "playerSpecies" : true,
+  "nameGen" : [ "/species/turiannamegen.config:names", "/species/turiannamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.wav", "/sfx/humanoid/humanhurt_female1.wav" ],
+  "charGenTextLabels" : [ "SKIN COLOR", "MARKINGS", "SHIRT", "PANTS", "UNDY COLOR", "MARKING COLOR", "SHIRT COLOR", "PANTS COLOR", "TURIAN", "PERSONALITY" ],
+  "defaultBlueprints" : {
+    "tier1" : [
+      { "item" : "humantier1hammer" },
+      { "item" : "humantier1shortsword" },
+      { "item" : "humantier1broadsword" },
+      { "item" : "humantier1spear" },
+      { "item" : "humantier1axe" },
+      { "item" : "humantier1dagger" },
+      { "item" : "conceptchest" },
+      { "item" : "conceptlegs" },
+      { "item" : "coolchest" },
+      { "item" : "coollegs" },
+      { "item" : "sweatervestchest" },
+      { "item" : "sweatervestlegs" },
+      { "item" : "workoutchest" },
+      { "item" : "workoutlegs" },
+      { "item" : "burger" },
+      { "item" : "vegetablesoup" },
+      { "item" : "bread" },
+      { "item" : "sweetcorn" },
+      { "item" : "candyapple" },
+      { "item" : "icecream" }
+    ],
+    "tier2" : [
+      { "item" : "humantier2hammer" },
+      { "item" : "humantier2shortsword" },
+      { "item" : "humantier2broadsword" },
+      { "item" : "humantier2spear" },
+      { "item" : "humantier2axe" },
+      { "item" : "humantier2dagger" },
+      { "item" : "humantier2head" },
+      { "item" : "humantier2chest" },
+      { "item" : "humantier2pants" },
+      { "item" : "spawnerhuman" }
+    ],
+    "tier3" : [
+      { "item" : "humantier3head" },
+      { "item" : "humantier3chest" },
+      { "item" : "humantier3pants" },
+      { "item" : "humantier3hammer" },
+      { "item" : "humantier3shortsword" },
+      { "item" : "humantier3broadsword" },
+      { "item" : "humantier3spear" },
+      { "item" : "humantier3axe" },
+      { "item" : "humantier3dagger" }
+    ],
+    "tier4" : [
+      { "item" : "humantier4head" },
+      { "item" : "humantier4chest" },
+      { "item" : "humantier4pants" },
+      { "item" : "humantier4hammer" },
+      { "item" : "humantier4shortsword" },
+      { "item" : "humantier4broadsword" },
+      { "item" : "humantier4spear" },
+      { "item" : "humantier4axe" },
+      { "item" : "humantier4dagger" }
+    ],
+    "level32" : [
+      { "item" : "humantier5head" },
+      { "item" : "humantier5chest" },
+      { "item" : "humantier5pants" },
+      { "item" : "humantier5hammer" },
+      { "item" : "humantier5shortsword" },
+      { "item" : "humantier5broadsword" },
+      { "item" : "humantier5spear" },
+      { "item" : "humantier5axe" },
+      { "item" : "humantier5dagger" }
+    ],
+    "level33" : [
+      { "item" : "humantier6head" },
+      { "item" : "humantier6chest" },
+      { "item" : "humantier6pants" },
+      { "item" : "humantier6hammer" },
+      { "item" : "humantier6shortsword" },
+      { "item" : "humantier6broadsword" },
+      { "item" : "humantier6spear" },
+      { "item" : "humantier6axe" },
+      { "item" : "humantier6dagger" }
+    ],
+    "level34" : [
+      { "item" : "humantier7head" },
+      { "item" : "humantier7chest" },
+      { "item" : "humantier7pants" },
+      { "item" : "humantier7hammer" },
+      { "item" : "humantier7shortsword" },
+      { "item" : "humantier7broadsword" },
+      { "item" : "humantier7spear" },
+      { "item" : "humantier7axe" },
+      { "item" : "humantier7dagger" }
+    ],
+    "level35" : [
+      { "item" : "humantier8head" },
+      { "item" : "humantier8chest" },
+      { "item" : "humantier8pants" },
+      { "item" : "humantier8hammer" },
+      { "item" : "humantier8shortsword" },
+      { "item" : "humantier8broadsword" },
+      { "item" : "humantier8spear" },
+      { "item" : "humantier8axe" },
+      { "item" : "humantier8dagger" }
+    ],
+    "level36" : [
+      { "item" : "humantier9head" },
+      { "item" : "humantier9chest" },
+      { "item" : "humantier9pants" },
+      { "item" : "humantier9hammer" },
+      { "item" : "humantier9shortsword" },
+      { "item" : "humantier9broadsword" },
+      { "item" : "humantier9spear" },
+      { "item" : "humantier9axe" },
+      { "item" : "humantier9dagger" }
+    ],
+    "level37" : [
+      { "item" : "humantier10head" },
+      { "item" : "humantier10chest" },
+      { "item" : "humantier10pants" },
+      { "item" : "humantier10hammer" },
+      { "item" : "humantier10shortsword" },
+      { "item" : "humantier10broadsword" },
+      { "item" : "humantier10spear" },
+      { "item" : "humantier10axe" },
+      { "item" : "humantier10dagger" }
+    ]
+  },
+  "altOptionAsUndyColor" : true,
+  "headOptionAsHairColor" : true,
+  "genders" : [
+    {
+      "name" : "male",
+      "image" : "/interface/title/male.png",
+      "characterImage" : "/interface/title/turianmale.png",
+      "hair" : [ "1", "2", "3", "4", "5", "6", "7" ], 
+      "shirt" : [ "workoutchest", "coolchest", "conceptchest", "sweatervestchest" ],
+      "pants" : [ "workoutlegs", "coollegs", "conceptlegs", "sweatervestlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "",
+      "facialMask" : [ ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/female.png",
+      "characterImage" : "/interface/title/turianfemale.png",
+      "hair" : [ "1", "2", "3", "4", "5", "6", "7" ],
+      "shirt" : [ "workoutchest", "coolchest", "conceptchest", "sweatervestchest" ],
+      "pants" : [ "workoutlegs", "coollegs", "conceptlegs", "sweatervestlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "",
+      "facialMask" : [ ]
+    }
+  ],
+  "bodyColor" : [
+	{ "917A68" : "918568", "6C5A4D" : "6C624D", "473A32" : "474032", "393939" : "474746" },
+	{ "917A68" : "916F68", "6C5A4D" : "6C524D", "473A32" : "473432", "393939" : "474746" },
+	{ "917A68" : "916877", "6C5A4D" : "6C4D59", "473A32" : "47323B", "393939" : "474646" },
+	{ "917A68" : "656C4D", "6C5A4D" : "434732", "473A32" : "434732", "393939" : "464746" },
+	{ "917A68" : "688D91", "6C5A4D" : "4D696C", "473A32" : "324647", "393939" : "464647" },
+	{ "917A68" : "687F91", "6C5A4D" : "4D5F6C", "473A32" : "323F47", "393939" : "464647" },
+	{ "917A68" : "917A68", "6C5A4D" : "6C5A4D", "473A32" : "473A32", "393939" : "393939" }
+  ],
+  
+  "undyColor" : [
+    { "808080" : "808080", "606060" : "606060" }
+  ],
+  
+  "hairColor" : [
+    { "AA564F" : "AA564F", "9B4944" : "9B4944", "8D3C39" : "8D3C39", "6A302D" : "6A302D", "808080" : "808080", "606060" : "606060" },
+	{ "AA564F" : "AEE1DD", "9B4944" : "6BC8C0", "8D3C39" : "1E7862", "6A302D" : "20625D", "808080" : "6BC8C0", "606060" : "1E7862" },
+    { "AA564F" : "AEE1B7", "9B4944" : "6BC87A", "8D3C39" : "1E781E", "6A302D" : "20622C", "808080" : "6BC87A", "606060" : "1E781E" },
+	{ "AA564F" : "CCE1AE", "9B4944" : "A1C86B", "8D3C39" : "62781E", "6A302D" : "466220", "808080" : "A1C86B", "606060" : "62781E" },
+	{ "AA564F" : "C3AEE1", "9B4944" : "926BC8", "8D3C39" : "351E78", "6A302D" : "3C2062", "808080" : "926BC8", "606060" : "351E78" },
+	{ "AA564F" : "E1AED9", "9B4944" : "C86BB9", "8D3C39" : "781E78", "6A302D" : "622056", "808080" : "C86BB9", "606060" : "781E78" },
+	{ "AA564F" : "E1AEB2", "9B4944" : "C86B73", "8D3C39" : "781E35", "6A302D" : "622025", "808080" : "C86B73", "606060" : "781E35" },
+	{ "AA564F" : "E1D0AE", "9B4944" : "C8A96B", "8D3C39" : "784B1E", "6A302D" : "624D20", "808080" : "C8A96B", "606060" : "784B1E" }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "Feroziumbar", "count" : 20 }
+  ],
+  "output" : { "item" : "silverbackarmorhead", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

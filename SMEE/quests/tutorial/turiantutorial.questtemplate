@@ -1,0 +1,16 @@
+{
+  "id" : "turiantutorial.gearup",
+  "title" : "^#9be3d6;There's No Place Like Home",
+  "text" : "Turian text here... You have been in search of a new home for some time. Finally your ship has run out of fuel in orbit of an unknown planet. Before setting out in search of fuel, ^green;search your ship's storage for a ^pink;matter manipulator^white;. Press ^green;E ^white;to interact with objects.",
+  "completionText" : "Well done! The matter omnipulator allows you to manipulate almost anything in the gameworld.",
+  "conditions" : [
+    { "kind" : "gather", "item" : [ "beamaxe", 1] }
+  ],
+  "moneyRange" : [10, 10],
+  "rewards" : [
+    [ [ "beamaxe", 1] ]
+  ],
+  "planetMode" : "none",
+  "questDungeons" : [ ],
+  "followUp" : "tutorial2.gearup"
+}
