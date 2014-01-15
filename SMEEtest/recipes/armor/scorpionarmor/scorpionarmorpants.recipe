@@ -1,7 +1,8 @@
-{
+{ 
+"__merge" : [
+  ["overwrite", "input"]
+],
   "input" : [
     { "item" : "money", "count" : 1 }
-  ],
-  "output" : { "item" : "scorpionarmorpants", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  ]
 }
