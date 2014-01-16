@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "money", "count" : 1 }
-  ],
-  "output" : { "item" : "omniblade2", "count" : 1 },
-  "groups" : [ "mod", "smee", "plain", "weapons", "tools", "all" ]
-}
