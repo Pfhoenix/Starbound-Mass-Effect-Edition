@@ -4,5 +4,7 @@
 ],
   "input" : [
     { "item" : "money", "count" : 1 }
-  ]
+  ],
+  
+  "groups" : [ "smee" ]
 }
