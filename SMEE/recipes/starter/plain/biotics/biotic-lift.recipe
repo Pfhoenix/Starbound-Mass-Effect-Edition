@@ -3,5 +3,5 @@
     { "item" : "money", "count" : 1 }
   ],
   "output" : { "item" : "biotic-lift-chip", "count" : 1 },
-  "groups" : [ "mod", "plain", "objects", "all" ]
+  "groups" : [ "mod", "smee", "plain", "objects", "all" ]
 }
