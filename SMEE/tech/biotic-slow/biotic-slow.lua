@@ -6,6 +6,8 @@ function init()
 end
 
 function uninit()
+	tech.setAnimationState("active", "off")
+	data.anim = false
 end
 
 function input(args)
