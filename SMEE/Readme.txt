@@ -1,10 +1,11 @@
-================================================================================
-		Starbound Mass Effect Edtiton (SMEE) 
+﻿================================================================================
+		Starbound Mass Effect Edition (SMEE) 
 ================================================================================
 		by Team SMEE
 		
 		Mod Version: 0.1.0
 		Starbound Version: Beta v. Angry Koala
+		Release Date: 2014-01-16
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -32,7 +33,6 @@ SMEE versions in the optional race package. You will need to install SMEE first
 and then place a mod from the optional package alongside SMEE into your 
 Starbound/mods directory.
 
-
 ================================================================================
 	Dependencies
 ================================================================================
@@ -43,7 +43,7 @@ Kawa's Xbawks Mode Character Creator
 Simple Extended Character Creation Mod
 
 See the Compatibility section for URLs.
-
+	
 
 ================================================================================
 	Conflicts
@@ -52,8 +52,8 @@ See the Compatibility section for URLs.
 If you use a mod with the same tile/material ids there will be a conflict.
 
 SMEE tile/material id list:
-7001 -- normandy ship wall
-7002 -- normandy ship detail
+7001 -- Normandy ship wall
+7002 -- Normandy ship detail
 
 
 ================================================================================
@@ -90,5 +90,4 @@ Thanks to:
 G4M5T3R - Mad Scientist (races and armors)
 Pfhoenix - Biotic God (biotic and tech powers)
 TohKlidan - Expert Tinkerer (ships and crafting)
-
 
