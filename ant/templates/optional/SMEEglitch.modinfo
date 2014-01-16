@@ -1,0 +1,10 @@
+{
+    "name" : "SMEEglitch",
+    "version" : "@SB_VERSION",
+    "path" : ".",
+	"dependencies" : ["Starbound : Mass Effect Edition"],
+	"metadata" : {
+	  "author" : "Team SMEE",
+	  "description" : "Use the Normandy with Glitch species. For SMEE v. @MOD_VERSION"
+	}
+}
