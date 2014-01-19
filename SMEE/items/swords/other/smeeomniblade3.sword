@@ -10,7 +10,7 @@
 	"kind" : "Shortsword",
 
 	"image" : "smeeomniblade3.png",
-	"firePosition" : [22, -12],
+	"firePosition" : [22, -2],
 	"fireTime" : 0.6,
 	"fireAfterWindup" : true,
 	"soundEffect" : { "fireSound" : [ { "file" : "/sfx/melee/swing_onehanded.wav" } ] },
@@ -30,24 +30,24 @@
 			"armFrameOverride" : "idleMelee",
 			"duration" : 0.1
 		},
-    
+
 		"windup" : {
 			"twoHanded" : false,
-			"armAngle" : -30,
-			"swordAngle" : -90,
-			"handPosition" : [-2, -22],
+			"armAngle" : 0,
+			"swordAngle" : -60,
+			"handPosition" : [0.2, -24],
 			"duration" : 0.2,
 			"statusEffects" : [
 				{ "kind" : "shieldsuppressed", "duration" : 0.1 },
 				{ "kind" : "smeeomniglow", "amount" : 0.5, "color" : [255, 176, 169]} 
 			]
 		},
-    
+
 		"cooldown" : {
 			"twoHanded" : false,
-			"armAngle" : -100,
+			"armAngle" : -140,
 			"swordAngle" : -90,
-			"handPosition" : [-3.0, -13],
+			"handPosition" : [2.0, -10],
 			"duration" : 0.4,
 			"statusEffects" : [
 				{ "kind" : "shieldsuppressed", "duration" : 0.1 },
