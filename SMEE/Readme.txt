@@ -55,6 +55,8 @@ SMEE tile/material id list:
 7001 -- Normandy ship wall
 7002 -- Normandy ship detail
 
+Eezo .matmod id -- 423
+
 
 ================================================================================
 	Compatibility
