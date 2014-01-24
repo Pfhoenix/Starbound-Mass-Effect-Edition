@@ -1,0 +1,10 @@
+{
+  "modId" : 425,
+  "modName" : "iridium",
+  "frames" : "iridium.png",
+  "variants" : 8,
+  "itemDrop" : "iridiumore",
+  "Description" : "Iridium.",
+  "health" : 10,
+  "breaksWithTile" : true
+}

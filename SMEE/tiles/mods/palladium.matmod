@@ -1,0 +1,10 @@
+{
+  "modId" : 424,
+  "modName" : "palladium",
+  "frames" : "palladium.png",
+  "variants" : 8,
+  "itemDrop" : "palladiumore",
+  "Description" : "Palladium.",
+  "health" : 18,
+  "breaksWithTile" : true
+}
