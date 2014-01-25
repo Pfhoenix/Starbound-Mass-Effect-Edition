@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "silverore", "count" : 6 },
+	{ "item" : "platinumore", "count" : 4 },
+	{ "item" : "solariumore", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "palladiumbar",
+    "count" : 1
+  },
+  "groups" : [ "smee", "mod", "stonefurnace", "all" ]
+}

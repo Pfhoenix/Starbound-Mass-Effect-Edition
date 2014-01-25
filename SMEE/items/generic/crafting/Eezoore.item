@@ -1,8 +1,7 @@
 {
   "itemName" : "Eezoore",
-  "rarity" : "rare",
+  "rarity" : "Rare",
   "inventoryIcon" : "Eezoore.png",
   "description" : "Valuable raw Element 0.",
-  "shortdescription" : "Eezo",
-  "fuelAmount" : 6
+  "shortdescription" : "Eezo"
 }
