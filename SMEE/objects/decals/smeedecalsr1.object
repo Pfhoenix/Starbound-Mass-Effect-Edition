@@ -2,7 +2,7 @@
   "objectName" : "smeedecalsr1",
   "rarity" : "Common",
   "category" : "decorative",
-  "price" : "50",
+  "price" : 50,
   "description" : "SR1 sign.",
   "shortdescription" : "SR1 sign",
   "race" : "n7human",

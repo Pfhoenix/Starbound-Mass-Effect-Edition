@@ -2,7 +2,7 @@
   "objectName" : "sr1cicstation1",
   "rarity" : "Common",
   "category" : "decorative",
-  "price" : "1000",
+  "price" : 1000,
 
   "description" : "A CIC station commonly used in alliance ship.",
   "shortdescription" : "CIC station",

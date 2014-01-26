@@ -14,7 +14,7 @@
 	"shortdescription" : "Equipment Mod Station",
 	"race" : "generic",
 	"category" : "crafting",
-	"price" : "1000",
+	"price" : 1000,
 
 	"inventoryIcon" : "smeeemodstationicon.png",
 	"orientations" : [

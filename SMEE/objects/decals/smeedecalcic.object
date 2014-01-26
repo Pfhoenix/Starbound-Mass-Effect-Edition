@@ -2,7 +2,7 @@
   "objectName" : "smeedecalcic",
   "rarity" : "Common",
   "category" : "decorative",
-  "price" : "50",
+  "price" : 50,
   "description" : "CIC of an starship.",
   "shortdescription" : "CIC sign",
   "race" : "n7human",

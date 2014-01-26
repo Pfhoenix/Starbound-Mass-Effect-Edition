@@ -19,7 +19,7 @@
 
     "particle" : {
       "type" : "ember",
-      "size" : "1.0",
+      "size" : 1.0,
       "color" : [94, 184, 236, 255],
       "light" : [94, 184, 236],
       "fade" : 0.9,

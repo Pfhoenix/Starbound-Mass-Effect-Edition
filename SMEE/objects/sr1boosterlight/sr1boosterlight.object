@@ -6,7 +6,7 @@
   "race" : "generic",
 
   "category" : "light",
-  "price" : "500",
+  "price" : 500,
   "lightColor" : [59, 183, 255],
   "flickerDistance" : 0.2,
   "flickerStrength" : 0.05,

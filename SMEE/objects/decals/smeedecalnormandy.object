@@ -2,7 +2,7 @@
   "objectName" : "smeedecalnormandy",
   "rarity" : "Common",
   "category" : "decorative",
-  "price" : "50",
+  "price" : 50,
   "description" : "Normandy name sign.",
   "shortdescription" : "Normandy sign",
   "race" : "n7human",

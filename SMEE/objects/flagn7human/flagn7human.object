@@ -3,7 +3,7 @@
   "rarity" : "Common",
 
   "category" : "crafting",
-  "price" : "100",
+  "price" : 100,
 
   "description" : "The flag of the Earth Alliance. Salute!",
   "shortdescription" : "Alliance Human Flag",

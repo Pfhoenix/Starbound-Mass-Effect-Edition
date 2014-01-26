@@ -2,7 +2,7 @@
   "objectName" : "sr1cicstation2",
   "rarity" : "Common",
   "category" : "decorative",
-  "price" : "1000",
+  "price" : 1000,
 
   "description" : "A CIC double seated station commonly used in alliance ship.",
   "shortdescription" : "Double seated CIC station",

@@ -6,7 +6,7 @@
   "interactAction" : "OpenTech3DPrinterDialog",
 
   "category" : "decorative",
-  "price" : "2500",
+  "price" : 2500,
 
   "description" : "An Alliance tech station. For creating awesome tech!",
   "shortdescription" : "Alliance Tech Station",

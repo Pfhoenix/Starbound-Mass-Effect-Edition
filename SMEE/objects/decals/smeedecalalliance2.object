@@ -2,7 +2,7 @@
   "objectName" : "smeedecalalliance2",
   "rarity" : "Common",
   "category" : "decorative",
-  "price" : "100",
+  "price" : 50,
   "description" : "A large Earth Alliance sign.",
   "shortdescription" : "Earth Alliance sign",
   "race" : "n7human",

@@ -2,7 +2,7 @@
   "objectName" : "smeedecalmedbay",
   "rarity" : "Common",
   "category" : "decorative",
-  "price" : "50",
+  "price" : 50,
   "description" : "Medbay of an starship.",
   "shortdescription" : "Medbay sign",
   "race" : "n7human",
