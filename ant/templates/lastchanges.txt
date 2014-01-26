@@ -1,1 +1,2 @@
-- Initial release
+- Update for v. Furious Koala
+- New Omni-Blade look
