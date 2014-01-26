@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "iridiumbar", "count" : 1 }
-  ],
-  "output" : { "item" : "money", "count" : 75 },
-  "groups" : [ "refinery" ]
-}

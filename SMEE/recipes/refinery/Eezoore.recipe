@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "Eezoore", "count" : 1 }
-  ],
-  "output" : { "item" : "money", "count" : 150 },
-  "groups" : [ "refinery" ]
-}
