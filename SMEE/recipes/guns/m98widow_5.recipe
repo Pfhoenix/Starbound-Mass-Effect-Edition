@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 2400 },
+    { "item" : "imperviumbar", "count" : 15 },
+    { "item" : "m98widow_4", "count" : 1 }
+  ],
+  "output" : { "item" : "m98widow_5", "count" : 1 },
+  "groups" : [ "craftingtable", "weapons", "all" ]
+}

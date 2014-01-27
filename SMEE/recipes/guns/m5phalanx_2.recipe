@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1000 },
+    { "item" : "Violiumbar", "count" : 5 },
+    { "item" : "m5phalanx_1", "count" : 1 }
+  ],
+  "output" : { "item" : "m5phalanx_2", "count" : 1 },
+  "groups" : [ "craftingtable", "weapons", "all" ]
+}

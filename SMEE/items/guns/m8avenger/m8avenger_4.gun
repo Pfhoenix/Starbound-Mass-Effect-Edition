@@ -1,0 +1,34 @@
+{
+  "itemName" : "m8avenger_4",
+  "inventoryIcon" : "m8avengericon.png",
+  "shortdescription" : "M-8 Avenger IV",
+  "description" : "M-8 Avenger IV",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m8avenger.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-2, 0],
+  "firePosition" : [18, 5],
+  
+  "fireTime" : 0.10,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 0.5,
+
+  "projectileType" : "energybullet2",
+  "projectile" : {
+	"power" : 16,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/gun/plasma_pistol1.wav" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m8avenger_5"
+  ]
+}
