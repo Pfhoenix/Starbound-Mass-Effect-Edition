@@ -35,9 +35,5 @@
 	"minBeamTrans" : 0.1,
 	"maxBeamTrans" : 0.4,
 	"minBeamLines" : 1,
-	"maxBeamLines" : 5,
-	
-	"statusEffects" : [
-		{ "kind" : "smeeomniglow", "amount" : 2.5, "color" : [255, 238, 169]} 
-	]
+	"maxBeamLines" : 5
 }

@@ -1,7 +1,8 @@
 {
-  "input" : [
-    { "item" : "money", "count" : 5 }
-  ],
-  "output" : { "item" : "omnitool1", "count" : 1 },
-  "groups" : [ "mod", "smee", "plain", "tools", "all" ]
+	"input" : [
+		{ "item" : "copperbar", "count" : 5 },
+		{ "item" : "money", "count" : 5 }
+	],
+	"output" : { "item" : "omnitool1", "count" : 1 },
+	"groups" : [ "mod", "smee", "plain", "tools", "all" ]
 }
