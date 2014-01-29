@@ -1,1 +1,6 @@
 - Omni-Tools: Fixed altBlockRadius back to 1. Added tiered recipe materials. 
+- Normandy Changes: 
+	- Fixed "infamous" toilet stuck bug (corner removed)
+	- Fixed stuck if using the galaxy map
+	- Added new room.
+	- Moved "vanilla" fuel hatch into cockpit.
