@@ -1,0 +1,32 @@
+{
+  "itemName" : "phoenixarmorIVpants",
+  "inventoryIcon" : "icons.png:pants",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Saving the galaxy never looked so fabulous.",
+  "shortdescription" : "Phoenix Pants IV",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "phoenixarmorVpants" ],
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "7"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 30,
+      "amount" : 18
+    },
+
+    {
+      "kind" : "energyregenmodifier",
+      "amount" : 1.0
+    }
+  ]
+}

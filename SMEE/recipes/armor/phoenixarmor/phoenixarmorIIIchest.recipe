@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "titaniumbar", "count" : 35 },
+    { "item" : "goldarmorchest", "count" : 1 },
+    { "item" : "money", "count" : 1400 }
+  ],
+  "output" : { "item" : "phoenixarmorIIIchest", "count" : 1 },
+  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+}

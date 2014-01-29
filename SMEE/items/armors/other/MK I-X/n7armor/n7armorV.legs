@@ -1,0 +1,31 @@
+{
+  "itemName" : "n7armorVpants",
+  "inventoryIcon" : "icons.png:pants",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "N7 Pants. No pockets!",
+  "shortdescription" : "N7 Pants V",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "n7armorVIpants" ],
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "9"
+    },
+
+    {
+      "kind" : "Protection",
+      "amount" : 26
+    },
+
+    {
+      "kind" : "energyregenmodifier",
+      "amount" : 1.35
+    }
+  ]
+}

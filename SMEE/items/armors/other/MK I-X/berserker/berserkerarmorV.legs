@@ -1,0 +1,31 @@
+{
+  "itemName" : "berserkerarmorVpants",
+  "inventoryIcon" : "icons.png:pants",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Pretty LED's to draw the aggro.",
+  "shortdescription" : "Berserker Pants V",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "berserkerarmorVIpants" ],
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "9"
+    },
+
+    {
+      "kind" : "Protection",
+      "amount" : 26
+    },
+
+    {
+      "kind" : "energyregenmodifier",
+      "amount" : 1.35
+    }
+  ]
+}

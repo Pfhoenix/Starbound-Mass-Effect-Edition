@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "Ceruliumbar", "count" : 10 },
+	{ "item" : "iridiumbar", "count" : 2 }
+  ],
+  "output" : { "item" : "n7armorVIIpants", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

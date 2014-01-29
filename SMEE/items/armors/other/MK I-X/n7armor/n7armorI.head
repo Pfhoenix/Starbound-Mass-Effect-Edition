@@ -1,0 +1,36 @@
+{
+  "itemName" : "n7armorIhead",
+  "inventoryIcon" : "icons.png:head",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "The sleek design of a N7 helmet.",
+  "shortdescription" : "N7 Helm I",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "n7armorIIhead" ],
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "coldprotection",
+      "amount" : "1"
+    },
+
+    {
+      "kind" : "protection",
+      "amount" : 4.5
+    },
+
+    {
+      "kind" : "energyincrease",
+      "amount" : 15
+    },
+	
+	{
+	  "kind" : "breathprotection"
+	}
+  ]
+}

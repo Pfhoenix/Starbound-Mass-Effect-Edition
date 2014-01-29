@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "imperviumbar", "count" : 20 }
+  ],
+  "output" : { "item" : "phoenixarmorXhead", "count" : 1 },
+  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+}

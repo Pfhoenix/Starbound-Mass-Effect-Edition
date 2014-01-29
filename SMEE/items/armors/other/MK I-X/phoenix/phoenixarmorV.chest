@@ -1,0 +1,41 @@
+{
+  "itemName" : "phoenixarmorVchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Saving the galaxy never looked so fabulous.",
+  "shortdescription" : "Phoenix Chestplate V",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "phoenixarmorVIchest" ],
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "22.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 31,
+      "amount" : 65
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 135
+    }
+  ]
+}

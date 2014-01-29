@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "imperviumbar", "count" : 12 }
+  ],
+  "output" : { "item" : "agentarmorXpants", "count" : 1 },
+  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+}

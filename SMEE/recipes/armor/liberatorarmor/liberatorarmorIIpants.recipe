@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "steelbar", "count" : 12 },
+    { "item" : "silverarmorpants", "count" : 1 },
+    { "item" : "money", "count" : 400 }
+  ],
+  "output" : { "item" : "liberatorarmorIIpants", "count" : 1 },
+  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "Rubiumbar", "count" : 10 },
+	{ "item" : "palladiumbar", "count" : 2 }
+  ],
+  "output" : { "item" : "agentarmorIXpants", "count" : 1 },
+  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "Rubiumbar", "count" : 30 },
+	{ "item" : "palladiumbar", "count" : 5 }
+  ],
+  "output" : { "item" : "silverbackarmorIXchest", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

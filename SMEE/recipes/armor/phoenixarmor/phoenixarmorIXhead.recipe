@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "Rubiumbar", "count" : 15 },
+	{ "item" : "palladiumbar", "count" : 5 }
+  ],
+  "output" : { "item" : "phoenixarmorIXhead", "count" : 1 },
+  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+}

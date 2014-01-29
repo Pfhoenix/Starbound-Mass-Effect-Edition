@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 12 }
+  ],
+  "output" : { "item" : "n7armorIVpants", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "titaniumbar", "count" : 20 },
+    { "item" : "goldarmorhead", "count" : 1 },
+    { "item" : "money", "count" : 650 }
+  ],
+  "output" : { "item" : "agentarmorIIIhead", "count" : 1 },
+  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+}

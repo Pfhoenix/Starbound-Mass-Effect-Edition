@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "Rubiumbar", "count" : 15 },
+	{ "item" : "palladiumbar", "count" : 5 }
+  ],
+  "output" : { "item" : "berserkerarmorIXhead", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

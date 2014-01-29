@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "aegisaltbar", "count" : 15 },
+	{ "item" : "iridiumbar", "count" : 5 }
+  ],
+  "output" : { "item" : "silverbackarmorVhead", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

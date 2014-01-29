@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "ironbar", "count" : 35 },
+    { "item" : "copperarmorchest", "count" : 1 },
+    { "item" : "money", "count" : 350 }
+  ],
+  "output" : { "item" : "silverbackarmorIchest", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

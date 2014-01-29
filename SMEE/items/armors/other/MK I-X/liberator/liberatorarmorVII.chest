@@ -1,0 +1,41 @@
+{
+  "itemName" : "liberatorarmorVIIchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A strong, light chestguard favoured by scouts.",
+  "shortdescription" : "Liberator Chestguard VII",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "liberatorarmorVIIIchest" ],
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "32.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 33,
+      "amount" : 120
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 220
+    }
+  ]
+}

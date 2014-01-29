@@ -1,0 +1,36 @@
+{
+  "itemName" : "phoenixarmorIhead",
+  "inventoryIcon" : "icons.png:head",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Saving the galaxy never looked so fabulous.",
+  "shortdescription" : "Phoenix Helm I",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "phoenixarmorIIhead" ],
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "coldprotection",
+      "amount" : "1"
+    },
+
+    {
+      "kind" : "protection",
+      "amount" : 4.5
+    },
+
+    {
+      "kind" : "energyincrease",
+      "amount" : 15
+    },
+	
+	{
+	  "kind" : "breathprotection"
+	}
+  ]
+}

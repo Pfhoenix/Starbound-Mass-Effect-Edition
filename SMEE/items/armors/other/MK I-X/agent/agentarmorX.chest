@@ -1,0 +1,40 @@
+{
+  "itemName" : "agentarmorXchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A mercenaries choice of armor.",
+  "shortdescription" : "Agent Chestplate X",
+  "inspectionKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "47.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 36,
+      "amount" : 250
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 400
+    }
+  ]
+}

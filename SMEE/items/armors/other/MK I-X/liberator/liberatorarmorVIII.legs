@@ -1,0 +1,31 @@
+{
+  "itemName" : "liberatorarmorVIIIpants",
+  "inventoryIcon" : "icons.png:pants",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "The scout's steel boots leave a distinct footprint.",
+  "shortdescription" : "Liberator Pants VIII",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "liberatorarmorIXpants" ],
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "15"
+    },
+
+    {
+      "kind" : "Protection",
+      "amount" : 64
+    },
+
+    {
+      "kind" : "energyregenmodifier",
+      "amount" : 2.7
+    }
+  ]
+}

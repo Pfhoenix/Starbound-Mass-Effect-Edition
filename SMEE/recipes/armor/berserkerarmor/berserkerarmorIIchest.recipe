@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "steelbar", "count" : 35 },
+    { "item" : "silverarmorchest", "count" : 1 },
+    { "item" : "money", "count" : 1200 }
+  ],
+  "output" : { "item" : "berserkerarmorIIchest", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

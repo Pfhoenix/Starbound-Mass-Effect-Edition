@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "silverore", "count" : 4 },
+	{ "item" : "platinumore", "count" : 2 },
+	{ "item" : "plutoniumore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "palladiumbar",
+    "count" : 1
+  },
+  "groups" : [ "stonefurnace", "all" ]
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "Ceruliumbar", "count" : 30 },
+	{ "item" : "iridiumbar", "count" : 5 }
+  ],
+  "output" : { "item" : "silverbackarmorVIIchest", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

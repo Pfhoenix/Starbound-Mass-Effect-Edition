@@ -1,0 +1,41 @@
+{
+  "itemName" : "n7armorIXchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "The N7's state of the art Chestplate and Armguards.",
+  "shortdescription" : "N7 Chestplate IX",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "n7armorXchest" ],
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "42.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 35,
+      "amount" : 200
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 330
+    }
+  ]
+}

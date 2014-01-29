@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "Violiumbar", "count" : 15 },
+	{ "item" : "palladiumbar", "count" : 5 }
+  ],
+  "output" : { "item" : "n7armorVIIIhead", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+}

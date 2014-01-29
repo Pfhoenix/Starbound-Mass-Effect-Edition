@@ -1,0 +1,41 @@
+{
+  "itemName" : "liberatorarmorVchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A strong, light chestguard favoured by scouts.",
+  "shortdescription" : "Liberator Chestguard V",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "liberatorarmorVIchest" ],
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "22.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 31,
+      "amount" : 65
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 135
+    }
+  ]
+}

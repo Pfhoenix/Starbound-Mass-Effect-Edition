@@ -1,0 +1,40 @@
+{
+  "itemName" : "silverbackarmorIIchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A finely crafted, concaved chestplate favoured by the Turian.",
+  "shortdescription" : "Silverback Chestguard II",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "silverbackarmorIIIchest" ],
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "7.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "amount" : 15
+    },
+
+    {
+      "kind" : "healthincrease",
+      "amount" : 35
+    }
+  ]
+}

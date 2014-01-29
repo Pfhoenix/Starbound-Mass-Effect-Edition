@@ -1,0 +1,31 @@
+{
+  "itemName" : "phoenixarmorIpants",
+  "inventoryIcon" : "icons.png:pants",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Saving the galaxy never looked so fabulous.",
+  "shortdescription" : "Phoenix Pants I",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "phoenixarmorIIpants" ],
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "coldprotection",
+      "amount" : "1"
+    },
+
+    {
+      "kind" : "protection",
+      "amount" : 3
+    },
+
+    {
+      "kind" : "energyregenmodifier",
+      "amount" : 0.15
+    }
+  ]
+}

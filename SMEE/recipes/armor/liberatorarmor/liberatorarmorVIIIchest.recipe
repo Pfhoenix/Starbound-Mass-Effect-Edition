@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "Violiumbar", "count" : 30 },
+	{ "item" : "palladiumbar", "count" : 5 }
+  ],
+  "output" : { "item" : "liberatorarmorVIIIchest", "count" : 1 },
+  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+}

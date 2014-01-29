@@ -1,0 +1,37 @@
+{
+  "itemName" : "agentarmorVIIIhead",
+  "inventoryIcon" : "icons.png:head",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A mercenaries choice of armor.",
+  "shortdescription" : "Agent Helm VIII",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "agentarmorIXhead" ],
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "22.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 34,
+      "amount" : 96
+    },
+
+    {
+      "kind" : "energyincrease",
+      "amount" : 270
+    },
+	
+	{
+	  "kind" : "breathprotection"
+	}
+  ]
+}

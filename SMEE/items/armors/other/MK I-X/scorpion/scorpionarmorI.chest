@@ -1,0 +1,40 @@
+{
+  "itemName" : "scorpionarmorIchest",
+  "inventoryIcon" : "icons.png:chest",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Chosen for its strength on the battlefield. The Scorpion chestplate has saved many lives.",
+  "shortdescription" : "Scorpion Chestplate I",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "scorpionarmorIIchest" ],
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "2.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "amount" : 7.5
+    },
+	
+    {
+      "kind" : "healthincrease",
+      "amount" : 15
+    }
+  ]
+}

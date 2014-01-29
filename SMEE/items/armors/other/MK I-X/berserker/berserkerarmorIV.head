@@ -1,0 +1,37 @@
+{
+  "itemName" : "berserkerarmorIVhead",
+  "inventoryIcon" : "icons.png:head",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Pretty LED's to draw the aggro.",
+  "shortdescription" : "Berserker Helm IV",
+  "inspectionKind" : "armor",
+  "learnBlueprintsOnPickup" : [ "berserkerarmorVhead" ],
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "statusEffects" : [
+    {
+      "kind" : "ColdProtection",
+      "amount" : "10.5"
+    },
+
+    {
+      "kind" : "Protection",
+      "level" : 30,
+      "amount" : 27
+    },
+
+    {
+      "kind" : "energyincrease",
+      "amount" : 100
+    },
+	
+	{
+	  "kind" : "breathprotection"
+	}
+  ]
+}
