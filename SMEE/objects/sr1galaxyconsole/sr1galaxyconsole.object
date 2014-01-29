@@ -1,7 +1,7 @@
 {
 	"objectName" : "sr1galaxyconsole",
 	"rarity" : "Common",
-	"objectType" : "interactable",
+	"objectType" : "interactable", //"objectType" : "wire", 
 	
 	"category" : "furniture",
 	"price" : 1000,
@@ -23,22 +23,22 @@
 		}
 	],
 	
-	// TODO uncommented until scripting on non wired enities worksgit 
+	// TODO uncommented until scripting on non wired enities work 
 	//"scripts" : [ "sr1galaxyconsole.lua" ],
 	//"scriptDelta" : 5,
 	//"animation" : "sr1galaxyconsole.animation",
 	//"animationParts" : {
 	//	"sr1galaxyconsole" : "sr1galaxyconsole.png"
 	//},
-	//"animationPosition" : [-11, 0],
+	"animationPosition" : [-11, 0],
 	// lua parameters
-	//"detectRadius" : 8,
+	"detectRadius" : 8,
 	
 	"interactAction" : "openCockpitInterface",
 	"sitFlipDirection" : false,
 	"sitPosition" : [-18, 28],
 	"sitOrientation" : "lay",
-  
+
 	// fx and light setup
 	"lightColor" : [142, 202, 249], //blue-ish
 	"flickerDistance" : 0.2,
