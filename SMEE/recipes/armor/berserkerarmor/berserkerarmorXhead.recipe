@@ -1,6 +1,6 @@
 {
   "input" : [
-    {{ "item" : "imperviumbar", "count" : 20 }
+    { "item" : "imperviumbar", "count" : 20 }
   ],
   "output" : { "item" : "berserkerarmorXhead", "count" : 1 },
   "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]

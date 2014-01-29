@@ -24,7 +24,7 @@
   "statusEffects" : [
     {
       "kind" : "ColdProtection",
-      "amount" : "37.5"
+      "amount" : 37.5
     },
 
     {
