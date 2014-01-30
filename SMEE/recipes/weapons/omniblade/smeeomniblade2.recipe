@@ -1,6 +1,6 @@
 {
 	"input" : [
-		// TODO adjust input
+		{ "item" : "refinedEezo", "count" : 1 },
 		{ "item" : "titaniumbar", "count" : 2 },
 		{ "item" : "smeeomniblade1", "count" : 1 }
 	],

@@ -1,5 +1,6 @@
 {
 	"input" : [
+		{ "item" : "refinedEezo", "count" : 5 },
 		{ "item" : "diamond", "count" : 5 },
 		{ "item" : "omnitool3", "count" : 1 },
 		{ "item" : "money", "count" : 1000 }

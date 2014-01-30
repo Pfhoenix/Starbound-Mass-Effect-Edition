@@ -1,28 +1,27 @@
 {
-  "objectName" : "sr1techstation",
-  "rarity" : "Common",
+	"objectName" : "sr1techstation",
+	"rarity" : "Common",
 
-  "objectType" : "interactable",
-  "interactAction" : "OpenTech3DPrinterDialog",
+	"objectType" : "interactable",
+	"interactAction" : "OpenTech3DPrinterDialog",
 
-  "category" : "decorative",
-  "price" : 2500,
+	"category" : "decorative",
+	"price" : 2500,
 
-  "description" : "An Alliance tech station. For creating awesome tech!",
-  "shortdescription" : "Alliance Tech Station",
-  "race" : "n7human",
+	"description" : "A tech station. For creating awesome tech!",
+	"shortdescription" : "Tech Station",
+	"race" : "generic",
 
-  "inventoryIcon" : "sr1recordplayericon.png",
-  "orientations" : [
-    {
-      "dualImage" : "sr1techstation.png:<color>.<frame>",
-      "imagePosition" : [-16, -8],
-      "frames" : 8,
-      "animationCycle" : 1.0,
+	"inventoryIcon" : "sr1recordplayericon.png",
+	"orientations" : [
+		{
+			"dualImage" : "sr1techstation.png:<color>.<frame>",
+			"imagePosition" : [-16, -8],
+			"frames" : 8,
+			"animationCycle" : 1.0,
 
-      "spaceScan" : 0.1,
-      "anchors" : [ "background" ]
-
-    }
-  ]
+			"spaceScan" : 0.1,
+			"anchors" : [ "background" ]
+		}
+	]
 }

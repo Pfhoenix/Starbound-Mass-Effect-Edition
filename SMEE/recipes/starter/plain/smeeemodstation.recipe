@@ -1,7 +1,6 @@
 {
 	"input" : [
-		// TODO needs adjustment
-		{ "item" : "ironbar", "count" : 10 }
+		{ "item" : "ironbar", "count" : 20 }
 	],
 	"output" : {
 		"item" : "smeeemodstation",

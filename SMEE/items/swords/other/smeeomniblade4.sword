@@ -19,7 +19,7 @@
 		"projectileType" : "smeeomniblade1swoosh",
 		"projectile" : {
 			"speed" : 0.1,
-			"power" : 280
+			"power" : 300
 		},
 		
 		"idle" : {
