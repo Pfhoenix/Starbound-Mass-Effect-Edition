@@ -1,0 +1,10 @@
+{
+  "itemName" : "makotech",
+  "rarity" : "Legendary",
+  "inventoryIcon" : "/tech/makoicon.png",
+  "description" : "Press F to spawn a Mako.",
+  "shortdescription" : "M35 Mako",
+  "inspectionKind" : "tech",
+
+  "techModule" : "mako.tech"
+}

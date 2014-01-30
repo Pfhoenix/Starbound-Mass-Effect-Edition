@@ -1,0 +1,74 @@
+{
+  "script" : "/tech/mech/treadmech.lua",
+  "actions" : [ "mechActivate", "mechDeactivate" ],
+  "animator" : "mako.animation",
+
+  "mechCustomMovementParameters" : {
+    "standingPoly" : [ [-3.5, -2.0], [-2, -5.0], [2, -5.0], [3.5, -2.0], [3.5, 2], [2, 3], [-2, 3], [-3.5, 2] ],
+    "crouchingPoly" : [ [-3.5, -2.0], [-2, -5.0], [2, -5.0], [3.5, -2.0], [3.5, 2], [2, 3], [-2, 3], [-3.5, 2] ],
+
+    "mass" : 5.0,
+
+    "normalGroundFriction" : 50.0,
+    "ambulatingGroundFriction" : 6.0,
+    "skiddingGroundFriction" : 10.0,
+
+    "groundForce" : 160.0,
+    "airForce" : 50.0,
+    "liquidForce" : 70.0,
+
+    "walkSpeed" : 5.0,
+    "runSpeed" : 8.0,
+
+    "airJumpProfile" : {
+      "jumpSpeed" : 0.0,
+      "jumpControlForce" : 0.0,
+      "jumpInitialPercentage" : 0.75,
+      "jumpHoldTime" : 0.15
+    },
+
+    "liquidJumpProfile" : {
+      "jumpSpeed" : 0.0,
+      "jumpControlForce" : 0.0,
+      "jumpInitialPercentage" : 0.75,
+      "jumpHoldTime" : 0.1
+    }
+  },
+
+  "energyCostPerSecond" : 30,
+
+  "mechTransformPositionChange" : [0.0, 2.5],
+  "parentOffset" : [-0.5, 1.75 ],
+
+  "mechCollisionTest" : [-4.3, -2.5, 4.3, 2.5],
+
+  "mechAimLimit" : 10,
+
+  "mechFireCycle" : 0.25,
+  "mechProjectile" : "spinningrocket",
+  "mechProjectile2" : "rocket",  
+  
+  "mechProjectileCost" : 1,
+  "mechProjectile2Cost" : 5,
+
+  
+  "mechProjectileConfig" : {
+  },
+  "mechProjectile2Config" : {
+  },
+
+  "bulldozeDamage" : 100,
+  "bulldozeOffset" : 5,
+  "bulldozeBlocks" : [
+    [0, -5],
+    [0, -4],
+    [0, -3],
+    [0, -2],
+    [0, -1],
+    [0, 0],
+    [0, 1],
+    [0, 2],
+    [0, 3]
+  ]
+  
+}

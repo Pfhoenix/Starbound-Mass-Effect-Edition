@@ -1,0 +1,399 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "movement" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1,
+            "frameProperties" : {
+              "stateNudge" : [ [0, -1.5] ]
+            }
+		  },
+
+          "jump" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "end",
+            "properties" : {
+			
+			//need Mako sounds
+			
+              "immediateSound" : "/sfx/tech/mech_jump3.wav"
+            },
+            "frameProperties" : {
+              "stateNudge" : [ [0, -1.5] ]
+            }
+          },
+
+          "fall" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "end",
+            "frameProperties" : {
+              "stateNudge" : [ [0, -1.5] ]
+            }
+          },
+
+          "walk" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "frameProperties" : {
+			
+			//need Mako sounds
+			
+              "immediateSound" : [ "/sfx/tech/mech_step.wav", "" ],
+              "stateNudge" : [ [0, -1.5], [0, -1.3] ]
+            }
+          },
+
+          "backWalk" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "frameProperties" : {
+			
+			//need Mako sounds
+			
+              "immediateSound" : [ "/sfx/tech/mech_step.wav", "" ],
+              "stateNudge" : [ [0, -1.5], [0, -1.3] ]
+            }
+          }
+        }
+      },
+
+      "frontFiring" : {
+        "states" : {
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "off"
+          },
+
+          "off" : { }
+        }
+      },
+
+      "backFiring" : {
+        "states" : {
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "off"
+          },
+
+          "off" : { }
+        }
+      }
+    },
+
+    "parts" : {
+      "backLeg" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 0,
+          "back" : true
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "makowheelsb.png:idle"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "makowheelsb.png:jump"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "makowheelsb.png:fall"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "makowheelsb.png:move.<frame>"
+              },
+              "frameProperties" : {
+                "offset" : [ [0, 0], [0, 0], [0, 0], [0, 0] ]
+              }
+            },
+            "backWalk" : {
+              "properties" : {
+                "image" : "makowheelsb.png:bmove.<frame>"
+              },
+              "frameProperties" : {
+                "offset" : [ [0, 0], [0, 0], [0, 0], [0, 0] ]
+              }
+            }
+          }
+        }
+      },
+
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "back" : true
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "makobackground.png:idle"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "makobackground.png:idle"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "makobackground.png:idle"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "makobackground.png:idle"
+              }
+            },
+            "backWalk" : {
+              "properties" : {
+                "image" : "makobackground.png:idle"
+              }
+            }
+          }
+        }
+      },
+
+      "backGunFire" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1.5,
+          "offset" : [6, -0.35],
+          "rotationGroup" : "guns",
+          "rotationCenter" : [2.4, -0.2]
+        },
+
+        "partStates" : {
+          "backFiring" : {
+            "fire" : {
+              "properties" : {
+                "image" : "bulletmuzzle.png:<frameIndex>"
+              }
+            }
+          }
+        }
+      },
+
+      "backGun" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "rotationGroup" : "guns",
+          "offset" : [2, 0],
+          "rotationCenter" : [2.4, 0],
+          "relativeAnchors" : {
+            "backGunFirePoint" : [6.5, -0.35]
+          }
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "makocannon.png:rotation",
+                "rotationCenter" : [2.4, -0.25]
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "makocannon.png:rotation"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "makocannon.png:rotation"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "makocannon.png:rotation"
+              }
+            },
+            "backWalk" : {
+              "properties" : {
+                "image" : "makocannon.png:rotation"
+              }
+            }
+          }
+        }
+      },
+
+      "body" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "makobody.png:idle"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "makobody.png:idle"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "makobody.png:idle"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "makobody.png:idle"
+              }
+            },
+            "backWalk" : {
+              "properties" : {
+                "image" : "makobody.png:idle"
+              }
+            }
+          }
+        }
+      },
+
+      "frontGunFire" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3.5,
+          "offset" : [4, -0.35],
+          "rotationGroup" : "guns",
+          "rotationCenter" : [0.4, -0.2]
+        },
+
+        "partStates" : {
+          "frontFiring" : {
+            "fire" : {
+              "properties" : {
+                "image" : "bulletmuzzle.png:<frameIndex>"
+              }
+            }
+          }
+        }
+      },
+
+      "frontGun" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [0.4, -0.25],
+          "relativeAnchors" : {
+            "frontGunFirePoint" : [4.5, -0.35]
+          }
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "makoturret.png:rotation",
+                "rotationCenter" : [0.4, -0.25]
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "makoturret.png:rotation"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "makoturret.png:rotation"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "makoturret.png:rotation"
+              }
+            },
+            "backWalk" : {
+              "properties" : {
+                "image" : "makoturret.png:rotation"
+              }
+            }
+          }
+        }
+      },
+
+      "frontLeg" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 5
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "makowheels.png:idle"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "makowheels.png:jump"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "makowheels.png:fall"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "makowheels.png:move.<frame>"
+              },
+              "frameProperties" : {
+                "offset" : [ [0, 0], [0, 0], [0, 0], [0, 0] ]
+              }
+            },
+            "backWalk" : {
+              "properties" : {
+                "image" : "makowheels.png:bmove.<frame>"
+              },
+              "frameProperties" : {
+                "offset" : [ [0, 0], [0, 0], [0, 0], [0, 0] ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "guns" : {
+      "angularVelocity" : 10.0
+    }
+  },
+
+  "particleEmitters" : {
+    "mechActivateParticles" : {
+      "particles" : [ ]
+    },
+    "mechDeactivateParticles" : {
+      "particles" : [ ]
+    }
+  }
+}
