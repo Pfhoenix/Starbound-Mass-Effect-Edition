@@ -26,6 +26,6 @@
   "uiConfig" : "/interface/fuel/fuel.config",
   "autoCloseCooldown" : 3600,
   "frameCooldown" : 67,
-  "soundEffect" : "/sfx/objects/shipengine.wav",
+  "soundEffect" : "/music/the_normandy.ogg",
   "soundEffectRadius" : 300
 }
