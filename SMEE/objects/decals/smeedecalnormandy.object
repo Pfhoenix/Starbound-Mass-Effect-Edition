@@ -18,5 +18,8 @@
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
     }
-  ]
+  ],
+  
+  "soundEffect" : "/music/the_normandy.ogg",
+  "soundEffectRadius" : 30000000
 }
