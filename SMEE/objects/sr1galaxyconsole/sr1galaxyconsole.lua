@@ -35,11 +35,9 @@ end
 -- if we have more idle states change value here
 function randomNormandy()
 	self.idledelay = 10;
-	local r = math.random(1, 2)
-	world.logInfo("galaxyconsole randomNormandy %d",r);
 	entity.setAnimationState(
 			"stationState", 
-			"idleseq" .. r
+			"idleseq" .. math.random(1, 2)
 		)
 end
 
