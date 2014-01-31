@@ -129,6 +129,15 @@
 			"object" : "sr1bed",
 			"objectDirection" : "right"
 		},
+		
+		{
+			"value" : [0, 100, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "sr1medbaybed",
+			"objectDirection" : "left"
+		},
 
 		{
 			"value" : [0, 255, 0, 255],
