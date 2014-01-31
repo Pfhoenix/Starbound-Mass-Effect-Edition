@@ -1,0 +1,10 @@
+{
+	"input" : [
+		{ "item" : "money", "count" : 50 }
+	],
+	"output" : {
+		"item" : "sr1shipdetails",
+		"count" : 1
+	},
+	"groups" : [ "mod", "smee", "plain", "objects", "all" ]
+}

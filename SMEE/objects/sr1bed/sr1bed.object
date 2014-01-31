@@ -13,7 +13,7 @@
 	"sitFlipDirection" : true,
 	"sitPosition" : [-10, 13],
 	"sitOrientation" : "lay",
-	"sitAngle" : "90",
+	"sitAngle" : 90,
 	"sitCoverImage" : "/objects/sr1bed/sr1bedcover.png",
 	"sitEmote" : "sleep",
 	"sitStatusEffects" : [
