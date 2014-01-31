@@ -1,0 +1,39 @@
+{
+	"objectName" : "sr1medbaybed",
+	"printable" : false,
+	"rarity" : "Common",
+	"description" : "A common Medbay Bed used by most Citadel species.",
+	"shortdescription" : "Medbay Bed",
+	"race" : "generic",
+	"category" : "furniture",
+	"price" : 3500,
+
+	"objectType" : "interactable",
+	"interactAction" : "sitdown",
+	"sitFlipDirection" : true,
+	"sitPosition" : [-8, 15], // -10, 13
+	"sitOrientation" : "lay",
+	"sitAngle" : 90,
+	"sitCoverImage" : "/objects/sr1medbaybed/sr1medbaybedcover.png",
+	"sitEmote" : "sleep",
+	"sitStatusEffects" : [
+		{ "kind" : "Nude" },
+		{ "kind" : "Health", "amount" : 0.10 }
+	],
+	"sitEffectEmitters" : [ "sleepbubbles" ],
+
+	"inventoryIcon" : "sr1medbaybedicon.png",
+	"orientations" : [
+		{
+			"dualImage" : "sr1medbaybed.png:<color>",
+	
+			"imagePosition" : [-24, 0],
+			"frames" : 1,
+			"animationCycle" : 1.0,
+	
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ]
+	
+		}
+	]
+}
