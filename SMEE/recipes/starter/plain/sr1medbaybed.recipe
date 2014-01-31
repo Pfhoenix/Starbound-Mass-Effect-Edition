@@ -1,0 +1,8 @@
+{
+	"input" : [
+		{ "item" : "titaniumbar", "count" : 5 },
+		{ "item" : "refinedEezo", "count" : 1 }
+	],
+	"output" : { "item" : "sr1medbaybed", "count" : 1 },
+	"groups" : [ "metalworkstation", "mod", "smee", "furniture", "objects", "all" ]
+}
