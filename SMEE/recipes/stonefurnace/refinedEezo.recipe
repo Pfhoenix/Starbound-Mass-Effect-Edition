@@ -6,5 +6,5 @@
     "item" : "refinedEezo",
     "count" : 1
   },
-  "groups" : [ "stonefurnace", "all" ]
+  "groups" : [ "smee", "mod", "stonefurnace", "all" ]
 }

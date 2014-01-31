@@ -8,5 +8,5 @@
     "item" : "iridiumbar",
     "count" : 1
   },
-  "groups" : [ "stonefurnace", "all" ]
+  "groups" : [ "smee", "mod, "metalworkstation", "all" ]
 }
