@@ -8,5 +8,5 @@
     "item" : "iridiumbar",
     "count" : 1
   },
-  "groups" : [ "smee", "mod, "metalworkstation", "all" ]
+  "groups" : [ "smee", "mod", "metalworkstation", "all" ]
 }
