@@ -1,0 +1,39 @@
+{
+	"objectName" : "sr1bed",
+	"printable" : false,
+	"rarity" : "Common",
+	"description" : "A comfortable Alliance bed. Looks pretty sleek.",
+	"shortdescription" : "Alliance Bed",
+	"race" : "n7human",
+	"category" : "furniture",
+	"price" : 1500,
+
+	"objectType" : "interactable",
+	"interactAction" : "sitdown",
+	"sitFlipDirection" : true,
+	"sitPosition" : [-10, 13],
+	"sitOrientation" : "lay",
+	"sitAngle" : 90,
+	"sitCoverImage" : "/objects/sr1bed/sr1bedcover.png",
+	"sitEmote" : "sleep",
+	"sitStatusEffects" : [
+		{ "kind" : "Nude" },
+		{ "kind" : "Health", "amount" : 0.02 }
+	],
+	"sitEffectEmitters" : [ "sleepbubbles" ],
+
+	"inventoryIcon" : "sr1bedicon.png",
+	"orientations" : [
+		{
+			"dualImage" : "sr1bed.png:<color>",
+
+			"imagePosition" : [-24, 0],
+			"frames" : 1,
+			"animationCycle" : 1.0,
+
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ]
+
+		}
+	]
+}

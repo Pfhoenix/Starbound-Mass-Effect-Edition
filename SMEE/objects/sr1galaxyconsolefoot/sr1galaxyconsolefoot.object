@@ -1,0 +1,32 @@
+{
+	"objectName" : "sr1galaxyconsolefoot",
+	"rarity" : "Common",
+	"objectType" : "interactable", 
+	"category" : "furniture",
+	"price" : 1000,
+	"printable" : false,
+	
+	"description" : "Use Me to open the Galaxy Map.",
+	"shortdescription" : "Holographic Galaxy Map",
+	"race" : "n7human",
+
+	"inventoryIcon" : "sr1galaxyconsoleicon.png",
+	"orientations" : [
+		{
+			"dualImage" : "sr1galaxyconsolefoot.png:<color>",
+			"imagePosition" : [0, 0],
+			"frames" : 1,
+			"animationCycle" : 0.5,
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ],
+			"collision" : "solid"
+		}
+	],
+	
+	"interactAction" : "openCockpitInterface",
+	"sitFlipDirection" : false,
+	"sitPosition" : [-12, 29],
+	"sitOrientation" : "lay",
+	"soundEffect" : "/sfx/galaxymap/galaxymap.ogg",
+  	"soundEffectRadius" : 4
+}

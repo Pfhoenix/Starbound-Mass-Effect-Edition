@@ -1,7 +1,7 @@
 {
 	"objectName" : "sr1galaxyconsole",
 	"rarity" : "Common",
-	"objectType" : "interactable", //"objectType" : "wire", 
+	"objectType" : "wire",
 	
 	"category" : "furniture",
 	"price" : 1000,
@@ -24,12 +24,12 @@
 	],
 	
 	// TODO uncommented until scripting on non wired enities work 
-	//"scripts" : [ "sr1galaxyconsole.lua" ],
-	//"scriptDelta" : 5,
-	//"animation" : "sr1galaxyconsole.animation",
-	//"animationParts" : {
-	//	"sr1galaxyconsole" : "sr1galaxyconsole.png"
-	//},
+	"scripts" : [ "sr1galaxyconsole.lua" ],
+	"scriptDelta" : 5,
+	"animation" : "sr1galaxyconsole.animation",
+	"animationParts" : {
+		"sr1galaxyconsole" : "sr1galaxyconsole.png"
+	},
 	"animationPosition" : [-11, 0],
 	// lua parameters
 	"detectRadius" : 8,
@@ -67,5 +67,8 @@
 		"particleVariance" : {
 			"initialVelocity" : [0.5, 2.0]
 		}
-	}
+	},
+	
+	"zoomInSounds" : [ "/sfx/galaxymap/galaxy_zoom_in.ogg" ],
+	"zoomOutSounds" : [ "/sfx/galaxymap/galaxy_zoom_out.ogg" ]
 }

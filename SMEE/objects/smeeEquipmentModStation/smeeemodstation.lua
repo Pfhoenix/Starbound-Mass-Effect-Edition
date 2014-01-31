@@ -43,7 +43,7 @@ function main()
 	
 	if self.powerondelay > 0 then
 		self.powerondelay = self.powerondelay -1
-	else  
+	else
 		-- switch to on loop
 		if self.powerondelay == 0 then
 			entity.setAnimationState("stationState", "on")

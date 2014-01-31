@@ -4,3 +4,8 @@
 	- Fixed stuck if using the galaxy map
 	- Added new room.
 	- Moved "vanilla" fuel hatch into cockpit.
+	- Improved galaxy console
+	- New furniture
+- Added Recipes for Alliance Wall Panels
+- New sounds
+- Weapon balancing
