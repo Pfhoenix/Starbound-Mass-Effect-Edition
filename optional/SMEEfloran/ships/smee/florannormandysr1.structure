@@ -103,12 +103,41 @@
 		},
 		
 		{
+			"value" : [0, 140, 140, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1galaxyconsolefoot",
+			"objectDirection" : "right",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
+		
+		{
 			"value" : [1, 139, 1, 255],
 			"foregroundBlock" : false,
 			"backgroundBlock" : true,
 			"backgroundMat" : "sr1shipdetails",
 			"object" : "smeeemodstation",
 			"objectDirection" : "right"
+		},
+		
+		{
+			"value" : [0, 130, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "sr1bed",
+			"objectDirection" : "right"
+		},
+		
+		{
+			"value" : [0, 100, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "sr1medbaybed",
+			"objectDirection" : "left"
 		},
 
 		{
