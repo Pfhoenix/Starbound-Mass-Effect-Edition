@@ -1,0 +1,63 @@
+{
+	"animatedParts" : {
+		"stateTypes" : {
+			"radioState" : {
+				"default" : "idle",
+				"states" : {
+					"idle" : {
+						"frames" : 1,
+						"cycle" : 0.15
+					},
+					
+					"track1" : {
+						"frames" : 5,
+						"cycle" : 1.0,
+						"mode" : "loop",
+						"properties" : {
+							"persistentSound" : "/music/radio/the_normandy.ogg"
+						}
+					},
+					
+					"track2" : {
+						"frames" : 5,
+						"cycle" : 1.0,
+						"mode" : "loop",
+						"properties" : {
+							"persistentSound" : "/music/radio/me1_theme.ogg"
+						}
+					}
+					
+				}
+			}
+		},
+
+		"parts" : {
+			"sr1radio" : {
+				"properties" : {
+					"centered" : false
+				},
+
+				"partStates" : {
+					"radioState" : {
+						"idle" : {
+							"properties" : {
+								"image" : "<partImage>:default.default"
+							}
+						},
+						"track1" : {
+							"properties" : {
+								"image" : "<partImage>:on.<frame>"
+							}
+						},
+						
+						"track2" : {
+							"properties" : {
+								"image" : "<partImage>:on.<frame>"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -38,5 +38,7 @@
 	},
 	"animationPosition" : [-8, 0],
 	// lua parameters
-	"detectRadius" : 8
+	"detectRadius" : 8,
+	"consoleSounds" : [ "/sfx/ships/console.ogg" ]
+	
 }
