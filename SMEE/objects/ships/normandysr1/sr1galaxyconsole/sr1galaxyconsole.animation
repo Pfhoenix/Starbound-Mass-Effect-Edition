@@ -20,11 +20,14 @@
 						"cycle" : 0.8,
 						"mode" : "loop"
 					},
-          
+
 					"galaxy" : {
 						"frames" : 18,
 						"cycle" : 3.6,
-						"mode" : "loop"
+						"mode" : "loop",
+						"properties" : {
+							"persistentSound" : "/sfx/galaxymap/galaxymap.ogg"
+						}
 					},
 					
 					"transnormandy" : {

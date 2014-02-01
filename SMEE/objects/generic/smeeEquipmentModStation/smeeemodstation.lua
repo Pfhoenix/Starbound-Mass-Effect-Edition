@@ -16,6 +16,7 @@ end
 function turnPowerOn()
 	if not isPowerOn() then
 		entity.setAnimationState("stationState", "turnOn")
+		entity.playSound("consoleSounds")
 		self.powerondelay = 5
 	end
 end
@@ -24,6 +25,7 @@ end
 function turnPowerOff()
 	if isPowerOn() then
 		entity.setAnimationState("stationState", "turnOff")
+		entity.playSound("consoleSounds")
 		self.poweroffdelay = 5
 	end
 end
@@ -31,7 +33,7 @@ end
 
 function onInteraction(args)
 	turnPowerOn()
-	-- TODO find a we put this in object file entity.configParameter
+	-- TODO find a way put this in object file entity.configParameter
 	return { "OpenCraftingInterface", { 
 			config = "/interface/windowconfig/smeeemodstation.config", 
 			filter = { "craftingtable", "plain", "smee" }} 

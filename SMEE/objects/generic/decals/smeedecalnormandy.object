@@ -1,0 +1,22 @@
+{
+	"objectName" : "smeedecalnormandy",
+	"rarity" : "Common",
+	"category" : "decorative",
+	"price" : 50,
+	"description" : "Normandy name sign.",
+	"shortdescription" : "Normandy sign",
+	"race" : "n7human",
+
+	"multicolored" : true,
+	"inventoryIcon" : "smeedecalnormandyicon.png",
+	"orientations" : [
+		{
+			"image" : "smeedecalnormandy.png:<color>",
+			"frames" : 1,
+			"imagePosition" : [0, 0],
+	
+			"spaceScan" : 0.1,
+			"anchors" : [ "background" ]
+		}
+	]
+}

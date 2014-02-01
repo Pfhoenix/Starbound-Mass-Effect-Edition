@@ -26,8 +26,8 @@
 	"uiConfig" : "/interface/fuel/fuel.config",
 	"autoCloseCooldown" : 3600,
 	"frameCooldown" : 67,
-	"soundEffect" : "/sfx/objects/shipengine.wav",
-	"soundEffectRadius" : 400,
+	"soundEffect" : "/sfx/ships/engine.ogg",
+	"soundEffectRadius" : 20,
   
 	// fx and light setup
 	"lightColor" : [142, 202, 249], //blue-ish

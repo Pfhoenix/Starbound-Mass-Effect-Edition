@@ -11,10 +11,10 @@
 	"objectType" : "interactable",
 	"interactAction" : "sitdown",
 	"sitFlipDirection" : true,
-	"sitPosition" : [-8, 15], // -10, 13
+	"sitPosition" : [-14, 17], // -10, 13
 	"sitOrientation" : "lay",
 	"sitAngle" : 90,
-	"sitCoverImage" : "/objects/sr1medbaybed/sr1medbaybedcover.png",
+	"sitCoverImage" : "/objects/generic/sr1medbaybed/sr1medbaybedcover.png",
 	"sitEmote" : "sleep",
 	"sitStatusEffects" : [
 		{ "kind" : "Nude" },
