@@ -26,7 +26,5 @@
 	"interactAction" : "openCockpitInterface",
 	"sitFlipDirection" : false,
 	"sitPosition" : [-12, 29],
-	"sitOrientation" : "lay",
-	"soundEffect" : "/sfx/galaxymap/galaxymap.ogg",
-  	"soundEffectRadius" : 4
+	"sitOrientation" : "lay"
 }
