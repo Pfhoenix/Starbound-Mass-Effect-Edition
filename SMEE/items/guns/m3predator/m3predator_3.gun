@@ -12,21 +12,23 @@
   "handPosition" : [-9, 0],
   "firePosition" : [11, 4],
   
-  "fireTime" : 0.20,
+  "fireTime" : 0.125,
   "twoHanded" : false,
-  "level" : 1,
-  "classMultiplier" : 0.5,
+  "level" : 10,
+  "classMultiplier" : 18.88889,
 
   "projectileType" : "energybullet",
   "projectile" : {
-	"power" : 2,
+	"power" : 1.777778,
 	"speed" : 85,
   "color" : [ 0, 255, 255]
   },
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
-    "fireSound" : [ { "file" : "/sfx/gun/plasma_ar2.wav" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m3predator/m3predator_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m3predator/m3predator_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m3predator/m3predator_fire3.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
