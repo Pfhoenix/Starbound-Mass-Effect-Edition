@@ -12,20 +12,21 @@
   "handPosition" : [-11, 0],
   "firePosition" : [20, 4],
   
-  "fireTime" : 0.10,
+  "fireTime" : 0.091,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 0.5,
+  "classMultiplier" : 28.45417,
 
   "projectileType" : "bullet-4",
   "projectile" : {
-	"power" : 420,
+	"power" : 121.2121,
 	"speed" : 85
   },
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
-    "fireSound" : [ { "file" : "/sfx/gun/sniper3.wav" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m76revenant/m76revenant_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m76revenant/m76revenant_fire2.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
