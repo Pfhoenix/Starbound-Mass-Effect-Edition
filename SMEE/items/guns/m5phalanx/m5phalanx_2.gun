@@ -12,20 +12,22 @@
   "handPosition" : [-9, 0],
   "firePosition" : [11, 4],
   
-  "fireTime" : 0.30,
+  "fireTime" : 0.25,
   "twoHanded" : false,
   "level" : 10,
-  "classMultiplier" : 0.5,
+  "classMultiplier" : 23.33333,
 
   "projectileType" : "energybullet",
   "projectile" : {
-	"power" : 320,
+	"power" : 6.555556,
 	"speed" : 85
   },
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
-    "fireSound" : [ { "file" : "/sfx/gun/plasma_ar2.wav" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m5phalanx/m5phalanx_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m5phalanx/m5phalanx_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m5phalanx/m5phalanx_fire3.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
