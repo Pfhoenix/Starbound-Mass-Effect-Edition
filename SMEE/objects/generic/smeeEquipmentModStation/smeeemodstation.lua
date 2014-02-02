@@ -65,11 +65,12 @@ function main()
   
 	-- detect everything that runs around
 	local radius = entity.configParameter("detectRadius")
-	local entityIds = world.entityQuery(
+	local entityIds = world.playerQuery(
 			entity.position(), 
 			radius, 
-			{ notAnObject = true }
-		)	
+			{ inSightOf = entity.id() }
+		)
+	
 	if not isPowerOn() then
 		if #entityIds > 0 then
 			turnPowerOn()
