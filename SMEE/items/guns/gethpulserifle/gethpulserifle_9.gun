@@ -12,20 +12,20 @@
   "handPosition" : [-4, 0],
   "firePosition" : [20, 3],
   
-  "fireTime" : 0.10,
+  "fireTime" : 0.07692,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 0.5,
+  "classMultiplier" : 30.77778,
 
   "projectileType" : "gethbullet",
   "projectile" : {
-	"power" : 138,
+	"power" : 6.410256,
 	"speed" : 85
   },
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
-    "fireSound" : [ { "file" : "/sfx/gun/plasma_ar2.wav" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/gethpulserifle/gethpulserifle_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
