@@ -12,20 +12,23 @@
   "handPosition" : [-2, 0],
   "firePosition" : [18, 5],
   
-  "fireTime" : 0.10,
+  "fireTime" : 0.125,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 0.5,
+  "classMultiplier" : 26.66667,
 
   "projectileType" : "energybullet2",
   "projectile" : {
-	"power" : 16,
+	"power" : 2.75,
 	"speed" : 85
   },
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
-    "fireSound" : [ { "file" : "/sfx/gun/plasma_pistol1.wav" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m8avenger/m8avenger_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m8avenger/m8avenger_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m8avenger/m8avenger_fire3.ogg" },
+    				{ "file" : "/sfx/guns/m8avenger/m8avenger_fire4.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
