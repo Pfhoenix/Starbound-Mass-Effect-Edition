@@ -15,7 +15,7 @@
   "fireTime" : 0.07692,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 30.77778,
+  "classMultiplier" : 7.453333,
 
   "projectileType" : "gethbullet",
   "projectile" : {
