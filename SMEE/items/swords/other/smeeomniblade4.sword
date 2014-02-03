@@ -16,7 +16,7 @@
 	"soundEffect" : { "fireSound" : [ { "file" : "/sfx/melee/swing_onehanded.wav" } ] },
 
 	"primaryStances" : {
-		"projectileType" : "smeeomniblade1swoosh",
+		"projectileType" : "smeeomniblade4swoosh",
 		"projectile" : {
 			"speed" : 0.1,
 			"power" : 300

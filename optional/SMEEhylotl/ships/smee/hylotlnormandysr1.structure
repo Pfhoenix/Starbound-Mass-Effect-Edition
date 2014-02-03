@@ -132,6 +132,15 @@
 		},
 		
 		{
+			"value" : [0, 110, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"backgroundMat" : "sr1shipdetails",
+			"object" : "sr1radio",
+			"objectDirection" : "right"
+		},
+		
+		{
 			"value" : [0, 100, 0, 255],
 			"foregroundBlock" : false,
 			"backgroundBlock" : true,

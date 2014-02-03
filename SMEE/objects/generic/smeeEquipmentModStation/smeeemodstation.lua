@@ -8,7 +8,7 @@ end
 
 
 function isPowerOn()	
-	return entity.animationState("stationState") == "on" 
+	return entity.animationState("stationState") == "on"
 			or entity.animationState("stationState") == "turnOn"
 end
 
