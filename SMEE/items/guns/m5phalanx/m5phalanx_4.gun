@@ -15,7 +15,7 @@
   "fireTime" : 0.25,
   "twoHanded" : false,
   "level" : 10,
-  "classMultiplier" : 50,
+  "classMultiplier" : 9.310345,
 
   "projectileType" : "energybullet",
   "projectile" : {
