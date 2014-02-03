@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1 }
+  ],
+  "output" : { "item" : "phoenixarmorIpants", "count" : 1 },
+  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+}

@@ -1,8 +1,7 @@
-{ 
-"__merge" : [
-  ["overwrite", "input"]
-],
-  "input" : [
+{
+	"input" : [
     { "item" : "money", "count" : 1 }
-  ]
+  ],
+	"output" : { "item" : "smeeomniblade2", "count" : 1 },
+	"groups" : [ "mod", "smee", "plain", "weapons", "tools", "all" ]
 }
