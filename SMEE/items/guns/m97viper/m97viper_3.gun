@@ -12,20 +12,20 @@
   "handPosition" : [-14, 0],
   "firePosition" : [25, 4],
   
-  "fireTime" : 0.30,
+  "fireTime" : 0.833333,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 0.5,
+  "classMultiplier" : 6.687898,
 
   "projectileType" : "bullet-3",
   "projectile" : {
-	"power" : 475,
-	"speed" : 75
+	"power" : 29.07407,
+	"speed" : 120
   },
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
-    "fireSound" : [ { "file" : "/sfx/gun/ar3.wav" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m97viper/m97viper_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
