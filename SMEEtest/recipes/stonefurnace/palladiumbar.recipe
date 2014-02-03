@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "silverore", "count" : 1 },
+	{ "item" : "platinumore", "count" : 1 },
+	{ "item" : "plutoniumore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "palladiumbar",
+    "count" : 1
+  },
+  "groups" : [ "smee", "mod", "metalworkstation", "all" ]
+}

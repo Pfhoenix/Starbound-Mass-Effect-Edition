@@ -1,8 +1,10 @@
-{ 
-"__merge" : [
-  ["overwrite", "input"]
-],
-  "input" : [
+{
+	"input" : [
     { "item" : "money", "count" : 1 }
-  ]
+  ],
+	"output" : {
+		"item" : "smeeemodstation",
+		"count" : 1
+	},
+	"groups" : [ "mod", "smee", "plain", "objects", "all" ]
 }
