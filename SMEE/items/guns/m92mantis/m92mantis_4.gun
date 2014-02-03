@@ -12,20 +12,22 @@
   "handPosition" : [-13, 0],
   "firePosition" : [20, 4],
   
-  "fireTime" : 1.0,
+  "fireTime" : 0.833333,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 0.5,
+  "classMultiplier" : 8.571429,
 
   "projectileType" : "energybullet2",
   "projectile" : {
-	"power" : 120,
-	"speed" : 85
+	"power" : 11.66667,
+	"speed" : 120
   },
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
-    "fireSound" : [ { "file" : "/sfx/gun/plasma_sniper3.wav" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m92mantis/m92mantis_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m92mantis/m92mantis_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m92mantis/m92mantis_fire3.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
