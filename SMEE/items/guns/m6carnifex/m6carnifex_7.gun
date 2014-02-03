@@ -12,20 +12,20 @@
   "handPosition" : [-9, 0],
   "firePosition" : [10, 4],
   
-  "fireTime" : 0.30,
+  "fireTime" : 0.625,
   "twoHanded" : false,
   "level" : 10,
-  "classMultiplier" : 0.5,
+  "classMultiplier" : 232.381,
 
   "projectileType" : "energybullet2",
   "projectile" : {
-	"power" : 920,
+	"power" : 175,
 	"speed" : 85
   },
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
-    "fireSound" : [ { "file" : "/sfx/gun/plasma_pistol4.wav" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m6carnifex/m6carnifex_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
