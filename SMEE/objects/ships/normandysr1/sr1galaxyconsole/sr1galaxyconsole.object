@@ -24,7 +24,7 @@
 	],
 	
 	"scripts" : [ "/scripts/smee/responsiveobject.lua", "sr1galaxyconsole.lua" ],
-	"scriptDelta" : 5,
+	"scriptDelta" : 10,
 	"animation" : "sr1galaxyconsole.animation",
 	"animationParts" : {
 		"sr1galaxyconsole" : "sr1galaxyconsole.png"
@@ -78,11 +78,11 @@
 			"idle" : [
 				{
 					"name" : "idleseq1",
-					"time" : 10
+					"time" : 5
 				},
 				{
 					"name" : "idleseq2",
-					"time" : 10
+					"time" : 5
 				}
 			],
 			"active" : [
@@ -93,12 +93,12 @@
 			],
 			"transActive" : {
 				"name" : "transgalaxy",
-				"time" : 5,
+				"time" : 3,
 				"sounds" : "zoomInSounds"
 			},
 			"transIdle" : {
 				"name" : "transnormandy",
-				"time" : 5,
+				"time" : 3,
 				"sounds" : "zoomOutSounds"
 			}
 		}

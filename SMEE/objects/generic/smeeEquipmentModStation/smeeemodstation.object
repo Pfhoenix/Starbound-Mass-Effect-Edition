@@ -30,7 +30,7 @@
 	],
 	  
 	"scripts" : [ "/scripts/smee/responsiveobject.lua", "smeeemodstation.lua" ],
-	"scriptDelta" : 5,
+	"scriptDelta" : 10,
 	"animation" : "smeeemodstation.animation",
 	"animationParts" : {
 		"smeeemodstation" : "smeeemodstation.png"
@@ -57,12 +57,12 @@
 			],
 			"transActive" : {
 				"name" : "turnOn",
-				"time" : 5,
+				"time" : 2,
 				"sounds" : "consoleSounds"
 			},
 			"transIdle" : {
 				"name" : "turnOff",
-				"time" : 5,
+				"time" : 2,
 				"sounds" : "consoleSounds"
 			}
 		}

@@ -24,7 +24,7 @@
 	],
 	
 	"scripts" : [ "sr1radio.lua" ],
-	"scriptDelta" : 5,
+	"scriptDelta" : 10,
 	"animation" : "sr1radio.animation",
 	"animationParts" : {
 		"sr1radio" : "sr1radio.png"
