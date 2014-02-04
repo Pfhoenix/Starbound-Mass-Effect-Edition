@@ -21,6 +21,15 @@
 			"yourpartid" : "youranimationimage.png"
 		},
 
+
+-- ===================================================================
+-- sound configuration:
+-- ===================================================================
+-- this is need since playSound needs a key instead of an array with
+-- sound files
+
+	"mySounds" : [ "/sfx/somesoundfile.ogg" ],
+	
 -- ===================================================================
 -- responsive object properties sample:
 -- ===================================================================
@@ -48,13 +57,13 @@
 			-- transitions are optional remove them if not needed
 			"transActive" : {
 				"name" : "yourAnimName",
-				"time" : -1,			// optional
-				"sounds" : ""		// optional
+				"time" : -1,				// optional
+				"sounds" : "mySounds"		// optional
 			},
 			"transIdle" : {
 				"name" : "yourAnimName",
-				"time" : -1,			// optional
-				"sounds" : ""		// optional
+				"time" : -1,				// optional
+				"sounds" : "mySounds"		// optional
 			},
 		}
 	}
@@ -62,4 +71,40 @@
 -- ===================================================================
 -- sample for your .lua file (LUA Syntax):
 -- ===================================================================
+
+function init(virtual)
+	entity.setInteractive(true)
+	entity.setAllOutboundNodes(false)
+	
+	if not virtual then
+		responsiveObject.init()
+		-- you can also add animation states here with:
+		-- responsiveObject.registerAnimation
+		responsiveObject.start()
+	end
+	
+	-- TODO your custom code here
+end
+
+
+-- only need if entity.setInteractive(true)
+function onInteraction(args)
+	-- optional if you don't need it remove this line
+	responsiveObject.interact()
+	
+	return { "", {} }
+end
+
+
+function main() 
+	responsiveObject.update()
+	
+	-- TODO your custom code here
+end
+
+function die() 
+	responsiveObject.die()
+	
+	-- TODO your custom code here
+end
 	

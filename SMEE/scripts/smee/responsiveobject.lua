@@ -1,6 +1,7 @@
 -- ===================================================================
 -- RESPONSIVE OBJECT
 -- ===================================================================
+-- Version 1.0.0
 --
 -- little module/API for furniture and decorations to respond 
 -- if a player enters it proximity radius and trigger animations
@@ -8,7 +9,7 @@
 -- Config Parameters:
 -- see sample file
 --
--- Animations State:
+-- Animation State:
 -- entity.animationState("responsiveState")
 
 ----------------------------------------------------------------------
@@ -53,11 +54,13 @@ end
 -- the responsive object initialization.
 -- and optional registerAnimation calls.
 function responsiveObject.start()
+
 	entity.setAnimationState(
 			"responsiveState",
 			self.anims.idle[1].name
 		)
 	self.timer = self.anims.idle[1].time
+	
 end
 
 ----------------------------------------------------------------------
@@ -72,6 +75,7 @@ function responsiveObject.update()
 		self.timer = self.timer - 1
 	elseif self.timer == 0 then
 		-- check if timer 0 and an animation switch is needed
+		self.timer = -1
 		
 		-- transitions
 		if entity.animationState("responsiveState") == self.anims.transActive.name then
@@ -79,15 +83,15 @@ function responsiveObject.update()
 		elseif entity.animationState("responsiveState") == self.anims.transIdle.name then
 			responsiveObject.nextAnimation("idle")
 		else
-			-- optional next random anim
-			-- TODO
+			if responsiveObject.isIdle() and #self.anims.idle > 1  then
+				responsiveObject.nextAnimation("idle")
+			elseif #self.anims.active > 1 then
+				responsiveObject.nextAnimation("active")
+			end
 		end
 		
-		self.timer = -1
 	end
 	
-		
-
 	-- detect player 
 	local entityIds = world.playerQuery(
 			entity.position(), 
@@ -105,8 +109,6 @@ function responsiveObject.update()
 		end
 	end
 	
-	
-
 end
 
 
@@ -116,7 +118,7 @@ end
 -- 
 -- call it in your entities die() hook.
 function responsiveObject.die()
-
+	self.anims = nil
 end
 
 ----------------------------------------------------------------------
@@ -125,8 +127,24 @@ end
 -- 
 -- optional, only if your entity is interactive (mouseover + E)
 -- call it in your entities onInteraction() hook.
+--
+-- triggers the first active animation.
 function responsiveObject.interact()
-
+	
+	if responsiveObject.isActive() then
+		return
+	end
+	
+	entity.setAnimationState(
+			"responsiveState",
+			self.anims.active[1].name
+		)
+	
+	self.timer = self.anims.active[1].time
+	
+	if self.anims.active[1].sounds ~= nil then 
+		entity.playSound(self.anims.active[1].sounds)
+	end
 end
 
 ----------------------------------------------------------------------
@@ -211,16 +229,15 @@ function responsiveObject.nextAnimation(type)
 	local anims = self.anims[type]
 	local index = 1
 	
--- TODO random
-	--if self.randomize == true then
-	--	index = math.random(1, #anims)
-	--end
+	if self.randomize == true then
+		index = math.random(1, #anims)
+	end
 	
 	entity.setAnimationState(
 			"responsiveState", 
 			anims[index].name
 		)
-	self.timer = anims[index].name
+	self.timer = anims[index].time
 	
 	if anims[index].sounds ~= nil then 
 		entity.playSound(anims[index].sounds)

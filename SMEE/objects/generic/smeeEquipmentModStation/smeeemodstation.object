@@ -3,11 +3,10 @@
 	"rarity" : "Common",
 	"objectType" : "wire",
 	
-	// TODO this is right now in the lua file. We need to get it back in here.
-	//"interactData" : {
-	//	"config" : "/interface/windowconfig/smeeemodstation.config",
-	//	"filter" : [ "craftingtable", "plain", "smee" ]
-	//},
+	"interactData" : {
+		"config" : "/interface/windowconfig/smeeemodstation.config",
+		"filter" : [ "craftingtable", "plain", "smee" ]
+	},
 	
 	"printable" : false,
 	"description" : "For crafting and modifications.",
@@ -37,15 +36,13 @@
 		"smeeemodstation" : "smeeemodstation.png"
 	},
 	"animationPosition" : [-8, 0],
-	// lua parameters
-	//"detectRadius" : 8,
-	"consoleSounds" : [ "/sfx/ships/console.ogg" ],
 	
+	// responsive object parameters
+	"consoleSounds" : [ "/sfx/ships/console.ogg" ],
 	"responsiveObject" : {
 		"detectRadius" : 8,
 		"detectLineOfSight" : true,
 		"responsiveAnimations" : {
-			"randomize" : true,
 			"idle" : [
 				{
 					"name" : "off",

@@ -8,4 +8,5 @@
 	- New furniture
 - Added Recipes for Alliance Wall Panels
 - New sounds
-- Weapon balancing
+- Complete overhaul of the weapon balancing and crafting
+- Eezo as new ore, a lot of SMEE items will need it ;)

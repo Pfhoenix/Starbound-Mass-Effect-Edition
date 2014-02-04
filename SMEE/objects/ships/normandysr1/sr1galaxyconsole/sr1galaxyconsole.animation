@@ -1,7 +1,7 @@
 {
 	"animatedParts" : {
 		"stateTypes" : {
-			"stationState" : {
+			"responsiveState" : {
 				"default" : "static",
 				"states" : {
 					"static" : {
@@ -50,7 +50,7 @@
 				},
 
 				"partStates" : {
-					"stationState" : {
+					"responsiveState" : {
 						"static" : {
 							"properties" : {
 								"image" : "<partImage>:default.default"

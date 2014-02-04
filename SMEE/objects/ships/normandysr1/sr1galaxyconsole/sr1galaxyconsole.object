@@ -23,16 +23,13 @@
 		}
 	],
 	
-	// TODO uncommented until scripting on non wired enities work 
-	"scripts" : [ "sr1galaxyconsole.lua" ],
+	"scripts" : [ "/scripts/smee/responsiveobject.lua", "sr1galaxyconsole.lua" ],
 	"scriptDelta" : 5,
 	"animation" : "sr1galaxyconsole.animation",
 	"animationParts" : {
 		"sr1galaxyconsole" : "sr1galaxyconsole.png"
 	},
 	"animationPosition" : [-11, 0],
-	// lua parameters
-	"detectRadius" : 8,
 	
 	"interactAction" : "openCockpitInterface",
 	"sitFlipDirection" : false,
@@ -69,6 +66,41 @@
 		}
 	},
 	
+	// responsive object parameters
 	"zoomInSounds" : [ "/sfx/galaxymap/galaxy_zoom_in.ogg" ],
-	"zoomOutSounds" : [ "/sfx/galaxymap/galaxy_zoom_out.ogg" ]
+	"zoomOutSounds" : [ "/sfx/galaxymap/galaxy_zoom_out.ogg" ],
+	
+	"responsiveObject" : {
+		"detectRadius" : 8,
+		"detectLineOfSight" : true,
+		"responsiveAnimations" : {
+			"randomize" : true,
+			"idle" : [
+				{
+					"name" : "idleseq1",
+					"time" : 10
+				},
+				{
+					"name" : "idleseq2",
+					"time" : 10
+				}
+			],
+			"active" : [
+				{
+					"name" : "galaxy",
+					"time" : -1
+				}
+			],
+			"transActive" : {
+				"name" : "transgalaxy",
+				"time" : 5,
+				"sounds" : "zoomInSounds"
+			},
+			"transIdle" : {
+				"name" : "transnormandy",
+				"time" : 5,
+				"sounds" : "zoomOutSounds"
+			}
+		}
+	}
 }

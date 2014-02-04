@@ -9,21 +9,30 @@ function init(virtual)
 end
 
 
-
 function onInteraction(args)
-	--turnPowerOn()
+	responsiveObject.interact()
 	
-	-- TODO find a way put this in object file entity.configParameter
+	local params = entity.configParameter("interactData") 
+	
+	
+	-- TODO test if it works
 	return { "OpenCraftingInterface", { 
-			config = "/interface/windowconfig/smeeemodstation.config", 
-			filter = { "craftingtable", "plain", "smee" }} 
-		}
+			config = params.config, 
+			filter = params.filter
+		}}
+		
+	-- TODO find a way put this in object file entity.configParameter
+	--return { "OpenCraftingInterface", { 
+	--		config = "/interface/windowconfig/smeeemodstation.config", 
+	--		filter = { "craftingtable", "plain", "smee" }} 
+	--	}
 end
 
 
 function main() 
 	responsiveObject.update()
 end
+
 
 function die() 
 	responsiveObject.die()
