@@ -30,7 +30,7 @@
 		}
 	],
 	  
-	"scripts" : [ "smeeemodstation.lua" ],
+	"scripts" : [ "/scripts/smee/responsiveobject.lua", "smeeemodstation.lua" ],
 	"scriptDelta" : 5,
 	"animation" : "smeeemodstation.animation",
 	"animationParts" : {
@@ -38,7 +38,37 @@
 	},
 	"animationPosition" : [-8, 0],
 	// lua parameters
-	"detectRadius" : 8,
-	"consoleSounds" : [ "/sfx/ships/console.ogg" ]
+	//"detectRadius" : 8,
+	"consoleSounds" : [ "/sfx/ships/console.ogg" ],
+	
+	"responsiveObject" : {
+		"detectRadius" : 8,
+		"detectLineOfSight" : true,
+		"responsiveAnimations" : {
+			"randomize" : true,
+			"idle" : [
+				{
+					"name" : "off",
+					"time" : -1
+				}
+			],
+			"active" : [
+				{
+					"name" : "on",
+					"time" : -1
+				}
+			],
+			"transActive" : {
+				"name" : "turnOn",
+				"time" : 5,
+				"sounds" : "consoleSounds"
+			},
+			"transIdle" : {
+				"name" : "turnOff",
+				"time" : 5,
+				"sounds" : "consoleSounds"
+			}
+		}
+	}
 	
 }

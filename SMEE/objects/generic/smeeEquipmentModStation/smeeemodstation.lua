@@ -1,38 +1,18 @@
-function init(args)
+function init(virtual)
 	entity.setInteractive(true)
 	entity.setAllOutboundNodes(false)
-	entity.setAnimationState("stationState", "off")
-	self.powerondelay = -1
-	self.poweroffdelay = -1
-end
-
-
-function isPowerOn()	
-	return entity.animationState("stationState") == "on"
-			or entity.animationState("stationState") == "turnOn"
-end
-
-
-function turnPowerOn()
-	if not isPowerOn() then
-		entity.setAnimationState("stationState", "turnOn")
-		entity.playSound("consoleSounds")
-		self.powerondelay = 5
+	
+	if not virtual then
+		responsiveObject.init()
+		responsiveObject.start()
 	end
 end
 
-
-function turnPowerOff()
-	if isPowerOn() then
-		entity.setAnimationState("stationState", "turnOff")
-		entity.playSound("consoleSounds")
-		self.poweroffdelay = 5
-	end
-end
 
 
 function onInteraction(args)
-	turnPowerOn()
+	--turnPowerOn()
+	
 	-- TODO find a way put this in object file entity.configParameter
 	return { "OpenCraftingInterface", { 
 			config = "/interface/windowconfig/smeeemodstation.config", 
@@ -42,42 +22,9 @@ end
 
 
 function main() 
-	
-	if self.powerondelay > 0 then
-		self.powerondelay = self.powerondelay -1
-	else
-		-- switch to on loop
-		if self.powerondelay == 0 then
-			entity.setAnimationState("stationState", "on")
-			self.powerondelay = -1
-		end
-	end
-  
-	if self.poweroffdelay > 0 then
-		self.poweroffdelay = self.poweroffdelay -1
-	else  
-		-- switch to on loop
-		if self.poweroffdelay == 0 then
-			entity.setAnimationState("stationState", "off")
-			self.poweroffdelay = -1
-		end
-	end
-  
-	-- detect everything that runs around
-	local radius = entity.configParameter("detectRadius")
-	local entityIds = world.playerQuery(
-			entity.position(), 
-			radius, 
-			{ inSightOf = entity.id() }
-		)
-	
-	if not isPowerOn() then
-		if #entityIds > 0 then
-			turnPowerOn()
-		end
-	elseif isPowerOn() then
-		if #entityIds == 0 then
-			turnPowerOff()
-		end
-	end
+	responsiveObject.update()
+end
+
+function die() 
+	responsiveObject.die()
 end
