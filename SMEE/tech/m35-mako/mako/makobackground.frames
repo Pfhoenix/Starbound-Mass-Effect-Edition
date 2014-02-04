@@ -1,11 +1,11 @@
 {
   "frameGrid" : {
-    "size" : [92, 72],
-    "dimensions" : [11, 2],
+    "size" : [300, 100],
+    "dimensions" : [3, 2],
 
     "names" : [
       [ null, "idle", null ],
-      [ null ]
+      [ null, null, null ]
     ]
   },
 

@@ -1,11 +1,12 @@
 {
   "frameGrid" : {
-    "size" : [92, 72],
-    "dimensions" : [11, 2],
+    "size" : [300, 100],
+    "dimensions" : [3, 2],
+	"offset" : [0, 0],
 
     "names" : [
-      [ null, "idle", null, "jump", "fall", null, null, null, null, null, null ],
-      [ null, "move.1", "move.2", null , null, null, null, null, null, null, null ]
+      [ null, "idle", "jump" ],
+      [ null, "move.1", "move.2"  ]
     ]
   },
 

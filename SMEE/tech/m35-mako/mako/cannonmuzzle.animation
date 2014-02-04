@@ -1,5 +1,5 @@
 {
-  "frames" : "bulletmuzzle1.png",
+  "frames" : "cannonmuzzle.png",
   "variants" : 3,
   "frameNumber" : 2,
   "animationCycle" : 0.03,

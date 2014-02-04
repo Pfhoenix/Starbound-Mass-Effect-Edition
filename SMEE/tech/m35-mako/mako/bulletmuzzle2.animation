@@ -1,5 +1,5 @@
 {
-  "frames" : "shellmuzzle.png",
+  "frames" : "bulletmuzzle2.png",
   "variants" : 3,
   "frameNumber" : 2,
   "animationCycle" : 0.03,

@@ -1,10 +1,10 @@
 {
-  "itemName" : "makotech",
+  "itemName" : "M35mako",
   "rarity" : "Legendary",
   "inventoryIcon" : "/tech/makoicon.png",
-  "description" : "Press F to spawn a Mako.",
+  "description" : "Press F. Use this tech, spawn a M35 Mako. Then destroy things.",
   "shortdescription" : "M35 Mako",
   "inspectionKind" : "tech",
 
-  "techModule" : "mako.tech"
+  "techModule" : "M35mako.tech"
 }
