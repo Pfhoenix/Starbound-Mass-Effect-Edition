@@ -1,4 +1,4 @@
-- Omni-Tools: Fixed altBlockRadius back to 1. Added tiered recipe materials. 
+- Fixed Omni-Tools: altBlockRadius back to 1. Added tiered recipe materials.
 - Normandy Changes: 
 	- Fixed "infamous" toilet stuck bug (corner removed)
 	- Fixed stuck if using the galaxy map
@@ -6,7 +6,7 @@
 	- Moved "vanilla" fuel hatch into cockpit.
 	- Improved galaxy console
 	- New furniture
-- Added Recipes for Alliance Wall Panels
+- Added recipes for Alliance Wall Panels
 - New sounds
-- Complete overhaul of the weapon balancing and crafting
+- Complete overhaul of the weapon balancing, upgrading and crafting
 - Eezo as new ore, a lot of SMEE items will need it ;)

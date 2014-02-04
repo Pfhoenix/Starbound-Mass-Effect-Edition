@@ -1,5 +1,21 @@
 
 
+Version - 0.2.0:
+--------------------------------------------------------------------------------
+- Fixed Omni-Tools: altBlockRadius back to 1. Added tiered recipe materials.
+- Normandy Changes: 
+	- Fixed "infamous" toilet stuck bug (corner removed)
+	- Fixed stuck if using the galaxy map
+	- Added new room.
+	- Moved "vanilla" fuel hatch into cockpit.
+	- Improved galaxy console
+	- New furniture
+- Added recipes for Alliance Wall Panels
+- New sounds
+- Complete overhaul of the weapon balancing, upgrading and crafting
+- Eezo as new ore, a lot of SMEE items will need it ;)
+
+
 Version - 0.1.1:
 --------------------------------------------------------------------------------
 - Update for v. Furious Koala
@@ -9,6 +25,7 @@ Version - 0.1.1:
 Version - 0.1.0:
 --------------------------------------------------------------------------------
 - Initial release
+
 
 
 

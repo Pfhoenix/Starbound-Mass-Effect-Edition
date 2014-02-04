@@ -3,9 +3,9 @@
 ================================================================================
 		by Team SMEE
 		
-		Mod Version: 0.1.1
+		Mod Version: 0.2.0
 		Starbound Version: Beta v. Furious Koala
-		Release Date: 2014-01-26
+		Release Date: 2014-02-04
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -37,7 +37,7 @@ Starbound/mods directory.
 	Dependencies
 ================================================================================
 
-You will need a custom character mod. We recommend one of the following :
+You will need a custom character mod. We recommend ONE of the following :
 
 Kawa's Xbawks Mode Character Creator
 Simple Extended Character Creation Mod
@@ -54,6 +54,7 @@ If you use a mod with the same tile/material ids there will be a conflict.
 SMEE tile/material id list:
 7001 -- Normandy ship wall
 7002 -- Normandy ship detail
+7003 -- Eezo
 
 
 ================================================================================

@@ -5,6 +5,6 @@
 	"dependencies" : ["Starbound : Mass Effect Edition"],
 	"metadata" : {
 	  "author" : "Team SMEE",
-	  "description" : "Use the Normandy with Apex species. For SMEE v. 0.1.1"
+	  "description" : "Use the Normandy with Apex species. For SMEE v. 0.2.0"
 	}
 }
