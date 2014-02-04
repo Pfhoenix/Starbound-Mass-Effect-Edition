@@ -1,7 +1,7 @@
 {
   "input" : [
-	{ "item" : "titaniumore", "count" : 2 },
-	{ "item" : "plutoniumore", "count" : 1 }
+	{ "item" : "titaniumbar", "count" : 2 },
+	{ "item" : "plutoniumrod", "count" : 1 }
   ],
   "output" : {
     "item" : "palladiumbar",
