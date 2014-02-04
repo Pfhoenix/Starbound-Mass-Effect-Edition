@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1050 },
+    { "item" : "steelbar", "count" : 10 },
+    { "item" : "refinedEezo", "count" : 2 },
+    { "item" : "gethpulserifle_1", "count" : 1 }
+  ],
+  "output" : { "item" : "gethpulserifle_2", "count" : 1 },
+  "groups" : [ "craftingtable", "weapons", "all" ]
+}
+

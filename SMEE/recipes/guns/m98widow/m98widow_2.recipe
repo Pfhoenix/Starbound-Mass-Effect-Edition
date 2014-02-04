@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 4200 },
+    { "item" : "Violiumbar", "count" : 20 },
+    { "item" : "iridiumbar", "count" : 1 },
+    { "item" : "palladiumbar", "count" : 1 },
+    { "item" : "refinedEezo", "count" : 8 },
+    { "item" : "m98widow_1", "count" : 1 }
+  ],
+  "output" : { "item" : "m98widow_2", "count" : 1 },
+  "groups" : [ "craftingtable", "weapons", "all" ]
+}

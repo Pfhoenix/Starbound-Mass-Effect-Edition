@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1175 },
+    { "item" : "titaniumbar", "count" : 5 },
+    { "item" : "refinedEezo", "count" : 3 },
+    { "item" : "m5phalanx_3", "count" : 1 }
+  ],
+  "output" : { "item" : "m5phalanx_4", "count" : 1 },
+  "groups" : [ "craftingtable", "weapons", "all" ]
+}
