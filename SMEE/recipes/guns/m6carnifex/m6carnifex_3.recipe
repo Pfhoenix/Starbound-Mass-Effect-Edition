@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 2750 },
+    { "item" : "aegisaltbar", "count" : 5 },
+    { "item" : "refinedEezo", "count" : 5 },
+    { "item" : "m6carnifex_2", "count" : 1 }
+  ],
+  "output" : { "item" : "m6carnifex_3", "count" : 1 },
+  "groups" : [ "craftingtable", "weapons", "all" ]
+}
