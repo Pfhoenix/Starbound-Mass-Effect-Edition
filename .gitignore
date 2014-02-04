@@ -1,6 +1,0 @@
-# eclipse ignores
-.project
-
-# ant and smee ignores
-/release
-

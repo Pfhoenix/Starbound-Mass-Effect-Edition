@@ -1,9 +1,0 @@
-{
-	"input" : [
-		// TODO adjust input
-		{ "item" : "aegisaltbar", "count" : 2 },
-		{ "item" : "smeeomniblade2", "count" : 1 }
-	],
-	"output" : { "item" : "smeeomniblade3", "count" : 1 },
-	"groups" : [ "mod", "smee", "plain", "weapons", "tools", "all" ]
-}

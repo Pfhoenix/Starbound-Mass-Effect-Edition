@@ -1,6 +1,0 @@
-{
-  "__merge" : [ 
-    ["overwrite", "moneyRange"] 
-  ],
-  "moneyRange" : [10000, 10000]
-}

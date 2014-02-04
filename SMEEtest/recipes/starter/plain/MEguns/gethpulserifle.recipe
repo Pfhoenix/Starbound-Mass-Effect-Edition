@@ -1,9 +1,0 @@
-{ 
-"__merge" : [
-  ["overwrite", "input"]
-],
-  "input" : [
-    { "item" : "money", "count" : 1 }
-  ]
-}
-

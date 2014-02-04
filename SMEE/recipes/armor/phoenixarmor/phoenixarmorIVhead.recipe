@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "durasteelbar", "count" : 20 }
-  ],
-  "output" : { "item" : "phoenixarmorIVhead", "count" : 1 },
-  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
-}

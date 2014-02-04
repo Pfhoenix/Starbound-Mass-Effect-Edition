@@ -1,7 +1,0 @@
-{
-  "input" : [
-    { "item" : "durasteelbar", "count" : 12 }
-  ],
-  "output" : { "item" : "agentarmorIVpants", "count" : 1 },
-  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
-}
