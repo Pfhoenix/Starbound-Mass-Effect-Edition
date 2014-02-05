@@ -1,0 +1,10 @@
+{
+	"__merge" : [], 
+	"filterButtons" : [
+		{
+			"baseImage" : "/objects/wired/tabularasa/smee/smeeGOLD.PNG",
+			"baseImageChecked" : "/objects/wired/tabularasa/smee/smeeGREY.PNG",
+			"filter" : "smee"
+		}
+	]
+}
