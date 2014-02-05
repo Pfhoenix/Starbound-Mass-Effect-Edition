@@ -16,6 +16,8 @@
   "twoHanded" : false,
   "level" : 10,
   "classMultiplier" : 11.081081,
+  
+  "fireOnRelease" : true,
 
   "projectileType" : "energybullet",
   "projectile" : {
