@@ -3,9 +3,9 @@
 ================================================================================
 		by Team SMEE
 		
-		Mod Version: 0.2.0
+		Mod Version: 0.2.1
 		Starbound Version: Beta v. Furious Koala
-		Release Date: 2014-02-04
+		Release Date: 2014-02-05
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -14,6 +14,12 @@ http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edi
 ================================================================================
 	Changelog
 ================================================================================
+
+
+Version - 0.2.1:
+--------------------------------------------------------------------------------
+- Hotfix: Missing iridiumbar and palladiumbar recipes added to the player.config
+- Added custom filter button for Tabularasa 2.0
 
 
 Version - 0.2.0:
@@ -41,6 +47,7 @@ Version - 0.1.1:
 Version - 0.1.0:
 --------------------------------------------------------------------------------
 - Initial release
+
 
 
 
