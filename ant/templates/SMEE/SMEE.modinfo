@@ -1,10 +1,10 @@
 {
-    "name" : "Starbound : Mass Effect Edition",
-    "version" : "@SB_VERSION",
-    "path" : ".",
+	"name" : "Starbound : Mass Effect Edition",
+	"version" : "@SB_VERSION",
+	"path" : ".",
 	"dependencies" : [],
 	"metadata" : {
-	  "author" : "Team SMEE",
-	  "description" : "Mass Effect in Starbound (v.@MOD_VERSION)"
-	  }
+		"author" : "Team SMEE",
+		"description" : "Mass Effect in Starbound (v.@MOD_VERSION)"
+	}
 }

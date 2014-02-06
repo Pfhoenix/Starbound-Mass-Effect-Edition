@@ -113,7 +113,8 @@
 				</antcall>
 			</sequential>
 		</for>	
-				
+		<!-- SMEE compatiblity patches -->
+		<!-- TODO -->
 	</target>	
 	
 
@@ -141,6 +142,9 @@
 		<antcall target="replace_version_and_date">
 			<param name="filename" value="${dir.optional.src}Readme.txt"/>
 		</antcall>	
+		
+		<!-- SMEE compatiblity patches -->
+		<!-- TODO -->
 		
 	</target>		
 	
@@ -225,22 +229,23 @@
 		<echo>
 		</echo>
 		<!-- clean up -->
-		<delete dir="${dir.release}SMEE"/>
-		<delete file="${dir.release}SMEECore.zip"/>
-		<delete file="${dir.release}SMEEOptional.zip"/>
+		<delete dir="${dir.release}SMEE" includes="**/*"/>
 				
 		<antcall target="compile_readmes" />
 		<antcall target="compile_changelog" />
 		<antcall target="compile_modinfos" />
 		
-		<echo>packing SMEECore.zip ...</echo>
+		<echo>packing SMEECore_${project.version}.zip ...</echo>
 		<copy todir="${dir.release}SMEE" >  
 			<fileset dir="${dir.smee.src}" includes="**"/>  
 		</copy>
-		<zip basedir="${dir.release}" includes="**/*.*" destfile="${dir.release}SMEECore.zip" />
+		<zip basedir="${dir.release}" includes="**/*.*" destfile="${dir.release}SMEECore_${project.version}.zip" />
 		
-		<echo>packing SMEEOptional.zip ...</echo>
-		<zip basedir="${dir.optional.src}" destfile="${dir.release}SMEEOptional.zip" />
+		<echo>packing SMEEOptional_${project.version}.zip ...</echo>
+		<zip basedir="${dir.optional.src}" destfile="${dir.release}SMEEOptional_${project.version}.zip" />
+		
+		<!-- SMEE compatiblity patches -->
+		<!-- TODO -->
 		
 		<echo message="Done."/>
 				
