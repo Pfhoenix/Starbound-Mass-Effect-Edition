@@ -95,6 +95,13 @@
 			<param name="filename" value="${dir.smee.src}SMEE.modinfo"/>
 		</antcall>
 			
+		<!-- SMEE music -->
+		<delete file="${dir.musicpack.src}SMEEmusuc.modinfo"/>
+		<copy todir="${dir.musicpack.src}" file="${dir.templates}SMEEmusic/SMEEmusic.modinfo"/>
+				
+		<antcall target="replace_version_and_date">
+			<param name="filename" value="${dir.musicpack.src}SMEEmusic.modinfo"/>
+		</antcall>
 		
 		<!-- SMEE optional -->
 		<for param="entry" list="${optional.modlist}" delimiter=",">
@@ -114,7 +121,22 @@
 			</sequential>
 		</for>	
 		<!-- SMEE compatiblity patches -->
-		<!-- TODO -->
+		<for param="entry" list="${cpatch.modlist}" delimiter=",">
+			<sequential>
+				<local name="modinfofile.template" />
+				<local name="modinfofile.dest" />
+				
+				<property name="modinfofile.template" value="${dir.templates}cpatches/@{entry}/@{entry}.modinfo"/>
+				<property name="modinfofile.dest" value="${dir.cpatches.src}@{entry}/@{entry}.modinfo"/>
+				
+				<delete file="${modinfofile.dest}"/>
+				<copy tofile="${modinfofile.dest}" file="${modinfofile.template}"/>
+				
+				<antcall target="replace_version_and_date">
+					<param name="filename" value="${modinfofile.dest}"/>
+				</antcall>
+			</sequential>
+		</for>
 	</target>	
 	
 
@@ -131,22 +153,42 @@
 		<echo>compiling readme's...</echo>
 				
 		<delete file="${dir.smee.src}Readme.txt"/>
+		<delete file="${dir.musicpack.src}Readme.txt"/>
 		<delete file="${dir.optional.src}Readme.txt"/>
 		
 		<copy todir="${dir.smee.src}" file="${dir.templates}SMEE\\Readme.txt"/>
+		<copy todir="${dir.musicpack.src}" file="${dir.templates}SMEEmusic\\Readme.txt"/>
 		<copy todir="${dir.optional.src}" file="${dir.templates}optional\\Readme.txt"/>
 		
 		<antcall target="replace_version_and_date">
 			<param name="filename" value="${dir.smee.src}Readme.txt"/>
 		</antcall>
 		<antcall target="replace_version_and_date">
+			<param name="filename" value="${dir.musicpack.src}Readme.txt"/>
+		</antcall>
+		<antcall target="replace_version_and_date">
 			<param name="filename" value="${dir.optional.src}Readme.txt"/>
 		</antcall>	
 		
 		<!-- SMEE compatiblity patches -->
-		<!-- TODO -->
+		<for param="entry" list="${cpatch.modlist}" delimiter=",">
+			<sequential>
+				<local name="readme.template" />
+				<local name="readme.dest" />
+				
+				<property name="readme.template" value="${dir.templates}cpatches/@{entry}/Readme.txt"/>
+				<property name="readme.dest" value="${dir.cpatches.src}@{entry}/Readme.txt"/>
+				
+				<delete file="${readme.dest}"/>
+				<copy tofile="${readme.dest}" file="${readme.template}"/>
+				
+				<antcall target="replace_version_and_date">
+					<param name="filename" value="${readme.dest}"/>
+				</antcall>
+			</sequential>
+		</for>
 		
-	</target>		
+	</target>
 	
 <!-- 
 	===========================================================================
@@ -230,25 +272,63 @@
 		</echo>
 		<!-- clean up -->
 		<delete dir="${dir.release}SMEE" includes="**/*"/>
-				
+		<delete dir="${dir.release}SMEEmusic" includes="**/*"/>
+		
 		<antcall target="compile_readmes" />
 		<antcall target="compile_changelog" />
 		<antcall target="compile_modinfos" />
 		
 		<echo>packing SMEECore_${project.version}.zip ...</echo>
 		<copy todir="${dir.release}SMEE" >  
-			<fileset dir="${dir.smee.src}" includes="**"/>  
+			<fileset dir="${dir.smee.src}" includes="**"/>
 		</copy>
-		<zip basedir="${dir.release}" includes="**/*.*" destfile="${dir.release}SMEECore_${project.version}.zip" />
+		<zip basedir="${dir.release}" includes="SMEE/**/*.*" destfile="${dir.release}SMEECore_${project.version}.zip" />
 		
-		<echo>packing SMEEOptional_${project.version}.zip ...</echo>
-		<zip basedir="${dir.optional.src}" destfile="${dir.release}SMEEOptional_${project.version}.zip" />
+		
+		<!-- SMEE music -->
+		<input message="Pack Music? (y/default n)" addProperty="arg.packmusic"/>
+		<if>
+			<equals arg1="${arg.packmusic}" arg2="y"/>
+			<then>
+				<echo>packing SMEEmusic_${project.version}.zip ...</echo>
+				<copy todir="${dir.release}SMEEmusic" >  
+					<fileset dir="${dir.musicpack.src}" includes="**"/>
+				</copy>
+				<zip basedir="${dir.release}" includes="SMEEmusic/**/*.*" destfile="${dir.release}SMEEmusic_${project.version}.zip" />
+			</then>
+		</if>
+				
+		<!-- SMEE optional -->
+		<input message="Pack Optional? (y/default n)" addProperty="arg.packoptional"/>
+		<if>
+			<equals arg1="${arg.packoptional}" arg2="y"/>
+			<then>
+				<echo>packing SMEEOptional_${project.version}.zip ...</echo>
+				<zip basedir="${dir.optional.src}" destfile="${dir.release}SMEEOptional_${project.version}.zip" />
+			</then>
+		</if>
 		
 		<!-- SMEE compatiblity patches -->
-		<!-- TODO -->
+		<input message="Pack compatiblity patches? (y/default n)" addProperty="arg.packcpatches"/>
+		<if>
+			<equals arg1="${arg.packcpatches}" arg2="y"/>
+			<then>
+				<for param="entry" list="${cpatch.modlist}" delimiter=",">
+					<sequential>
+						<echo>packing @{entry}_${project.version}.zip ...</echo>
+						<delete dir="${dir.release}@{entry}" includes="**/*"/>
+						<mkdir dir="${dir.release}@{entry}"/>
+						<copy todir="${dir.release}@{entry}" >  
+							<fileset dir="${dir.cpatches.src}@{entry}" includes="**"/>
+						</copy>
+						<zip basedir="${dir.release}" includes="@{entry}/**/*.*" destfile="${dir.release}@{entry}_${project.version}.zip" />
+					</sequential>
+				</for>
+			</then>
+		</if>
 		
 		<echo message="Done."/>
-				
+		
 	</target>
 
 </project>
