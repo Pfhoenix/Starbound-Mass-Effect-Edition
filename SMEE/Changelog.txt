@@ -3,9 +3,9 @@
 ================================================================================
 		by Team SMEE
 		
-		Mod Version: 0.2.1
+		Mod Version: 0.2.2
 		Starbound Version: Beta v. Furious Koala
-		Release Date: 2014-02-05
+		Release Date: 2014-02-08
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -14,6 +14,12 @@ http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edi
 ================================================================================
 	Changelog
 ================================================================================
+
+
+Version - 0.2.2:
+--------------------------------------------------------------------------------
+- Compatibility patch for Industrialization: Starbound Edition (needs patch pack SMEEISE)
+- Music moved to extra pack.
 
 
 Version - 0.2.1:
@@ -47,6 +53,7 @@ Version - 0.1.1:
 Version - 0.1.0:
 --------------------------------------------------------------------------------
 - Initial release
+
 
 
 

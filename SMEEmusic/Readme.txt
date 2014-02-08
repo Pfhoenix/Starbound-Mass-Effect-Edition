@@ -5,7 +5,7 @@
 		
 		Mod Version: 0.2.2
 		Starbound Version: Beta v. Furious Koala
-		Release Date: 2014-02-07
+		Release Date: 2014-02-08
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/

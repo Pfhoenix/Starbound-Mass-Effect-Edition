@@ -1,5 +1,11 @@
 
 
+Version - 0.2.2:
+--------------------------------------------------------------------------------
+- Compatibility patch for Industrialization: Starbound Edition (needs patch pack SMEEISE)
+- Music moved to extra pack.
+
+
 Version - 0.2.1:
 --------------------------------------------------------------------------------
 - Hotfix: Missing iridiumbar and palladiumbar recipes added to the player.config
@@ -31,6 +37,7 @@ Version - 0.1.1:
 Version - 0.1.0:
 --------------------------------------------------------------------------------
 - Initial release
+
 
 
 

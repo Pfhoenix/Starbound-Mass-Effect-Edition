@@ -6,7 +6,7 @@
 		SMEE Version: 0.2.2
 		Industrialization: Starbound Edition Version: V.0.7.2RC8
 		Starbound Version: Beta v. Furious Koala
-		Release Date: 2014-02-07
+		Release Date: 2014-02-08
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
