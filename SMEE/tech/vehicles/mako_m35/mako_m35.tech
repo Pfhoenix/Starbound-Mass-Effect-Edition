@@ -1,0 +1,62 @@
+{
+	"script" : "/tech/vehicles/mako_m35/mako_m35.lua",
+	"actions" : [ "mechActivate", "mechDeactivate" ],
+	"animator" : "mako_m35.animation",
+
+	"mechCustomMovementParameters" : {
+		"standingPoly" : [ [-6.5, 1.5], [3.5, 1.5], [7.0, 0.0], [4.5, -2.75], [-7.25, -2.75] ], //Testing needed
+		"crouchingPoly" : [ [-6.5, 1.5], [3.5, 1.5], [7.0, 0.0], [4.5, -2.75], [-7.25, -2.75] ], //Testing needed
+
+		"mass" : 15.0,  //Testing needed
+
+		"normalGroundFriction" : 50.0,    //Testing needed
+		"ambulatingGroundFriction" : 6.0, //Testing needed
+		"skiddingGroundFriction" : 10.0,  //Testing needed
+
+		"groundForce" : 160.0,            //Testing needed
+		"airForce" : 50.0,                //Testing needed
+		"liquidForce" : 70.0,             //Testing needed
+
+		"walkSpeed" : 5.0,                //Testing needed
+		"runSpeed" : 8.0,                 //Testing needed
+
+		"airJumpProfile" : {
+			"jumpSpeed" : 20.0,             //Testing needed
+			"jumpControlForce" : 400.0,     //Testing needed
+			"jumpInitialPercentage" : 0.75, //Testing needed
+			"jumpHoldTime" : 0.15           //Testing needed
+		},
+		
+		"liquidJumpProfile" : {
+			"jumpSpeed" : 8.0,              //Testing needed
+			"jumpControlForce" : 400.0,     //Testing needed
+			"jumpInitialPercentage" : 0.75, //Testing needed
+			"jumpHoldTime" : 0.1            //Testing needed
+		}
+	},
+
+	"energyCostPerSecond" : 1,                  //Value testing purpose //Testing needed
+
+	"mechTransformPositionChange" : [0.0, 0.0], //Testing needed
+	"parentOffset" : [3.8, -0.75],                //Testing needed
+
+	"mechCollisionTest" : [6.5, 2.5, -6.5, -2.5],   //Testing needed
+
+	"mechAimLimit" : 40,                        //Testing needed
+
+// first test no guns available so we use the carhorn.
+	"mechFireCycle" : 1.0,
+	"mechProjectile" : "carhorn",
+	"mechProjectileConfig" : {
+		"power" : 0
+	}
+
+/*
+
+	"mechFireCycle" : 0.25,                     //Testing needed
+	"mechProjectile" : "bullet-4",              //Second Projetile type needed. Turret - energybullet, Cannon - bullet-1 //Testing needed
+	"mechProjectileConfig" : {
+		"power" : 8
+	}
+*/
+}

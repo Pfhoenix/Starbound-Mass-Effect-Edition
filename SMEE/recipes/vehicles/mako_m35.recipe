@@ -1,0 +1,7 @@
+{
+	"input" : [
+		{ "item" : "money", "count" : 1 }
+	],
+	"output" : { "item" : "mako_m35-chip", "count" : 1 },
+	"groups" : [ "mod", "smee", "plain", "objects", "all" ]
+}
