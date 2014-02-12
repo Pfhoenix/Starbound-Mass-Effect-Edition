@@ -9,7 +9,7 @@
 					"idle" : { },
 
 					"jump" : {
-						"frames" : 3,
+						"frames" : 1, //3
 						"cycle" : 0.5,
 						"mode" : "end",
 						"properties" : {
@@ -21,7 +21,7 @@
 					},
 
 					"fall" : {
-						"frames" : 3,
+						"frames" : 1, // 3
 						"cycle" : 0.5,
 						"mode" : "end",
 						"frameProperties" : {
@@ -95,12 +95,12 @@
 						},
 						"jump" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:jump.<frame>"
+								"image" : "mako_m35_wheels_bg.png:idle" // "mako_m35_wheels_bg.png:jump.<frame>"
 							}
 						},
 						"fall" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:fall.<frame>"
+								"image" : "mako_m35_wheels_bg.png:idle" //"mako_m35_wheels_bg.png:fall.<frame>"
 							}
 						},
 						"walk" : {
@@ -133,12 +133,12 @@
             },
             "jump" : {
               "properties" : {
-                "image" : "mako_m35_bg.png:jump.<frame>"
+                "image" : "mako_m35_bg.png:idle" // "mako_m35_bg.png:jump.<frame>"
               }
             },
             "fall" : {
               "properties" : {
-                "image" : "mako_m35_bg.png:fall.<frame>"
+                "image" : "mako_m35_bg.png:idle" // "mako_m35_bg.png:fall.<frame>"
               }
             },
             "walk" : {
@@ -234,12 +234,12 @@
             },
             "jump" : {
               "properties" : {
-                "image" : "mako_m35_body.png:jump.<frame>"
+                "image" : "mako_m35_body.png:idle" //"mako_m35_body.png:jump.<frame>"
               }
             },
             "fall" : {
               "properties" : {
-                "image" : "mako_m35_body.png:fall.<frame>"
+                "image" : "mako_m35_body.png:idle" // "mako_m35_body.png:fall.<frame>"
               }
             },
             "walk" : {
@@ -334,12 +334,12 @@
             },
             "jump" : {
               "properties" : {
-                "image" : "mako_m35_wheels_fg.png:jump.<frame>"
+                "image" : "mako_m35_wheels_fg.png:idle" // "mako_m35_wheels_fg.png:jump.<frame>"
               }
             },
             "fall" : {
               "properties" : {
-                "image" : "mako_m35_wheels_fg.png:fall.<frame>"
+                "image" : "mako_m35_wheels_fg.png:idle" //"mako_m35_wheels_fg.png:fall.<frame>"
               }
             },
             "walk" : {
