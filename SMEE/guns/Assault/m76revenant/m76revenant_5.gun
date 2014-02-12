@@ -1,0 +1,35 @@
+{
+  "itemName" : "m76revenant_5",
+  "inventoryIcon" : "m76revenanticon.png",
+  "shortdescription" : "M-76 Revenant V",
+  "description" : "M-76 Revenant V",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m76revenant.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-11, 0],
+  "firePosition" : [20, 4],
+  
+  "fireTime" : 0.091,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 1.406731,
+
+  "projectileType" : "bullet-4",
+  "projectile" : {
+	"power" : 105.0505,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m76revenant/m76revenant_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m76revenant/m76revenant_fire2.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m76revenant_6"
+  ]
+}

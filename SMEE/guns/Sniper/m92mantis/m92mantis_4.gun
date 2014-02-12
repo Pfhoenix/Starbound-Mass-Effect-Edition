@@ -1,0 +1,38 @@
+{
+  "itemName" : "m92mantis_4",
+  "inventoryIcon" : "m92mantisicon.png",
+  "shortdescription" : "M-92 Mantis IV",
+  "description" : "M-92 Mantis IV",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m92mantis.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-13, 0],
+  "firePosition" : [20, 4],
+  
+  "fireTime" : 0.833333,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 8.571429,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "energybullet2",
+  "projectile" : {
+	"power" : 11.66667,
+	"speed" : 120
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m92mantis/m92mantis_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m92mantis/m92mantis_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m92mantis/m92mantis_fire3.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m92mantis_5"
+  ]
+}

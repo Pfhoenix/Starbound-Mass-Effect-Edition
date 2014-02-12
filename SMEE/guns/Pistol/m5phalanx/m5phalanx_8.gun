@@ -1,0 +1,38 @@
+{
+  "itemName" : "m5phalanx_8",
+  "inventoryIcon" : "m5phalanxicon.png",
+  "shortdescription" : "M-5 Phalanx VIII",
+  "description" : "M-5 Phalanx VIII",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m5phalanx.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-9, 0],
+  "firePosition" : [11, 4],
+  
+  "fireTime" : 0.25,
+  "twoHanded" : false,
+  "level" : 10,
+  "classMultiplier" : 9.020979,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "energybullet",
+  "projectile" : {
+	"power" : 15.88889,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m5phalanx/m5phalanx_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m5phalanx/m5phalanx_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m5phalanx/m5phalanx_fire3.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m5phalanx_9"
+  ]
+}

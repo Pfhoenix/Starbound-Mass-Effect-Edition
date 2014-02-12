@@ -1,0 +1,32 @@
+{
+  "itemName" : "m6carnifex_10",
+  "inventoryIcon" : "m6carnifexicon.png",
+  "shortdescription" : "M-6 Carnifex X",
+  "description" : "M-6 Carnifex X",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m6carnifex.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-9, 0],
+  "firePosition" : [10, 4],
+  
+  "fireTime" : 0.625,
+  "twoHanded" : false,
+  "level" : 10,
+  "classMultiplier" : 3.84,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "energybullet2",
+  "projectile" : {
+	"power" : 218.75,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m6carnifex/m6carnifex_fire1.ogg" } ]
+  }
+}

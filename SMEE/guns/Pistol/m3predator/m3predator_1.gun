@@ -1,0 +1,39 @@
+{
+  "itemName" : "m3predator_1",
+  "inventoryIcon" : "m3predatoricon.png",
+  "shortdescription" : "M-3 Predator I",
+  "description" : "M-3 Predator I",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m3predator.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-9, 0],
+  "firePosition" : [11, 4],
+  
+  "fireTime" : 0.125,
+  "twoHanded" : false,
+  "level" : 10,
+  "classMultiplier" : 10,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "energybullet",
+  "projectile" : {
+	"power" : 1,
+	"speed" : 85,
+  "color" : [ 0, 255, 255]
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m3predator/m3predator_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m3predator/m3predator_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m3predator/m3predator_fire3.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m3predator_2"
+  ]
+}

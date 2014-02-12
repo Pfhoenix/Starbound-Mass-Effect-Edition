@@ -1,0 +1,36 @@
+{
+  "itemName" : "m98widow_4",
+  "inventoryIcon" : "m98widowicon.png",
+  "shortdescription" : "M-98 Widow IV",
+  "description" : "M-98 Widow IV",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m98widow.png",
+  "recoilTime" : 0.2,
+  "handPosition" : [-13, 0],
+  "firePosition" : [23, 4],
+  
+  "fireTime" : 0.909091,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 1.256316,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "bullet-1",
+  "projectile" : {
+	"power" : 1151.515,
+	"speed" : 120
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m98widow/m98widow_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m98widow_5"
+  ]
+}

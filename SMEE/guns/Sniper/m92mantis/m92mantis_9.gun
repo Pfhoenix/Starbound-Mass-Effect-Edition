@@ -1,0 +1,38 @@
+{
+  "itemName" : "m92mantis_9",
+  "inventoryIcon" : "m92mantisicon.png",
+  "shortdescription" : "M-92 Mantis IX",
+  "description" : "M-92 Mantis IX",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m92mantis.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-13, 0],
+  "firePosition" : [20, 4],
+  
+  "fireTime" : 0.833333,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 8.04878,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "energybullet2",
+  "projectile" : {
+	"power" : 22.77778,
+	"speed" : 120
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m92mantis/m92mantis_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m92mantis/m92mantis_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m92mantis/m92mantis_fire3.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m92mantis_10"
+  ]
+}

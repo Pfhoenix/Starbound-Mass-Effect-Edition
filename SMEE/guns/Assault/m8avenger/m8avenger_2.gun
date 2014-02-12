@@ -1,0 +1,37 @@
+{
+  "itemName" : "m8avenger_2",
+  "inventoryIcon" : "m8avengericon.png",
+  "shortdescription" : "M-8 Avenger II",
+  "description" : "M-8 Avenger II",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m8avenger.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-2, 0],
+  "firePosition" : [18, 5],
+  
+  "fireTime" : 0.125,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 9.824561,
+
+  "projectileType" : "energybullet2",
+  "projectile" : {
+	"power" : 1.583333,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m8avenger/m8avenger_fire1.ogg" },
+    				{ "file" : "/sfx/guns/m8avenger/m8avenger_fire2.ogg" },
+    				{ "file" : "/sfx/guns/m8avenger/m8avenger_fire3.ogg" },
+    				{ "file" : "/sfx/guns/m8avenger/m8avenger_fire4.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m8avenger_3"
+  ]
+}
