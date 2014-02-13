@@ -3,7 +3,12 @@ function init()
   data.fireTimer = 0
   tech.setVisible(false)
   tech.rotateGroup("guns", 0, true)
+  data.jumping = false
+  data.jumpPressed = false
+  data.thrustEnergyUsage = tech.parameter("thrustEnergyUsage")
+  data.maxThrustAcceleration = tech.parameter("maxThrustAcceleration")
 end
+
 
 function uninit()
   if data.active then
@@ -18,7 +23,11 @@ function uninit()
   end
 end
 
+
 function input(args)
+  -- because we can't return multiple actions per frame, and thrusting needs per-frame response
+  data.inputArgs = args
+
   if args.moves["special"] == 1 then
     if data.active then
       return "mechDeactivate"
@@ -32,7 +41,10 @@ function input(args)
   return nil
 end
 
+
 function update(args)
+  local frameEnergyCost = 0
+  
   local energyCostPerSecond = tech.parameter("energyCostPerSecond")
   local mechCustomMovementParameters = tech.parameter("mechCustomMovementParameters")
   local mechTransformPositionChange = tech.parameter("mechTransformPositionChange")
@@ -59,6 +71,7 @@ function update(args)
       tech.setParentAppearance("sit")
       tech.setToolUsageSuppressed(true)
       data.active = true
+      data.jumpPressed = false -- don't want start thrusting immediately unintentionally
     else
       -- Make some kind of error noise
     end
@@ -70,10 +83,35 @@ function update(args)
     tech.setToolUsageSuppressed(false)
     tech.setParentOffset({0, 0})
     data.active = false
+    data.jumping = false
   end
 
   tech.setParentFacingDirection(nil)
   if data.active then
+    -- handle jumping first so that code later can account for being off-ground or falling as necessary
+    if data.inputArgs.moves["jump"] then
+      if not data.jumping then
+        -- turn on thrusting animations/particles/whatnot
+        data.jumping = true
+      end
+      
+      -- this will get later changed to take into account the rotation of the mako itself
+      local vector = { 0, data.maxThrustAcceleration }
+      if data.thrustEnergyUsage * args.dt <= args.availableEnergy then
+		local pv = tech.velocity()
+		tech.setVelocity({ pv[1] + vector[1] * args.dt, pv[2] + vector[2] * args.dt })
+		frameEnergyCost = frameEnergyCost + data.thrustEnergyUsage * args.dt
+      else
+        -- turn off thrusting animations/particles/whatnot
+        data.jumping = false
+      end
+    else
+      if data.jumping then
+        -- turn off thrusting animations/particles/whatnot
+        data.jumping = false
+      end
+    end
+  
     local diff = world.distance(args.aimPosition, tech.position())
     local aimAngle = math.atan2(diff[2], diff[1])
     local flip = aimAngle > math.pi / 2 or aimAngle < -math.pi / 2
@@ -138,7 +176,8 @@ function update(args)
       end
     end
 
-    return energyCostPerSecond * args.dt
+    frameEnergyCost = frameEnergyCost + energyCostPerSecond * args.dt
+    return frameEnergyCost
   end
 
   return 0
