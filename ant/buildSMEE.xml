@@ -89,35 +89,48 @@
 		
 		<!-- SMEE core -->
 		<delete file="${dir.smee.src}SMEE.modinfo"/>
+		<delete file="${dir.smee.src}pak.modinfo"/>
 		<copy todir="${dir.smee.src}" file="${dir.templates}SMEE/SMEE.modinfo"/>
 		
 		<antcall target="replace_version_and_date">
 			<param name="filename" value="${dir.smee.src}SMEE.modinfo"/>
 		</antcall>
-			
+		<!-- for mod pack -->
+		<copy file="${dir.smee.src}SMEE.modinfo" tofile="${dir.smee.src}pak.modinfo"/>
+		
+		
 		<!-- SMEE music -->
 		<delete file="${dir.musicpack.src}SMEEmusuc.modinfo"/>
 		<copy todir="${dir.musicpack.src}" file="${dir.templates}SMEEmusic/SMEEmusic.modinfo"/>
-				
+		
 		<antcall target="replace_version_and_date">
 			<param name="filename" value="${dir.musicpack.src}SMEEmusic.modinfo"/>
 		</antcall>
+		<!-- for mod pack -->
+		<copy file="${dir.musicpack.src}SMEEmusic.modinfo" tofile="${dir.musicpack.src}pak.modinfo"/>
+				
 		
 		<!-- SMEE optional -->
 		<for param="entry" list="${optional.modlist}" delimiter=",">
 			<sequential>
 				<local name="modinfofile.template" />
 				<local name="modinfofile.dest" />
-				
+				<local name="modinfopak.dest" />
+								
 				<property name="modinfofile.template" value="${dir.templates}optional/@{entry}.modinfo"/>
 				<property name="modinfofile.dest" value="${dir.optional.src}@{entry}/@{entry}.modinfo"/>
-				
+				<property name="modinfopak.dest" value="${dir.optional.src}@{entry}/pak.modinfo"/>
+								
 				<delete file="${modinfofile.dest}"/>
+				<delete file="${modinfopak.dest}"/>
 				<copy tofile="${modinfofile.dest}" file="${modinfofile.template}"/>
 				
 				<antcall target="replace_version_and_date">
 					<param name="filename" value="${modinfofile.dest}"/>
 				</antcall>
+				<!-- for mod pack -->
+				<copy file="${modinfofile.dest}" tofile="${modinfopak.dest}"/>
+				
 			</sequential>
 		</for>	
 		<!-- SMEE compatiblity patches -->
@@ -125,16 +138,21 @@
 			<sequential>
 				<local name="modinfofile.template" />
 				<local name="modinfofile.dest" />
+				<local name="modinfopak.dest" />
 				
 				<property name="modinfofile.template" value="${dir.templates}cpatches/@{entry}/@{entry}.modinfo"/>
 				<property name="modinfofile.dest" value="${dir.cpatches.src}@{entry}/@{entry}.modinfo"/>
-				
+				<property name="modinfopak.dest" value="${dir.cpatches.src}@{entry}/pak.modinfo"/>
+								
 				<delete file="${modinfofile.dest}"/>
 				<copy tofile="${modinfofile.dest}" file="${modinfofile.template}"/>
 				
 				<antcall target="replace_version_and_date">
 					<param name="filename" value="${modinfofile.dest}"/>
 				</antcall>
+				<!-- for mod pack -->
+				<copy file="${modinfofile.dest}" tofile="${modinfopak.dest}"/>
+				
 			</sequential>
 		</for>
 	</target>	
@@ -277,6 +295,15 @@
 		<antcall target="compile_readmes" />
 		<antcall target="compile_changelog" />
 		<antcall target="compile_modinfos" />
+		
+		<!-- TODO  create pak files -->
+		<!-- Run ..\win32\asset_packer.exe YourMod YourMod.modpak -->
+		<!-- Sample
+			<exec executable="${dir.sbassetpacker}asset_packer.exe">
+				<arg value="TODO modpath"/>
+    			<arg value="MODNAME.modpak"/>
+    		</exec>
+		-->
 		
 		<echo>packing SMEECore_${project.version}.zip ...</echo>
 		<copy todir="${dir.release}SMEE" >  
