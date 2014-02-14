@@ -16,23 +16,11 @@
 		"groundForce" : 160.0,            //Testing needed
 		"airForce" : 50.0,                //Testing needed
 		"liquidForce" : 70.0,             //Testing needed
+		
+		"jumpingSuppressed" : true,
 
 		"walkSpeed" : 5.0,                //Testing needed
-		"runSpeed" : 8.0,                 //Testing needed
-
-		"airJumpProfile" : {
-			"jumpSpeed" : 20.0,             //Testing needed
-			"jumpControlForce" : 400.0,     //Testing needed
-			"jumpInitialPercentage" : 0.75, //Testing needed
-			"jumpHoldTime" : 0.15           //Testing needed
-		},
-		
-		"liquidJumpProfile" : {
-			"jumpSpeed" : 8.0,              //Testing needed
-			"jumpControlForce" : 400.0,     //Testing needed
-			"jumpInitialPercentage" : 0.75, //Testing needed
-			"jumpHoldTime" : 0.1            //Testing needed
-		}
+		"runSpeed" : 8.0                 //Testing needed
 	},
 
 	"energyCostPerSecond" : 1,                  //Value testing purpose //Testing needed
@@ -49,7 +37,7 @@
 	"mechProjectile" : "carhorn",
 	"mechProjectileConfig" : {
 		"power" : 0
-	}
+	},
 
 /*
 
@@ -59,4 +47,6 @@
 		"power" : 8
 	}
 */
+	"thrustEnergyUsage" : 30,
+	"maxThrustAcceleration" : 70
 }
