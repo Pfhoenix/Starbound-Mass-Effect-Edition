@@ -100,7 +100,7 @@
 		
 		
 		<!-- SMEE music -->
-		<delete file="${dir.musicpack.src}SMEEmusuc.modinfo"/>
+		<delete file="${dir.musicpack.src}SMEEmusic.modinfo"/>
 		<copy todir="${dir.musicpack.src}" file="${dir.templates}SMEEmusic/SMEEmusic.modinfo"/>
 		
 		<antcall target="replace_version_and_date">
@@ -350,6 +350,7 @@
 		
 		<!-- TODO  create pak files -->
 		<!-- Run ..\win32\asset_packer.exe YourMod YourMod.modpak -->
+		<!-- need to remove the non pak.modinfo otherwise it crashes -->
 		<echo message="modpacking SMEE..."/>
 		<exec executable="${dir.sbassetpacker}asset_packer.exe">
 			<arg value="${dir.smee.src}"/>
