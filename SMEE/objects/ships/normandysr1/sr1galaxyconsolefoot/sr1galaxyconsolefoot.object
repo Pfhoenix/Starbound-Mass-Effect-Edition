@@ -1,7 +1,7 @@
 {
 	"objectName" : "sr1galaxyconsolefoot",
 	"rarity" : "Common",
-	"objectType" : "interactable", 
+	"objectType" : "loungeable", 
 	"category" : "furniture",
 	"price" : 1000,
 	"printable" : false,

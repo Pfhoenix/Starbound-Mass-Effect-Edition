@@ -1,10 +1,10 @@
 {
 	"name" : "Starbound : Mass Effect Edition",
-	"version" : "Beta v. Furious Koala",
+	"version" : "Beta v. Enraged Koala",
 	"path" : ".",
 	"dependencies" : [],
 	"metadata" : {
 		"author" : "Team SMEE",
-		"description" : "Mass Effect in Starbound (v.0.2.2)"
+		"description" : "Mass Effect in Starbound (v.0.2.3)"
 	}
 }

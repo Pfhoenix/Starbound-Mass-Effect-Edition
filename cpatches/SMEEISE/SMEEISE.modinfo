@@ -1,10 +1,10 @@
 {
 	"name" : "SMEEISE",
-	"version" : "Beta v. Furious Koala",
+	"version" : "Beta v. Enraged Koala",
 	"path" : ".",
 	"dependencies" : ["Starbound : Mass Effect Edition", "industrialization"],
 	"metadata" : {
 		"author" : "Team SMEE",
-		"description" : "Compatibility patch for Industrialization: Starbound Edition - ISE and SMEE. Minimum required SMEE version 0.2.2. Minimum required ISE version V.0.7.2RC8"
+		"description" : "Compatibility patch for Industrialization: Starbound Edition - ISE and SMEE. Minimum required SMEE version 0.2.3. Minimum required ISE version V.0.7.2RC8"
 	}
 }
