@@ -30,6 +30,7 @@
 					},
 
 					"walk" : {
+					/*
 						"frames" : 4,
 						"cycle" : 0.5,
 						"mode" : "loop",
@@ -37,9 +38,11 @@
 							"immediateSound" : [ "/sfx/tech/mech_step.wav", "", "", "", "", "/sfx/tech/mech_step2.wav", "", "", "", "" ],
 							"stateNudge" : [ [0, 0.375], [0, 0.125], [0, 0], [0, 0.125] ]
 						}
+					*/
 					},
 
 					"backWalk" : {
+					/*
 						"frames" : 4,
 						"cycle" : 0.5,
 						"mode" : "loop",
@@ -47,6 +50,7 @@
 							"immediateSound" : [ "/sfx/tech/mech_step.wav", "", "", "", "", "/sfx/tech/mech_step2.wav", "", "", "", "" ],
 							"stateNudge" : [ [0, 0.375], [0, 0.125], [0, 0], [0, 0.125] ]
 						}
+					*/
 					}
 				}
 			},
@@ -90,27 +94,27 @@
 					"movement" : {
 						"idle" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:idle"
+								"image" : "mako_m35_wheels_bg.png:<tireframe>"
 							}
 						},
 						"jump" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:idle" // "mako_m35_wheels_bg.png:jump.<frame>"
+								"image" : "mako_m35_wheels_bg.png:<tireframe>" // "mako_m35_wheels_bg.png:jump.<frame>"
 							}
 						},
 						"fall" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:idle" //"mako_m35_wheels_bg.png:fall.<frame>"
+								"image" : "mako_m35_wheels_bg.png:<tireframe>" //"mako_m35_wheels_bg.png:fall.<frame>"
 							}
 						},
 						"walk" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:move.<frame>"
+								"image" : "mako_m35_wheels_bg.png:<tireframe>"
 							}
 						},
             "backWalk" : {
               "properties" : {
-                "image" : "mako_m35_wheels_bg.png:bmove.<frame>"
+                "image" : "mako_m35_wheels_bg.png:<tireframe>"
               }
             }
           }
@@ -329,27 +333,27 @@
           "movement" : {
             "idle" : {
               "properties" : {
-                "image" : "mako_m35_wheels_fg.png:idle"
+                "image" : "mako_m35_wheels_fg.png:<tireframe>"
               }
             },
             "jump" : {
               "properties" : {
-                "image" : "mako_m35_wheels_fg.png:idle" // "mako_m35_wheels_fg.png:jump.<frame>"
+                "image" : "mako_m35_wheels_fg.png:<tireframe>" // "mako_m35_wheels_fg.png:jump.<frame>"
               }
             },
             "fall" : {
               "properties" : {
-                "image" : "mako_m35_wheels_fg.png:idle" //"mako_m35_wheels_fg.png:fall.<frame>"
+                "image" : "mako_m35_wheels_fg.png:<tireframe>" //"mako_m35_wheels_fg.png:fall.<frame>"
               }
             },
             "walk" : {
               "properties" : {
-                "image" : "mako_m35_wheels_fg.png:move.<frame>"
+                "image" : "mako_m35_wheels_fg.png:<tireframe>"
               }
             },
             "backWalk" : {
               "properties" : {
-                "image" : "mako_m35_wheels_fg.png:bmove.<frame>"
+                "image" : "mako_m35_wheels_fg.png:back.<tireframe>"
               }
             }
           }

@@ -4,8 +4,8 @@
 	"animator" : "mako_m35.animation",
 
 	"mechCustomMovementParameters" : {
-		"standingPoly" : [ [-6.5, 1.5], [3.5, 1.5], [7.0, 0.0], [4.5, -2.75], [-7.25, -2.75] ], //Testing needed
-		"crouchingPoly" : [ [-6.5, 1.5], [3.5, 1.5], [7.0, 0.0], [4.5, -2.75], [-7.25, -2.75] ], //Testing needed
+		"standingPoly" : [ [-6.5, 1.5], [3.5, 1.5], [7.0, 0.0], [4.5, -2.75], [-7.25, -2.95] ], //Testing needed
+		"crouchingPoly" : [ [-6.5, 1.5], [3.5, 1.5], [7.0, 0.0], [4.5, -2.75], [-7.25, -2.95] ], //Testing needed
 
 		"mass" : 15.0,  //Testing needed
 
@@ -28,7 +28,7 @@
 	"mechTransformPositionChange" : [0.0, 0.0], //Testing needed
 	"parentOffset" : [3.8, -0.75],                //Testing needed
 
-	"mechCollisionTest" : [6.5, 2.5, -6.5, -2.5],   //Testing needed
+	"mechCollisionTest" : [6.5, 2.5, -6.5, -2.95],   //Testing needed
 
 	"mechAimLimit" : 40,                        //Testing needed
 
@@ -48,5 +48,9 @@
 	}
 */
 	"thrustEnergyUsage" : 30,
-	"maxThrustAcceleration" : 70
+	"maxThrustAcceleration" : 70,
+	
+	"tireRadius" : 1.2,
+	"tireFrames" : 4
+	
 }

@@ -1,12 +1,18 @@
 function init()
-  data.active = false
-  data.fireTimer = 0
-  tech.setVisible(false)
-  tech.rotateGroup("guns", 0, true)
-  data.jumping = false
-  data.jumpPressed = false
-  data.thrustEnergyUsage = tech.parameter("thrustEnergyUsage")
-  data.maxThrustAcceleration = tech.parameter("maxThrustAcceleration")
+	data.active = false
+	data.fireTimer = 0
+	tech.setVisible(false)
+	tech.rotateGroup("guns", 0, true)
+	data.jumping = false
+	data.jumpPressed = false
+	data.thrustEnergyUsage = tech.parameter("thrustEnergyUsage")
+	data.maxThrustAcceleration = tech.parameter("maxThrustAcceleration")
+	
+	-- tire parameters
+	data.tireRadius = tech.parameter("tireRadius")
+	data.tireFrames = tech.parameter("tireFrames")
+	data.angle = 0
+
 end
 
 
@@ -20,6 +26,7 @@ function uninit()
     tech.setParentAppearance("normal")
     tech.setToolUsageSuppressed(false)
     tech.setParentFacingDirection(nil)
+    data.angle = 0
   end
 end
 
@@ -41,6 +48,21 @@ function input(args)
   return nil
 end
 
+-- Animates the tires in the same way as the morphball tech
+function animateTires(args)
+	if data.active then
+		if tech.onGround() then
+			data.angularVelocity = -tech.measuredVelocity()[1] / data.tireRadius
+		end
+
+		data.angle = math.fmod(math.pi * 2 + data.angle + data.angularVelocity * args.dt, math.pi * 2)
+
+		-- Rotation frames for the ball are given as one *half* rotation so two
+		-- full cycles of each of the ball frames completes a total rotation.
+		local tireframe = math.floor(data.angle / math.pi * data.tireFrames) % data.tireFrames
+		tech.setGlobalTag("tireframe", tireframe)
+	end
+end
 
 function update(args)
   local frameEnergyCost = 0
@@ -153,7 +175,7 @@ function update(args)
       end
     elseif tech.walking() or tech.running() then
       if flip and tech.direction() == 1 or not flip and tech.direction() == -1 then
-        tech.setAnimationState("movement", "backWalk")
+          tech.setAnimationState("movement", "backWalk")
       else
         tech.setAnimationState("movement", "walk")
       end
@@ -175,7 +197,9 @@ function update(args)
         end
       end
     end
-
+	
+	animateTires(args)
+	
     frameEnergyCost = frameEnergyCost + energyCostPerSecond * args.dt
     return frameEnergyCost
   end

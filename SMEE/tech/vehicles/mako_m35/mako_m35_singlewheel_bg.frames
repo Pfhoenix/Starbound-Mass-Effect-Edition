@@ -4,16 +4,16 @@
 		"dimensions" : [1, 4],
 
 		"names" : [
-			[ "idle", move.1 , move.2, move.3 ]
+			[ "idle", move.0 , move.1, move.2 ]
 		]
 	},
 
 	"aliases" : {
-		"move.4" : "idle",
+		"move.3" : "idle",
 		// drive backward
-		"bmove.1" : "move.3",
-		"bmove.2" : "move.2",
-		"bmove.3" : "move.1",
-		"bmove.4" : "idle"
+		"bmove.0" : "move.2",
+		"bmove.1" : "move.1",
+		"bmove.2" : "move.0",
+		"bmove.3" : "idle"
 	}
 }
