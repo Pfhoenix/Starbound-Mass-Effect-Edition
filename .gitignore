@@ -3,5 +3,6 @@
 
 # ant and smee ignores
 /release
+/ant/build.properties
 
 sources/~$Mass Effect 3 Weapons Stats.xlsx

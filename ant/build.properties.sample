@@ -1,7 +1,7 @@
 project.name.short=SMEE
 project.name.long=Starbound : Mass Effect Edition
-project.version=0.2.2
-starbound.version=Beta v. Furious Koala
+project.version=0.2.3
+starbound.version=Beta v. Enraged Koala
 
 #setup your workspace and sub dirs.
 dir.project=${basedir}\\Starbound-Mass-Effect-Edition\\
@@ -15,9 +15,11 @@ dir.cpatches.src=${dir.project}cpatches\\
 dir.release=${dir.project}release\\
 dir.ant=${dir.project}ant\\
 dir.templates=${dir.project}ant\\templates\\
+#only the dir (absolute path needed here)
+dir.sbassetpacker=
 
 # csv list with our optional mod names.
-optional.modlist=SMEEapex,SMEEavian,SMEEfloran,SMEEglitch,SMEEhylotl
+optional.modlist=SMEEapex,SMEEavian,SMEEfloran,SMEEglitch,SMEEhylotl,SMEEhuman
 
 # csv list for the compatibility patches
 cpatch.modlist=SMEEISE

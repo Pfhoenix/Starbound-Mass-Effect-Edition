@@ -1,2 +1,3 @@
-- Compatibility patch for Industrialization: Starbound Edition (needs patch pack SMEEISE)
-- Music moved to extra pack.
+- Added optional species pack for vanilla humans 
+  (now also vanilla humans can fly the normandy)
+- Updates for Starbound Beta v. Enraged Koala

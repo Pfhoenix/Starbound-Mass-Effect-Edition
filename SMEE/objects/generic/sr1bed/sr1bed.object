@@ -8,7 +8,7 @@
 	"category" : "furniture",
 	"price" : 1500,
 
-	"objectType" : "interactable",
+	"objectType" : "loungeable",
 	"interactAction" : "sitdown",
 	"sitFlipDirection" : true,
 	"sitPosition" : [-10, 15],
