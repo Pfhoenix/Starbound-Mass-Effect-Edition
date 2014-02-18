@@ -296,14 +296,7 @@
 		<antcall target="compile_changelog" />
 		<antcall target="compile_modinfos" />
 		
-		<!-- TODO  create pak files -->
-		<!-- Run ..\win32\asset_packer.exe YourMod YourMod.modpak -->
-		<!-- Sample
-			<exec executable="${dir.sbassetpacker}asset_packer.exe">
-				<arg value="TODO modpath"/>
-    			<arg value="MODNAME.modpak"/>
-    		</exec>
-		-->
+		
 		
 		<echo>packing SMEECore_${project.version}.zip ...</echo>
 		<copy todir="${dir.release}SMEE" >  
@@ -354,6 +347,14 @@
 			</then>
 		</if>
 		
+		
+		<!-- TODO  create pak files -->
+		<!-- Run ..\win32\asset_packer.exe YourMod YourMod.modpak -->
+		<echo message="modpacking SMEE..."/>
+		<exec executable="${dir.sbassetpacker}asset_packer.exe">
+			<arg value="${dir.smee.src}"/>
+    		<arg value="${dir.release}SMEE.modpak"/>
+    	</exec>
 		<echo message="Done."/>
 		
 	</target>

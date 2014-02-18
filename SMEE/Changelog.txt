@@ -20,7 +20,7 @@ Version - 0.2.3:
 --------------------------------------------------------------------------------
 - Added optional species pack for vanilla humans 
   (now also vanilla humans can fly the normandy)
-- 
+- Updates for Starbound Beta v. Enraged Koala
 
 
 
