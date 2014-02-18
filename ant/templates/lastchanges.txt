@@ -1,1 +1,3 @@
-- Added optional species pack for vanilla humans
+- Added optional species pack for vanilla humans 
+  (now also vanilla humans can fly the normandy)
+- Updates for Starbound Beta v. Enraged Koala

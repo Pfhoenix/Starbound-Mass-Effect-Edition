@@ -1,7 +1,7 @@
 project.name.short=SMEE
 project.name.long=Starbound : Mass Effect Edition
-project.version=0.2.2
-starbound.version=Beta v. Furious Koala
+project.version=0.2.3
+starbound.version=Beta v. Enraged Koala
 
 #setup your workspace and sub dirs.
 dir.project=${basedir}\\Starbound-Mass-Effect-Edition\\
