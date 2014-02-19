@@ -1,11 +1,13 @@
-// first test i used the car animation code as base:
 {
 	"animatedParts" : {
 		"stateTypes" : {
+		
+			// used for body parts background and foreground
 			"movement" : {
 				"default" : "idle",
 				
 				"states" : {
+					// TODO idle motor noise
 					"idle" : { },
 
 					"jump" : {
@@ -29,20 +31,8 @@
 						}
 					},
 
-					"walk" : {
-					/*
-						"frames" : 4,
-						"cycle" : 0.5,
-						"mode" : "loop",
-						"frameProperties" : {
-							"immediateSound" : [ "/sfx/tech/mech_step.wav", "", "", "", "", "/sfx/tech/mech_step2.wav", "", "", "", "" ],
-							"stateNudge" : [ [0, 0.375], [0, 0.125], [0, 0], [0, 0.125] ]
-						}
-					*/
-					},
-
-					"backWalk" : {
-					/*
+					"drive" : {
+					/* TODO driving sounds and nudges. 
 						"frames" : 4,
 						"cycle" : 0.5,
 						"mode" : "loop",
@@ -54,7 +44,7 @@
 					}
 				}
 			},
-
+			
 			"frontFiring" : {
 				"states" : {
 					"fire" : {
@@ -83,86 +73,153 @@
 		},
 
 		"parts" : {
-			"backLeg" : {
+		
+			
+			// we have 6 single tires. 3 in front of the body 3 behind of it.
+			// all front tires share the same image. same applies for the background tires
+			// the positions are aft, mid and nose. and fg and bg.
+			// the "tireFrame" is calculated by animateTires in the lua script.
+			// So the tires need only one state the rest does the script
+			
+			// background tires:
+			"tireBgAft" : {
 				"properties" : {
 					"centered" : true,
 					"zLevel" : 0,
+					"offset" : [-4.75, -2.25], 
 					"back" : true
 				},
-
 				"partStates" : {
 					"movement" : {
 						"idle" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:<tireframe>"
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
 							}
 						},
 						"jump" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:<tireframe>" // "mako_m35_wheels_bg.png:jump.<frame>"
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
 							}
 						},
 						"fall" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:<tireframe>" //"mako_m35_wheels_bg.png:fall.<frame>"
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
 							}
 						},
-						"walk" : {
+						"drive" : {
 							"properties" : {
-								"image" : "mako_m35_wheels_bg.png:<tireframe>"
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
+							}
+						}
+					}
+				}
+			},
+			
+			"tireBgMid" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 1,
+					"offset" : [-2.5, -2.25], 
+					"back" : true
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
 							}
 						},
-            "backWalk" : {
-              "properties" : {
-                "image" : "mako_m35_wheels_bg.png:<tireframe>"
-              }
-            }
-          }
-        }
-      },
+						"jump" : {
+							"properties" : {
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
+							}
+						},
+						"fall" : {
+							"properties" : {
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
+							}
+						}
+					}
+				}
+			},
+			
+			"tireBgNose" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 2,
+					"offset" : [2.15, -2.25], 
+					"back" : true
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
+							}
+						},
+						"jump" : {
+							"properties" : {
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
+							}
+						},
+						"fall" : {
+							"properties" : {
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_tire_bg.png:<tireFrame>"
+							}
+						}
+					}
+				}
+			},
+			
+			
+			// mako background
+			"background" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 3,
+					"back" : true
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "mako_m35_bg.png:idle"
+							}
+						},
+						"jump" : {
+							"properties" : {
+								"image" : "mako_m35_bg.png:idle"
+							}
+						},
+						"fall" : {
+							"properties" : {
+								"image" : "mako_m35_bg.png:idle"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_bg.png:idle"
+							}
+						}
+					}
+				}
+			},
 
-      "background" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 1,
-          "back" : true
-        },
-
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "mako_m35_bg.png:idle"
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "mako_m35_bg.png:idle" // "mako_m35_bg.png:jump.<frame>"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "mako_m35_bg.png:idle" // "mako_m35_bg.png:fall.<frame>"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "mako_m35_bg.png:idle"
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "mako_m35_bg.png:idle"
-              }
-            }
-          }
-        }
-      },
-
+// FIXME we need to re-arrange the zorder for the guns
       "backGunFire" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 1.5,
+          "zLevel" : 4.5,
           "offset" : [6, -0.35],
           "rotationGroup" : "guns",
           "rotationCenter" : [2.4, -0.2]
@@ -182,7 +239,7 @@
       "backGun" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 2,
+          "zLevel" : 4,
           "rotationGroup" : "guns",
           "offset" : [2, 0],
           "rotationCenter" : [2.4, 0],
@@ -209,12 +266,7 @@
                 "image" : "humancargun.png:rotation"
               }
             },
-            "walk" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation"
-              }
-            },
-            "backWalk" : {
+            "drive" : {
               "properties" : {
                 "image" : "humancargun.png:rotation"
               }
@@ -223,47 +275,52 @@
         }
       },
 
-      "body" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 3
-        },
 
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "mako_m35_body.png:idle"
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "mako_m35_body.png:idle" //"mako_m35_body.png:jump.<frame>"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "mako_m35_body.png:idle" // "mako_m35_body.png:fall.<frame>"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "mako_m35_body.png:move.<frame>"
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "mako_m35_body.png:bmove.<frame>"
-              }
-            }
-          }
-        }
-      },
+// TODO insert here the mask layer for the character
+
+
+			// Mako body foreground
+			"body" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 6
+				},
+
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "mako_m35_body.png:idle"
+							}
+						},
+						"jump" : {
+							"properties" : {
+								// TODO custom image with trusters
+								"image" : "mako_m35_body.png:idle"
+						  }
+						},
+						"fall" : {
+							"properties" : {
+								// TODO custom image with trusters
+								"image" : "mako_m35_body.png:idle"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_body.png:idle"
+							}
+						}
+					}
+				}
+			},
+
+
+// FIXME we need to re-arrange the zorder for the guns
 
       "frontGunFire" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 3.5,
+          "zLevel" : 7.5,
           "offset" : [4, -0.35],
           "rotationGroup" : "guns",
           "rotationCenter" : [0.4, -0.2]
@@ -283,7 +340,7 @@
       "frontGun" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 4,
+          "zLevel" : 7,
           "rotationGroup" : "guns",
           "rotationCenter" : [0.4, -0.25],
           "relativeAnchors" : {
@@ -309,12 +366,7 @@
                 "image" : "humancargun.png:rotation"
               }
             },
-            "walk" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation"
-              }
-            },
-            "backWalk" : {
+            "drive" : {
               "properties" : {
                 "image" : "humancargun.png:rotation"
               }
@@ -323,49 +375,118 @@
         }
       },
 
-      "frontLeg" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 5
-        },
 
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "mako_m35_wheels_fg.png:<tireframe>"
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "mako_m35_wheels_fg.png:<tireframe>" // "mako_m35_wheels_fg.png:jump.<frame>"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "mako_m35_wheels_fg.png:<tireframe>" //"mako_m35_wheels_fg.png:fall.<frame>"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "mako_m35_wheels_fg.png:<tireframe>"
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "mako_m35_wheels_fg.png:back.<tireframe>"
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-
-  "rotationGroups" : {
-    "guns" : {
-      "angularVelocity" : 10.0
-    }
+			// foreground tires:
+			"tireFgAft" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 8,
+					"offset" : [-6.7,-2.25]
+					
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"jump" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"fall" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						}
+					}
+				}
+			},
+			
+			"tireFgMid" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 9,
+					"offset" : [-4.1,-2.25]
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"jump" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"fall" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						}
+					}
+				}
+			},
+			
+			"tireFgNose" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 10,
+					"offset" : [0.5,-2.25]
+					
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"jump" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"fall" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_tire_fg.png:<tireFrame>"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	
+	"rotationGroups" : {
+		"guns" : {
+			"angularVelocity" : 10.0
+		} //,
+		// TODO  for bouncing (decel, accel) and terrain gradients
+		/*
+		"chassis" : {
+			"angularVelocity" : 5.0
+		}
+		*/
   },
 
   "particleEmitters" : {
@@ -377,6 +498,8 @@
     }
   }
 }
+
+// OLD code from G4M5T3R removed it when finished
 /*
 {
 	"animatedParts" : {

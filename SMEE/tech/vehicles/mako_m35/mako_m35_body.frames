@@ -12,13 +12,6 @@
 	},
 
 	"aliases" : { 
-		"move.1" : "idle",
-		"move.2" : "idle",
-		"move.3" : "idle",
-		"move.4" : "idle",
-		"bmove.1" : "idle",
-		"bmove.2" : "idle",
-		"bmove.3" : "idle",
-		"bmove.4" : "idle"
+		"default" : "idle"
 	}
 }

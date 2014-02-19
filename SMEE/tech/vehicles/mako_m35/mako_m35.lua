@@ -3,31 +3,32 @@ function init()
 	data.fireTimer = 0
 	tech.setVisible(false)
 	tech.rotateGroup("guns", 0, true)
+	data.flip = false
+	-- thrusters
 	data.jumping = false
 	data.jumpPressed = false
 	data.thrustEnergyUsage = tech.parameter("thrustEnergyUsage")
 	data.maxThrustAcceleration = tech.parameter("maxThrustAcceleration")
-	
 	-- tire parameters
 	data.tireRadius = tech.parameter("tireRadius")
 	data.tireFrames = tech.parameter("tireFrames")
-	data.angle = 0
+	data.tireAngle = 0
 
 end
 
 
 function uninit()
-  if data.active then
-    local mechTransformPositionChange = tech.parameter("mechTransformPositionChange")
-    tech.translate({-mechTransformPositionChange[1], -mechTransformPositionChange[2]})
-    tech.setParentOffset({0, 0})
-    data.active = false
-    tech.setVisible(false)
-    tech.setParentAppearance("normal")
-    tech.setToolUsageSuppressed(false)
-    tech.setParentFacingDirection(nil)
-    data.angle = 0
-  end
+	if data.active then
+		local mechTransformPositionChange = tech.parameter("mechTransformPositionChange")
+		tech.translate({-mechTransformPositionChange[1], -mechTransformPositionChange[2]})
+		tech.setParentOffset({0, 0})
+		data.active = false
+		tech.setVisible(false)
+		tech.setParentAppearance("normal")
+		tech.setToolUsageSuppressed(false)
+		tech.setParentFacingDirection(nil)
+		data.tireAngle = 0
+	end
 end
 
 
@@ -49,18 +50,31 @@ function input(args)
 end
 
 -- Animates the tires in the same way as the morphball tech
+
 function animateTires(args)
 	if data.active then
+		
 		if tech.onGround() then
-			data.angularVelocity = -tech.measuredVelocity()[1] / data.tireRadius
+			data.angularVelocity = tech.measuredVelocity()[1] / data.tireRadius
+		else
+			-- TODO slow down tires
 		end
-
-		data.angle = math.fmod(math.pi * 2 + data.angle + data.angularVelocity * args.dt, math.pi * 2)
+		
+		
+		if data.flip then
+			data.angularVelocity = data.angularVelocity * (-1)
+		end
+		
+		data.tireAngle = math.fmod(math.pi * 2 + data.tireAngle + data.angularVelocity * args.dt, math.pi * 2)
 
 		-- Rotation frames for the ball are given as one *half* rotation so two
 		-- full cycles of each of the ball frames completes a total rotation.
-		local tireframe = math.floor(data.angle / math.pi * data.tireFrames) % data.tireFrames
-		tech.setGlobalTag("tireframe", tireframe)
+		local tireframe = math.floor(data.tireAngle / math.pi * data.tireFrames) % data.tireFrames
+		tech.setGlobalTag("tireFrame", tireframe)
+		
+		-- TODO add reaction to the terrain
+		-- check if directly below the tire is a foreground tile if not move them down.
+		
 	end
 end
 
@@ -136,10 +150,11 @@ function update(args)
   
     local diff = world.distance(args.aimPosition, tech.position())
     local aimAngle = math.atan2(diff[2], diff[1])
-    local flip = aimAngle > math.pi / 2 or aimAngle < -math.pi / 2
-
+	data.flip = aimAngle > math.pi / 2 or aimAngle < -math.pi / 2
+  	
     tech.applyMovementParameters(mechCustomMovementParameters)
-    if flip then
+    if data.flip then
+    
       tech.setFlipped(true)
       local nudge = tech.stateNudge()
       tech.setParentOffset({-parentOffset[1] - nudge[1], parentOffset[2] + nudge[2]})
@@ -174,10 +189,10 @@ function update(args)
         tech.setAnimationState("movement", "fall")
       end
     elseif tech.walking() or tech.running() then
-      if flip and tech.direction() == 1 or not flip and tech.direction() == -1 then
-          tech.setAnimationState("movement", "backWalk")
+      if data.flip and tech.direction() == 1 or not data.flip and tech.direction() == -1 then
+          tech.setAnimationState("movement", "drive")
       else
-        tech.setAnimationState("movement", "walk")
+        tech.setAnimationState("movement", "drive")
       end
     else
       tech.setAnimationState("movement", "idle")
