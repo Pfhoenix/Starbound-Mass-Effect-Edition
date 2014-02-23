@@ -291,6 +291,8 @@
 		<!-- clean up -->
 		<delete dir="${dir.release}SMEE" includes="**/*"/>
 		<delete dir="${dir.release}SMEEmusic" includes="**/*"/>
+		<delete dir="${dir.release}SMEEOptional" includes="**/*"/>
+		<delete dir="${dir.release}SMEEISE" includes="**/*"/>
 		
 		<antcall target="compile_readmes" />
 		<antcall target="compile_changelog" />
@@ -300,7 +302,10 @@
 		
 		<echo>packing SMEECore_${project.version}.zip ...</echo>
 		<copy todir="${dir.release}SMEE" >  
-			<fileset dir="${dir.smee.src}" includes="**"/>
+			<fileset dir="${dir.smee.src}">
+				<include name="**/*" />
+				<exclude name="pak.modinfo"/>
+			</fileset>
 		</copy>
 		<zip basedir="${dir.release}" includes="SMEE/**/*.*" destfile="${dir.release}SMEECore_${project.version}.zip" />
 		
@@ -312,7 +317,10 @@
 			<then>
 				<echo>packing SMEEmusic_${project.version}.zip ...</echo>
 				<copy todir="${dir.release}SMEEmusic" >  
-					<fileset dir="${dir.musicpack.src}" includes="**"/>
+					<fileset dir="${dir.musicpack.src}">
+						<include name="**/*" />
+						<exclude name="pak.modinfo"/>
+					</fileset>
 				</copy>
 				<zip basedir="${dir.release}" includes="SMEEmusic/**/*.*" destfile="${dir.release}SMEEmusic_${project.version}.zip" />
 			</then>
@@ -324,7 +332,13 @@
 			<equals arg1="${arg.packoptional}" arg2="y"/>
 			<then>
 				<echo>packing SMEEOptional_${project.version}.zip ...</echo>
-				<zip basedir="${dir.optional.src}" destfile="${dir.release}SMEEOptional_${project.version}.zip" />
+				<copy todir="${dir.release}SMEEOptional" >  
+					<fileset dir="${dir.optional.src}">
+						<include name="**/*" />
+						<exclude name="**/*pak.modinfo*"/>
+					</fileset>
+				</copy>
+				<zip basedir="${dir.release}SMEEOptional" destfile="${dir.release}SMEEOptional_${project.version}.zip" />
 			</then>
 		</if>
 		
@@ -339,7 +353,10 @@
 						<delete dir="${dir.release}@{entry}" includes="**/*"/>
 						<mkdir dir="${dir.release}@{entry}"/>
 						<copy todir="${dir.release}@{entry}" >  
-							<fileset dir="${dir.cpatches.src}@{entry}" includes="**"/>
+							<fileset dir="${dir.cpatches.src}@{entry}">
+								<include name="**/*" />
+								<exclude name="pak.modinfo"/>
+							</fileset>
 						</copy>
 						<zip basedir="${dir.release}" includes="@{entry}/**/*.*" destfile="${dir.release}@{entry}_${project.version}.zip" />
 					</sequential>
@@ -351,11 +368,11 @@
 		<!-- TODO  create pak files -->
 		<!-- Run ..\win32\asset_packer.exe YourMod YourMod.modpak -->
 		<!-- need to remove the non pak.modinfo otherwise it crashes -->
-		<echo message="modpacking SMEE..."/>
+		<!-- echo message="modpacking SMEE..."/>
 		<exec executable="${dir.sbassetpacker}asset_packer.exe">
 			<arg value="${dir.smee.src}"/>
     		<arg value="${dir.release}SMEE.modpak"/>
-    	</exec>
+    	</exec -->
 		<echo message="Done."/>
 		
 	</target>
