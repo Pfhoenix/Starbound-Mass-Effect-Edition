@@ -39,8 +39,11 @@ Starbound/mods directory.
 
 You will need a custom character mod. We recommend ONE of the following :
 
+Another Character Creation Menu
 Kawa's Xbawks Mode Character Creator
+odb2 Character Creation Mod
 Simple Extended Character Creation Mod
+
 
 See the Compatibility section for URLs.
 	
@@ -61,8 +64,14 @@ SMEE tile/material id list:
 	Compatibility
 ================================================================================
 
+- Another Character Creation Menu:
+	http://community.playstarbound.com/index.php?resources/another-character-creation-menu.1257/
+	
 - Kawa's Xbawks Mode Character Creator:
 	http://community.playstarbound.com/index.php?resources/kawas-xbawks-mode-character-creator.81/
+
+- odb2 Character Creation Mod:
+	http://community.playstarbound.com/index.php?resources/odb2-character-creation-mod.1241/
 	
 - Simple Extended Character Creation Mod:
 	http://community.playstarbound.com/index.php?resources/simple-extended-character-creation-mod-now-even-easier.218/
@@ -70,6 +79,7 @@ SMEE tile/material id list:
 - Tabula Rasa:
 	http://community.playstarbound.com/index.php?resources/the-tabula-rasa.114/
 	
+
 
 ================================================================================
 	Credits
