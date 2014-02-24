@@ -13,6 +13,13 @@ function init()
 	data.tireRadius = tech.parameter("tireRadius")
 	data.tireFrames = tech.parameter("tireFrames")
 	data.tireAngle = 0
+	data.angularVelocity = 0
+	
+	-- chassis rotation adjustments
+	-- absolute value since we have to adjust it if flipped
+	data.chassisAngle = 0.0
+	tech.rotateGroup("chassis",0.0, true)
+
 
 end
 
@@ -28,6 +35,11 @@ function uninit()
 		tech.setToolUsageSuppressed(false)
 		tech.setParentFacingDirection(nil)
 		data.tireAngle = 0
+		data.angularVelocity = 0
+		
+		data.chassisAngle = 0.0
+		tech.rotateGroup("chassis",0.0, true)
+		
 	end
 end
 
@@ -185,19 +197,31 @@ function update(args)
     if not tech.onGround() then
       if tech.velocity()[2] > 0 then
         tech.setAnimationState("movement", "jump")
+        -- TODO flip switch
+        data.chassisAngle = 0.1 * tech.direction()
+	    
       else
         tech.setAnimationState("movement", "fall")
+        -- TODO flip switch
+         data.chassisAngle =  -0.1 * tech.direction()
       end
     elseif tech.walking() or tech.running() then
       if data.flip and tech.direction() == 1 or not data.flip and tech.direction() == -1 then
           tech.setAnimationState("movement", "drive")
+          data.chassisAngle = 0.02  * -tech.direction()
       else
         tech.setAnimationState("movement", "drive")
+         -- TODO flip switch
+         data.chassisAngle = 0.02 * tech.direction()
       end
     else
       tech.setAnimationState("movement", "idle")
+       data.chassisAngle = 0.0
     end
 
+	-- TODO adjust angle also to ground gradient
+	tech.rotateGroup("chassis",data.chassisAngle, true)
+    
     if args.actions["mechFire"] then
       if data.fireTimer <= 0 then
         world.spawnProjectile(mechProjectile, tech.anchorPoint("frontGunFirePoint"), tech.parentEntityId(), {math.cos(aimAngle), math.sin(aimAngle)}, false, mechProjectileConfig)

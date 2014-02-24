@@ -283,7 +283,9 @@
 			"body" : {
 				"properties" : {
 					"centered" : true,
-					"zLevel" : 6
+					"zLevel" : 6,
+					"rotationGroup" : "chassis",
+					"rotationCenter" : [0.0, 0.0]
 				},
 
 				"partStates" : {
@@ -480,13 +482,13 @@
 	"rotationGroups" : {
 		"guns" : {
 			"angularVelocity" : 10.0
-		} //,
+		},
 		// TODO  for bouncing (decel, accel) and terrain gradients
-		/*
+		
 		"chassis" : {
 			"angularVelocity" : 5.0
 		}
-		*/
+		
   },
 
   "particleEmitters" : {
