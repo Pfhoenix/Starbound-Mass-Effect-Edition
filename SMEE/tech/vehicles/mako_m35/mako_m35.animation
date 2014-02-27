@@ -11,7 +11,7 @@
 					"idle" : { },
 
 					"jump" : {
-						"frames" : 1, //3
+						"frames" : 1,
 						"cycle" : 0.5,
 						"mode" : "end",
 						"properties" : {
@@ -23,7 +23,7 @@
 					},
 
 					"fall" : {
-						"frames" : 1, // 3
+						"frames" : 1,
 						"cycle" : 0.5,
 						"mode" : "end",
 						"frameProperties" : {
@@ -41,6 +41,40 @@
 							"stateNudge" : [ [0, 0.375], [0, 0.125], [0, 0], [0, 0.125] ]
 						}
 					*/
+					}
+				}
+			},
+			
+			"boostback" : {
+				"default" : "off",
+				"states" : {
+					"off" : { },
+					"on" : {
+						"frames" : 3,
+						"cycle" : 0.20,
+						"mode" : "loop"
+						//,
+						/* TODO some booster sound
+						"properties" : {
+							"persistentSound" : ".wav"
+						}*/
+					}
+				}
+			},
+			
+			"boostbottom" : {
+				"default" : "off",
+				"states" : {
+					"off" : { },
+					"on" : {
+						"frames" : 4,
+						"cycle" : 0.40,
+						"mode" : "loop"
+						//,
+						/* TODO some booster sound
+						"properties" : {
+							"persistentSound" : ".wav"
+						}*/
 					}
 				}
 			},
@@ -73,7 +107,6 @@
 		},
 
 		"parts" : {
-		
 			
 			// we have 6 single tires. 3 in front of the body 3 behind of it.
 			// all front tires share the same image. same applies for the background tires
@@ -193,22 +226,22 @@
 					"movement" : {
 						"idle" : {
 							"properties" : {
-								"image" : "mako_m35_bg.png:idle"
+								"image" : "mako_m35_bg.png:idledrive"
 							}
 						},
 						"jump" : {
 							"properties" : {
-								"image" : "mako_m35_bg.png:idle"
+								"image" : "mako_m35_bg.png:jumpfall"
 							}
 						},
 						"fall" : {
 							"properties" : {
-								"image" : "mako_m35_bg.png:idle"
+								"image" : "mako_m35_bg.png:jumpfall"
 							}
 						},
 						"drive" : {
 							"properties" : {
-								"image" : "mako_m35_bg.png:idle"
+								"image" : "mako_m35_bg.png:idledrive"
 							}
 						}
 					}
@@ -292,24 +325,22 @@
 					"movement" : {
 						"idle" : {
 							"properties" : {
-								"image" : "mako_m35_body.png:idle"
+								"image" : "mako_m35_body.png:idledrive"
 							}
 						},
 						"jump" : {
 							"properties" : {
-								// TODO custom image with trusters
-								"image" : "mako_m35_body.png:idle"
+								"image" : "mako_m35_body.png:jumpfall"
 						  }
 						},
 						"fall" : {
 							"properties" : {
-								// TODO custom image with trusters
-								"image" : "mako_m35_body.png:idle"
+								"image" : "mako_m35_body.png:jumpfall"
 							}
 						},
 						"drive" : {
 							"properties" : {
-								"image" : "mako_m35_body.png:idle"
+								"image" : "mako_m35_body.png:idledrive"
 							}
 						}
 					}
@@ -475,7 +506,71 @@
 						}
 					}
 				}
+			},
+			
+			"thrusterBack" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 11,
+					"offset" : [-7.7, 0.4]
+				},
+				"partStates" : {
+					"boostback" : {
+						"on" : {
+							"properties" : {
+								"image" : "mako_m35_booster_back.png:on.<frameIndex>"
+							}
+						},
+						"off" : {
+							"properties" : {
+							}
+						}
+					}
+				}
+			},
+			
+			"thrusterNoseBottom" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 12,
+					"offset" : [1.4, -2.0]
+				},
+				"partStates" : {
+					"boostbottom" : {
+						"on" : {
+							"properties" : {
+								"image" : "mako_m35_booster_bottom.png:on.<frameIndex>"
+							}
+						},
+						"off" : {
+							"properties" : {
+							}
+						}
+					}
+				}
+			},
+			
+			"thrusterAftBottom" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 13,
+					"offset" : [-6.3, -1.9]
+				},
+				"partStates" : {
+					"boostbottom" : {
+						"on" : {
+							"properties" : {
+								"image" : "mako_m35_booster_bottom.png:on.<frameIndex>"
+							}
+						},
+						"off" : {
+							"properties" : {
+							}
+						}
+					}
+				}
 			}
+			
 		}
 	},
 	
