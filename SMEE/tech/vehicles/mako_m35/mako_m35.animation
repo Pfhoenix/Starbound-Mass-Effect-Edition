@@ -79,26 +79,24 @@
 				}
 			},
 			
-			"frontFiring" : {
+			"artilleryFiring" : {
 				"states" : {
 					"fire" : {
 						"frames" : 1,
 						"cycle" : 0.5,
-						"mode" : "transition",
-						"transition" : "off"
+						"mode" : "end"
 					},
 
 					"off" : { }
 				}
 			},
 
-			"backFiring" : {
+			"autocannonFiring" : {
 				"states" : {
 					"fire" : {
-						"frames" : 1,
+						"frames" : 2,
 						"cycle" : 0.5,
-						"mode" : "transition",
-						"transition" : "off"
+						"mode" : "loop"
 					},
 
 					"off" : { }
@@ -248,67 +246,6 @@
 				}
 			},
 
-// FIXME we need to re-arrange the zorder for the guns
-      "backGunFire" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 4.5,
-          "offset" : [6, -0.35],
-          "rotationGroup" : "guns",
-          "rotationCenter" : [2.4, -0.2]
-        },
-
-        "partStates" : {
-          "backFiring" : {
-            "fire" : {
-              "properties" : {
-                "image" : "bulletmuzzle1.png:<frameIndex>"
-              }
-            }
-          }
-        }
-      },
-
-      "backGun" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 4,
-          "rotationGroup" : "guns",
-          "offset" : [2, 0],
-          "rotationCenter" : [2.4, 0],
-          "relativeAnchors" : {
-            "backGunFirePoint" : [6.5, -0.35]
-          }
-        },
-
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation",
-                "rotationCenter" : [2.4, -0.25]
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation"
-              }
-            },
-            "drive" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation"
-              }
-            }
-          }
-        }
-      },
-
-
 // TODO insert here the mask layer for the character
 
 
@@ -347,73 +284,132 @@
 				}
 			},
 
+			"artilleryFire" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 7.5,
+					"offset" : [4, -0.35],		//FIXME
+					"rotationGroup" : "guns",
+					"rotationCenter" : [0.4, -0.2] //FIXME
+				},
 
-// FIXME we need to re-arrange the zorder for the guns
+				"partStates" : {
+					"artilleryFiring" : {
+						"fire" : {
+							"properties" : {
+								//FIXME
+								"image" : "bulletmuzzle1.png:<frameIndex>"
+							}
+						}
+					}
+				}
+			},
 
-      "frontGunFire" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 7.5,
-          "offset" : [4, -0.35],
-          "rotationGroup" : "guns",
-          "rotationCenter" : [0.4, -0.2]
-        },
+			"artilleryGun" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 7,
+					"offset" : [3.8, 1.9],
+					"rotationGroup" : "guns",
+					"rotationCenter" :  [1.9, 1.75], //[0.4, -0.25],
+					"relativeAnchors" : {
+						"backGunFirePoint" : [4.5, -0.35]
+					}
+				},
 
-        "partStates" : {
-          "frontFiring" : {
-            "fire" : {
-              "properties" : {
-                "image" : "bulletmuzzle1.png:<frameIndex>"
-              }
-            }
-          }
-        }
-      },
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								// TODO we need a stage here instead of default
+								"image" : "mako_m35_artillerygun.png:default",
+								"rotationCenter" : [1.9, 1.75] //[0.4, -0.25]
+							}
+						},
+						"jump" : {
+							"properties" : {
+								"image" : "mako_m35_artillerygun.png:default"
+							}
+						},
+						"fall" : {
+							"properties" : {
+								"image" : "mako_m35_artillerygun.png:default"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_artillerygun.png:default"
+							}
+						}
+					}
+				}
+			},
 
-      "frontGun" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 7,
-          "rotationGroup" : "guns",
-          "rotationCenter" : [0.4, -0.25],
-          "relativeAnchors" : {
-            "frontGunFirePoint" : [4.5, -0.35]
-          }
-        },
+			"autocannonFire" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 8.5,
+					"offset" : [6, -0.35], //FIXME
+					"rotationGroup" : "guns",
+					"rotationCenter" : [2.4, -0.2] //FIXME
+				},
 
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation",
-                "rotationCenter" : [0.4, -0.25]
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation"
-              }
-            },
-            "drive" : {
-              "properties" : {
-                "image" : "humancargun.png:rotation"
-              }
-            }
-          }
-        }
-      },
+				"partStates" : {
+					"autocannonFiring" : {
+						"fire" : {
+							"properties" : {
+								"image" : "bulletmuzzle1.png:<frameIndex>"
+							}
+						}
+					}
+				}
+			},
 
+			"autoCannon" : {
+				"properties" : {
+					"centered" : true,
+					"zLevel" : 8,
+					"rotationGroup" : "guns",
+					"offset" : [3.6, 1.6],
+					"rotationCenter" :  [1.8, 1.50], // [2.4, 0],
+					"relativeAnchors" : {
+						"frontGunFirePoint" : [6.5, -0.35]
+					}
+				},
+
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								// TODO we need a stage here instead of default
+								"image" : "mako_m35_autocannon.png:default",
+								"rotationCenter" : [1.8, 1.50] //  [2.4, -0.25]
+							}
+						},
+						"jump" : {
+							"properties" : {
+								"image" : "mako_m35_autocannon.png:default"
+							}
+						},
+						"fall" : {
+							"properties" : {
+								"image" : "mako_m35_autocannon.png:default"
+							}
+						},
+						"drive" : {
+							"properties" : {
+								"image" : "mako_m35_autocannon.png:default"
+							}
+						}
+					}
+				}
+			},
 
 			// foreground tires:
 			"tireFgAft" : {
 				"properties" : {
 					"centered" : true,
-					"zLevel" : 8,
+					"zLevel" : 9,
 					"offset" : [-6.7,-2.25]
 					
 				},
@@ -446,7 +442,7 @@
 			"tireFgMid" : {
 				"properties" : {
 					"centered" : true,
-					"zLevel" : 9,
+					"zLevel" : 10,
 					"offset" : [-4.1,-2.25]
 				},
 				"partStates" : {
@@ -478,7 +474,7 @@
 			"tireFgNose" : {
 				"properties" : {
 					"centered" : true,
-					"zLevel" : 10,
+					"zLevel" : 11,
 					"offset" : [0.5,-2.25]
 					
 				},
@@ -511,7 +507,7 @@
 			"thrusterBack" : {
 				"properties" : {
 					"centered" : true,
-					"zLevel" : 11,
+					"zLevel" : 12,
 					"offset" : [-7.7, 0.4]
 				},
 				"partStates" : {
@@ -532,7 +528,7 @@
 			"thrusterNoseBottom" : {
 				"properties" : {
 					"centered" : true,
-					"zLevel" : 12,
+					"zLevel" : 13,
 					"offset" : [1.4, -2.0]
 				},
 				"partStates" : {
@@ -553,7 +549,7 @@
 			"thrusterAftBottom" : {
 				"properties" : {
 					"centered" : true,
-					"zLevel" : 13,
+					"zLevel" : 14,
 					"offset" : [-6.3, -1.9]
 				},
 				"partStates" : {
@@ -595,411 +591,3 @@
     }
   }
 }
-
-// OLD code from G4M5T3R removed it when finished
-/*
-{
-	"animatedParts" : {
-		"stateTypes" : {
-			"movement" : {
-				"default" : "idle",
-				
-				"states" : {
-					"idle" : {
-						"frames" : 1,
-						"frameProperties" : {
-							"stateNudge" : [ [0, 0] ]
-						}
-					},
-
-				"jump" : {
-					"frames" : 1,
-					"cycle" : 0,
-            "mode" : "end",
-            "properties" : {
-			
-	//Need cool sfx Pfhoenix ;)
-			
-              "immediateSound" : "/sfx/tech/mech_jump3.wav"
-            },
-            "frameProperties" : {
-              "stateNudge" : [ [0, 0] ]
-            }
-          },
-
-          "fall" : {
-            "frames" : 1,
-            "cycle" : 0,
-            "mode" : "end",
-            "frameProperties" : {
-              "stateNudge" : [ [0, 0] ]
-            }
-          },
-
-          "walk" : {
-            "frames" : 2,
-            "cycle" : 0.4,
-            "mode" : "loop",
-            "frameProperties" : {
-			
-			//Need cool sfx Pfhoenix ;)
-			
-              "immediateSound" : [ "/sfx/tech/mech_step.wav", "" ],
-              "stateNudge" : [ [0, 0], [0, 0]]
-            }
-          },
-
-          "backWalk" : {
-            "frames" : 2,
-            "cycle" : 0.4,
-            "mode" : "loop",
-            "frameProperties" : {
-			
-			//Need cool sfx Pfhoenix ;)
-			
-              "immediateSound" : [ "/sfx/tech/mech_step.wav", "" ],
-              "stateNudge" : [ [0, 0], [0, 0] ]
-            }
-          }
-        }
-      },
-	  
-	  //I'm unsure exactly how these next few play into the guns at the moment.
-
-      "frontFiring" : {
-        "states" : {
-          "fire" : {
-            "frames" : 3,
-            "cycle" : 0.15,
-            "mode" : "transition",
-            "transition" : "off"
-          },
-
-          "off" : { }
-        }
-      },
-
-      "backFiring" : {
-        "states" : {
-          "fire" : {
-            "frames" : 3,
-            "cycle" : 0.15,
-            "mode" : "transition",
-            "transition" : "off"
-          },
-
-          "off" : { }
-        }
-      }
-    },
-
-	//I do understand it from here on.
-	
-    "parts" : {
-      "backLeg" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 0,
-          "back" : true
-        },
-
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "makowheelsb.png:idle"
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "makowheelsb.png:jump"
-				}
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "makowheelsb.png:fall"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "makowheelsb.png:move.<frame>"
-              },
-              "frameProperties" : {
-                "offset" : [ [0, 0], [0, 0] ]
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "humanmechbleg.png:bmove.<frame>"
-              },
-              "frameProperties" : {
-                "offset" : [ [0, 0], [0, 0] ]
-              }
-            }
-          }
-        }
-      },
-
-      "background" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 1,
-          "back" : true
-        },
-
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "makobackground.png:idle"
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "makobackground.png:idle"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "makobackground.png:idle"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "makobackground.png:idle"
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "makobackground.png:idle"
-              }
-            }
-          }
-        }
-      },
-
-      "backGunFire" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 1.5,
-          "offset" : [0, 0],
-          "rotationGroup" : "guns",
-          "rotationCenter" : [0.0, 0.0]
-        },
-
-        "partStates" : {
-          "backFiring" : {
-            "fire" : {
-              "properties" : {
-                "image" : "bulletmuzzle2.png:<frameIndex>"
-              }
-            }
-          }
-        }
-      },
-
-      "backGun" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 2,
-          "rotationGroup" : "guns",
-          "offset" : [0, 0],
-          "rotationCenter" : [0.0, 0.0],
-          "relativeAnchors" : {
-            "backGunFirePoint" : [0.0, 0.0]
-          }
-        },
-
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation",
-                "rotationCenter" : [2.4, -0.25]
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation"
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation"
-              }
-            }
-          }
-        }
-      },
-
-      "body" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 3
-        },
-
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "makobody.png:idle"
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "makobody.png:idle"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "makobody.png:idle"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "makobody.png:idle"
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "makobody.png:idle"
-              }
-            }
-          }
-        }
-      },
-
-      "frontGunFire" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 3.5,
-          "offset" : [0, 0],
-          "rotationGroup" : "guns",
-          "rotationCenter" : [0.0, 0.0]
-        },
-
-        "partStates" : {
-          "frontFiring" : {
-            "fire" : {
-              "properties" : {
-                "image" : "cannonmuzzle.png:<frameIndex>"
-              }
-            }
-          }
-        }
-      },
-
-      "frontGun" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 4,
-          "rotationGroup" : "guns",
-          "rotationCenter" : [0.0, 0.0],
-          "relativeAnchors" : {
-            "frontGunFirePoint" : [0.0, 0.0]
-          }
-        },
-
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation",
-                "rotationCenter" : [0.4, -0.25]
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation"
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "makoguns.png:rotation"
-              }
-            }
-          }
-        }
-      },
-
-      "frontLeg" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : 5
-        },
-
-        "partStates" : {
-          "movement" : {
-            "idle" : {
-              "properties" : {
-                "image" : "makowheels.png:idle"
-              }
-            },
-            "jump" : {
-              "properties" : {
-                "image" : "makowheels.png:jump"
-              }
-            },
-            "fall" : {
-              "properties" : {
-                "image" : "makowheels.png:fall"
-              }
-            },
-            "walk" : {
-              "properties" : {
-                "image" : "makowheels.png:move.<frame>"
-              },
-			  "frameProperties" : {
-                "offset" : [ [0, 0], [0, 0] ]
-              }
-            },
-            "backWalk" : {
-              "properties" : {
-                "image" : "makowheels.png:bmove.<frame>"
-              },
-              "frameProperties" : {
-                "offset" : [ [0, 0], [0, 0] ]
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-
-  "rotationGroups" : {
-    "guns" : {
-      "angularVelocity" : 10.0
-    }
-  },
-
-  "particleEmitters" : {
-    "mechActivateParticles" : {
-      "particles" : [ ]
-    },
-    "mechDeactivateParticles" : {
-      "particles" : [ ]
-    }
-  }
-}
-*/

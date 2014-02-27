@@ -1,0 +1,19 @@
+{
+	"frameGrid" : {
+		"size" : [19, 4],
+		"dimensions" : [2, 5],
+
+		"names" : [
+			[ "fire.1", "fire.2" ],
+			[ "heat1.1", "heat1.2" ],
+			[ "heat2.1", "heat2.2" ],
+			[ "heat3.1", "heat3.2" ],
+			[ "heat4.1", "heat4.2" ]
+			
+		]
+	},
+
+	"aliases" : { 
+		"default" : "fire.1"
+	}
+}
