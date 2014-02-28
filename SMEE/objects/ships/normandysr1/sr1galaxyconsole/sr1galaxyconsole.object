@@ -2,7 +2,6 @@
 	"objectName" : "sr1galaxyconsole",
 	"rarity" : "Common",
 	"objectType" : "loungeable",
-	//"objectType" : "wire",
 	
 	"category" : "furniture",
 	"price" : 1000,
@@ -34,7 +33,7 @@
 	
 	"interactAction" : "openCockpitInterface",
 	"sitFlipDirection" : false,
-	"sitPosition" : [-18, 28],
+	"sitPosition" : [-18, 20],
 	"sitOrientation" : "lay",
 
 	// fx and light setup

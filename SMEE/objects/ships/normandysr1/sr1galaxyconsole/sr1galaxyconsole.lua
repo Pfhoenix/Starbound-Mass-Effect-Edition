@@ -1,6 +1,5 @@
 function init(virtual)
 	entity.setInteractive(true)
-	entity.setAllOutboundNodes(false)
 	if not virtual then
 		responsiveObject.init()
 		responsiveObject.start()

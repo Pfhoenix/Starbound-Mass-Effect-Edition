@@ -1,7 +1,6 @@
 {
 	"objectName" : "smeeemodstation",
 	"rarity" : "Common",
-	//"objectType" : "wire",
 	
 	"interactData" : {
 		"config" : "/interface/windowconfig/smeeemodstation.config",
