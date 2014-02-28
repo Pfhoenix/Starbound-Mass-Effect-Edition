@@ -1,6 +1,6 @@
 {
     "name" : "SMEE Test",
-    "version" : "Beta v. Furious Koala",
+    "version" : "Beta v. Enraged Koala",
     "path" : ".",
 	"dependencies" : ["Starbound : Mass Effect Edition"],
 	"metadata" : {

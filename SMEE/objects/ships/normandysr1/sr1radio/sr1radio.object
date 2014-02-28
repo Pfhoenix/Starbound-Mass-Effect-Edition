@@ -1,7 +1,7 @@
 {
 	"objectName" : "sr1radio",
 	"rarity" : "Common",
-	"objectType" : "wire",
+	//"objectType" : "wire",
 	
 	"category" : "furniture",
 	"price" : 1000,
@@ -33,7 +33,7 @@
 	
 	"radioDialog": {
 		"idle": [
-			"Music off. Alarm set to 5am."
+			"Music off. Alarm set to 5:00."
 		],
 		"track1": [
 			"Playing Track 1/2."

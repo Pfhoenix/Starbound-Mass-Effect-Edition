@@ -1,7 +1,5 @@
-function init(args)
-
-	--Until scripting allows OpenCockpitInterface uncommented
-	--entity.setInteractive(true)
+function init(virtual)
+	entity.setInteractive(true)
 	entity.setAllOutboundNodes(false)
 	if not virtual then
 		responsiveObject.init()
@@ -13,9 +11,17 @@ end
 function onInteraction(args)
 	responsiveObject.interact()
 	
-	-- Since Furious Koala the function is called but
-	-- nothing happens if OpenCockpitInterface is called :(
-	return { "OpenCockpitInterface",{} }
+	local flipDirection = entity.configParameter("sitFlipDirection") 
+	local position = entity.configParameter("sitPosition") 
+	local orientation = entity.configParameter("sitOrientation") 
+	
+	return { "OpenCockpitInterface",
+			{
+				sitFlipDirection = flipDirection,
+				sitPosition = position,
+				sitOrientation = orientation
+			} 
+		}
 end
 
 

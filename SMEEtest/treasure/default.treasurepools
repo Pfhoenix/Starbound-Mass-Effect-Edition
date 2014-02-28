@@ -5,8 +5,9 @@
 		[0, {
 			"__merge" : [],
 			"fill" : [
-				// additional test tresure
+				// additional test treasure
 				["ironbar", 10],
+				"mako_m35-chip",
 				
 				// original treasure
 				"omnitool1",
@@ -15,7 +16,9 @@
 				[ "torch", 10],
 				[ "cornseed", 3],
 				[ "wheatseed", 3],
-				[ "smeeomniblade1", 1]
+				[ "smeeomniblade1", 1],
+				"biotic-lift-chip",
+				"biotic-slow-chip"
 			]
 		}]
 	]

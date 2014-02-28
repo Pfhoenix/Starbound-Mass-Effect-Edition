@@ -1,7 +1,8 @@
 {
 	"objectName" : "sr1galaxyconsole",
 	"rarity" : "Common",
-	"objectType" : "wire",
+	"objectType" : "loungeable",
+	//"objectType" : "wire",
 	
 	"category" : "furniture",
 	"price" : 1000,
