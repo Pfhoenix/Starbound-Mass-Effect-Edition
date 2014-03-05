@@ -2,6 +2,7 @@
 	// test object only for testing the wss api!!!
 	
 	"objectName" : "wsstestspeaker",
+	"objectType" : "wire",
 	"rarity" : "Common",
 	"category" : "decorative",
 	"price" : 50,
@@ -23,7 +24,7 @@
 	],
 	
 	"scripts" : [ "/scripts/smee/wss.lua", "wsstestspeaker.lua" ],
-	"scriptDelta" : 10,
+	"scriptDelta" : 60,
 		
 	// wss properties
 	"wssTrack1" : "/music/radio/the_normandy.ogg",

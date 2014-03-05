@@ -1,32 +1,29 @@
 function init(virtual)
-	entity.setInteractive(true)
 	if not virtual then
-		wss.getInstance()
-		wss.registerSpeaker(entity)
+		wssInit()
+		entity.setInteractive(true)
 	end
 end
 
 function die()
-	--wss.getInstance()
-	wss.unregisterSpeaker(entity)
-	
+	wssDie()
 end
 
 
 function onInteraction(args)
-	--wss.getInstance()
+	local soundargs = {}
 	
-	if not wss.isSoundPlaying() then
-		wss.triggerSound("wssTrack1")
+	if not wssIsSoundPlaying() then
+		soundargs.sound = "wssTrack1"
 	else
-		wss.triggerSound("")
+		soundargs.sound = ""
 	end 
+	wssTriggerSound(soundargs)
 	
 	return nil
 end
 
 
 function main()
-	--wss.getInstance()
-	wss.update(entity)
+	wssUpdate()
 end

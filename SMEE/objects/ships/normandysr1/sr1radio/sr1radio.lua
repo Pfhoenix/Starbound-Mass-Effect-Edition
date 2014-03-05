@@ -36,8 +36,10 @@ function onInteraction(args)
 	-- say does not work here need to find another way to give some feedback
 	-- ShowPopup is no option since it plays the anoing quest sound.
 	-- entity.say("radioDialog", self.dlg)
-	world.logInfo(args)
-	entity.say(self.dlg)
+	
+	-- FIXME
+	-- world.logInfo(args)
+	-- entity.say(self.dlg)
 	-- Test say with nearest player entity or if args contains player entity.
 	
 	return nil

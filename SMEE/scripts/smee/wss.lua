@@ -3,135 +3,264 @@
 -- ===================================================================
 -- Version xxx unfinished
 --
+-- How this works:
+--
 
-----------------------------------------------------------------------
--- Definition
-----------------------------------------------------------------------
-wss = {}
 
--- TODO find a way to prevent double initialization
-wss.initialized = false
 
--- singleton instance
-local _instance 
+-- if dt == -1 force sound switch
+function wssBroadcastToSpeakers(sound, dt)
+
+	if #self.registeredSpeakers == nil then
+		return nil
+	end
+	
+	self.soundTimer = self.soundTimer - dt
+	if self.soundTimer <= 0 or dt == -1 then
+	
+		if sound ~= "" then
+			self.soundTimer = 2.0 -- FIXME entity.configParameter(tostring(sound) .. "Duration")
+		else
+			self.soundTimer = 0
+		end
+		
+		for i = 1, #self.registeredSpeakers do
+			world.callScriptedEntity(self.registeredSpeakers[i], "entity.playSound", sound )
+		--	self.registeredSpeakers[i].playSound(sound)
+		end
+	end
+end
+
+
 
 ----------------------------------------------------------------------
 -- init
 ----------------------------------------------------------------------
-local function init()
-	world.logInfo("wss init")
-	-- To test if _instance also works if not use _instance
-	_instance.registeredSpeakers = {}
+-- @param entity
+
+function wssInit()
+	world.logInfo("wss -- init")
+		
+	-- init our parameters
 	
 	-- the first registers speaker which it also used to trigger
 	-- update from his main() function
-	_instance.masterSpeaker = nil
+	self.registeredSpeakers = {}
+	self.isMasterSpeaker = false
+	self.masterSpeaker = 0
 	
-	_instance.currentSound = ""
-	_instance.lastActiveSound = ""
+	-- current sound playing
+	self.currentSound = ""
+	-- last sound playing
+	self.lastActiveSound = ""
+	-- time until sound is finished.
+	self.soundTimer = 0
 	
-	_instance.soundTimer = 0
-	
-	world.logInfo("wss init done.")
+	world.logInfo("wss -- init done.")
 end
-
--- if dt == -1 force sound switch
-local function broadcastToSpeakers(sound, dt)
-	if #_instance.registeredSpeaker == nil then
-		return nil
-	end
-	
-	_instance.soundTimer = _instance.soundTimer - dt
-	if _instance.soundTimer <= 0 or dt == -1 then
-	
-		if sound ~= "" then
-			_instance.soundTimer = _instance.masterSpeaker.configParameter(sound .. "Duration")
-		else
-			_instance.soundTimer = 0
-		end
-		
-		
-		for i = 1, #_instance.registeredSpeakers do
-			_instance.registeredSpeakers[i].playSound(sound)
-		end
-	end
-end
-
 
 ----------------------------------------------------------------------
--- getInstance
+-- die
 ----------------------------------------------------------------------
--- 
--- call it in your speakers init() hook.
-function wss.getInstance()
-	if wss.initialized == false then
-		wss.initialized = true
-		_instance = {} -- setmetatable({}, wss)
-		init()
-	end
-	return _instance
-end
 
-
-function wss.triggerSound(sound)
-	world.logInfo("wss triggerSound " .. sound )
+function wssDie()
+	world.logInfo("wss -- die")
 	
-	_instance.lastActiveSound = _instance.currentSound
-	_instance.currentSound = sound
-	broadcastToSpeakers(_instance.currentSound,-1)
+	if self.isMasterSpeaker then
+		-- give master to next wss object
+		local objectIds = world.objectQuery(
+				entity.position(), 
+				1000, 
+				{withoutEntityId = entity.id()}
+			)
+		
+		if #objectIds > 0 then
+			world.callScriptedEntity(
+					objectIds[1], 
+					"wssHandoverMaster",
+					{
+						speakers = self.registeredSpeakers,
+						csound = self.currentSound,
+						lasound = self.lastActiveSound,
+						timer = self.soundTimer
+					}
+				)
+		end
+	end
+	
+	if self.masterSpeaker > 0 then
+		-- now unregister me
+		world.callScriptedEntity(
+				self.masterSpeaker, 
+				"wssUnregisterSpeaker",
+				entity.id()
+			)
+	end
 end
 
-function wss.triggerLastSound()
-	_instance.currentSound = _instance.lastActiveSound
-	_instance.lastActiveSound = ""
-	broadcastToSpeakers(_instance.currentSound,-1)
+
+function wssTriggerSound(sound)
+	world.logInfo("wss -- triggerSound ")
+	
+	if self.isMasterSpeaker then
+		world.logInfo("wss -- triggerSound master speaker")
+	
+		self.lastActiveSound = self.currentSound
+		self.currentSound = sound
+		wssBroadcastToSpeakers(self.currentSound,-1)
+		
+	elseif self.masterSpeaker ~= nil then
+		world.logInfo("wss -- triggerSound redirect to master speaker")
+		world.callScriptedEntity(
+				self.masterSpeaker, 
+				"wssTriggerSound",
+				sound
+			)
+	end
+end
+
+function wssTriggerLastSound()
+	world.logInfo("wss -- triggerLastSound ")
+	
+	if self.isMasterSpeaker then
+		world.logInfo("wss -- triggerLastSound master speaker")
+	
+		self.currentSound = self.lastActiveSound
+		self.lastActiveSound = ""
+		wssBroadcastToSpeakers(self.currentSound,-1)
+		
+	elseif self.masterSpeaker ~= nil then
+		world.logInfo("wss -- triggerLastSound redirect to master speaker")
+		world.callScriptedEntity(
+				self.masterSpeaker,
+				"wssTriggerLastSound"
+			)
+	end
+	
 end
 
 -- calls this from every speaker in your main
 -- entity = speaker that calls
 -- args from main
-function wss.update(entity)
-
-	if entity ~= _instance.masterSpeaker then
+function wssUpdate()
+	
+	if not self.isMasterSpeaker and self.masterSpeaker == 0 then
+		
+		if entity.id() > 0 then
+			-- now look for master speaker
+			world.logInfo("wss -- looking for master speaker ...")
+			
+			local objectIds = world.objectQuery(
+					entity.position(), 
+					1000, 
+					{withoutEntityId = entity.id()}
+				)
+			
+			world.logInfo("wss -- " .. tostring(#objectIds) .." objects in area found." )
+			local master = nil
+			
+			for k, v in pairs(objectIds) do
+				master = world.callScriptedEntity(
+						k, 
+						"wssRegisterSpeaker",
+						entity.id()
+					)
+				
+				if master ~=nil and master > 0 then
+					world.logInfo("wss -- master found")
+					self.masterSpeaker = master
+					break;
+				end
+			end
+			if self.masterSpeaker == 0 then
+				-- no master  found.
+				world.logInfo("wss -- no master found. I am master now")
+				self.isMasterSpeaker = true
+				
+				-- master itself is also a speaker
+				wssRegisterSpeaker(entity.id())
+			end
+		end
+	end 
+	
+	if not self.isMasterSpeaker then
 		return
 	end
-	broadcastToSpeakers(_instance.currentSound,entity.dt())
+	
+	wssBroadcastToSpeakers(self.currentSound,entity.dt())
 end
 
-function wss.isSoundPlaying()
-	if _instance.currentSound ~= nil then
-		return true
+function wssIsSoundPlaying()
+	world.logInfo("wss -- isSoundPlaying")
+		
+	if self.isMasterSpeaker then
+		world.logInfo("wss -- isSoundPlaying master speaker")
+		
+		if self.currentSound ~= "" then
+			return true
+		end
+		return false
+		
+	elseif self.masterSpeaker > 0 then
+		world.logInfo("wss -- isSoundPlaying redirect to master speaker")
+		return world.callScriptedEntity(
+				self.masterSpeaker, 
+				"wssIsSoundPlaying"
+			)
 	end
-	
+
 	return false
 end
 
 
-function wss.registerSpeaker(entity)
-	world.logInfo("wss registerSpeaker ")
+-- @param args.speakers
+-- @param args.csound
+-- @param args.lasound
+-- @param args.timer
+--
+function wssHandoverMaster(args)
+	world.logInfo("wss -- handoverMaster called")
 	
-	_instance.registeredSpeakers[#_instance.registeredSpeakers+1] = entity
+	world.logInfo("wss -- handoverMaster new master speaker found" )
+		
+	self.registeredSpeakers = args.speakers
+	self.isMasterSpeaker = true
+	self.masterSpeaker = nil
+	self.currentSound = args.csound
+	self.lastActiveSound = args.lasound
+	self.soundTimer = args.timer
+end
+
+-- @param speakerid
+-- @return the entity if it is already a master or nil if not
+--
+function wssRegisterSpeaker(speakerid)
+	world.logInfo("wss -- registerSpeaker called")
+	if not self.isMasterSpeaker then
+		return nil
+	else
+		world.logInfo("wss -- registerSpeaker master speaker" )
 	
-	if #_instance.registeredSpeakers == 1 then
-		_instance.masterSpeaker = entity
+		self.registeredSpeakers[#self.registeredSpeakers+1] = speakerid
+		return entity.id()
 	end
 end
 
-
-function wss.unregisterSpeaker(entity)
-	world.logInfo("wss unregisterSpeaker " )--.. world.entityName(entity.id()) .. " " .. entity.id() )
+-- @param speakerid
+function wssUnregisterSpeaker(speakerid)
 	
-	for i=#_instance.registeredSpeakers,1,-1 do
-		if _instance.registeredSpeakers[i] == entity then
-			local removed = table.remove(_instance.registeredSpeakers, i)
-			removed.playSound(nil)
-			break
+	world.logInfo("wss -- unregisterSpeaker called" )
+	if not self.isMasterSpeaker then
+		return
+	else
+		world.logInfo("wss -- unregisterSpeaker master speaker" )
+		for i=#self.registeredSpeakers,1,-1 do
+			if self.registeredSpeakers[i] == speakerid then
+				local removed = table.remove(self.registeredSpeakers, i)
+		
+				world.callScriptedEntity(removed, "entity.playSound", "" )
+				break
+			end
 		end
-	end
-	
-	if entity == _instance.masterSpeaker and #_instance.registeredSpeakers > 0 then
-		_instance.masterSpeaker = _instance.registeredSpeakers[1]
-	else 
-		_instance.masterSpeaker = nil
 	end
 end
