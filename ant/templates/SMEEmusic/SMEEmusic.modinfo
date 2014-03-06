@@ -1,10 +1,12 @@
 {
-	"name" : "Starbound : Mass Effect Edition",
+	"name" : "Starbound : Mass Effect Edition Music Pak",
 	"version" : "@SB_VERSION",
 	"path" : ".",
 	"dependencies" : ["Starbound : Mass Effect Edition"],
 	"metadata" : {
 		"author" : "Team SMEE",
-		"description" : "Mass Effect in Starbound Music pack. Minimum required SMEE version @MOD_VERSION."
+		"description" : "Mass Effect in Starbound Music pack. Minimum required SMEE version @MOD_VERSION.",
+		"support_url" : "http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/",
+		"version" : "@MOD_VERSION"
 	}
 }

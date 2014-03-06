@@ -5,6 +5,8 @@
 	"dependencies" : [],
 	"metadata" : {
 		"author" : "Team SMEE",
-		"description" : "Mass Effect in Starbound (v.@MOD_VERSION)"
+		"description" : "Mass Effect in Starbound (v.@MOD_VERSION)",
+		"support_url" : "http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/",
+		"version" : "@MOD_VERSION"
 	}
 }

@@ -5,6 +5,8 @@
 	"dependencies" : ["Starbound : Mass Effect Edition", "industrialization"],
 	"metadata" : {
 		"author" : "Team SMEE",
-		"description" : "Compatibility patch for Industrialization: Starbound Edition - ISE and SMEE. Minimum required SMEE version @MOD_VERSION. Minimum required ISE version V.0.7.2RC8"
+		"description" : "Compatibility patch for Industrialization: Starbound Edition - ISE and SMEE. Minimum required SMEE version @MOD_VERSION. Minimum required ISE version V.0.7.2RC8",
+		"support_url" : "http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/",
+		"version" : "@MOD_VERSION"
 	}
 }
