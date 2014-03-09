@@ -30,6 +30,7 @@
 	  
 	"scripts" : [ "/scripts/smee/responsiveobject.lua", "smeeemodstation.lua" ],
 	"scriptDelta" : 10,
+	
 	"animation" : "smeeemodstation.animation",
 	"animationParts" : {
 		"smeeemodstation" : "smeeemodstation.png"

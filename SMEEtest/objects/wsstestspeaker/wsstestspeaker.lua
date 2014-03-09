@@ -11,10 +11,10 @@ end
 
 
 function onInteraction(args)
-	local mysound = nil
+	local mysound = "off"
 	
 	if not wssIsSoundPlaying() then
-		mysound = "wssTrack1"
+		mysound = "track1"
 	end 
 	wssTriggerSound(mysound)
 	

@@ -1,14 +1,19 @@
 function init(args)
-	entity.setInteractive(true)
-	entity.setAnimationState("radioState", "idle")
+	if not virtual then
+		wssInit()
+		entity.setInteractive(true)
+	end
 	
 	-- to add new track increase the count here and add new animations to the animation file.
 	self.trackcount = 2
 	-- 0 = off
 	self.currenttrack = 0
-	self.dlg = "idle"
+	self.dlg = "off"
 end
 
+function die()
+	wssDie()
+end
 
 function nextTrack()
 	self.currenttrack = self.currenttrack +1
@@ -17,15 +22,15 @@ function nextTrack()
 		self.currenttrack = 0
 	end
 	
+	local sound = "off"
+	
 	if self.currenttrack > 0 then
-		-- next track
-		entity.setAnimationState("radioState", "track" .. self.currenttrack)
-		self.dlg = "track" .. self.currenttrack
-	else
-		-- off
-		entity.setAnimationState("radioState", "idle")
-		self.dlg = "idle"
+		sound = "track" .. self.currenttrack
 	end
+	
+	self.dlg = sound
+	
+	wssTriggerSound(sound)
 
 end
 
@@ -47,6 +52,6 @@ end
 
 
 function main() 
-	
+	wssUpdate()
 	
 end

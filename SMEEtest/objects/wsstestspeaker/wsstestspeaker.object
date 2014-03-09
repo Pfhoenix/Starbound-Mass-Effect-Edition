@@ -24,17 +24,17 @@
 		}
 	],
 	
+	//TODO animation 
+	
 	"scripts" : [ "/scripts/smee/wss.lua", "wsstestspeaker.lua" ],
 	"scriptDelta" : 10,
 	
+	"animation" : "wsstestspeaker.animation",
+	"animationParts" : {
+		"wssSounds" : "wsstestspeaker.png:blue"
+	},
+	
 	// wss properties
 	"wssSpeakerGroup" : "sr1ship", // TODO
-	"wssSpeakerRange" : 1000, // defines the range that is scanned for a possible master and other speakers
-	// since there is no stop sound function we play this little sound once!
-	"wssStopSound" : ["/sfx/interface/clickon_success.wav"],
-	"wssTrack1" : ["/music/radio/the_normandy.ogg"],
-	"wssTrack1Duration" : 95.0, // TODO test if this is a minute
-	"wssTrack2" : ["/music/radio/me1_theme.ogg"],
-	"wssTrack2Duration" : 1.0 // TODO test if this is a minute
-	
+	"wssSpeakerRange" : 1000 // defines the range that is scanned for a possible master and other speakers
 }

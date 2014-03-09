@@ -5,23 +5,15 @@
 				"default" : "off",
 				"states" : {
 					"off" : {
-						"frames" : 1,
-						"cycle" : 0.15
 					},
 					
 					"track1" : {
-						"frames" : 5,
-						"cycle" : 1.0,
-						"mode" : "loop",
 						"properties" : {
 							"persistentSound" : "/music/radio/the_normandy.ogg"
 						}
 					},
 					
 					"track2" : {
-						"frames" : 5,
-						"cycle" : 1.0,
-						"mode" : "loop",
 						"properties" : {
 							"persistentSound" : "/music/radio/me1_theme.ogg"
 						}
@@ -41,18 +33,18 @@
 					"wssState" : {
 						"off" : {
 							"properties" : {
-								"image" : "<partImage>:default.default"
+								"image" : "<partImage>"
 							}
 						},
 						"track1" : {
 							"properties" : {
-								"image" : "<partImage>:on.<frame>"
+								"image" : "<partImage>"
 							}
 						},
 						
 						"track2" : {
 							"properties" : {
-								"image" : "<partImage>:on.<frame>"
+								"image" : "<partImage>"
 							}
 						}
 					}
