@@ -2,6 +2,7 @@
 	"objectName" : "sr1galaxyconsole",
 	"rarity" : "Common",
 	"objectType" : "loungeable",
+	//"objectType" : "wire",
 	
 	"category" : "furniture",
 	"price" : 1000,
@@ -23,11 +24,12 @@
 		}
 	],
 	
-	"scripts" : [ "/scripts/smee/responsiveobject.lua", "sr1galaxyconsole.lua" ],
+	"scripts" : [ "/scripts/smee/responsiveobject.lua", "/scripts/smee/wss.lua", "sr1galaxyconsole.lua" ],
 	"scriptDelta" : 10,
 	"animation" : "sr1galaxyconsole.animation",
 	"animationParts" : {
-		"sr1galaxyconsole" : "sr1galaxyconsole.png"
+		"sr1galaxyconsole" : "sr1galaxyconsole.png",
+		"wssSounds" : "wssoverlay.png"
 	},
 	"animationPosition" : [-11, 0],
 	
@@ -65,6 +67,10 @@
 			"initialVelocity" : [0.5, 2.0]
 		}
 	},
+	
+	// wss parameters
+	"wssSpeakerGroup" : "sr1ship",
+	"wssSpeakerRange" : 1000, // defines the range that is scanned for a possible master and other speakers
 	
 	// responsive object parameters
 	"zoomInSounds" : [ "/sfx/galaxymap/galaxy_zoom_in.ogg" ],

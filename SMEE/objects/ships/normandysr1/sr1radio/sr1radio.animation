@@ -9,6 +9,14 @@
 						"cycle" : 0.15
 					},
 					
+					"galaxy" : {
+						"frames" : 1,
+						"cycle" : 0.15,
+						"properties" : {
+							"persistentSound" : "/sfx/galaxymap/galaxymap.ogg"
+						}
+					},
+					
 					"track1" : {
 						"frames" : 5,
 						"cycle" : 1.0,
@@ -40,6 +48,11 @@
 				"partStates" : {
 					"wssState" : {
 						"off" : {
+							"properties" : {
+								"image" : "<partImage>:default.default"
+							}
+						},
+						"galaxy" : {
 							"properties" : {
 								"image" : "<partImage>:default.default"
 							}

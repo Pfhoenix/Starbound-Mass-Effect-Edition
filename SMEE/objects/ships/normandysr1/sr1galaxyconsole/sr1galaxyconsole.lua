@@ -3,7 +3,13 @@ function init(virtual)
 	if not virtual then
 		responsiveObject.init()
 		responsiveObject.start()
+		wssInit()
 	end
+end
+
+function die()
+	wssDie()
+	responsiveObject.die()
 end
 
 
@@ -25,5 +31,16 @@ end
 
 
 function main() 
+	wssUpdate()
 	responsiveObject.update()
+	
+	local isactive = responsiveObject.isActive()
+	local sound = entity.animationState("wssState")
+	
+	if isactive and sound ~= "galaxy" then
+		wssTriggerSound("galaxy")
+	elseif not isactive and sound == "galaxy" then
+		wssTriggerLastSound()
+	end
+	
 end

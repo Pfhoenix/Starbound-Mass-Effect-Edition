@@ -24,10 +24,11 @@
 					"galaxy" : {
 						"frames" : 18,
 						"cycle" : 3.6,
-						"mode" : "loop",
-						"properties" : {
+						"mode" : "loop"
+						
+						/*"properties" : {
 							"persistentSound" : "/sfx/galaxymap/galaxymap.ogg"
-						}
+						}*/
 					},
 					
 					"transnormandy" : {
@@ -40,13 +41,41 @@
 						"cycle" : 0.5
 					}
 				}
+			},
+			"wssState" : {
+				"default" : "off",
+				"states" : {
+					"off" : {
+					},
+					
+					"galaxy" : {
+						"properties" : {
+							"persistentSound" : "/sfx/galaxymap/galaxymap.ogg"
+						}
+					},
+					
+					"track1" : {
+						"properties" : {
+							"persistentSound" : "/music/radio/the_normandy.ogg"
+						}
+					},
+					
+					"track2" : {
+						"properties" : {
+							"persistentSound" : "/music/radio/me1_theme.ogg"
+						}
+					}
+					
+				}
 			}
 		},
 
 		"parts" : {
 			"sr1galaxyconsole" : {
 				"properties" : {
-					"centered" : false
+					"offset" : [0, 0],
+					"centered" : false,
+					"zLevel" : 1
 				},
 
 				"partStates" : {
@@ -83,6 +112,39 @@
 						"transgalaxy" : {
 							"properties" : {
 								"image" : "<partImage>:transgalaxy.<frame>"
+							}
+						}
+					}
+				}
+			},
+			"wssSounds" : {
+				"properties" : {
+					"offset" : [0, 0],
+					"centered" : false,
+					"zLevel" : 2
+				},
+
+				"partStates" : {
+					"wssState" : {
+						"off" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						"galaxy" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						"track1" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						
+						"track2" : {
+							"properties" : {
+								"image" : "<partImage>"
 							}
 						}
 					}
