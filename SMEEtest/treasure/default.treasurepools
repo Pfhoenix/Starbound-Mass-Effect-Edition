@@ -8,8 +8,7 @@
 				// additional test treasure
 				["ironbar", 10],
 				"mako_m35-chip",
-				// for testing wss
-				["wsstestspeaker",3],
+				["coalore", 50],
 				
 				// original treasure
 				"omnitool1",

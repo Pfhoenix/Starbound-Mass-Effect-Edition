@@ -1,1 +1,3 @@
 - More Enraged Koala fixes.
+- Wireless Sound System (WSS) for ship wide sounds.
+- New shaded Normandy. Thanks to Starbound forum member Kinsem!

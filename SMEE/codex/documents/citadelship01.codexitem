@@ -1,0 +1,10 @@
+{
+	"codexId" : "citadelship01",
+	"title" : "Codex - Ship - Tantalus Drive Core",
+	"codexkind" : "codex",
+	"inventoryIcon" : "citadelcodex.png",
+	"itemName" : "citadelship01Codex",
+	"rarity" : "common",
+	"description" : "Brief description about Tantalus Drive Core.",
+	"shortdescription" : "Codex - Ship - Tantalus Drive Core"
+}

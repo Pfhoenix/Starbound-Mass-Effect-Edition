@@ -1,0 +1,10 @@
+{
+	"codexId" : "citadeltech01",
+	"title" : "Codex - Tech - Omni Tools",
+	"codexkind" : "codex",
+	"inventoryIcon" : "citadelcodex.png",
+	"itemName" : "citadeltech01Codex",
+	"rarity" : "common",
+	"description" : "Brief description about Omni Tools.",
+	"shortdescription" : "Codex - Tech - Omni Tools"
+}

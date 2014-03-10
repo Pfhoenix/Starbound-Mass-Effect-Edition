@@ -34,5 +34,10 @@
 	"flickerDistance" : 0.4,
 	"flickerStrength" : 0.05,
 	"flickerTiming" : 1,
-	"unlit" :true
+	"unlit" :true,
+	
+	"scripts" : [ "/scripts/smee/ccd.lua", "sr1tantaluscore.lua" ],
+	"scriptDelta" : 10,
+	"ccdCodex" : "citadelship01Codex"
+	
 }

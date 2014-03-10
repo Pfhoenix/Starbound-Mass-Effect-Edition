@@ -31,7 +31,7 @@
 	},
 	"animationPosition" : [0, 0],
 	
-	"wssSpeakerGroup" : "sr1ship", //TODO
+	"wssSpeakerGroup" : "sr1ship",
 	"wssSpeakerRange" : 1000, // defines the range that is scanned for a possible master and other speakers
 	
 	"radioDialog": {
