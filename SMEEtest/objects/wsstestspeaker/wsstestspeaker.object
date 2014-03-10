@@ -24,8 +24,6 @@
 		}
 	],
 	
-	//TODO animation 
-	
 	"scripts" : [ "/scripts/smee/wss.lua", "wsstestspeaker.lua" ],
 	"scriptDelta" : 10,
 	

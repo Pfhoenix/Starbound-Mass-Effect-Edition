@@ -1,18 +1,23 @@
 -- ===================================================================
 -- Wireless Sound System
 -- ===================================================================
--- Version 1.0.0 unfinished
+-- Version 1.0.0
 --
 -- How this works:
 --
-
+-- WSS triggers animations via master-slave-communication.
+-- Because playSound and playImmediateSound cannot stop the sound 
+-- before it is finished.
+--
+-- See also wss_samples.lua for how to use this API.
+-- 
 
 ----------------------------------------------------------------------
 -- wssInit
 ----------------------------------------------------------------------
 -- call it from init()
 function wssInit()
-	world.logInfo("wss -- init")
+	--world.logInfo("wss -- init")
 		
 	-- init our parameters
 	-- is true if entity is master speaker
@@ -21,12 +26,18 @@ function wssInit()
 	self.masterSpeaker = 0
 	-- list of ids for speakers only filled if the entity is master speaker
 	self.registeredSpeakers = {}
-	-- TODO item belongs to a speaker group
-	self.speakerGroup = ""
-	-- current sound playing
-	self.currentSound = "off"
-	-- last sound playing
-	self.lastActiveSound = "off"
+	
+	self.speakerGroup = entity.configParameter("wssSpeakerGroup", "")
+	self.speakerRange = entity.configParameter("wssSpeakerRange", 1000)
+	
+	-- setup the stored data
+	-- the last animation stage is saved automatic since EKu6 but
+	-- we need also save the current and last sound variables.
+	if not storage.wss then
+		storage.wss = {}
+		storage.wss.currentSound = "off"
+		storage.wss.lastActiveSound = "off"
+	end
 end
 
 ----------------------------------------------------------------------
@@ -34,14 +45,14 @@ end
 ----------------------------------------------------------------------
 -- call it from die()
 function wssDie()
-	world.logInfo("wss -- die")
+	--world.logInfo("wss -- die")
 	
 	if self.isMasterSpeaker then
 		-- world.logInfo("wss -- looking for new master")
 		-- give master to next wss object
 		local objectIds = world.objectQuery(
 				entity.position(), 
-				entity.configParameter("wssSpeakerRange"), 
+				self.speakerRange, 
 				{withoutEntityId = entity.id()}
 			)
 		
@@ -50,8 +61,8 @@ function wssDie()
 					objectIds[1], 
 					"wssHandoverMaster",
 					self.registeredSpeakers,
-					self.currentSound,
-					self.lastActiveSound
+					storage.wss.currentSound,
+					storage.wss.lastActiveSound
 				)
 			self.masterSpeaker = objectIds[1]
 		end
@@ -69,8 +80,6 @@ function wssDie()
 	self.isMasterSpeaker = false
 	self.masterSpeaker = 0
 	self.registeredSpeakers = {}
-	self.currentSound = "off"
-	self.lastActiveSound = "off"
 end
 
 
@@ -101,14 +110,14 @@ end
 --
 -- @param sound if nil no sound is played
 function wssTriggerSound(sound)
-	world.logInfo("wss -- triggerSound: " .. sound )
+	--world.logInfo("wss -- triggerSound: " .. sound )
 	
 	if self.isMasterSpeaker then
 		--world.logInfo("wss -- triggerSound master speaker")
 		
-		self.lastActiveSound = self.currentSound
-		self.currentSound = sound
-		wssBroadcastToSpeakers(self.currentSound)
+		storage.wss.lastActiveSound = storage.wss.currentSound
+		storage.wss.currentSound = sound
+		wssBroadcastToSpeakers(storage.wss.currentSound)
 		
 	elseif self.masterSpeaker ~= nil then
 		--world.logInfo("wss -- triggerSound redirect to master speaker")
@@ -126,14 +135,14 @@ end
 -- call this function if you want to return to the last sound
 --
 function wssTriggerLastSound()
-	world.logInfo("wss -- triggerLastSound " .. self.lastActiveSound )
+	--world.logInfo("wss -- triggerLastSound " .. storage.wss.lastActiveSound )
 	
 	if self.isMasterSpeaker then
 		--world.logInfo("wss -- triggerLastSound master speaker")
 	
-		self.currentSound = self.lastActiveSound
-		self.lastActiveSound = "off"
-		wssBroadcastToSpeakers(self.currentSound)
+		storage.wss.currentSound = storage.wss.lastActiveSound
+		storage.wss.lastActiveSound = "off"
+		wssBroadcastToSpeakers(storage.wss.currentSound)
 		
 	elseif self.masterSpeaker ~= nil then
 		--world.logInfo("wss -- triggerLastSound redirect to master speaker")
@@ -186,7 +195,7 @@ end
 -- 
 function wssGetCurrentSoundPlaying()
 	if self.isMasterSpeaker then
-		return self.currentSound
+		return storage.wss.currentSound
 		
 	elseif self.masterSpeaker > 0 then
 		return world.callScriptedEntity(
@@ -211,8 +220,8 @@ function wssHandoverMaster(speakers, csound, lasound)
 	self.registeredSpeakers = speakers
 	self.isMasterSpeaker = true
 	self.masterSpeaker = nil
-	self.currentSound = csound
-	self.lastActiveSound = lasound
+	storage.wss.currentSound = csound
+	storage.wss.lastActiveSound = lasound
 end
 
 ----------------------------------------------------------------------
@@ -220,15 +229,15 @@ end
 ----------------------------------------------------------------------
 -- 
 function wssRegisterMasterSpeaker()
-	world.logInfo("wss -- looking for master speaker ...")
+	--world.logInfo("wss -- looking for master speaker ...")
 	
 	local objectIds = world.objectQuery(
 			entity.position(), 
-			entity.configParameter("wssSpeakerRange"), 
+			self.speakerRange, 
 			{withoutEntityId = entity.id()}
 		)
 	
-	world.logInfo("wss -- " .. tostring(#objectIds) .." objects in area found." )
+	--world.logInfo("wss -- " .. tostring(#objectIds) .." objects in area found." )
 	local master = nil
 	
 	for k, v in pairs(objectIds) do
@@ -239,14 +248,14 @@ function wssRegisterMasterSpeaker()
 			)
 		
 		if master ~=nil and master > 0 then
-			world.logInfo("wss -- master found")
+			--world.logInfo("wss -- master found")
 			self.masterSpeaker = master
 			break;
 		end
 	end
 	if self.masterSpeaker == 0 then
 		-- no master  found.
-		world.logInfo("wss -- no master found. I am master now")
+		--world.logInfo("wss -- no master found. I am master now")
 		self.isMasterSpeaker = true
 		
 		-- master itself is also a speaker
@@ -260,7 +269,7 @@ end
 -- @param speakerid
 -- @return master entity id or nil if is not the master
 function wssRegisterSpeaker(speakerid)
-	world.logInfo("wss -- registerSpeaker called")
+	--world.logInfo("wss -- registerSpeaker called")
 	if not self.isMasterSpeaker then
 		return nil
 	else
@@ -278,8 +287,7 @@ end
 ----------------------------------------------------------------------
 -- @param speakerid
 function wssUnregisterSpeaker(speakerid)
-	
-	world.logInfo("wss -- unregisterSpeaker called" )
+	--world.logInfo("wss -- unregisterSpeaker called" )
 	if not self.isMasterSpeaker then
 		return
 	else
