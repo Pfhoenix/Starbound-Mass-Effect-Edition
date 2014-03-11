@@ -19,7 +19,7 @@ dir.templates=${dir.project}ant\\templates\\
 dir.sbassetpacker=
 
 # csv list with our optional mod names.
-optional.modlist=SMEEapex,SMEEavian,SMEEfloran,SMEEglitch,SMEEhylotl,SMEEhuman
+optional.modlist=SMEEapex,SMEEavian,SMEEfloran,SMEEglitch,SMEEhylotl,SMEEhuman,SMEEavali
 
 # csv list for the compatibility patches
 cpatch.modlist=SMEEISE

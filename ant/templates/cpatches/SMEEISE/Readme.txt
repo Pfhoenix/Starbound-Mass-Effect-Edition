@@ -4,7 +4,7 @@
 		by Team SMEE
 		
 		SMEE Version: @MOD_VERSION
-		Industrialization: Starbound Edition Version: V.0.7.2RC8
+		Industrialization: Starbound Edition Version: V.0.8.0 RC2 BETA
 		Starbound Version: @SB_VERSION
 		Release Date: @RELEASE_DATE
 		
