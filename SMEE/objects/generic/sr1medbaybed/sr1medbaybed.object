@@ -11,7 +11,7 @@
 	"objectType" : "loungeable",
 	"interactAction" : "sitdown",
 	"sitFlipDirection" : true,
-	"sitPosition" : [-14, 17], // -10, 13
+	"sitPosition" : [-11, 15],  
 	"sitOrientation" : "lay",
 	"sitAngle" : 90,
 	"sitCoverImage" : "/objects/generic/sr1medbaybed/sr1medbaybedcover.png",
@@ -35,5 +35,55 @@
 			"anchors" : [ "bottom" ]
 	
 		}
-	]
+	],
+	
+	"scripts" : [ "/scripts/smee/responsiveobject.lua", "sr1medbaybed.lua" ],
+	"scriptDelta" : 10,
+	
+	"animation" : "sr1medbaybed.animation",
+	"animationParts" : {
+		"sr1medbaybed" : "sr1medbaybed.png",
+		"healthstatus" : "healthstatus.png",
+		"scanoverlay" : "scanoverlay.png"
+	},
+	"animationPosition" : [-24, 0],
+	
+	// responsive object parameters
+	"consoleSounds" : [ "/sfx/ships/console.ogg" ],
+	"responsiveObject" : {
+		"detectRadius" : 4,
+		"detectLineOfSight" : true,
+		"responsiveAnimations" : {
+			"idle" : [
+				{
+					"name" : "off",
+					"time" : -1
+				}
+			],
+			"active" : [
+				{
+					"name" : "max", // max health > 66%
+					"time" : -1
+				},
+				{
+					"name" : "med", // medium health >= 33% <= 66%
+					"time" : -1
+				},
+				{
+					"name" : "low", // low health < 33%
+					"time" : -1
+				}
+			],
+			"transActive" : {
+				"name" : "turnOn",
+				"time" : 2,
+				"sounds" : "consoleSounds"
+			},
+			"transIdle" : {
+				"name" : "turnOff",
+				"time" : 2,
+				"sounds" : "consoleSounds"
+			}
+		}
+	}
 }

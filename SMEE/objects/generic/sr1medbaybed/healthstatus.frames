@@ -1,0 +1,19 @@
+{
+
+	"frameGrid" : {
+		"size" : [8, 10],
+		"dimensions" : [4, 4],
+		"names" : [
+			[ "off", "turnOn.1", "turnOn.2", null ],
+			[ "max.1", "max.2", "max.3", "max.4" ],
+			[ "med.1", "med.2", "med.3", "med.4" ],
+			[ "low.1", "low.2", "low.3", "low.4" ]
+			
+		]
+	},
+	"aliases" : {
+		"default" : "off",
+		"turnOff.1" : "turnOn.2",
+		"turnOff.2" : "turnOn.1"
+	}
+}

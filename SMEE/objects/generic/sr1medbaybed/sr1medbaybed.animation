@@ -1,0 +1,178 @@
+{
+	"animatedParts" : {
+		"stateTypes" : {
+			"responsiveState" : {
+				"default" : "off",
+				"states" : {
+					"off" : {
+						"frames" : 1,
+						"cycle" : 0.15
+					},
+
+					"max" : {
+						"frames" : 4,
+						"cycle" : 1.0,
+						"mode" : "loop"
+					},
+					
+					"med" : {
+						"frames" : 4,
+						"cycle" : 1.0,
+						"mode" : "loop"
+					},
+					
+					"low" : {
+						"frames" : 4,
+						"cycle" : 1.0,
+						"mode" : "loop"
+					},
+					
+					"turnOn" : {
+						"frames" : 2,
+						"cycle" : 0.5
+					},
+					
+					"turnOff" : {
+						"frames" : 2,
+						"cycle" : 0.5
+					}
+				}
+			},
+			"scanState" : {
+				"default" : "off",
+				"states" : {
+					"off" : {
+						"frames" : 1,
+						"cycle" : 0.15
+					},
+
+					"on" : {
+						"frames" : 8,
+						"cycle" : 2.5,
+						"mode" : "loop"
+					}
+				}
+			}
+			
+		},
+
+		"parts" : {
+			"sr1medbaybed" : {
+				"properties" : {
+					"offset" : [0, 0],
+					"centered" : false,
+					"zLevel" : 0,
+					"back" : true
+				},
+
+				"partStates" : {
+					"responsiveState" : {
+						"off" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+
+						"max" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						"med" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						
+						"low" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						
+						"turnOn" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						
+						"turnOff" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						}
+					}
+				}
+			},
+			"healthstatus" : {
+				"properties" : {
+					"offset" : [5.4, 1.2],
+					"centered" : false,
+					"zLevel" : 1
+				},
+
+				"partStates" : {
+					"responsiveState" : {
+						"off" : {
+							"properties" : {
+								"image" : "<partImage>:off"
+							}
+						},
+
+						"max" : {
+							"properties" : {
+								"image" : "<partImage>:max.<frame>"
+							}
+						},
+						"med" : {
+							"properties" : {
+								"image" : "<partImage>:med.<frame>"
+							}
+						},
+						
+						"low" : {
+							"properties" : {
+								"image" : "<partImage>:low.<frame>"
+							}
+						},
+						
+						"turnOn" : {
+							"properties" : {
+								"image" : "<partImage>:turnOn.<frame>"
+							}
+						},
+						
+						"turnOff" : {
+							"properties" : {
+								"image" : "<partImage>:turnOff.<frame>"
+							}
+						}
+					}
+				}
+			},
+			"scanoverlay" : {
+				"properties" : {
+					"offset" : [0, 0], // TODO adjust
+					"centered" : false,
+					"zLevel" : 2
+				},
+
+				"partStates" : {
+					"scanState" : {
+						"off" : {
+							"properties" : {
+								"image" : "<partImage>:off"
+							}
+						},
+
+						"on" : {
+							"properties" : {
+								"image" : "<partImage>:max.<frame>"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
