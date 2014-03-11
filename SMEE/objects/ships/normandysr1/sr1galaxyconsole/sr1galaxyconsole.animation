@@ -25,10 +25,6 @@
 						"frames" : 18,
 						"cycle" : 3.6,
 						"mode" : "loop"
-						
-						/*"properties" : {
-							"persistentSound" : "/sfx/galaxymap/galaxymap.ogg"
-						}*/
 					},
 					
 					"transnormandy" : {

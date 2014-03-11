@@ -1,5 +1,5 @@
 - More Enraged Koala fixes.
 - Wireless Sound System (WSS) for ship wide sounds, currently used by radio and galaxy console.
-- New shaded Normandy. Thanks to Starbound forum member Kinsem!
+- New re-shaded Normandy. Thanks to Starbound forum member Kinsem!
 - Medbay Bed is now responsive and shows current health
 - 2 new codex quests.

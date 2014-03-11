@@ -99,7 +99,7 @@ function wssBroadcastToSpeakers(sound, dt)
 end
 
 function wssPlaySound(sound)
-	world.logInfo("wssPlaySound ".. sound .." on entity:" ..tostring(entity.id() ) )
+	--world.logInfo("wssPlaySound ".. sound .." on entity:" ..tostring(entity.id() ) )
 	entity.setAnimationState("wssState", sound)
 end
 

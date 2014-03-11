@@ -37,7 +37,7 @@
 	"unlit" :true,
 	
 	"scripts" : [ "/scripts/smee/ccd.lua", "sr1tantaluscore.lua" ],
-	"scriptDelta" : 10,
+	"scriptDelta" : 30,
 	"ccdCodex" : "citadelship01Codex"
 	
 }
