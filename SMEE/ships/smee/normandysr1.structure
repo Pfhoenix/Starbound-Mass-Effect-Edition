@@ -220,7 +220,14 @@
 			"value" : [255, 102, 0, 255],
 			"foregroundBlock" : false,
 			"backgroundBlock" : true,
-			"object" : "apexshipdoor"
+			"object" : "sr1shipdoor"
+		},
+
+		{
+			"value" : [245, 102, 0, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1slidingdoor"
 		},
 
 		{
@@ -324,7 +331,7 @@
 		},
 
 
-		// dont know what this is for...
+		// don't know what this is for...
 		{
 			"value" : [174, 137, 81, 255],
 			"foregroundBlock" : false,

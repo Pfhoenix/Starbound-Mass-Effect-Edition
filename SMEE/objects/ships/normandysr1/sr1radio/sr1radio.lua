@@ -42,10 +42,16 @@ function onInteraction(args)
 	-- ShowPopup is no option since it plays the anoing quest sound.
 	-- entity.say("radioDialog", self.dlg)
 	
+			
 	-- FIXME
-	-- world.logInfo(args)
-	-- entity.say(self.dlg)
 	-- Test say with nearest player entity or if args contains player entity.
+	-- world.logInfo("radio - onInteraction " .. world.entityName(args["sourceId"]) .. " says " .. self.dlg )
+	-- works not on pcs
+	--world.callScriptedEntity(
+	--		args["sourceId"],
+	--		"entity.say",
+	--		entity.configParameter(self.dlg, "missing dlg: ".. self.dlg) 
+	--	)
 	
 	return nil
 end
