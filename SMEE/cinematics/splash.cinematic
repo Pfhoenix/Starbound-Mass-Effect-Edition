@@ -1,0 +1,83 @@
+{
+  "panels" : [
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/busy.png:{frame}"
+        }
+      ],
+      "animationFrames" : 10,
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "zoom" : 0,
+          "alpha" : 0,
+          "position" : [480, 250],
+          "frame" : 0
+        },
+        {
+          "timecode" : 4,
+          "alpha" : 0,
+          "zoom" : 1,
+          "frame" : 0
+        },
+        {
+          "timecode" : 4.5,
+          "alpha" : 1,
+          "zoom" : 1,
+          "frame" : 0
+        },
+        {
+          "timecode" : 10000,
+          "alpha" : 1,
+          "zoom" : 1,
+          "frame" : 100000
+        }
+      ]
+    },
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/chucklelogofinal.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "zoom" : 0,
+          "alpha" : 0,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 0.1,
+          "alpha" : 1
+        },
+        {
+          "timecode" : 0.4,
+          "zoom" : 1
+        },
+        {
+          "timecode" : 2.5,
+          "zoom" : 0.5
+        },
+        {
+          "timecode" : 3,
+          "alpha" : 1,
+          "zoom" : 0.5
+        },
+        {
+          "timecode" : 4,
+          "alpha" : 0,
+          "zoom" : 0.5,
+          "complete" : true
+        }
+      ]
+    }
+  ],
+  "audio" : [
+    {
+      "timecode" : 0,
+      "resource" : "/sfx/cinematics/man_laugh.ogg"
+    }
+  ]
+}

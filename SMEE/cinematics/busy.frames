@@ -1,0 +1,9 @@
+{
+  //the frameGrid will take the "size" and use it for each "dimensions" on the spritesheet from left to right for each column. 
+  //the defaults show 1 column of 8 frames each with a size of 24x24 pixels.
+
+  "frameGrid" : {
+    "size" : [192, 66],     //default values. the size of each frame on the spritesheet canvas. [X, Y]
+    "dimensions" : [10, 1]  //default values. the number of frames on the spritesheet. [X, Y]
+  }
+}
