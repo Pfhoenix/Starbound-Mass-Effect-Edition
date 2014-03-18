@@ -3,3 +3,6 @@
 - New re-shaded Normandy. Thanks to Starbound forum member Kinsem!
 - Medbay Bed is now responsive and shows current health
 - 2 new codex quests.
+- New loading Mass Relay.
+- Tier 1 helms air tank removed
+- Turian now have a mouth for "idle".
