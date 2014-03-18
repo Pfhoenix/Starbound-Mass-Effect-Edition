@@ -2,9 +2,9 @@
 <!-- 
 	ANT BUILDER
  -->
-<project default="process" name="SMEE build file v.1.0.0">
+<project default="process" name="SMEEbuild">
     <description>
-    	Build and packages all SMEE content for release
+    	Build and packages all SMEE content for release v.1.0.0
     </description>
 	
 	
@@ -289,10 +289,8 @@
 		<echo>
 		</echo>
 		<!-- clean up -->
-		<delete dir="${dir.release}SMEE" includes="**/*"/>
-		<delete dir="${dir.release}SMEEmusic" includes="**/*"/>
-		<delete dir="${dir.release}SMEEOptional" includes="**/*"/>
-		<delete dir="${dir.release}SMEEISE" includes="**/*"/>
+		<delete dir="${dir.release.pak}" includes="**/*"/>
+		<delete dir="${dir.release}" includes="**/*"/>
 		
 		<antcall target="compile_readmes" />
 		<antcall target="compile_changelog" />
@@ -307,8 +305,32 @@
 				<exclude name="pak.modinfo"/>
 			</fileset>
 		</copy>
-		<zip basedir="${dir.release}" includes="SMEE/**/*.*" destfile="${dir.release}SMEECore_${project.version}.zip" />
+		<zip basedir="${dir.release}" includes="SMEE/**/*.*" destfile="${dir.release}SMEECoreUnpacked_${project.version}.zip" />
 		
+		<echo message="modpacking SMEE..."/>
+		
+		<mkdir dir="${dir.release.pak}SMEE"/>
+		<copy todir="${dir.release.pak}SMEE" >
+			<fileset dir="${dir.smee.src}">
+				<include name="**/*" />
+				<exclude name="SMEE.modinfo"/>
+			</fileset>
+		</copy>
+		
+		<exec executable="${dir.sbassetpacker}asset_packer.exe">
+			<arg value="${dir.release.pak}SMEE"/>
+			<arg value="${dir.release}SMEE.modpak"/>
+		</exec>
+		<zip  destfile="${dir.release}SMEECore_${project.version}.zip">
+			<mappedresources>
+				<fileset dir="${dir.release}">
+					<include name="SMEE.modpak" />
+					<include name="SMEE/Readme.txt" />
+					<include name="SMEE/Changelog.txt" />
+				</fileset>
+				<flattenmapper />
+			</mappedresources>
+		</zip>
 		
 		<!-- SMEE music -->
 		<input message="Pack Music? (y/default n)" addProperty="arg.packmusic"/>
@@ -322,7 +344,31 @@
 						<exclude name="pak.modinfo"/>
 					</fileset>
 				</copy>
-				<zip basedir="${dir.release}" includes="SMEEmusic/**/*.*" destfile="${dir.release}SMEEmusic_${project.version}.zip" />
+				<zip basedir="${dir.release}" includes="SMEEmusic/**/*.*" destfile="${dir.release}SMEEmusicUnpacked_${project.version}.zip" />
+			
+				<echo message="modpacking SMEEmusic..."/>
+						
+				<mkdir dir="${dir.release.pak}SMEEmusic"/>
+				<copy todir="${dir.release.pak}SMEEmusic" >
+					<fileset dir="${dir.musicpack.src}">
+						<include name="**/*" />
+						<exclude name="SMEEmusic.modinfo"/>
+					</fileset>
+				</copy>
+				
+				<exec executable="${dir.sbassetpacker}asset_packer.exe">
+					<arg value="${dir.release.pak}SMEEmusic"/>
+					<arg value="${dir.release}SMEEmusic.modpak"/>
+				</exec>
+				<zip  destfile="${dir.release}SMEEmusic_${project.version}.zip">
+					<mappedresources>
+						<fileset dir="${dir.release}">
+							<include name="SMEEmusic.modpak" />
+							<include name="SMEEmusic/Readme.txt" />
+						</fileset>
+						<flattenmapper />
+					</mappedresources>
+				</zip>
 			</then>
 		</if>
 				
@@ -338,7 +384,50 @@
 						<exclude name="**/*pak.modinfo*"/>
 					</fileset>
 				</copy>
-				<zip basedir="${dir.release}SMEEOptional" destfile="${dir.release}SMEEOptional_${project.version}.zip" />
+				<zip basedir="${dir.release}SMEEOptional" destfile="${dir.release}SMEEOptionalUnpacked_${project.version}.zip" />
+				
+				<for param="entry" list="${optional.modlist}" delimiter=",">
+					<sequential>
+						<echo message="modpacking @{entry}..."/>
+						<mkdir dir="${dir.release.pak}@{entry}"/>
+						<copy todir="${dir.release.pak}@{entry}" >
+							<fileset dir="${dir.optional.src}@{entry}">
+								<include name="**/*" />
+								<exclude name="@{entry}.modinfo"/>
+							</fileset>
+						</copy>
+						
+						<exec executable="${dir.sbassetpacker}asset_packer.exe">
+							<arg value="${dir.optional.src}@{entry}"/>
+							<arg value="${dir.release}@{entry}.modpak"/>
+						</exec>
+						
+					</sequential>
+				</for>
+				
+				<script language="javascript"><![CDATA[
+					optional = SMEEbuild.getProperty("optional.modlist");
+					arr = optional.split(",");
+					packnames = "";
+					for( var i=0; i<arr.length; i++ )
+					{
+						packnames += arr[i] + ".modpak";
+						if( i< arr.length - 1 )
+							packnames += ","
+					}
+					
+					SMEEbuild.setProperty("packnames", packnames);
+				]]></script>
+				
+				<zip  destfile="${dir.release}SMEEOptional_${project.version}.zip">
+					<mappedresources>
+						<fileset dir="${dir.release}" includes="${packnames}">
+							<include name="SMEEOptional/Readme.txt" />
+						</fileset>
+						<flattenmapper />
+					</mappedresources>
+				</zip>
+				
 			</then>
 		</if>
 		
@@ -358,21 +447,38 @@
 								<exclude name="pak.modinfo"/>
 							</fileset>
 						</copy>
-						<zip basedir="${dir.release}" includes="@{entry}/**/*.*" destfile="${dir.release}@{entry}_${project.version}.zip" />
+						<zip basedir="${dir.release}" includes="@{entry}/**/*.*" destfile="${dir.release}@{entry}Unpacked_${project.version}.zip" />
+						
+						<echo message="modpacking @{entry}..."/>
+						
+						<mkdir dir="${dir.release.pak}@{entry}"/>
+						<copy todir="${dir.release.pak}@{entry}" >
+							<fileset dir="${dir.cpatches.src}@{entry}">
+								<include name="**/*" />
+								<exclude name="@{entry}.modinfo"/>
+							</fileset>
+						</copy>
+						
+						<exec executable="${dir.sbassetpacker}asset_packer.exe">
+							<arg value="${dir.release.pak}@{entry}"/>
+							<arg value="${dir.release}@{entry}.modpak"/>
+						</exec>
+						
+						<zip  destfile="${dir.release}@{entry}_${project.version}.zip">
+							<mappedresources>
+								<fileset dir="${dir.release}">
+									<include name="@{entry}.modpak" />
+									<include name="@{entry}/Readme.txt" />
+								</fileset>
+								<flattenmapper />
+							</mappedresources>
+						</zip>
+						
 					</sequential>
 				</for>
 			</then>
 		</if>
 		
-		
-		<!-- TODO  create pak files -->
-		<!-- Run ..\win32\asset_packer.exe YourMod YourMod.modpak -->
-		<!-- need to remove the non pak.modinfo otherwise it crashes -->
-		<!-- echo message="modpacking SMEE..."/>
-		<exec executable="${dir.sbassetpacker}asset_packer.exe">
-			<arg value="${dir.smee.src}"/>
-    		<arg value="${dir.release}SMEE.modpak"/>
-    	</exec -->
 		<echo message="Done."/>
 		
 	</target>

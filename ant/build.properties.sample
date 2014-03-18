@@ -17,6 +17,7 @@ dir.ant=${dir.project}ant\\
 dir.templates=${dir.project}ant\\templates\\
 #only the dir (absolute path needed here)
 dir.sbassetpacker=
+dir.release.pak=${dir.project}packs\\
 
 # csv list with our optional mod names.
 optional.modlist=SMEEapex,SMEEavian,SMEEfloran,SMEEglitch,SMEEhylotl,SMEEhuman,SMEEavali

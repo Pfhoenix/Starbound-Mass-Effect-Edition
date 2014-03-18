@@ -4,9 +4,9 @@
 		by Team SMEE
 		
 		SMEE Version: 0.2.3
-		Industrialization: Starbound Edition Version: V.0.7.2RC8
+		Industrialization: Starbound Edition Version: V.0.8.0 RC2 BETA
 		Starbound Version: Beta v. Enraged Koala
-		Release Date: 2014-02-23
+		Release Date: 2014-03-18
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -29,3 +29,4 @@ Nothing inside here runs without both mods!
 G4M5T3R - Mad Scientist (races and armors)
 Pfhoenix - Biotic God (biotic and tech powers)
 TohKlidan - Expert Tinkerer (ships and crafting)
+Kinsem - Insane Pixelist (art awesomeness)

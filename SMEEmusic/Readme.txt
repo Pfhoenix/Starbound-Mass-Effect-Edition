@@ -5,7 +5,7 @@
 		
 		Mod Version: 0.2.3
 		Starbound Version: Beta v. Enraged Koala
-		Release Date: 2014-02-23
+		Release Date: 2014-03-18
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -26,3 +26,4 @@ You need also to download the SMEE core files.
 G4M5T3R - Mad Scientist (races and armors)
 Pfhoenix - Biotic God (biotic and tech powers)
 TohKlidan - Expert Tinkerer (ships and crafting)
+Kinsem - Insane Pixelist (art awesomeness)

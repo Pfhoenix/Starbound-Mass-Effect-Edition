@@ -1,11 +1,11 @@
 {
-	"name" : "SMEEapex",
+	"name" : "SMEEavali",
 	"version" : "Beta v. Enraged Koala",
 	"path" : ".",
-	"dependencies" : ["Starbound : Mass Effect Edition"],
+	"dependencies" : ["Starbound : Mass Effect Edition" , "Avali"],
 	"metadata" : {
 		"author" : "Team SMEE",
-		"description" : "Use the Normandy with Apex species. Minimum required SMEE version 0.2.3.",
+		"description" : "Use the Normandy with custom Avali species. Minimum required SMEE version 0.2.3 and Avali Race Mod 0.8.0",
 		"support_url" : "http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/",
 		"version" : "0.2.3"
 	}

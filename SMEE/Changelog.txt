@@ -5,7 +5,7 @@
 		
 		Mod Version: 0.2.3
 		Starbound Version: Beta v. Enraged Koala
-		Release Date: 2014-02-23
+		Release Date: 2014-03-18
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -18,7 +18,15 @@ http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edi
 
 Version - 0.2.3:
 --------------------------------------------------------------------------------
-- Enraged Koala fixes.
+- More Enraged Koala fixes.
+- Wireless Sound System (WSS) for ship wide sounds, currently used by radio and galaxy console.
+- New re-shaded Normandy.
+- Medbay Bed is now responsive and shows current health
+- 2 new codex quests.
+- New loading Mass Relay.
+- Tier 1 helms air tank removed
+- Turian now have a mouth for "idle".
+- Optional species package for custom species Avali
 
 
 Version - 0.2.3:

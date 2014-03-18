@@ -30,3 +30,4 @@ without SMEE!
 G4M5T3R - Mad Scientist (races and armors)
 Pfhoenix - Biotic God (biotic and tech powers)
 TohKlidan - Expert Tinkerer (ships and crafting)
+Kinsem - Insane Pixelist (art awesomeness)
