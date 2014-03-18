@@ -9,8 +9,8 @@
   "inspectionKind" : "gun",
   "image" : "at12raider.png",
   "recoilTime" : 0.1,
-  "handPosition" : [-16, -2],
-  "firePosition" : [0, 0],
+  "handPosition" : [-16, -4],
+  "firePosition" : [4, 0],
   
   "fireTime" : 1.0,
   "twoHanded" : true,

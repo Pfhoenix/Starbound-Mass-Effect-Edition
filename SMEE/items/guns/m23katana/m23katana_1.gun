@@ -10,7 +10,7 @@
   "image" : "m23katana.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -2],
-  "firePosition" : [0, 0],
+  "firePosition" : [6, 1],
   
   "fireTime" : 1.0,
   "twoHanded" : true,

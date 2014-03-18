@@ -9,8 +9,8 @@
   "inspectionKind" : "gun",
   "image" : "m300claymore.png",
   "recoilTime" : 0.1,
-  "handPosition" : [-16, -2],
-  "firePosition" : [0, 0],
+  "handPosition" : [-15, -4],
+  "firePosition" : [3, 4],
   
   "fireTime" : 1.0,
   "twoHanded" : true,
