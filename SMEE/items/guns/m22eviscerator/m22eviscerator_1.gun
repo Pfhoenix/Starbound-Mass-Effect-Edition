@@ -28,7 +28,7 @@
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m22eviscerator/m22eviscerator_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
