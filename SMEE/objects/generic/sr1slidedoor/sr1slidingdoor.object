@@ -20,9 +20,8 @@
 		}
 	],
 
-	// TODO custom script
 	"scripts" : [ "/objects/wired/smee/autoslidingdoor/autoslidingdoor.lua" ],
-	"scriptDelta" : 5,
+	"scriptDelta" : 10,
 
 	"animation" : "/objects/wired/door/door.animation",
 	"animationParts" : {
@@ -36,5 +35,5 @@
 	"openSounds" : [ "/sfx/objects/bunkerslidingdoor_open.wav" ],
 	"closeSounds" : [ "/sfx/objects/bunkerslidingdoor_close.wav" ],
 	
-	"detectRadius" : 5
+	"detectRadius" : 4
 }
