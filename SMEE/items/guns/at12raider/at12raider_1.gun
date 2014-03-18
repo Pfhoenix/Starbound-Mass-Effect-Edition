@@ -1,0 +1,37 @@
+{
+  "itemName" : "at12raider_1",
+  "inventoryIcon" : "at12raidericon.png",
+  "shortdescription" : "AT-12 Raider I",
+  "description" : "AT-12 Raider I",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "at12raider.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-16, -2],
+  "firePosition" : [0, 0],
+  
+  "fireTime" : 1.0,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 10,
+  
+  "fireOnRelease" : true,
+  "spread" : 8,
+
+  "projectileType" : "pellet",
+  "projectile" : {
+	"power" : 2.5,
+	"speed" : 85,
+  "color" : [ 64, 64, 64 ]
+  },
+
+  "muzzleEffect" : {
+    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "at12raider_2"
+  ]
+}
