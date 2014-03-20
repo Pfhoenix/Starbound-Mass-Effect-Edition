@@ -21,6 +21,8 @@ first before you can continue!
 This package contains only optional "patch mods" and nothing inside here runs
 without SMEE!
 
+If you want to use SMEEavali you also need to install the Avali Mod!
+
 
 
 ================================================================================
