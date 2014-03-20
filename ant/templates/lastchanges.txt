@@ -1,3 +1,4 @@
+- SMEE and all optional files are now modpak's.
 - More Enraged Koala fixes.
 - Wireless Sound System (WSS) for ship wide sounds, currently used by radio and galaxy console.
 - New re-shaded Normandy.
