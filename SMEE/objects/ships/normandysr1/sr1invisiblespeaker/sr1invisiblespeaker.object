@@ -1,0 +1,35 @@
+{
+	"objectName" : "sr1invisiblespeaker",
+	"rarity" : "Common",
+	"objectType" : "wire",
+	"description" : "Ship Speaker",
+	"shortdescription" : "Ship Speaker",
+	"race" : "n7human",
+
+	"category" : "wire",
+	"price" : 500,
+
+	"inventoryIcon" : "sr1invisiblespeaker.png",
+	"orientations" : [
+		{
+			"image" : "sr1invisiblespeaker.png:default",
+			"imagePosition" : [0, 0],
+			"frames" : 1,
+			"animationCycle" : 0.3,
+			"spaceScan" : 0.1,
+			"anchors" : [ "background" ]
+		}
+	],
+	
+	"scripts" : [ "/scripts/smee/wss.lua", "sr1invisiblespeaker.lua" ],
+	"scriptDelta" : 10,
+	
+	"animation" : "sr1invisiblespeaker.animation",
+	"animationParts" : {
+		"wssSounds" : "sr1invisiblespeaker.png:default"
+	},
+	
+	// wss properties
+	"wssSpeakerGroup" : "sr1ship", 
+	"wssSpeakerRange" : 1000 
+}
