@@ -1,0 +1,76 @@
+{
+	"animatedParts" : {
+		"stateTypes" : {
+			"wssState" : {
+				"default" : "off",
+				"states" : {
+					"off" : {
+						"frames" : 1,
+						"cycle" : 0.15
+					},
+					
+					"galaxy" : {
+						"frames" : 1,
+						"cycle" : 0.15,
+						"properties" : {
+							"persistentSound" : "/sfx/galaxymap/galaxymap.ogg"
+						}
+					},
+					
+					"track1" : {
+						"frames" : 5,
+						"cycle" : 1.0,
+						"mode" : "loop",
+						"properties" : {
+							"persistentSound" : "/music/radio/the_normandy.ogg"
+						}
+					},
+					
+					"track2" : {
+						"frames" : 5,
+						"cycle" : 1.0,
+						"mode" : "loop",
+						"properties" : {
+							"persistentSound" : "/music/radio/me1_theme.ogg"
+						}
+					}
+				}
+			}
+		},
+
+		"parts" : {
+			"wssSounds" : {
+				"properties" : {
+					"centered" : false
+				},
+
+				"partStates" : {
+					"wssState" : {
+						"off" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						"galaxy" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						
+						"track1" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						},
+						
+						"track2" : {
+							"properties" : {
+								"image" : "<partImage>"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

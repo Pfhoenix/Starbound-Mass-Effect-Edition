@@ -38,6 +38,16 @@
 				"unbreakable" : true
 			}
 		},
+		
+		{
+			"value" : [220, 220, 220, 255],
+			"foregroundBlock" : false,
+			"backgroundBlock" : true,
+			"object" : "sr1invisiblespeaker",
+			"objectParameters" : {
+				"unbreakable" : true
+			}
+		},
 
 		{
 			"value" : [230, 230, 230, 255],
