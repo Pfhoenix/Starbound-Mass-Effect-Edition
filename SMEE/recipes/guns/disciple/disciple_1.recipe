@@ -1,9 +1,9 @@
 {
   "input" : [
-    //{ "item" : "money", "count" : 1000 },
-    //{ "item" : "steelbar", "count" : 15 },
-    //{ "item" : "refinedEezo", "count" : 2 }
-    { "item" : "money", "count" : 1 }
+    { "item" : "money", "count" : 3500 },
+    { "item" : "Cerliumbar", "count" : 15 },
+    { "item" : "palladiumbar", "count" : 1 },
+    { "item" : "refinedEezo", "count" : 7 }
   ],
   "output" : { "item" : "disciple_1", "count" : 1 },
   "groups" : [ "craftingtable", "weapons", "all" ]

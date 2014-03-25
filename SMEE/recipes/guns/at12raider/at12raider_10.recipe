@@ -2,6 +2,8 @@
   "input" : [
     { "item" : "money", "count" : 7250 },
     { "item" : "imperviumbar", "count" : 15 },
+    { "item" : "iridiumbar", "count" : 1 },
+    { "item" : "palladiumbar", "count" : 1 },
     { "item" : "refinedEezo", "count" : 10 },
     { "item" : "at12raider_9", "count" : 1 }
   ],
