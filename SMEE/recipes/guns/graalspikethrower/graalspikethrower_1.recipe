@@ -1,9 +1,10 @@
 {
   "input" : [
-    //{ "item" : "money", "count" : 1000 },
-    //{ "item" : "steelbar", "count" : 15 },
-    //{ "item" : "refinedEezo", "count" : 2 }
-    { "item" : "money", "count" : 1 }
+    { "item" : "money", "count" : 4000 },
+    { "item" : "Violiumbar", "count" : 15 },
+    { "item" : "iridiumbar", "count" : 1 },
+    { "item" : "palladiumbar", "count" : 1 },
+    { "item" : "refinedEezo", "count" : 8 }
   ],
   "output" : { "item" : "graalspikethrower_1", "count" : 1 },
   "groups" : [ "craftingtable", "weapons", "all" ]
