@@ -1,8 +1,9 @@
 {
   "input" : [
-    { "item" : "money", "count" : 1000 },
+    { "item" : "money", "count" : 1050 },
     { "item" : "steelbar", "count" : 15 },
-    { "item" : "refinedEezo", "count" : 2 }
+    { "item" : "refinedEezo", "count" : 2 },
+    { "item" : "m23katana_1", "count" : 1 }
   ],
   "output" : { "item" : "m23katana_1", "count" : 1 },
   "groups" : [ "craftingtable", "weapons", "all" ]
