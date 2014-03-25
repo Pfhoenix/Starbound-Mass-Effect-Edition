@@ -1,8 +1,8 @@
 {
-  "itemName" : "at12raider_1",
+  "itemName" : "at12raider_10",
   "inventoryIcon" : "at12raidericon.png",
-  "shortdescription" : "AT-12 Raider I",
-  "description" : "AT-12 Raider I",
+  "shortdescription" : "AT-12 Raider X",
+  "description" : "AT-12 Raider X",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
@@ -15,23 +15,20 @@
   "fireTime" : 0.3,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 0.55,
+  "classMultiplier" : 0.599,
   
   "fireOnRelease" : true,
   "spread" : 8,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 159.0,
+	"power" : 227.272,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
     "fireSound" : [ { "file" : "/sfx/guns/at12raider/at12raider_fire1.ogg" } ]
-  },
+  }
   
-  "learnBlueprintsOnPickup" : [
-    "at12raider_2"
-  ]
 }

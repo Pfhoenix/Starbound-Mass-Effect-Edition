@@ -1,0 +1,34 @@
+{
+  "itemName" : "m23katana_10",
+  "inventoryIcon" : "m23katanaicon.png",
+  "shortdescription" : "M-23 Katana X",
+  "description" : "M-23 Katana X",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "inspectionKind" : "gun",
+  "image" : "m23katana.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-16, -2],
+  "firePosition" : [6, 1],
+  
+  "fireTime" : 1.0,
+  "twoHanded" : true,
+  "level" : 10,
+  "classMultiplier" : 6,
+  
+  "fireOnRelease" : true,
+  "spread" : 8,
+
+  "projectileType" : "pellet",
+  "projectile" : {
+	"power" : 12.5,
+	"speed" : 85,
+  "color" : [ 64, 64, 64 ]
+  },
+
+  "muzzleEffect" : {
+    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]
+  }
+  
+}

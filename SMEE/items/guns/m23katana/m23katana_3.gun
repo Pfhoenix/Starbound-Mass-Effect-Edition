@@ -1,37 +1,37 @@
 {
-  "itemName" : "reegarcarbine_1",
-  "inventoryIcon" : "reegarcarbineicon.png",
-  "shortdescription" : "Reegar Carbine I",
-  "description" : "Reegar Carbine I",
+  "itemName" : "m23katana_3",
+  "inventoryIcon" : "m23katanaicon.png",
+  "shortdescription" : "M-23 Katana III",
+  "description" : "M-23 Katana III",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
   "inspectionKind" : "gun",
-  "image" : "reegarcarbine.png",
+  "image" : "m23katana.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -2],
-  "firePosition" : [0, 0],
+  "firePosition" : [6, 1],
   
   "fireTime" : 1.0,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 10,
+  "classMultiplier" : 7.647,
   
   "fireOnRelease" : true,
   "spread" : 8,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 6.5,
+	"power" : 4.722,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ] //needs changed
+    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
-    "reegarcarbine_2"
+    "m23katana_4"
   ]
 }

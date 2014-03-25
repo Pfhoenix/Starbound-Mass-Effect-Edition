@@ -1,8 +1,8 @@
 {
-  "itemName" : "disciple_1",
+  "itemName" : "disciple_10",
   "inventoryIcon" : "discipleicon.png",
-  "shortdescription" : "Disciple I",
-  "description" : "Disciple I",
+  "shortdescription" : "Disciple X",
+  "description" : "Disciple X",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
@@ -15,23 +15,20 @@
   "fireTime" : 0.8,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 1.9,
+  "classMultiplier" : 1.583,
   
   "fireOnRelease" : true,
   "spread" : 1,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 400.0,
+	"power" : 720.0,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
     "fireSound" : [ { "file" : "/sfx/guns/disciple/disciple_fire1.ogg" } ]
-  },
+  }
   
-  "learnBlueprintsOnPickup" : [
-    "disciple_2"
-  ]
 }

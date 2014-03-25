@@ -1,13 +1,13 @@
 {
-  "itemName" : "venomshotgun_1",
-  "inventoryIcon" : "venomshotgunicon.png",
-  "shortdescription" : "Venom I",
-  "description" : "Venom Shotgun I",
+  "itemName" : "reegarcarbine_9",
+  "inventoryIcon" : "reegarcarbineicon.png",
+  "shortdescription" : "Reegar Carbine IX",
+  "description" : "Reegar Carbine IX",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
   "inspectionKind" : "gun",
-  "image" : "venomshotgun.png",
+  "image" : "reegarcarbine.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -2],
   "firePosition" : [0, 0],
@@ -18,20 +18,20 @@
   "classMultiplier" : 10,
   
   "fireOnRelease" : true,
-  "spread" : 1,
+  "spread" : 8,
 
-  "projectileType" : "pellet",  //needs changed
+  "projectileType" : "pellet",
   "projectile" : {
-	"power" : 636.0,
+	"power" : 6.5,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]  //needs changed
+    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ] //needs changed
   },
   
   "learnBlueprintsOnPickup" : [
-    "venomshotgun_2"
+    "reegarcarbine_10"
   ]
 }

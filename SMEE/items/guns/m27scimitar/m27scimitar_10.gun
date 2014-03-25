@@ -1,8 +1,8 @@
 {
-  "itemName" : "m27scimitar_1",
+  "itemName" : "m27scimitar_10",
   "inventoryIcon" : "m27scimitaricon.png",
-  "shortdescription" : "M-27 Scimitar I",
-  "description" : "M-27 Scimitar I",
+  "shortdescription" : "M-27 Scimitar X",
+  "description" : "M-27 Scimitar X",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
@@ -15,23 +15,20 @@
   "fireTime" : 0.6,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 3.377,
+  "classMultiplier" : 2.742,
   
   "fireOnRelease" : true,
   "spread" : 8,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 14.062,
+	"power" : 27.343,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
     "fireSound" : [ { "file" : "/sfx/guns/m27scimitar/m27scimitar_fire1.ogg" } ]
-  },
+  }
   
-  "learnBlueprintsOnPickup" : [
-    "m27scimitar_2"
-  ]
 }

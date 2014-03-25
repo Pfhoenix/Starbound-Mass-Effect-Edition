@@ -1,8 +1,8 @@
 {
-  "itemName" : "reegarcarbine_1",
+  "itemName" : "reegarcarbine_10",
   "inventoryIcon" : "reegarcarbineicon.png",
-  "shortdescription" : "Reegar Carbine I",
-  "description" : "Reegar Carbine I",
+  "shortdescription" : "Reegar Carbine X",
+  "description" : "Reegar Carbine X",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
@@ -29,9 +29,6 @@
 
   "muzzleEffect" : {
     "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ] //needs changed
-  },
+  }
   
-  "learnBlueprintsOnPickup" : [
-    "reegarcarbine_2"
-  ]
 }

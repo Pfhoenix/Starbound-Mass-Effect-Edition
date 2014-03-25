@@ -12,23 +12,23 @@
   "handPosition" : [-16, -2],
   "firePosition" : [0, 0],
   
-  "fireTime" : 1.0,
+  "fireTime" : 1.25,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 10,
+  "classMultiplier" : 1.186,
   
   "fireOnRelease" : true,
   "spread" : 8,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 2.5,
+	"power" : 187.5,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]  \\needs changed
   },
   
   "learnBlueprintsOnPickup" : [

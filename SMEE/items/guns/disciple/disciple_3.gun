@@ -1,37 +1,37 @@
 {
-  "itemName" : "venomshotgun_1",
-  "inventoryIcon" : "venomshotgunicon.png",
-  "shortdescription" : "Venom I",
-  "description" : "Venom Shotgun I",
+  "itemName" : "disciple_3",
+  "inventoryIcon" : "discipleicon.png",
+  "shortdescription" : "Disciple III",
+  "description" : "Disciple III",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
   "inspectionKind" : "gun",
-  "image" : "venomshotgun.png",
+  "image" : "disciple.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -2],
   "firePosition" : [0, 0],
   
-  "fireTime" : 1.0,
+  "fireTime" : 0.8,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 10,
+  "classMultiplier" : 1.792,
   
   "fireOnRelease" : true,
   "spread" : 1,
 
-  "projectileType" : "pellet",  //needs changed
+  "projectileType" : "pellet",
   "projectile" : {
-	"power" : 636.0,
+	"power" : 471.111,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]  //needs changed
+    "fireSound" : [ { "file" : "/sfx/guns/disciple/disciple_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
-    "venomshotgun_2"
+    "disciple_4"
   ]
 }

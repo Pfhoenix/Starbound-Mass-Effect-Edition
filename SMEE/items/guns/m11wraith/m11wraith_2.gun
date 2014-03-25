@@ -1,37 +1,37 @@
 {
-  "itemName" : "reegarcarbine_1",
-  "inventoryIcon" : "reegarcarbineicon.png",
-  "shortdescription" : "Reegar Carbine I",
-  "description" : "Reegar Carbine I",
+  "itemName" : "m11wraith_2",
+  "inventoryIcon" : "m11wraithicon.png",
+  "shortdescription" : "M-11 Wraith II",
+  "description" : "M-11 Wraith II",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
   "inspectionKind" : "gun",
-  "image" : "reegarcarbine.png",
+  "image" : "m11wraith.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -2],
   "firePosition" : [0, 0],
   
-  "fireTime" : 1.0,
+  "fireTime" : 1.25,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 10,
+  "classMultiplier" : 1.124,
   
   "fireOnRelease" : true,
   "spread" : 8,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 6.5,
+	"power" : 204.861,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ] //needs changed
+    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]  \\needs changed
   },
   
   "learnBlueprintsOnPickup" : [
-    "reegarcarbine_2"
+    "m11wraith_3"
   ]
 }

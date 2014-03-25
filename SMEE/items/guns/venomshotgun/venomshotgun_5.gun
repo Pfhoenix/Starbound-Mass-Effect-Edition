@@ -1,8 +1,8 @@
 {
-  "itemName" : "venomshotgun_1",
+  "itemName" : "venomshotgun_5",
   "inventoryIcon" : "venomshotgunicon.png",
-  "shortdescription" : "Venom I",
-  "description" : "Venom Shotgun I",
+  "shortdescription" : "Venom V",
+  "description" : "Venom Shotgun V",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
@@ -32,6 +32,6 @@
   },
   
   "learnBlueprintsOnPickup" : [
-    "venomshotgun_2"
+    "venomshotgun_6"
   ]
 }

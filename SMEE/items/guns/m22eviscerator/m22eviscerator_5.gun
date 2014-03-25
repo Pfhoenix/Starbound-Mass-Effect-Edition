@@ -1,8 +1,8 @@
 {
-  "itemName" : "m22eviscerator_1",
+  "itemName" : "m22eviscerator_5",
   "inventoryIcon" : "m22evisceratoricon.png",
-  "shortdescription" : "M-22 Eviscerator I",
-  "description" : "M-22 Eviscerator I",
+  "shortdescription" : "M-22 Eviscerator V",
+  "description" : "M-22 Eviscerator V",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
@@ -15,14 +15,14 @@
   "fireTime" : 1.25,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 5.333,
+  "classMultiplier" : 4.289,
   
   "fireOnRelease" : true,
   "spread" : 8,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 11.718,
+	"power" : 20.399,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
@@ -32,6 +32,6 @@
   },
   
   "learnBlueprintsOnPickup" : [
-    "m22eviscerator_2"
+    "m22eviscerator_6"
   ]
 }

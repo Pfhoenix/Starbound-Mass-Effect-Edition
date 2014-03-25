@@ -1,37 +1,37 @@
 {
-  "itemName" : "m22eviscerator_1",
-  "inventoryIcon" : "m22evisceratoricon.png",
-  "shortdescription" : "M-22 Eviscerator I",
-  "description" : "M-22 Eviscerator I",
+  "itemName" : "m27scimitar_3",
+  "inventoryIcon" : "m27scimitaricon.png",
+  "shortdescription" : "M-27 Scimitar III",
+  "description" : "M-27 Scimitar III",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
   "inspectionKind" : "gun",
-  "image" : "m22eviscerator.png",
+  "image" : "m27scimitar.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -4],
-  "firePosition" : [1, 0],
+  "firePosition" : [3, 0],
   
-  "fireTime" : 1.25,
+  "fireTime" : 0.6,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 5.333,
+  "classMultiplier" : 3.151,
   
   "fireOnRelease" : true,
   "spread" : 8,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 11.718,
+	"power" : 17.013,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m22eviscerator/m22eviscerator_fire1.ogg" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/m27scimitar/m27scimitar_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
-    "m22eviscerator_2"
+    "m27scimitar_4"
   ]
 }

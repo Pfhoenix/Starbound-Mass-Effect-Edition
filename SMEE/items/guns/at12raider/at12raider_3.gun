@@ -1,37 +1,37 @@
 {
-  "itemName" : "m22eviscerator_1",
-  "inventoryIcon" : "m22evisceratoricon.png",
-  "shortdescription" : "M-22 Eviscerator I",
-  "description" : "M-22 Eviscerator I",
+  "itemName" : "at12raider_3",
+  "inventoryIcon" : "at12raidericon.png",
+  "shortdescription" : "AT-12 Raider III",
+  "description" : "AT-12 Raider III",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
   "inspectionKind" : "gun",
-  "image" : "m22eviscerator.png",
+  "image" : "at12raider.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -4],
-  "firePosition" : [1, 0],
+  "firePosition" : [4, 0],
   
-  "fireTime" : 1.25,
+  "fireTime" : 0.3,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 5.333,
+  "classMultiplier" : 0.564,
   
   "fireOnRelease" : true,
   "spread" : 8,
 
   "projectileType" : "pellet",
   "projectile" : {
-	"power" : 11.718,
+	"power" : 174.242,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m22eviscerator/m22eviscerator_fire1.ogg" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/at12raider/at12raider_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [
-    "m22eviscerator_2"
+    "at12raider_4"
   ]
 }

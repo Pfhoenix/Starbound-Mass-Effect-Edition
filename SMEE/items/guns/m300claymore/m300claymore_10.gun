@@ -1,8 +1,8 @@
 {
-  "itemName" : "m300claymore_1",
+  "itemName" : "m300claymore_10",
   "inventoryIcon" : "m300claymoreicon.png",
-  "shortdescription" : "M-300 Claymore I",
-  "description" : "M-300 Claymore I",
+  "shortdescription" : "M-300 Claymore X",
+  "description" : "M-300 Claymore X",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
   "maxStack" : 1,
   "rarity" : "Rare",
@@ -15,23 +15,20 @@
   "fireTime" : 1.0,
   "twoHanded" : true,
   "level" : 10,
-  "classMultiplier" : 0.636,
+  "classMultiplier" : 0.520,
   
   "fireOnRelease" : true,
   "spread" : 1,
 
   "projectileType" : "pellet",  //needs changed
   "projectile" : {
-	"power" : 3300.0,
+	"power" : 4800.0,
 	"speed" : 85,
   "color" : [ 64, 64, 64 ]
   },
 
   "muzzleEffect" : {
     "fireSound" : [ { "file" : "/sfx/guns/m300claymore/m300claymore_fire1.ogg" } ]
-  },
+  }
   
-  "learnBlueprintsOnPickup" : [
-    "m300claymore_2"
-  ]
 }
