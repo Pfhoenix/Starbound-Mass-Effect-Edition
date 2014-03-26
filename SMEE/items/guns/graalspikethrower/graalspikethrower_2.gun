@@ -1,6 +1,6 @@
 {
   "itemName" : "graalspikethrower_2",
-  "inventoryIcon" : "graalspikethrowercon.png",
+  "inventoryIcon" : "graalspikethrowericon.png",
   "shortdescription" : "Spike Thrower II",
   "description" : "Graal Spike Thrower II",
   "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
