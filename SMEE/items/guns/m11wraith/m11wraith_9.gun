@@ -9,7 +9,7 @@
   "inspectionKind" : "gun",
   "image" : "m11wraith.png",
   "recoilTime" : 0.1,
-  "handPosition" : [-16, -2],
+  "handPosition" : [-16, -4],
   "firePosition" : [0, 0],
   
   "fireTime" : 1.25,

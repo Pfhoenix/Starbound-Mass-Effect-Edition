@@ -9,7 +9,7 @@
   "inspectionKind" : "gun",
   "image" : "disciple.png",
   "recoilTime" : 0.1,
-  "handPosition" : [-16, -2],
+  "handPosition" : [-16, -3],
   "firePosition" : [0, 0],
   
   "fireTime" : 0.8,

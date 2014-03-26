@@ -9,7 +9,7 @@
   "inspectionKind" : "gun",
   "image" : "m23katana.png",
   "recoilTime" : 0.1,
-  "handPosition" : [-16, -2],
+  "handPosition" : [-16, -3],
   "firePosition" : [6, 1],
   
   "fireTime" : 1.0,
