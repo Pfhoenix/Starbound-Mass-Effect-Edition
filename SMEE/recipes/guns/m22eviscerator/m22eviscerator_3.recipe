@@ -5,6 +5,7 @@
     { "item" : "refinedEezo", "count" : 4 },
     { "item" : "m22eviscerator_2", "count" : 1 }
   ],
+  
   "output" : { "item" : "m22eviscerator_3", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
 }

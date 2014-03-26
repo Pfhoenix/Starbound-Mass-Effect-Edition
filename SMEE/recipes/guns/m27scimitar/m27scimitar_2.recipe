@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 2625 },
+    { "item" : "aegisaltbar", "count" : 15 },
+    { "item" : "refinedEezo", "count" : 5 },
+	{ "item" : "m27scimitar_1", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "m27scimitar_2", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
+}

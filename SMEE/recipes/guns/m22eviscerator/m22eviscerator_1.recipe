@@ -4,6 +4,7 @@
     { "item" : "titaniumbar", "count" : 15 },
     { "item" : "refinedEezo", "count" : 3 }
   ],
+  
   "output" : { "item" : "m22eviscerator_1", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
 }

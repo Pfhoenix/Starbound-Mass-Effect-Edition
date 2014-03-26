@@ -7,6 +7,7 @@
     { "item" : "refinedEezo", "count" : 8 },
     { "item" : "graalspikethrower_4", "count" : 1 }
   ],
+  
   "output" : { "item" : "graalspikethrower_5", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
 }

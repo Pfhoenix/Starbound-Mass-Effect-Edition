@@ -4,6 +4,7 @@
     { "item" : "steelbar", "count" : 15 },
     { "item" : "refinedEezo", "count" : 2 }
   ],
+  
   "output" : { "item" : "m23katana_1", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
 }

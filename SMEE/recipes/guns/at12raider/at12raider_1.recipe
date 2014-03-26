@@ -6,6 +6,7 @@
     { "item" : "palladiumbar", "count" : 1 },
     { "item" : "refinedEezo", "count" : 10 }
   ],
+  
   "output" : { "item" : "at12raider_1", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
 }

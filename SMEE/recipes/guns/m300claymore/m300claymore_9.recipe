@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 7000 },
+    { "item" : "imperviumbar", "count" : 15 },
+	{ "item" : "iridiumbar", "count" : 1 },
+	{ "item" : "palladiumbar", "count" : 1 },
+    { "item" : "refinedEezo", "count" : 10 },
+    { "item" : "m300claymore_8", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "m300claymore_9", "count" : 1 },
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
+}

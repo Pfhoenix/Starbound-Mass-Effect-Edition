@@ -6,6 +6,7 @@
     { "item" : "refinedEezo", "count" : 7 },
     { "item" : "disciple_3", "count" : 1 }
   ],
+  
   "output" : { "item" : "disciple_4", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
 }

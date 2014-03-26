@@ -7,6 +7,7 @@
     { "item" : "refinedEezo", "count" : 10 },
     { "item" : "at12raider_6", "count" : 1 }
   ],
+  
   "output" : { "item" : "at12raider_7", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
 }
