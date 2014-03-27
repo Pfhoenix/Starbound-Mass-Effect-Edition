@@ -8,3 +8,4 @@
 - Tier 1 helms air tank removed
 - Turian now have a mouth for "idle".
 - Optional species package for custom species Avali
+- Status pods now look like Prothean Beacons
