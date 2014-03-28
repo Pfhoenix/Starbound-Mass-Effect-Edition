@@ -1,6 +1,6 @@
 project.name.short=SMEE
 project.name.long=Starbound : Mass Effect Edition
-project.version=0.2.3
+project.version=0.3.0
 starbound.version=Beta v. Enraged Koala
 
 #setup your workspace and sub dirs.

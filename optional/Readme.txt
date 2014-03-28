@@ -3,9 +3,9 @@
 ================================================================================
 		by Team SMEE
 		
-		Mod Version: 0.2.3
+		Mod Version: 0.3.0
 		Starbound Version: Beta v. Enraged Koala
-		Release Date: 2014-03-18
+		Release Date: 2014-03-28
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -20,6 +20,8 @@ first before you can continue!
 
 This package contains only optional "patch mods" and nothing inside here runs
 without SMEE!
+
+If you want to use SMEEavali you also need to install the Avali Mod!
 
 
 

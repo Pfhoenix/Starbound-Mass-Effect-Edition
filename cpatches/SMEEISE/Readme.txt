@@ -3,10 +3,10 @@
 ================================================================================
 		by Team SMEE
 		
-		SMEE Version: 0.2.3
+		SMEE Version: 0.3.0
 		Industrialization: Starbound Edition Version: V.0.8.0 RC2 BETA
 		Starbound Version: Beta v. Enraged Koala
-		Release Date: 2014-03-18
+		Release Date: 2014-03-28
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/

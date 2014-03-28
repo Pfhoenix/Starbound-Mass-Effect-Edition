@@ -3,9 +3,9 @@
 ================================================================================
 		by Team SMEE
 		
-		Mod Version: 0.2.3
+		Mod Version: 0.3.0
 		Starbound Version: Beta v. Enraged Koala
-		Release Date: 2014-03-18
+		Release Date: 2014-03-28
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -24,7 +24,7 @@ races. Wield awesome Biotic Powers.
 	Installation
 ================================================================================
 
-Simply copy the entire mod directory into your "Starbound/mods" directory,
+Simply copy the modpak file into your "Starbound/mods" directory,
 commonly at "c:\Program Files (x86)\Steam\SteamApps\common\Starbound\mods". 
 
 If you wish to use one of the original Starbound races with SMEE and have access
@@ -32,6 +32,9 @@ to the Normandy, it is recommended that you download and use one or more of the
 SMEE versions in the optional race package. You will need to install SMEE first 
 and then place a mod from the optional package alongside SMEE into your 
 Starbound/mods directory.
+
+Don't forget to remove the obsolete mod folders from previous versions
+if you are updating SMEE!
 
 ================================================================================
 	Dependencies
@@ -91,7 +94,6 @@ Thanks to:
 - Bioware for making the Mass Effect series.
 - nathiesk, from the playstarbound forums, for her work on the Mass Effect guns.
 - derektye05 and shadee, from deviantart, for source Title Race face Sprites.
-- Troondon80, from deviantart, for source Mass Relay loading sprites.
 - Some Wiki sources, for some placeholder codex entries.  
 
 ================================================================================

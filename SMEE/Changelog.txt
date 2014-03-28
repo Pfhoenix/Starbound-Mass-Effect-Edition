@@ -3,9 +3,9 @@
 ================================================================================
 		by Team SMEE
 		
-		Mod Version: 0.2.3
+		Mod Version: 0.3.0
 		Starbound Version: Beta v. Enraged Koala
-		Release Date: 2014-03-18
+		Release Date: 2014-03-28
 		
 --------------------------------------------------------------------------------
 http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/
@@ -16,8 +16,9 @@ http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edi
 ================================================================================
 
 
-Version - 0.2.3:
+Version - 0.3.0:
 --------------------------------------------------------------------------------
+- SMEE and all optional files are now modpak's.
 - More Enraged Koala fixes.
 - Wireless Sound System (WSS) for ship wide sounds, currently used by radio and galaxy console.
 - New re-shaded Normandy.
@@ -27,6 +28,8 @@ Version - 0.2.3:
 - Tier 1 helms air tank removed
 - Turian now have a mouth for "idle".
 - Optional species package for custom species Avali
+- Status pods now look like Prothean Beacons
+- New weapons
 
 
 Version - 0.2.3:
