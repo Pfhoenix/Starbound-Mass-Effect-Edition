@@ -1,13 +1,13 @@
 {
   "objectName" : "sr1boosterflame",
   "rarity" : "Common",
-  "objectType" : "engine",
   "description" : "Any vessel caught behind them will melt like wax in a blowtorch.",
   "shortdescription" : "Antiproton Thrusters",
-  "race" : "n7human",
+  "race" : "generic",
 
   "category" : "light",
   "lightColor" : [59, 183, 255],
+  "pointLight" : true,
   "flickerDistance" : 0.2,
   "flickerStrength" : 0.05,
   "flickerTiming" : 4,
@@ -42,6 +42,7 @@
       "imagePosition" : [-48, -32],
       "frames" : 4,
       "animationCycle" : 1.0,
+      "fullbright" : true,
 
       "spaces" : [ [-3, 2], [-3, 1], [-3, 0], [-3, -1], [-3, -2], [-3, -3], [-2, 2], [-2, 1], [-2, 0], [-2, -1], [-2, -2], [-2, -3], [-1, 2], [-1, 1], [-1, 0], [-1, -1], [-1, -2], [-1, -3], [0, 2], [0, 1], [0, 0], [0, -1], [0, -2], [0, -3] ],
       "anchors" : [ "right" ]

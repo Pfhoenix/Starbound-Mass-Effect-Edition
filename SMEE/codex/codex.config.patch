@@ -1,0 +1,5 @@
+[
+  { "op" : "add",
+    "path" : "/initialcodex/n7human",
+    "value" : [ "controls", "humanprologue", "humanorigins", "humanescape", "survivalguide" ] }
+]

@@ -1,0 +1,18 @@
+{
+	"config" : {
+		"shipUpgrades" : {
+		  "capabilities" : [ "teleport", "planetTravel", "systemTravel" ],
+		  "maxFuel" : 1000
+		}
+	},
+
+	"backgroundOverlays" : [
+		{
+			"image" : "normandysr1_t7.png",
+			"position" : [0, -1]
+		}
+	],
+
+	"blockKey" : "blockKey.config:blockKey",
+	"blockImage" : "normandysr1_t7blocks.png"
+}

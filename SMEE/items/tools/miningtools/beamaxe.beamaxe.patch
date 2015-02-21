@@ -1,0 +1,32 @@
+[
+	{
+		"op" : "replace",
+		"path" : "/inventoryIcon",
+		"value" : "omnitool1icon.png"
+	},
+	{
+		"op" : "replace",
+		"path" : "/description",
+		"value" : "Civilian version of an omni-tool. Manipulates matter."
+	},
+	{
+		"op" : "replace",
+		"path" : "/shortdescription",
+		"value" : "Omni-Tool O-1"
+	},
+	{
+		"op" : "replace",
+		"path" : "/largeImage",
+		"value" : "omnitool1.png"
+	},
+	{
+		"op" : "replace",
+		"path" : "/image",
+		"value" : "/humanoid/any/omnitool1.png"
+	},
+	{
+		"op" : "replace",
+		"path" : "/handPosition",
+		"value" : [1, 0]
+	}
+]

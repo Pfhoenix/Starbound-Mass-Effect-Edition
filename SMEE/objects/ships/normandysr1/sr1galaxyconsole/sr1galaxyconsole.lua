@@ -30,9 +30,9 @@ function onInteraction(args)
 end
 
 
-function main() 
-	wssUpdate()
-	responsiveObject.update()
+function update(dt) 
+	wssUpdate(dt)
+	responsiveObject.update(dt)
 	
 	local isactive = responsiveObject.isActive()
 	local sound = entity.animationState("wssState")

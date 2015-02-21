@@ -1,0 +1,32 @@
+[
+	{
+		"op" : "replace",
+		"path" : "/inventoryIcon",
+		"value" : "omnitool4icon.png"
+	},
+	{
+		"op" : "replace",
+		"path" : "/description",
+		"value" : "Military grade omni-tool. Manipulates matter."
+	},
+	{
+		"op" : "replace",
+		"path" : "/shortdescription",
+		"value" : "Omni-Tool O-M"
+	},
+	{
+		"op" : "replace",
+		"path" : "/largeImage",
+		"value" : "omnitool4.png"
+	},
+	{
+		"op" : "replace",
+		"path" : "/image",
+		"value" : "/humanoid/any/omnitool4.png"
+	},
+	{
+		"op" : "replace",
+		"path" : "/handPosition",
+		"value" : [1, 0]
+	}
+]

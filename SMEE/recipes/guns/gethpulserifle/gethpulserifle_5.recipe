@@ -6,6 +6,6 @@
     { "item" : "gethpulserifle_4", "count" : 1 }
   ],
   "output" : { "item" : "gethpulserifle_5", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "weapons", "all" ]
 }
 

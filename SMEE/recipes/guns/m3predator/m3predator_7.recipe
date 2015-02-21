@@ -6,5 +6,5 @@
     { "item" : "m3predator_6", "count" : 1 }
   ],
   "output" : { "item" : "m3predator_7", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "weapons", "all" ]
 }

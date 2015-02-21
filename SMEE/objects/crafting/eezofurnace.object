@@ -1,0 +1,61 @@
+{
+  "objectName" : "eezofurnace",
+  "rarity" : "legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/eezofurnace.config",
+    "filter" : [ "eezofurnace" ]
+  },
+  "printable" : false,
+  "description" : "This device can break down materials and turn them into Element-0.",
+  "shortdescription" : "^orange;Atomic Decomposer^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1250,
+
+  "lightColor" : [102, 45, 102],
+  "lightPosition" : [0, 2],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1.0,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.0,
+
+  "inventoryIcon" : "eezofurnaceicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "eezofurnace.png:<color>.<frame>", "fullbright" : true }, { "image" : "eezofurnacelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 14,
+      "animationCycle" : 0.5,
+      
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "eezofurnace.png:<color>.<frame>", "fullbright" : true }, { "image" : "eezofurnacelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 14,
+      "animationCycle" : 0.5,
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/scififurnace.wav",
+
+  "statusEffects" : [ ],
+  
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+
+}

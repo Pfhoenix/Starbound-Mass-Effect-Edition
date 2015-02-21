@@ -1,13 +1,22 @@
 {
   "materialId" : 7002,
   "materialName" : "sr1shipwall",
-  "frames" : "sr1shipwall.png",
   "particleColor" : [110, 110, 110, 255],
-  "variants" : 1,
   "itemDrop" : "sr1shipwall",
   "description" : "A wall panel used by Alliance ships.",
   "shortdescription" : "Alliance Wall Panel",
-  "multicolored" : false,
+  "glitchDescription" : "Alliance Wall Panel",
+  "floranDescription" : "Alliance Wall Panel",
   "footstepSound" : "/sfx/blocks/footstep_composite.wav",
-  "health" : 20
+  "health" : 20,
+  "category" : "materials",
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "sr1shipwall.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
 }

@@ -147,5 +147,9 @@
 				}
 			}
 		}
+	},
+	"sounds" : {
+		"zoomInSounds" : [],
+		"zoomOutSounds" : []
 	}
 }

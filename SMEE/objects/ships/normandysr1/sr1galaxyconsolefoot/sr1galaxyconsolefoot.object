@@ -8,7 +8,7 @@
 	
 	"description" : "Use Me to open the Galaxy Map.",
 	"shortdescription" : "Holographic Galaxy Map",
-	"race" : "n7human",
+	"race" : "generic",
 
 	"inventoryIcon" : "sr1galaxyconsoleicon.png",
 	"orientations" : [

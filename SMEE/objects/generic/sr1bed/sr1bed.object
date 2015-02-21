@@ -4,7 +4,7 @@
 	"rarity" : "Common",
 	"description" : "A comfortable Alliance bed. Looks pretty sleek.",
 	"shortdescription" : "Alliance Bed",
-	"race" : "n7human",
+	"race" : "generic",
 	"category" : "furniture",
 	"price" : 1500,
 
@@ -17,8 +17,7 @@
 	"sitCoverImage" : "/objects/generic/sr1bed/sr1bedcover.png",
 	"sitEmote" : "sleep",
 	"sitStatusEffects" : [
-		{ "kind" : "Nude" },
-		{ "kind" : "Health", "amount" : 0.02 }
+		"regeneration1"
 	],
 	"sitEffectEmitters" : [ "sleepbubbles" ],
 

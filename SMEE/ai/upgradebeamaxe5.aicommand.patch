@@ -1,0 +1,29 @@
+[
+  { 
+    "op" : "add",
+    "path" : "/speciesText/n7human",
+    "value" : {
+      "buttonText" : "Upgrade M. M. - Power III",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;With ^orange;10 refined units^white; each of ^orange;aegisalt, rubium, and violium^white;, I can upgrade your matter manipulator to ^green;greatly increase its mining power^white;.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Success! Your matter manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Failure. We'll need ^orange;10 refined aegisalt, 10 refined rubium, and 10 refined violium ^white;to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    }}
+]

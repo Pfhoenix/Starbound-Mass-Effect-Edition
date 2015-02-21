@@ -1,0 +1,29 @@
+[
+  { 
+    "op" : "add",
+    "path" : "/speciesText/n7human",
+    "value" : {
+      "buttonText" : "Upgrade M. M. - Power II",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;With ^orange;20 bars of durasteel^white;, I can upgrade your matter manipulator to ^green;further increase its mining power^white;.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Success! Your matter manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Failure. We'll need ^orange;20 durasteel bars^white; to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    }}
+]

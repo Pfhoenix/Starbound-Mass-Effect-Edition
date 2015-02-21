@@ -1,9 +1,10 @@
 {
   "kind" : "n7human",
-  "index" : 6,
   "nameGen" : [ "/species/n7humannamegenmale.config:names", "/species/n7humannamegenfemale.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.wav", "/sfx/humanoid/humanhurt_female1.wav" ],
+  "gruntNoises" : [ [ "/sfx/humanoid/humangrunt1.wav", "/sfx/humanoid/humangrunt2.wav" ], [ "/sfx/humanoid/humangrunt1.wav", "/sfx/humanoid/humangrunt2.wav" ] ],
   "charGenTextLabels" : [ "SKIN COLOR", "HAIR STYLE", "SHIRT", "PANTS", "UNDY COLOR", "HAIR COLOR", "SHIRT COLOR", "PANTS COLOR", "HUMAN", "PERSONALITY" ],
+  "skull" : "/humanoid/human/dead.png",
   "defaultBlueprints" : {
     "tier1" : [
       { "item" : "humantier1hammer" },
@@ -23,15 +24,9 @@
       { "item" : "sweatervestlegs" },
       { "item" : "workoutchest" },
       { "item" : "workoutlegs" },
-      { "item" : "burger" },
-      { "item" : "vegetablesoup" },
-      { "item" : "bread" },
-      { "item" : "sweetcorn" },
-      { "item" : "candyapple" },
-      { "item" : "icecream" },
-	  { "item" : "flagn7human" }
-    ],
-    "tier2" : [
+      
+      { "item" : "flagn7human" },
+      
       { "item" : "humantier2hammer" },
       { "item" : "humantier2shortsword" },
       { "item" : "humantier2broadsword" },
@@ -41,9 +36,7 @@
       { "item" : "humantier2head" },
       { "item" : "humantier2chest" },
       { "item" : "humantier2pants" },
-      { "item" : "spawnerhuman" }
-    ],
-    "tier3" : [
+      
       { "item" : "humantier3head" },
       { "item" : "humantier3chest" },
       { "item" : "humantier3pants" },
@@ -52,9 +45,8 @@
       { "item" : "humantier3broadsword" },
       { "item" : "humantier3spear" },
       { "item" : "humantier3axe" },
-      { "item" : "humantier3dagger" }
-    ],
-    "tier4" : [
+      { "item" : "humantier3dagger" },
+      
       { "item" : "humantier4head" },
       { "item" : "humantier4chest" },
       { "item" : "humantier4pants" },
@@ -63,42 +55,22 @@
       { "item" : "humantier4broadsword" },
       { "item" : "humantier4spear" },
       { "item" : "humantier4axe" },
-      { "item" : "humantier4dagger" }
-    ],
-    "level32" : [
+      { "item" : "humantier4dagger" },
+      
       { "item" : "humantier5head" },
       { "item" : "humantier5chest" },
       { "item" : "humantier5pants" },
-      { "item" : "humantier5hammer" },
-      { "item" : "humantier5shortsword" },
-      { "item" : "humantier5broadsword" },
-      { "item" : "humantier5spear" },
-      { "item" : "humantier5axe" },
-      { "item" : "humantier5dagger" }
-    ],
-    "level33" : [
+      { "item" : "humantier5dagger" },
+      
       { "item" : "humantier6head" },
       { "item" : "humantier6chest" },
       { "item" : "humantier6pants" },
-      { "item" : "humantier6hammer" },
-      { "item" : "humantier6shortsword" },
-      { "item" : "humantier6broadsword" },
-      { "item" : "humantier6spear" },
-      { "item" : "humantier6axe" },
-      { "item" : "humantier6dagger" }
-    ],
-    "level34" : [
+      { "item" : "humantier6dagger" },
+      
       { "item" : "humantier7head" },
       { "item" : "humantier7chest" },
       { "item" : "humantier7pants" },
-      { "item" : "humantier7hammer" },
-      { "item" : "humantier7shortsword" },
-      { "item" : "humantier7broadsword" },
-      { "item" : "humantier7spear" },
-      { "item" : "humantier7axe" },
-      { "item" : "humantier7dagger" }
-    ],
-    "level35" : [
+      
       { "item" : "humantier8head" },
       { "item" : "humantier8chest" },
       { "item" : "humantier8pants" },
@@ -107,20 +79,12 @@
       { "item" : "humantier8broadsword" },
       { "item" : "humantier8spear" },
       { "item" : "humantier8axe" },
-      { "item" : "humantier8dagger" }
-    ],
-    "level36" : [
+      { "item" : "humantier8dagger" },
+      
       { "item" : "humantier9head" },
       { "item" : "humantier9chest" },
       { "item" : "humantier9pants" },
-      { "item" : "humantier9hammer" },
-      { "item" : "humantier9shortsword" },
-      { "item" : "humantier9broadsword" },
-      { "item" : "humantier9spear" },
-      { "item" : "humantier9axe" },
-      { "item" : "humantier9dagger" }
-    ],
-    "level37" : [
+      
       { "item" : "humantier10head" },
       { "item" : "humantier10chest" },
       { "item" : "humantier10pants" },
@@ -161,16 +125,16 @@
     }
   ],
   "bodyColor" : [
-    { "ffe2c5" : "ffe9d3", "ffc181" : "ffc181", "d39c6c" : "d39c6c", "c7815b" : "b97551" },
-    { "ffe2c5" : "fff6f6", "ffc181" : "f7d5d3", "d39c6c" : "d1aaa1", "c7815b" : "a27f70" },
-    { "ffe2c5" : "fff7ec", "ffc181" : "f9d3a9", "d39c6c" : "d3a57c", "c7815b" : "b37c5d" },
-    { "ffe2c5" : "fbe1d4", "ffc181" : "f6baa2", "d39c6c" : "cc9582", "c7815b" : "ac7261" },
-    { "ffe2c5" : "f4e0ba", "ffc181" : "e9b768", "d39c6c" : "c18f54", "c7815b" : "a2683d" },
-    { "ffe2c5" : "e8cebc", "ffc181" : "cfa97d", "d39c6c" : "ae774b", "c7815b" : "804e34" },
+    { "ffe2c5" : "ab8c77", "ffc181" : "86644a", "d39c6c" : "684431", "c7815b" : "40271d" },
+    { "ffe2c5" : "c5ad98", "ffc181" : "a47a59", "d39c6c" : "865d40", "c7815b" : "66412e" },
     { "ffe2c5" : "e1b98d", "ffc181" : "c88959", "d39c6c" : "9e6a4d", "c7815b" : "784930" },
     { "ffe2c5" : "c9b181", "ffc181" : "ac8348", "d39c6c" : "87633f", "c7815b" : "694c31" },
-    { "ffe2c5" : "c5ad98", "ffc181" : "a47a59", "d39c6c" : "865d40", "c7815b" : "66412e" },
-    { "ffe2c5" : "ab8c77", "ffc181" : "86644a", "d39c6c" : "684431", "c7815b" : "40271d" }
+    { "ffe2c5" : "e8cebc", "ffc181" : "cfa97d", "d39c6c" : "ae774b", "c7815b" : "804e34" },
+    { "ffe2c5" : "f4e0ba", "ffc181" : "e9b768", "d39c6c" : "c18f54", "c7815b" : "a2683d" },
+    { "ffe2c5" : "ffe9d3", "ffc181" : "ffc181", "d39c6c" : "d39c6c", "c7815b" : "b97551" },
+    { "ffe2c5" : "fbe1d4", "ffc181" : "f6baa2", "d39c6c" : "cc9582", "c7815b" : "ac7261" },
+    { "ffe2c5" : "fff7ec", "ffc181" : "f9d3a9", "d39c6c" : "d3a57c", "c7815b" : "b37c5d" },
+    { "ffe2c5" : "fff6f6", "ffc181" : "f7d5d3", "d39c6c" : "d1aaa1", "c7815b" : "a27f70" }
   ],
   "undyColor" : [
     { "dc1f00" : "4d76ad", "be1b00" : "395187", "951500" : "20325b" },
@@ -185,25 +149,34 @@
     { "dc1f00" : "f794f8", "be1b00" : "d355c1", "951500" : "b72c95" }
   ],
   "hairColor" : [
-    { "d9c189" : "525252", "a38d59" : "363636", "735e3a" : "161616" },
-    { "d9c189" : "50422f", "a38d59" : "36261e", "735e3a" : "170f0d" },
-    { "d9c189" : "7f5a39", "a38d59" : "5b3523", "735e3a" : "3b1f15" },
-    { "d9c189" : "a6671d", "a38d59" : "915622", "735e3a" : "743e1d" },
-    { "d9c189" : "e6e756", "a38d59" : "c7ac3f", "735e3a" : "a9882f" },
-    { "d9c189" : "f2eba3", "a38d59" : "dcd28c", "735e3a" : "c2b677" },
-    { "d9c189" : "7d3c1c", "a38d59" : "4d240b", "735e3a" : "2d1606" },
+    { "d9c189" : "CD1C38", "a38d59" : "982441", "735e3a" : "69243F" },
     { "d9c189" : "ad2716", "a38d59" : "8f1f1b", "735e3a" : "731a1a" },
-    { "d9c189" : "b8b8b8", "a38d59" : "828282", "735e3a" : "555555" },
-    { "d9c189" : "eaeaea", "a38d59" : "b8b8b8", "735e3a" : "828282" },
-    { "d9c189" : "6f6d85", "a38d59" : "525269", "735e3a" : "3e4352" },
-    { "d9c189" : "cd72d9", "a38d59" : "ac4da6", "735e3a" : "913b86" },
-    { "d9c189" : "425879", "a38d59" : "343965", "735e3a" : "242247" },
-    { "d9c189" : "5d8bc7", "a38d59" : "4d55b0", "735e3a" : "2e2a73" },
-    { "d9c189" : "653b7f", "a38d59" : "562e6a", "735e3a" : "3f1d4b" },
-    { "d9c189" : "7f3b6d", "a38d59" : "6a2e53", "735e3a" : "4b1d30" },
+    { "d9c189" : "E86D46", "a38d59" : "D1422E", "735e3a" : "96201B" },
+    { "d9c189" : "BE471B", "a38d59" : "9B2F0C", "735e3a" : "702710" },
+    { "d9c189" : "a6671d", "a38d59" : "915622", "735e3a" : "743e1d" },
     { "d9c189" : "efa838", "a38d59" : "be6d1d", "735e3a" : "834012" },
+    { "d9c189" : "e6e756", "a38d59" : "c7ac3f", "735e3a" : "a9882f" },
+    { "d9c189" : "A7D13D", "a38d59" : "83AD22", "735e3a" : "6B880B" },
     { "d9c189" : "4ece61", "a38d59" : "34ae47", "735e3a" : "228a38" },
     { "d9c189" : "3b7f44", "a38d59" : "2e6a38", "735e3a" : "1d4b28" },
-    { "d9c189" : "74726f", "a38d59" : "53504d", "735e3a" : "2a251e" }
+    { "d9c189" : "49E193", "a38d59" : "3BA380", "735e3a" : "197C81" },
+    { "d9c189" : "5BD5B6", "a38d59" : "4AA9AD", "735e3a" : "237082" },
+    { "d9c189" : "61BCDE", "a38d59" : "5381CC", "735e3a" : "2C489E" },
+    { "d9c189" : "5d8bc7", "a38d59" : "4d55b0", "735e3a" : "2e2a73" },
+    { "d9c189" : "425879", "a38d59" : "343965", "735e3a" : "242247" },
+    { "d9c189" : "653b7f", "a38d59" : "562e6a", "735e3a" : "3f1d4b" },
+    { "d9c189" : "7f3b6d", "a38d59" : "6a2e53", "735e3a" : "4b1d30" },
+    { "d9c189" : "AD68E2", "a38d59" : "9441B0", "735e3a" : "812E93" },
+    { "d9c189" : "cd72d9", "a38d59" : "ac4da6", "735e3a" : "913b86" },
+    { "d9c189" : "D26BA4", "a38d59" : "A54669", "735e3a" : "89334D" },
+    { "d9c189" : "525252", "a38d59" : "363636", "735e3a" : "161616" },
+    { "d9c189" : "50422f", "a38d59" : "36261e", "735e3a" : "170f0d" },
+    { "d9c189" : "7d3c1c", "a38d59" : "4d240b", "735e3a" : "2d1606" },   
+    { "d9c189" : "7f5a39", "a38d59" : "5b3523", "735e3a" : "3b1f15" },
+    { "d9c189" : "74726f", "a38d59" : "53504d", "735e3a" : "2a251e" },
+    { "d9c189" : "6f6d85", "a38d59" : "525269", "735e3a" : "3e4352" },
+    { "d9c189" : "b8b8b8", "a38d59" : "828282", "735e3a" : "555555" },
+    { "d9c189" : "f2eba3", "a38d59" : "dcd28c", "735e3a" : "c2b677" },
+    { "d9c189" : "eaeaea", "a38d59" : "b8b8b8", "735e3a" : "828282" }
   ]
 }

@@ -1,13 +1,11 @@
 {
 	"objectName" : "sr1shipdoor",
 	"rarity" : "Common",
-	"objectType" : "wire",
-
 	"category" : "door",
 	"price" : 650,
-	"description" : "A air tight ship door.",
+	"description" : "An air-tight ship door.",
 	"shortdescription" : "Alliance Ship Door",
-	"race" : "n7human",
+	"race" : "generic",
 
 	"inventoryIcon" : "sr1shipdooricon.png",
 	"orientations" : [
@@ -24,14 +22,17 @@
 	"scriptDelta" : 5,
 
 	"animation" : "/objects/wired/door/door.animation",
+	"animationCustom" : {
+		"sounds" : {
+			"open" : [ "/sfx/objects/apexcooldoor_open.wav" ],
+			"close" : [ "/sfx/objects/apexcooldoor_close.wav" ]
+		}
+	},
 	"animationParts" : {
 		"door" : "sr1shipdoor.png"
 	},
 	"animationPosition" : [-20, 0],
 
 	"inboundNodes" : [ [-1, 4] ],
-	"outboundNodes" : [ [1, 0] ],
-
-	"openSounds" : [ "/sfx/objects/apexcooldoor_open.wav" ],
-	"closeSounds" : [ "/sfx/objects/apexcooldoor_close.wav" ]
+	"outboundNodes" : [ [1, 0] ]
 }

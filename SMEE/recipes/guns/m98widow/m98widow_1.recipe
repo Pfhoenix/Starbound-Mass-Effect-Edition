@@ -7,5 +7,5 @@
     { "item" : "refinedEezo", "count" : 8 }
   ],
   "output" : { "item" : "m98widow_1", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "weapons", "all" ]
 }

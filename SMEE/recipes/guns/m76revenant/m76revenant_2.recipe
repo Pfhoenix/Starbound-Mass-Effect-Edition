@@ -8,5 +8,5 @@
     { "item" : "m76revenant_1", "count" : 1 }
   ],
   "output" : { "item" : "m76revenant_2", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "weapons", "all" ]
 }

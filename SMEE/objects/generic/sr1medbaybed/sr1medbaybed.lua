@@ -32,7 +32,6 @@ function onInteraction(args)
 end
 
 function switchHealthState()
-	
 	if self.occupiedBy == nil then
 		return
 	end
@@ -50,7 +49,7 @@ function switchHealthState()
 end
 
 
-function main() 
+function update(dt) 
 	
 	-- first count down timer
 	if self.timer > 0 then
@@ -75,22 +74,18 @@ function main()
 	end
 	
 	-- detect player 
-	local entityIds = world.playerQuery(
-			entity.position(), 
-			self.detectRadius, 
-			{
-				inSightOf = entity.id(),
-				order = "nearest"
-			}
-		)
+	local players = world.entityQuery(self.detectArea[1], self.detectArea[2], {
+      includedTypes = {"player"},
+      boundMode = "CollisionArea"
+    })
 	
 	if responsiveObject.isIdle() then
-		if #entityIds > 0 then
-			self.occupiedBy = entityIds[1]
+		if #players > 0 then
+			self.occupiedBy = players[1]
 			responsiveObject.switchToActive()
 		end
 	elseif not responsiveObject.isIdle() then
-		if #entityIds == 0 then
+		if #players == 0 then
 			self.occupiedBy = nil
 			responsiveObject.switchToIdle()
 		else

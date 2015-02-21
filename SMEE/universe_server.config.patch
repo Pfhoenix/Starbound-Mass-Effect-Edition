@@ -1,0 +1,16 @@
+[
+  { "op" : "add",
+    "path" : "/speciesShips/n7human",
+    "value" : [ 
+                "/ships/smee/normandysr1_t0.structure",
+                "/ships/smee/normandysr1_t1.structure",
+                "/ships/smee/normandysr1_t2.structure",
+                "/ships/smee/normandysr1_t3.structure",
+                "/ships/smee/normandysr1_t4.structure",
+                "/ships/smee/normandysr1_t5.structure",
+                "/ships/smee/normandysr1_t6.structure",
+                "/ships/smee/normandysr1_t7.structure",
+                "/ships/smee/normandysr1_t8.structure" 
+              ]
+  }
+]

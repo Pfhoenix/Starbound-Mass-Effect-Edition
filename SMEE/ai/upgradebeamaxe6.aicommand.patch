@@ -1,0 +1,29 @@
+[
+  { 
+    "op" : "add",
+    "path" : "/speciesText/n7human",
+    "value" : {
+      "buttonText" : "Upgrade M. M. - Size II",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;With ^orange;10 solarium stars^white; and ^orange;10 diamonds^white;, I can upgrade your matter manipulator to ^green;further increase its mining area^white;.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Success! Your matter manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Failure. We'll need ^orange;10 solarium stars^white; and ^orange;10 diamonds^white; to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    }}
+]

@@ -6,5 +6,5 @@
     { "item" : "m8avenger_6", "count" : 1 }
   ],
   "output" : { "item" : "m8avenger_7", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "weapons", "all" ]
 }

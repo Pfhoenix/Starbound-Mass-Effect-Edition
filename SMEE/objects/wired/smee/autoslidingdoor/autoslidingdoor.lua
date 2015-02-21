@@ -1,6 +1,10 @@
 function init(args)
 	entity.setColliding(true)
 
+    self.detectArea = entity.configParameter("detectArea")
+    self.detectArea[1] = entity.toAbsolutePosition(self.detectArea[1])
+    self.detectArea[2] = entity.toAbsolutePosition(self.detectArea[2])
+
 	if isDoorClosed() then
 		entity.setColliding(true)
 		entity.setAllOutboundNodes(true)
@@ -39,27 +43,24 @@ function onInteraction(args)
 	end
 end
 
-function main() 
-	local detectRadius = entity.configParameter("detectRadius", 5)
-	
+function update(dt)
 	-- if its wired auto open is disabled!
 	if entity.isInboundNodeConnected(0) then
 		return
 	end
 		
 	-- detect player 
-	local entityIds = world.playerQuery(
-			entity.position(), 
-			detectRadius, 
-			{}
-		)
-	
+	local players = world.entityQuery(self.detectArea[1], self.detectArea[2], {
+      includedTypes = {"player"},
+      boundMode = "CollisionArea"
+    })
+    
 	if isDoorClosed() then
-		if #entityIds > 0 then
+		if #players > 0 then
 			openDoor(nil)
 		end
 	elseif not isDoorClosed() then
-		if #entityIds == 0 then
+		if #players == 0 then
 			closeDoor()
 		end
 	end
@@ -93,7 +94,7 @@ function closeDoor()
 		else
 			entity.setAnimationState("doorState", "closeRight")
 		end
-		entity.playSound("closeSounds")
+		entity.playSound("close")
 		entity.setColliding(true)
 		entity.setAllOutboundNodes(true)
 	end
@@ -106,7 +107,7 @@ function openDoor(direction)
 		else
 			entity.setAnimationState("doorState", "openRight")
 		end
-		entity.playSound("openSounds")
+		entity.playSound("open")
 		entity.setColliding(false)
 		entity.setAllOutboundNodes(false)
 	end

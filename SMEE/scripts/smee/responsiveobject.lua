@@ -23,7 +23,7 @@ responsiveObject = {}
 -- 
 -- call it in your entities init() hook.
 function responsiveObject.init()
-	
+
 	self.anims = {}
 	
 	-- indexed array
@@ -68,7 +68,7 @@ end
 ----------------------------------------------------------------------
 -- 
 -- call it in your entities main() hook.
-function responsiveObject.update()
+function responsiveObject.update(dt)
 
 	-- first count down timer
 	if self.timer > 0 then
@@ -93,18 +93,17 @@ function responsiveObject.update()
 	end
 	
 	-- detect player 
-	local entityIds = world.playerQuery(
-			entity.position(), 
-			self.detectRadius, 
-			{ inSightOf = entity.id() }
-		)
+	local players = world.entityQuery(self.detectArea[1], self.detectArea[2], {
+      includedTypes = {"player"},
+      boundMode = "CollisionArea"
+    })
 	
 	if responsiveObject.isIdle() then
-		if #entityIds > 0 then
+		if #players > 0 then
 			responsiveObject.switchToActive()
 		end
 	elseif not responsiveObject.isIdle() then
-		if #entityIds == 0 then
+		if #players == 0 then
 			responsiveObject.switchToIdle()
 		end
 	end
@@ -304,16 +303,10 @@ function responsiveObject.parse()
 	
 	-- not nil parse params 
 	-- "mostly fail saved"
-	self.detectRadius = responsiveConfig.detectRadius
-	if self.detectRadius == nil then
-		self.detectRadius = 1
-	end
-	
-	self.detectLineOfSight = responsiveConfig.detectLineOfSight
-	if self.detectLineOfSight == nil then
-		self.detectLineOfSight = true
-	end
-	
+	self.detectArea = responsiveConfig.detectArea
+    self.detectArea[1] = entity.toAbsolutePosition(self.detectArea[1])
+    self.detectArea[2] = entity.toAbsolutePosition(self.detectArea[2])
+		
 	self.randomize = responsiveConfig.responsiveAnimations.randomize
 	if self.randomize == nil then
 		self.randomize = false

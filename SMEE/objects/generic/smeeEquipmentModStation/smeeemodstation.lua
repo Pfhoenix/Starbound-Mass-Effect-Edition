@@ -20,8 +20,8 @@ function onInteraction(args)
 end
 
 
-function main() 
-	responsiveObject.update()
+function update(dt)
+	responsiveObject.update(dt)
 end
 
 

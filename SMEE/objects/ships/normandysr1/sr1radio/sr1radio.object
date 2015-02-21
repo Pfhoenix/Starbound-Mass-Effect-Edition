@@ -1,15 +1,13 @@
 {
 	"objectName" : "sr1radio",
 	"rarity" : "Common",
-	"objectType" : "wire",
-	
 	"category" : "furniture",
 	"price" : 1000,
 	"printable" : false,
 
 	"description" : "An alarm clock with radio. It plays music.",
 	"shortdescription" : "Alarm Clock and Radio",
-	"race" : "n7human",
+	"race" : "generic",
 
 	"inventoryIcon" : "sr1radioicon.png",
 	"orientations" : [

@@ -1,0 +1,7 @@
+[
+  {
+  	"op" : "add",
+    "path" : "/species/-",
+    "value" : "n7human"
+  }
+]

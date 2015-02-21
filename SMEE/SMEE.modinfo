@@ -1,12 +1,12 @@
 {
 	"name" : "Starbound : Mass Effect Edition",
-	"version" : "Beta v. Enraged Koala",
+	"version" : "Stable v. Upbeat Giraffe",
 	"path" : ".",
 	"dependencies" : [],
 	"metadata" : {
+		"displayName" : "Starbound : Mass Effect Edition",
 		"author" : "Team SMEE",
-		"description" : "Mass Effect in Starbound (v.0.3.0)",
-		"support_url" : "http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/",
-		"version" : "0.3.0"
+		"version" : "0.2.4",
+		"description" : "Mass Effect in Starbound"
 	}
 }

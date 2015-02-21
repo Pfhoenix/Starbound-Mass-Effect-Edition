@@ -7,5 +7,5 @@
     { "item" : "m6carnifex_7", "count" : 1 }
   ],
   "output" : { "item" : "m6carnifex_8", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "weapons", "all" ]
 }

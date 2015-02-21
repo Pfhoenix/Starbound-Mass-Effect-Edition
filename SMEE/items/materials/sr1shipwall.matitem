@@ -5,6 +5,7 @@
   "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
   "description" : "A wall panel used by Alliance ships.",
   "shortdescription" : "Alliance Wall Panel",
- 
+  "glitchDescription" : "Alliance Wall Panel",
+  "floranDescription" : "Alliance Wall Panel",
   "materialId" : 7002
 }

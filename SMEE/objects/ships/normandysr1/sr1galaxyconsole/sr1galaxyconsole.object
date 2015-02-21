@@ -2,7 +2,6 @@
 	"objectName" : "sr1galaxyconsole",
 	"rarity" : "Common",
 	"objectType" : "loungeable",
-	//"objectType" : "wire",
 	
 	"category" : "furniture",
 	"price" : 1000,
@@ -10,7 +9,7 @@
 
 	"description" : "A holographic view of the galaxy. Used for navigation.",
 	"shortdescription" : "Holographic Galaxy Map",
-	"race" : "n7human",
+	"race" : "generic",
 
 	"inventoryIcon" : "sr1galaxyconsoleicon.png",
 	"orientations" : [
@@ -32,6 +31,12 @@
 		"wssSounds" : "wssoverlay.png"
 	},
 	"animationPosition" : [-11, 0],
+	"animationCustom" : {
+		"sounds" : {
+			"zoomInSounds" : [ "/sfx/galaxymap/galaxy_zoom_in.ogg" ],
+			"zoomOutSounds" : [ "/sfx/galaxymap/galaxy_zoom_out.ogg" ]
+		}
+	},
 	
 	"interactAction" : "openCockpitInterface",
 	"sitFlipDirection" : false,
@@ -72,13 +77,9 @@
 	"wssSpeakerGroup" : "sr1ship",
 	"wssSpeakerRange" : 1000, // defines the range that is scanned for a possible master and other speakers
 	
-	// responsive object parameters
-	"zoomInSounds" : [ "/sfx/galaxymap/galaxy_zoom_in.ogg" ],
-	"zoomOutSounds" : [ "/sfx/galaxymap/galaxy_zoom_out.ogg" ],
-	
+	// responsive object parameters	
 	"responsiveObject" : {
-		"detectRadius" : 8,
-		"detectLineOfSight" : true,
+		"detectArea" : [[0, 0], [6, 5]],
 		"responsiveAnimations" : {
 			"randomize" : true,
 			"idle" : [

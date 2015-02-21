@@ -5,5 +5,5 @@
     { "item" : "refinedEezo", "count" : 2 }
   ],
   "output" : { "item" : "m5phalanx_1", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "weapons", "all" ]
 }

@@ -6,5 +6,5 @@
     { "item" : "m5phalanx_5", "count" : 1 }
   ],
   "output" : { "item" : "m5phalanx_6", "count" : 1 },
-  "groups" : [ "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "weapons", "all" ]
 }

@@ -4,7 +4,7 @@
 	"objectType" : "container",
 	"description" : "Tantalus Core. Accepts a bunch of different kinds of fuel.",
 	"shortdescription" : "Tantalus Core",
-	"race" : "n7human",
+	"race" : "generic",
 
 	"inventoryIcon" : "fuelhatchicon.png",
 	"orientations" : [
