@@ -1,12 +1,12 @@
 {
-	"name" : "Starbound : Mass Effect Edition Music Pak",
-	"version" : "Beta v. Enraged Koala",
-	"path" : ".",
-	"dependencies" : ["Starbound : Mass Effect Edition"],
+    "name" : "Starbound : Mass Effect Edition Music Package",
+    "version" : "Stable v. Upbeat Giraffe",
+    "path" : ".",
+	"dependencies" : [],
 	"metadata" : {
-		"author" : "Team SMEE",
-		"description" : "Mass Effect in Starbound Music pack. Minimum required SMEE version 0.3.0.",
-		"support_url" : "http://community.playstarbound.com/index.php?resources/starbound-mass-effect-edition.1062/",
-		"version" : "0.3.0"
-	}
+	  "displayName" : "Starbound : Mass Effect Edition Music",
+	  "author" : "Team SMEE",
+	  "version" : "1.0",
+	  "description" : "Mass Effect Music in Starbound"
+	  }
 }
