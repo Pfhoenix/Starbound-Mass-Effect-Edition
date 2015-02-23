@@ -1,7 +1,19 @@
 [
-	{
-		"op" : "add",
-		"path" : "/initialquests/n7human",
-		"value" : [ "humantutorial.gearup" ]
-	}
+  {
+    "op" : "add",
+    "path" : "/initialquests/n7human",
+    "value" : [ "humantutorial.gearup" ]
+  },
+	
+  {
+    "op" : "add",
+    "path" : "/initialquests/asari",
+    "value" : [ "humantutorial.gearup" ]
+  },
+	
+  {
+    "op" : "add",
+    "path" : "/initialquests/turian",
+    "value" : [ "humantutorial.gearup" ]
+  }
 ]

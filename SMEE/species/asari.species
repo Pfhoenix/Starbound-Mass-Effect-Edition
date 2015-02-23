@@ -1,9 +1,10 @@
 {
   "kind" : "asari",
-  "playerSpecies" : true,
-  "nameGen" : [ "/species/asarinamegen.config:names", "/species/asarinamegen.config:names" ],
+  "nameGen" : [ "/species/asarinamegenmale.config:names", "/species/asarinamegenfemale.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/humanhurt_female2.wav", "/sfx/humanoid/humanhurt_female1.wav" ],
+  "gruntNoises" : [ [ "/sfx/humanoid/humangrunt1.wav", "/sfx/humanoid/humangrunt2.wav" ], [ "/sfx/humanoid/humangrunt1.wav", "/sfx/humanoid/humangrunt2.wav" ] ],
   "charGenTextLabels" : [ "SKIN COLOR", "HAIR STYLE", "SHIRT", "PANTS", "EYE COLOR", "HAIR COLOR", "SHIRT COLOR", "PANTS COLOR", "ASARI", "PERSONALITY" ],
+  "skull" : "/humanoid/human/dead.png",
   "defaultBlueprints" : {
     "tier1" : [
       { "item" : "humantier1hammer" },
@@ -12,6 +13,9 @@
       { "item" : "humantier1spear" },
       { "item" : "humantier1axe" },
       { "item" : "humantier1dagger" },
+      { "item" : "humantier1head" },
+      { "item" : "humantier1chest" },
+      { "item" : "humantier1pants" },
       { "item" : "conceptchest" },
       { "item" : "conceptlegs" },
       { "item" : "coolchest" },
@@ -20,14 +24,9 @@
       { "item" : "sweatervestlegs" },
       { "item" : "workoutchest" },
       { "item" : "workoutlegs" },
-      { "item" : "burger" },
-      { "item" : "vegetablesoup" },
-      { "item" : "bread" },
-      { "item" : "sweetcorn" },
-      { "item" : "candyapple" },
-      { "item" : "icecream" }
-    ],
-    "tier2" : [
+      
+      { "item" : "flagn7human" },
+      
       { "item" : "humantier2hammer" },
       { "item" : "humantier2shortsword" },
       { "item" : "humantier2broadsword" },
@@ -37,9 +36,7 @@
       { "item" : "humantier2head" },
       { "item" : "humantier2chest" },
       { "item" : "humantier2pants" },
-      { "item" : "spawnerhuman" }
-    ],
-    "tier3" : [
+      
       { "item" : "humantier3head" },
       { "item" : "humantier3chest" },
       { "item" : "humantier3pants" },
@@ -48,9 +45,8 @@
       { "item" : "humantier3broadsword" },
       { "item" : "humantier3spear" },
       { "item" : "humantier3axe" },
-      { "item" : "humantier3dagger" }
-    ],
-    "tier4" : [
+      { "item" : "humantier3dagger" },
+      
       { "item" : "humantier4head" },
       { "item" : "humantier4chest" },
       { "item" : "humantier4pants" },
@@ -59,42 +55,22 @@
       { "item" : "humantier4broadsword" },
       { "item" : "humantier4spear" },
       { "item" : "humantier4axe" },
-      { "item" : "humantier4dagger" }
-    ],
-    "level32" : [
+      { "item" : "humantier4dagger" },
+      
       { "item" : "humantier5head" },
       { "item" : "humantier5chest" },
       { "item" : "humantier5pants" },
-      { "item" : "humantier5hammer" },
-      { "item" : "humantier5shortsword" },
-      { "item" : "humantier5broadsword" },
-      { "item" : "humantier5spear" },
-      { "item" : "humantier5axe" },
-      { "item" : "humantier5dagger" }
-    ],
-    "level33" : [
+      { "item" : "humantier5dagger" },
+      
       { "item" : "humantier6head" },
       { "item" : "humantier6chest" },
       { "item" : "humantier6pants" },
-      { "item" : "humantier6hammer" },
-      { "item" : "humantier6shortsword" },
-      { "item" : "humantier6broadsword" },
-      { "item" : "humantier6spear" },
-      { "item" : "humantier6axe" },
-      { "item" : "humantier6dagger" }
-    ],
-    "level34" : [
+      { "item" : "humantier6dagger" },
+      
       { "item" : "humantier7head" },
       { "item" : "humantier7chest" },
       { "item" : "humantier7pants" },
-      { "item" : "humantier7hammer" },
-      { "item" : "humantier7shortsword" },
-      { "item" : "humantier7broadsword" },
-      { "item" : "humantier7spear" },
-      { "item" : "humantier7axe" },
-      { "item" : "humantier7dagger" }
-    ],
-    "level35" : [
+      
       { "item" : "humantier8head" },
       { "item" : "humantier8chest" },
       { "item" : "humantier8pants" },
@@ -103,20 +79,12 @@
       { "item" : "humantier8broadsword" },
       { "item" : "humantier8spear" },
       { "item" : "humantier8axe" },
-      { "item" : "humantier8dagger" }
-    ],
-    "level36" : [
+      { "item" : "humantier8dagger" },
+      
       { "item" : "humantier9head" },
       { "item" : "humantier9chest" },
       { "item" : "humantier9pants" },
-      { "item" : "humantier9hammer" },
-      { "item" : "humantier9shortsword" },
-      { "item" : "humantier9broadsword" },
-      { "item" : "humantier9spear" },
-      { "item" : "humantier9axe" },
-      { "item" : "humantier9dagger" }
-    ],
-    "level37" : [
+      
       { "item" : "humantier10head" },
       { "item" : "humantier10chest" },
       { "item" : "humantier10pants" },

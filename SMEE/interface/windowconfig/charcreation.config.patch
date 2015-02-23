@@ -3,5 +3,17 @@
   	"op" : "add",
     "path" : "/speciesOrdering/-",
     "value" : "n7human" 
+  },
+  
+  {
+  	"op" : "add",
+    "path" : "/speciesOrdering/-",
+    "value" : "asari" 
+  },
+  
+  {
+  	"op" : "add",
+    "path" : "/speciesOrdering/-",
+    "value" : "turian" 
   }
 ]

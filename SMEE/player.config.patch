@@ -5,6 +5,18 @@
     "value" : "n7human"
   },
   
+  {
+  	"op" : "add",
+    "path" : "/species/-",
+    "value" : "asari"
+  },
+  
+  {
+  	"op" : "add",
+    "path" : "/species/-",
+    "value" : "turian"
+  },
+  
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "smeeemodstation" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIhead" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIchest" } },

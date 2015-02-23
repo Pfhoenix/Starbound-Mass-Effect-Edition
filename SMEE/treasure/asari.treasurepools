@@ -1,0 +1,11 @@
+{
+  "asariStarterTreasure" : [
+    [0, {
+      "fill" : [
+                 { "pool" : "starterTreasure" },
+                 { "item" : [ "eezofurnace", 1 ]},
+                 { "item" : [ "humanstarter", 1]}
+               ]
+        } ]
+    ]
+}
