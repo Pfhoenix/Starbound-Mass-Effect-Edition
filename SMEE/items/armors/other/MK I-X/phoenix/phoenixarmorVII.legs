@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Saving the galaxy never looked so fabulous.",
   "shortdescription" : "Phoenix Pants VII",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "phoenixarmorVIIIpants" ],
 
   "maleFrames" : "pants.png",
@@ -14,18 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 13
+      "stat" : "protection",
+      "amount" : 50
     },
 
     {
-      "kind" : "Protection",
-      "amount" : 48
+      "stat" : "maxEnergy",
+      "amount" : 150
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 2.2
+      "stat" : "maxHealth",
+      "amount" : 30
     }
   ]
 }

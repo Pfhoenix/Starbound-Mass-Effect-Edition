@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "N7 Pants. No pockets!",
   "shortdescription" : "N7 Pants IX",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "n7armorXpants" ],
 
   "maleFrames" : "pants.png",
@@ -14,18 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 17
+      "stat" : "protection",
+      "amount" : 40
     },
 
     {
-      "kind" : "Protection",
-      "amount" : 80
+      "stat" : "maxEnergy",
+      "amount" : 125
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 3.3
+      "stat" : "maxHealth",
+      "amount" : 20
     }
   ]
 }

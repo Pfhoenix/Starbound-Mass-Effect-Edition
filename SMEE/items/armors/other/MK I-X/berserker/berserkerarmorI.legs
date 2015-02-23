@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Pretty LED's to draw the aggro.",
   "shortdescription" : "Berserker Pants I",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "berserkerarmorIIpants" ],
 
   "maleFrames" : "pants.png",
@@ -14,18 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "coldprotection",
-      "amount" : 1
+      "stat" : "protection",
+      "amount" : 6
     },
 
     {
-      "kind" : "protection",
-      "amount" : 3
+      "stat" : "maxEnergy",
+      "amount" : 5
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 0.15
+      "stat" : "maxHealth",
+      "amount" : 2
     }
   ]
 }

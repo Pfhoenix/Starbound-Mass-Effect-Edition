@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "These pants are favoured by the Turian for the tight fit.",
   "shortdescription" : "Silverback Pants IX",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "silverbackarmorXpants" ],
 
   "maleFrames" : "pants.png",
@@ -14,18 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 17
+      "stat" : "protection",
+      "amount" : 40
     },
 
     {
-      "kind" : "Protection",
-      "amount" : 80
+      "stat" : "maxEnergy",
+      "amount" : 125
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 3.3
+      "stat" : "maxHealth",
+      "amount" : 20
     }
   ]
 }

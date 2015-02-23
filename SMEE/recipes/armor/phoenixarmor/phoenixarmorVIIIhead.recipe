@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Violiumbar", "count" : 15 },
-	{ "item" : "palladiumbar", "count" : 5 }
+    { "item" : "refinedviolium", "count" : 6 }
   ],
   "output" : { "item" : "phoenixarmorVIIIhead", "count" : 1 },
-  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

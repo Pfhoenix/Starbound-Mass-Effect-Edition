@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Pretty LED's to draw the aggro.",
   "shortdescription" : "Berserker Helm VIII",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "berserkerarmorIXhead" ],
 
   "maleFrames" : "head.png",
@@ -15,23 +15,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 22.5
+      "stat" : "protection",
+      "amount" : 85
     },
 
     {
-      "kind" : "Protection",
-      "level" : 34,
-      "amount" : 96
+      "stat" : "maxEnergy",
+      "amount" : 25
     },
 
     {
-      "kind" : "energyincrease",
-      "amount" : 270
-    },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+      "stat" : "maxHealth",
+      "amount" : 50
+    }
   ]
 }

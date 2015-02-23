@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "imperviumbar", "count" : 12 }
+    { "item" : "imperviumcompound", "count" : 4 }
   ],
   "output" : { "item" : "scorpionarmorXpants", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

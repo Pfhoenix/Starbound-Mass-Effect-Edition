@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A mercenaries choice of armor.",
   "shortdescription" : "Agent Chestplate II",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "agentarmorIIIchest" ],
 
   "maleFrames" : {
@@ -23,18 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 7.5
-    },
-
-    {
-      "kind" : "Protection",
-      "amount" : 15
-    },
-
-    {
-      "kind" : "healthincrease",
+      "stat" : "protection",
       "amount" : 35
+    },
+
+    {
+      "stat" : "maxEnergy",
+      "amount" : 40
+    },
+
+    {
+      "stat" : "maxHealth",
+      "amount" : 20
     }
   ]
 }

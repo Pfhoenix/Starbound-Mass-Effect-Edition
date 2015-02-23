@@ -5,5 +5,28 @@
     "value" : "n7human"
   },
   
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "smeeemodstation" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIhead" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIchest" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIpants" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "liberatorarmorIhead" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "liberatorarmorIchest" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "liberatorarmorIpants" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "agentarmorIhead" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "agentarmorIchest" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "agentarmorIpants" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "berserkerarmorIhead" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "berserkerarmorIchest" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "berserkerarmorIpants" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "scorpionarmorIhead" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "scorpionarmorIchest" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "scorpionarmorIpants" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "silverbackarmorIhead" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "silverbackarmorIchest" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "silverbackarmorIpants" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "n7armorIhead" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "n7armorIchest" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "n7armorIpants" } },
+  
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "refinedEezo" } }
 ]

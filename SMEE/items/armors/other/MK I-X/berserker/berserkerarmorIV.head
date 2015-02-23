@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Pretty LED's to draw the aggro.",
   "shortdescription" : "Berserker Helm IV",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "berserkerarmorVhead" ],
 
   "maleFrames" : "head.png",
@@ -15,23 +15,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 10.5
+      "stat" : "protection",
+      "amount" : 55
     },
 
     {
-      "kind" : "Protection",
-      "level" : 30,
-      "amount" : 27
+      "stat" : "maxEnergy",
+      "amount" : 60
     },
 
     {
-      "kind" : "energyincrease",
-      "amount" : 100
-    },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+      "stat" : "maxHealth",
+      "amount" : 30
+    }
   ]
 }

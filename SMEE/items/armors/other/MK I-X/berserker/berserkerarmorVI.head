@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Pretty LED's to draw the aggro.",
   "shortdescription" : "Berserker Helm VI",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "berserkerarmorVIIhead" ],
 
   "maleFrames" : "head.png",
@@ -15,23 +15,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 16.5
+      "stat" : "protection",
+      "amount" : 90
     },
 
     {
-      "kind" : "Protection",
-      "level" : 32,
-      "amount" : 54
+      "stat" : "maxEnergy",
+      "amount" : 95
     },
 
     {
-      "kind" : "energyincrease",
-      "amount" : 175
-    },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+      "stat" : "maxHealth",
+      "amount" : 50
+    }
   ]
 }

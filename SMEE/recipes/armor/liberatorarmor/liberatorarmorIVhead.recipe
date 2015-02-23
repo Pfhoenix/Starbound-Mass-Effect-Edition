@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "durasteelbar", "count" : 20 }
+    { "item" : "durasteelbar", "count" : 6 }
   ],
   "output" : { "item" : "liberatorarmorIVhead", "count" : 1 },
-  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

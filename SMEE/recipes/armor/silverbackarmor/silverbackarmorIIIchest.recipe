@@ -1,9 +1,7 @@
 {
   "input" : [
-    { "item" : "titaniumbar", "count" : 35 },
-    { "item" : "goldarmorchest", "count" : 1 },
-    { "item" : "money", "count" : 1400 }
+    { "item" : "titaniumbar", "count" : 10 }
   ],
   "output" : { "item" : "silverbackarmorIIIchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

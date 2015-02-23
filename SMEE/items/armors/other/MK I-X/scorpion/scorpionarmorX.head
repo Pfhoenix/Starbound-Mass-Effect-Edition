@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "This helm is usually worn by the vanguard.",
   "shortdescription" : "Scorpion Helm X",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
@@ -14,23 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 28.5
+      "stat" : "protection",
+      "amount" : 105
     },
 
     {
-      "kind" : "Protection",
-      "level" : 36,
-      "amount" : 150
+      "stat" : "maxEnergy",
+      "amount" : 35
     },
 
     {
-      "kind" : "energyincrease",
-      "amount" : 400
-    },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+      "stat" : "maxHealth",
+      "amount" : 60
+    }
   ]
 }

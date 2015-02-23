@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "The N7's state of the art Chestplate and Armguards.",
   "shortdescription" : "N7 Chestplate I",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "n7armorIIchest" ],
 
   "maleFrames" : {
@@ -23,18 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 2.5
+      "stat" : "protection",
+      "amount" : 15
     },
 
     {
-      "kind" : "Protection",
-      "amount" : 7.5
+      "stat" : "maxEnergy",
+      "amount" : 10
     },
-	
+
     {
-      "kind" : "healthincrease",
-      "amount" : 15
+      "stat" : "maxHealth",
+      "amount" : 8
     }
   ]
 }

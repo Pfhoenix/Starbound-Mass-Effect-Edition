@@ -1,9 +1,7 @@
 {
   "input" : [
-    { "item" : "ironbar", "count" : 12 },
-    { "item" : "copperarmorpants", "count" : 1 },
-    { "item" : "money", "count" : 150 }
+    { "item" : "ironbar", "count" : 2 }
   ],
   "output" : { "item" : "scorpionarmorIpants", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

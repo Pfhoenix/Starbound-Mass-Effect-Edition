@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "The sleek design of a N7 helmet.",
   "shortdescription" : "N7 Helm VII",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "n7armorVIIIhead" ],
 
   "maleFrames" : "head.png",
@@ -15,23 +15,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 19.5
+      "stat" : "protection",
+      "amount" : 70
     },
 
     {
-      "kind" : "Protection",
-      "level" : 33,
-      "amount" : 72
-    },
-
-    {
-      "kind" : "energyincrease",
+      "stat" : "maxEnergy",
       "amount" : 220
     },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+
+    {
+      "stat" : "maxHealth",
+      "amount" : 45
+    }
   ]
 }

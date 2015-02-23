@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "The vanguard fight with passion, honour and fancy Scorpion pants.",
   "shortdescription" : "Scorpion Pants I",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "scorpionarmorIIpants" ],
 
   "maleFrames" : "pants.png",
@@ -14,18 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "coldprotection",
-      "amount" : 1
+      "stat" : "protection",
+      "amount" : 6
     },
 
     {
-      "kind" : "protection",
-      "amount" : 3
+      "stat" : "maxEnergy",
+      "amount" : 5
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 0.15
+      "stat" : "maxHealth",
+      "amount" : 2
     }
   ]
 }

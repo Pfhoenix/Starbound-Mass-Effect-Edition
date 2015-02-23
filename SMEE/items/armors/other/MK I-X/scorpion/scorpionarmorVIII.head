@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "This helm is usually worn by the vanguard.",
   "shortdescription" : "Scorpion Helm VIII",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "scorpionarmorIXhead" ],
 
   "maleFrames" : "head.png",
@@ -15,23 +15,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 22.5
+      "stat" : "protection",
+      "amount" : 85
     },
 
     {
-      "kind" : "Protection",
-      "level" : 34,
-      "amount" : 96
+      "stat" : "maxEnergy",
+      "amount" : 25
     },
 
     {
-      "kind" : "energyincrease",
-      "amount" : 270
-    },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+      "stat" : "maxHealth",
+      "amount" : 50
+    }
   ]
 }

@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Violiumbar", "count" : 30 },
-	{ "item" : "palladiumbar", "count" : 5 }
+    { "item" : "refinedviolium", "count" : 10 }
   ],
   "output" : { "item" : "scorpionarmorVIIIchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

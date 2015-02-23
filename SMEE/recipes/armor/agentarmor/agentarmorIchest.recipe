@@ -1,9 +1,7 @@
 {
   "input" : [
-    { "item" : "ironbar", "count" : 35 },
-    { "item" : "copperarmorchest", "count" : 1 },
-    { "item" : "money", "count" : 350 }
+    { "item" : "ironbar", "count" : 5 }
   ],
   "output" : { "item" : "agentarmorIchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

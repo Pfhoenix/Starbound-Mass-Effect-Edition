@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Saving the galaxy never looked so fabulous.",
   "shortdescription" : "Phoenix Chestplate VI",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "phoenixarmorVIIchest" ],
 
   "maleFrames" : {
@@ -23,19 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 27.5
+      "stat" : "protection",
+      "amount" : 150
     },
 
     {
-      "kind" : "Protection",
-      "level" : 32,
+      "stat" : "maxEnergy",
+      "amount" : 160
+    },
+
+    {
+      "stat" : "maxHealth",
       "amount" : 90
-    },
-
-    {
-      "kind" : "healthincrease",
-      "amount" : 175
     }
   ]
 }

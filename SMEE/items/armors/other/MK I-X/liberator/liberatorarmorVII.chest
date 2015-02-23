@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A strong, light chestguard favoured by scouts.",
   "shortdescription" : "Liberator Chestguard VII",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "liberatorarmorVIIIchest" ],
 
   "maleFrames" : {
@@ -23,19 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 32.5
-    },
-
-    {
-      "kind" : "Protection",
-      "level" : 33,
+      "stat" : "protection",
       "amount" : 120
     },
 
     {
-      "kind" : "healthincrease",
-      "amount" : 220
+      "stat" : "maxEnergy",
+      "amount" : 370
+    },
+
+    {
+      "stat" : "maxHealth",
+      "amount" : 75
     }
   ]
 }

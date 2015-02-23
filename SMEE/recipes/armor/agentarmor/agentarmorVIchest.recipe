@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Feroziumbar", "count" : 30 },
-	{ "item" : "iridiumbar", "count" : 5 }
+    { "item" : "feroziumcompound", "count" : 10 }
   ],
   "output" : { "item" : "agentarmorVIchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

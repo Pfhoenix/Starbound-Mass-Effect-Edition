@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A finely crafted, concaved chestplate favoured by the Turian.",
   "shortdescription" : "Silverback Chestguard I",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "silverbackarmorIIchest" ],
 
   "maleFrames" : {
@@ -23,18 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 2.5
+      "stat" : "protection",
+      "amount" : 15
     },
 
     {
-      "kind" : "Protection",
-      "amount" : 7.5
+      "stat" : "maxEnergy",
+      "amount" : 10
     },
-	
+
     {
-      "kind" : "healthincrease",
-      "amount" : 15
+      "stat" : "maxHealth",
+      "amount" : 8
     }
   ]
 }

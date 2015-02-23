@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Violiumbar", "count" : 10 },
-	{ "item" : "palladiumbar", "count" : 2 }
+    { "item" : "refinedviolium", "count" : 4 }
   ],
   "output" : { "item" : "berserkerarmorVIIIpants", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

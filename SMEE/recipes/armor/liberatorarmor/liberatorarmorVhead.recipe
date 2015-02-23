@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "aegisaltbar", "count" : 15 },
-	{ "item" : "iridiumbar", "count" : 5 }
+    { "item" : "refinedaegisalt", "count" : 6 }
   ],
   "output" : { "item" : "liberatorarmorVhead", "count" : 1 },
-  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

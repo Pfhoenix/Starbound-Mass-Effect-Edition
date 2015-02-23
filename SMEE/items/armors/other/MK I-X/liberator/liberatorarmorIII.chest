@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A strong, light chestguard favoured by scouts.",
   "shortdescription" : "Liberator Chestguard III",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "liberatorarmorIVchest" ],
 
   "maleFrames" : {
@@ -23,19 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 12.5
+      "stat" : "protection",
+      "amount" : 60
     },
 
     {
-      "kind" : "Protection",
-      "level" : 25,
-      "amount" : 27.5
-    },
-
-    {
-      "kind" : "healthincrease",
+      "stat" : "maxEnergy",
       "amount" : 70
+    },
+
+    {
+      "stat" : "maxHealth",
+      "amount" : 30
     }
   ]
 }

@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Rubiumbar", "count" : 15 },
-	{ "item" : "palladiumbar", "count" : 5 }
+    { "item" : "refinedrubium", "count" : 6 }
   ],
   "output" : { "item" : "liberatorarmorIXhead", "count" : 1 },
-  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

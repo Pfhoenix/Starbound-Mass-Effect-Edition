@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Rubiumbar", "count" : 30 },
-	{ "item" : "palladiumbar", "count" : 5 }
+    { "item" : "refinedrubium", "count" : 10 }
   ],
   "output" : { "item" : "scorpionarmorIXchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

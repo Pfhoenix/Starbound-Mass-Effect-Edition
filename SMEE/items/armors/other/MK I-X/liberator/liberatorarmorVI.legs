@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "The scout's steel boots leave a distinct footprint.",
   "shortdescription" : "Liberator Pants VI",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "liberatorarmorVIIpants" ],
 
   "maleFrames" : "pants.png",
@@ -14,18 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 11
+      "stat" : "protection",
+      "amount" : 60
     },
 
     {
-      "kind" : "Protection",
-      "amount" : 36
+      "stat" : "maxEnergy",
+      "amount" : 65
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 1.75
+      "stat" : "maxHealth",
+      "amount" : 35
     }
   ]
 }

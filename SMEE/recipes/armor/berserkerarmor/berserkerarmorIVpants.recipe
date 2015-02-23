@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "durasteelbar", "count" : 12 }
+    { "item" : "durasteelbar", "count" : 4 }
   ],
   "output" : { "item" : "berserkerarmorIVpants", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

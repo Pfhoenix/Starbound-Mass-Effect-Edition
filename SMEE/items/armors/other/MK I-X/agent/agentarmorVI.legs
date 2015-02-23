@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A mercenaries choice of armor.",
   "shortdescription" : "Agent Pants VI",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "agentarmorVIIpants" ],
 
   "maleFrames" : "pants.png",
@@ -14,18 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 11
+      "stat" : "protection",
+      "amount" : 60
     },
 
     {
-      "kind" : "Protection",
-      "amount" : 36
+      "stat" : "maxEnergy",
+      "amount" : 65
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 1.75
+      "stat" : "maxHealth",
+      "amount" : 35
     }
   ]
 }

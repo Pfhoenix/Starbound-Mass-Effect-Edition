@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A mercenaries choice of armor.",
   "shortdescription" : "Agent Helm III",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "agentarmorIVhead" ],
 
   "maleFrames" : "head.png",
@@ -15,23 +15,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 7.5
+      "stat" : "protection",
+      "amount" : 35
     },
 
     {
-      "kind" : "Protection",
-      "level" : 25,
-      "amount" : 16.5
+      "stat" : "maxEnergy",
+      "amount" : 40
     },
 
     {
-      "kind" : "energyincrease",
-      "amount" : 70
-    },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+      "stat" : "maxHealth",
+      "amount" : 20
+    }
   ]
 }

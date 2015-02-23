@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Saving the galaxy never looked so fabulous.",
   "shortdescription" : "Phoenix Chestplate IX",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "phoenixarmorXchest" ],
 
   "maleFrames" : {
@@ -23,19 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 42.5
+      "stat" : "protection",
+      "amount" : 100
     },
 
     {
-      "kind" : "Protection",
-      "level" : 35,
-      "amount" : 200
+      "stat" : "maxEnergy",
+      "amount" : 310
     },
 
     {
-      "kind" : "healthincrease",
-      "amount" : 330
+      "stat" : "maxHealth",
+      "amount" : 50
     }
   ]
 }

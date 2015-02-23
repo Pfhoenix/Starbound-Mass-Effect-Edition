@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Feroziumbar", "count" : 15 },
-	{ "item" : "iridiumbar", "count" : 5 }
+    { "item" : "feroziumcompound", "count" : 6 }
   ],
   "output" : { "item" : "phoenixarmorVIhead", "count" : 1 },
-  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Chosen for its strength on the battlefield. The scorpion chestplate has saved many lives.",
   "shortdescription" : "Scorpion Chestplate VIII",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "scorpionarmorIXchest" ],
 
   "maleFrames" : {
@@ -23,19 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 37.5
+      "stat" : "protection",
+      "amount" : 140
     },
 
     {
-      "kind" : "Protection",
-      "level" : 34,
-      "amount" : 160
+      "stat" : "maxEnergy",
+      "amount" : 40
     },
 
     {
-      "kind" : "healthincrease",
-      "amount" : 270
+      "stat" : "maxHealth",
+      "amount" : 85
     }
   ]
 }

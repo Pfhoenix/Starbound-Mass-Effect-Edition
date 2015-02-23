@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "imperviumbar", "count" : 35 }
+    { "item" : "imperviumcompound", "count" : 10 }
   ],
   "output" : { "item" : "phoenixarmorXchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

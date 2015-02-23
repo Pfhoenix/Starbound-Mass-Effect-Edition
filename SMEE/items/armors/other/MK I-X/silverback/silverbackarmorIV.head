@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "This tall helmet was designed to allow room for any... tentacled species hairdew.",
   "shortdescription" : "Silverback Helm IV",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "silverbackarmorVhead" ],
 
   "maleFrames" : "head.png",
@@ -15,23 +15,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 10.5
+      "stat" : "protection",
+      "amount" : 55
     },
 
     {
-      "kind" : "Protection",
-      "level" : 30,
-      "amount" : 27
+      "stat" : "maxEnergy",
+      "amount" : 60
     },
 
     {
-      "kind" : "energyincrease",
-      "amount" : 100
-    },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+      "stat" : "maxHealth",
+      "amount" : 30
+    }
   ]
 }

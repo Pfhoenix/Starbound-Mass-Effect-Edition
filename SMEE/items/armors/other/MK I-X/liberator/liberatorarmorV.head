@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "This helm is light and airy, perfect for scouting.",
   "shortdescription" : "Liberator Helm V",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "liberatorarmorVIhead" ],
 
   "maleFrames" : "head.png",
@@ -15,23 +15,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 13.5
+      "stat" : "protection",
+      "amount" : 70
     },
 
     {
-      "kind" : "Protection",
-      "level" : 31,
-      "amount" : 39
+      "stat" : "maxEnergy",
+      "amount" : 80
     },
 
     {
-      "kind" : "energyincrease",
-      "amount" : 135
-    },
-	
-	{
-	  "kind" : "breathprotection"
-	}
+      "stat" : "maxHealth",
+      "amount" : 40
+    }
   ]
 }

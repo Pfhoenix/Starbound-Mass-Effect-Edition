@@ -6,25 +6,25 @@
   "rarity" : "Common",
   "description" : "N7 Pants. No pockets!",
   "shortdescription" : "N7 Pants X",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 19
+      "stat" : "protection",
+      "amount" : 70
     },
 
     {
-      "kind" : "Protection",
-      "amount" : 100
+      "stat" : "maxEnergy",
+      "amount" : 20
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 4
+      "stat" : "maxHealth",
+      "amount" : 40
     }
   ]
 }

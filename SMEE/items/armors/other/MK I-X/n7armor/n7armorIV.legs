@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "N7 Pants. No pockets!",
   "shortdescription" : "N7 Pants IV",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "n7armorVpants" ],
 
   "maleFrames" : "pants.png",
@@ -14,19 +14,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 7
+      "stat" : "protection",
+      "amount" : 35
     },
 
     {
-      "kind" : "Protection",
-      "level" : 30,
-      "amount" : 18
+      "stat" : "maxEnergy",
+      "amount" : 40
     },
 
     {
-      "kind" : "energyregenmodifier",
-      "amount" : 1.0
+      "stat" : "maxHealth",
+      "amount" : 20
     }
   ]
 }

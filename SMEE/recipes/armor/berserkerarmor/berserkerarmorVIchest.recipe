@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Feroziumbar", "count" : 30 },
-	{ "item" : "iridiumbar", "count" : 5 }
+    { "item" : "feroziumcompound", "count" : 10 }
   ],
   "output" : { "item" : "berserkerarmorVIchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

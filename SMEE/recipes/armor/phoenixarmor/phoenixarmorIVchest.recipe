@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "durasteelbar", "count" : 35 }
+    { "item" : "durasteelbar", "count" : 10 }
   ],
   "output" : { "item" : "phoenixarmorIVchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "anvil", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

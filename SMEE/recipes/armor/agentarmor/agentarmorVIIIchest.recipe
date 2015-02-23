@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "Violiumbar", "count" : 30 },
-	{ "item" : "palladiumbar", "count" : 5 }
+    { "item" : "refinedviolium", "count" : 10 }
   ],
   "output" : { "item" : "agentarmorVIIIchest", "count" : 1 },
-  "groups" : [ "smee", "mod", "metalworkstation", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

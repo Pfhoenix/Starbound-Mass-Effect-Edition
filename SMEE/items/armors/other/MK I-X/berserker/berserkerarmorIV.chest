@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "Pretty LED's to draw the aggro.",
   "shortdescription" : "Berserker Chestplate IV",
-  "inspectionKind" : "armor",
+  "tooltipKind" : "armor",
   "learnBlueprintsOnPickup" : [ "berserkerarmorVchest" ],
 
   "maleFrames" : {
@@ -23,19 +23,18 @@
 
   "statusEffects" : [
     {
-      "kind" : "ColdProtection",
-      "amount" : 17.5
+      "stat" : "protection",
+      "amount" : 85
     },
 
     {
-      "kind" : "Protection",
-      "level" : 30,
-      "amount" : 45
-    },
-
-    {
-      "kind" : "healthincrease",
+      "stat" : "maxEnergy",
       "amount" : 100
+    },
+
+    {
+      "stat" : "maxHealth",
+      "amount" : 50
     }
   ]
 }

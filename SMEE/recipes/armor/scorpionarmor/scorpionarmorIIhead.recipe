@@ -1,9 +1,7 @@
 {
   "input" : [
-    { "item" : "steelbar", "count" : 20 },
-    { "item" : "silverarmorhead", "count" : 1 },
-    { "item" : "money", "count" : 500 }
+    { "item" : "steelbar", "count" : 6 }
   ],
   "output" : { "item" : "scorpionarmorIIhead", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }

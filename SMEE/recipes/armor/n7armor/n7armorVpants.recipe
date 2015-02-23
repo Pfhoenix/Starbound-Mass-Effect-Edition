@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "aegisaltbar", "count" : 10 },
-	{ "item" : "iridiumbar", "count" : 2 }
+    { "item" : "refinedaegisalt", "count" : 4 }
   ],
   "output" : { "item" : "n7armorVpants", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "armors", "all" ]
+  "groups" : [ "smeemodstation", "mod", "armors", "all" ]
 }
