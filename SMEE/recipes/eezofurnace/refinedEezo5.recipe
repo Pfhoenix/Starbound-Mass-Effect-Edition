@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "platinumore", "count" : 40 }
+  ],
+  "output" : {
+    "item" : "refinedEezo",
+    "count" : 1
+  },
+  "groups" : [ "eezofurnace", "mod", "all" ]
+}

@@ -3,5 +3,7 @@
   	"op" : "add",
     "path" : "/species/-",
     "value" : "n7human"
-  }
+  },
+  
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "refinedEezo" } }
 ]
