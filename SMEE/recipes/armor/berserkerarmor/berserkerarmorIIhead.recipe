@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "steelbar", "count" : 6 }
+    { "item" : "steelbar", "count" : 6 },
+	{ "item" : "berserkerarmorIhead", "count" : 1 }
   ],
   "output" : { "item" : "berserkerarmorIIhead", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

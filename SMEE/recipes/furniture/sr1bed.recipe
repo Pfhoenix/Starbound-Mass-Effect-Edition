@@ -3,5 +3,5 @@
 		{ "item" : "titaniumbar", "count" : 5 }
 	],
 	"output" : { "item" : "sr1bed", "count" : 1 },
-	"groups" : [ "metalworkstation", "mod", "smee", "furniture", "objects", "all" ]
+	"groups" : [ "smeemodstation", "mod", "objects", "all" ]
 }

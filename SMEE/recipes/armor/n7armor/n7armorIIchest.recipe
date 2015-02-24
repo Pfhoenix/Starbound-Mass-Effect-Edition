@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "steelbar", "count" : 10 }
+    { "item" : "steelbar", "count" : 10 },
+	{ "item" : "n7armorIchest", "count" : 1 }
   ],
   "output" : { "item" : "n7armorIIchest", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

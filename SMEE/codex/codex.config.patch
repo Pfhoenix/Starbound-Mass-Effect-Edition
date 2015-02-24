@@ -2,18 +2,18 @@
   { 
     "op" : "add",
     "path" : "/initialcodex/n7human",
-    "value" : [ "controls", "humanprologue", "humanorigins", "humanescape", "survivalguide" ] 
+    "value" : [ "controls", "n7humansystemsalliance", "n7humansearth", "n7humanfirstcontactwar", "survivalguide" ] 
   },
   
   {
     "op" : "add",
     "path" : "/initialcodex/asari",
-    "value" : [ "controls", "humanprologue", "humanorigins", "humanescape", "survivalguide" ] 
+    "value" : [ "controls", "asariprologue", "asariorigins", "asariambition", "survivalguide" ] 
   },
   
   {
     "op" : "add",
     "path" : "/initialcodex/turian",
-    "value" : [ "controls", "humanprologue", "humanorigins", "humanescape", "survivalguide" ]  
+    "value" : [ "controls", "turianprologue", "turianorigins", "turiandirective", "survivalguide" ]  
   }
 ]

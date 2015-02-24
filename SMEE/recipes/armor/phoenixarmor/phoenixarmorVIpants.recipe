@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "feroziumcompound", "count" : 4 }
+    { "item" : "feroziumcompound", "count" : 4 },
+	{ "item" : "phoenixarmorVpants", "count" : 1 }
   ],
   "output" : { "item" : "phoenixarmorVIpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

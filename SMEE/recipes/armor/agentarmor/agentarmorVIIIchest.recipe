@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedviolium", "count" : 10 }
+    { "item" : "refinedviolium", "count" : 10 },
+	{ "item" : "agentarmorVIIchest", "count" : 1 }
   ],
   "output" : { "item" : "agentarmorVIIIchest", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

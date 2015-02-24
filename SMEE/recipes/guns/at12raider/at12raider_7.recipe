@@ -2,12 +2,10 @@
   "input" : [
     { "item" : "money", "count" : 6500 },
     { "item" : "imperviumbar", "count" : 15 },
-    { "item" : "iridiumbar", "count" : 1 },
-    { "item" : "palladiumbar", "count" : 1 },
     { "item" : "refinedEezo", "count" : 10 },
     { "item" : "at12raider_6", "count" : 1 }
   ],
   
   "output" : { "item" : "at12raider_7", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }

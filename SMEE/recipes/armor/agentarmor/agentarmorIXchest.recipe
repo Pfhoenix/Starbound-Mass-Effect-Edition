@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedrubium", "count" : 10 }
+    { "item" : "refinedrubium", "count" : 10 },
+	{ "item" : "agentarmorVIIIchest", "count" : 1 }
   ],
   "output" : { "item" : "agentarmorIXchest", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

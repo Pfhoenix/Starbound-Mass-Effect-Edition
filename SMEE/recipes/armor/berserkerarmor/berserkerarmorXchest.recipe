@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "imperviumcompound", "count" : 10 }
+    { "item" : "imperviumcompound", "count" : 10 },
+	{ "item" : "berserkerarmorIXchest", "count" : 1 }
   ],
   "output" : { "item" : "berserkerarmorXchest", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

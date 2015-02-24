@@ -2,12 +2,10 @@
   "input" : [
     { "item" : "money", "count" : 6000 },
     { "item" : "imperviumbar", "count" : 15 },
-	{ "item" : "iridiumbar", "count" : 1 },
-	{ "item" : "palladiumbar", "count" : 1 },
     { "item" : "refinedEezo", "count" : 10 },
     { "item" : "m300claymore_4", "count" : 1 }
   ],
   
   "output" : { "item" : "m300claymore_5", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }

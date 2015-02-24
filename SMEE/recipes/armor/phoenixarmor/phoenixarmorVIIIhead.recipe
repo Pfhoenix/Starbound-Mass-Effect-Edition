@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedviolium", "count" : 6 }
+    { "item" : "refinedviolium", "count" : 6 },
+	{ "item" : "phoenixarmorVIIhead", "count" : 1 }
   ],
   "output" : { "item" : "phoenixarmorVIIIhead", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "ceruliumcompound", "count" : 4 }
+    { "item" : "ceruliumcompound", "count" : 4 },
+	{ "item" : "berserkerarmorVIpants", "count" : 1 }
   ],
   "output" : { "item" : "berserkerarmorVIIpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

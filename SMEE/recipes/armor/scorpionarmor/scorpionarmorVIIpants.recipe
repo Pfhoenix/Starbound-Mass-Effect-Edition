@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "ceruliumcompound", "count" : 4 }
+    { "item" : "ceruliumcompound", "count" : 4 },
+	{ "item" : "scorpionarmorVIpants", "count" : 1 }
   ],
   "output" : { "item" : "scorpionarmorVIIpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "ceruliumcompound", "count" : 6 }
+    { "item" : "ceruliumcompound", "count" : 6 },
+	{ "item" : "phoenixarmorVIhead", "count" : 1 }
   ],
   "output" : { "item" : "phoenixarmorVIIhead", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

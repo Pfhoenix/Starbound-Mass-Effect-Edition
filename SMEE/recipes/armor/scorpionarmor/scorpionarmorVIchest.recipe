@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "feroziumcompound", "count" : 10 }
+    { "item" : "feroziumcompound", "count" : 10 },
+	{ "item" : "scorpionarmorVchest", "count" : 1 }
   ],
   "output" : { "item" : "scorpionarmorVIchest", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

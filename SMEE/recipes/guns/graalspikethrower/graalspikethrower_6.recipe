@@ -2,12 +2,10 @@
   "input" : [
     { "item" : "money", "count" : 5000 },
     { "item" : "Violiumbar", "count" : 15 },
-    { "item" : "iridiumbar", "count" : 1 },
-    { "item" : "palladiumbar", "count" : 1 },
     { "item" : "refinedEezo", "count" : 8 },
     { "item" : "graalspikethrower_5", "count" : 1 }
   ],
   
   "output" : { "item" : "graalspikethrower_6", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }

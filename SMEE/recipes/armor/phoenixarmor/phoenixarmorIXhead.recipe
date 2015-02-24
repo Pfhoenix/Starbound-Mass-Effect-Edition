@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedrubium", "count" : 6 }
+    { "item" : "refinedrubium", "count" : 6 },
+	{ "item" : "phoenixarmorVIIIhead", "count" : 1 }
   ],
   "output" : { "item" : "phoenixarmorIXhead", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

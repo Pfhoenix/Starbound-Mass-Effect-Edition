@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "imperviumcompound", "count" : 6 }
+    { "item" : "imperviumcompound", "count" : 6 },
+	{ "item" : "phoenixarmorIXhead", "count" : 1 }
   ],
   "output" : { "item" : "phoenixarmorXhead", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

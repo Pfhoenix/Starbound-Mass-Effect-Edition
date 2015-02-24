@@ -5,7 +5,8 @@
     { "item" : "refinedEezo", "count" : 2 },
     { "item" : "gethpulserifle_1", "count" : 1 }
   ],
+  
   "output" : { "item" : "gethpulserifle_2", "count" : 1 },
-  "groups" : [ "smeemodstation", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }
 

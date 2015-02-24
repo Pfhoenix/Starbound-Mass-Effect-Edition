@@ -1,23 +1,5 @@
 [
-  {
-  	"op" : "add",
-    "path" : "/species/-",
-    "value" : "n7human"
-  },
-  
-  {
-  	"op" : "add",
-    "path" : "/species/-",
-    "value" : "asari"
-  },
-  
-  {
-  	"op" : "add",
-    "path" : "/species/-",
-    "value" : "turian"
-  },
-  
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "smeeemodstation" } },
+  //armors
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIhead" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIchest" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIpants" } },
@@ -40,5 +22,44 @@
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "n7armorIchest" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "n7armorIpants" } },
   
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "refinedEezo" } }
+  //guns
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "at12raider_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "disciple_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "gethpulserifle_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "graalspikethrower_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m11wraith_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m23katana_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m22eviscerator_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m27scimitar_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m300claymore_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m3predator_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m5phalanx_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m6carnifex_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m8avenger_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m76revenant_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m92mantis_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m97viper_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m98widow_1" } },
+  
+  //materials
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "refinedEezo" } },
+  
+  //objects
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "smeeemodstation" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "sr1shipwall" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "sr1shipdetails" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "sr1bed" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "sr1medbaybed" } },
+  
+  //species
+  { "op" : "add", "path" : "/species/-", "value" : "n7human" }, 
+  { "op" : "add", "path" : "/species/-", "value" : "asari" },  
+  { "op" : "add", "path" : "/species/-", "value" : "turian" }
+  
+  //tools
+  //{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "omnitool1" } },
+  //{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "omnitool2" } },
+  //{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "omnitool3" } },
+  //{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "omnitool4" } }
+  
 ]

@@ -1,0 +1,17 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/animatedParts/stateTypes/podState/states",
+    "value" : {
+        "active" : {
+        "frames" : 9,
+        "cycle" : 0.9,
+        "mode" : "loop"
+        },
+        "expire" : {
+        "frames" : 6,
+        "cycle" : 0.9
+        }
+	}
+  }
+]

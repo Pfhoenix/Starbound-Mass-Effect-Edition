@@ -1,0 +1,7 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/text",
+    "value" : "Now that I can visit the planets within this solar system ^green;I need to start looking at how to repair my FTL drive, ^orange;E.D.I will probably know more."
+  }
+]

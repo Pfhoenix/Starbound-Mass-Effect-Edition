@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedrubium", "count" : 4 }
+    { "item" : "refinedrubium", "count" : 4 },
+	{ "item" : "scorpionarmorVIIIpants", "count" : 1 }
   ],
   "output" : { "item" : "scorpionarmorIXpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

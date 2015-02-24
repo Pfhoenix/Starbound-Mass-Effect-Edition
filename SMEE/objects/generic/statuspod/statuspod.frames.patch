@@ -1,14 +1,13 @@
-{
-
-	"frameGrid" : {
+[
+  {
+    "op" : "replace",
+	"path" : "/frameGrid",
+	"value" : {
 		"size" : [16,64],
 		"dimensions" : [15, 1],
 		"names" : [
 			[ "active.1", "active.2", "active.3", "active.4", "active.5", "active.6", "active.7", "active.8", "active.9", "expire.1", "expire.2", "expire.3", "expire.4", "expire.5", "expire.6" ]
 		]
-	},
-
-	"aliases" : {
-		"default" : "active.1"
 	}
-}
+  }
+]

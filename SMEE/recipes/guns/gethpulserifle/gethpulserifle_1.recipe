@@ -4,7 +4,8 @@
     { "item" : "steelbar", "count" : 10 },
     { "item" : "refinedEezo", "count" : 2 }
   ],
+  
   "output" : { "item" : "gethpulserifle_1", "count" : 1 },
-  "groups" : [ "smeemodstation", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }
 

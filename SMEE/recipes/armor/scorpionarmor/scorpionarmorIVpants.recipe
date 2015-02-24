@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "durasteelbar", "count" : 4 }
+    { "item" : "durasteelbar", "count" : 4 },
+	{ "item" : "scorpionarmorIIIpants", "count" : 1 }
   ],
   "output" : { "item" : "scorpionarmorIVpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

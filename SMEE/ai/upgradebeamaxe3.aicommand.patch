@@ -25,5 +25,61 @@
           "speedModifier" : 1.0
         }
       ]
-    }}
+    } },
+	
+  { 
+    "op" : "add",
+    "path" : "/speciesText/asari",
+    "value" : {
+      "buttonText" : "Upgrade M. M. - Size",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;With ^orange;10 bars of gold^white; and ^orange;10 bars of titanium^white;, I can upgrade your matter manipulator to ^green;increase its mining area^white;.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Success! Your matter manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Failure. We'll need ^orange;10 gold bars^white; and ^orange;10 titanium bars^white; to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    } },
+	
+  { 
+    "op" : "add",
+    "path" : "/speciesText/turian",
+    "value" : {
+      "buttonText" : "Upgrade M. M. - Size",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;With ^orange;10 bars of gold^white; and ^orange;10 bars of titanium^white;, I can upgrade your matter manipulator to ^green;increase its mining area^white;.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Success! Your matter manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "^white;Failure. We'll need ^orange;10 gold bars^white; and ^orange;10 titanium bars^white; to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    } }
 ]

@@ -25,5 +25,61 @@
           "speedModifier" : 1.0
         }
       ]
-    }}
+    } },
+	
+  { 
+    "op" : "add",
+    "path" : "/speciesText/asari",
+    "value" : {
+      "buttonText" : "Enable Omni-tool",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "The omni-tool is a very powerful tool. Capable of manipulating any kind of matter at a distance.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "I have switched on your omni-tool. ^green;The omni-tool enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    } },
+	
+  { 
+    "op" : "add",
+    "path" : "/speciesText/turian",
+    "value" : {
+      "buttonText" : "Enable Omni-tool",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "The omni-tool is a very powerful tool. Capable of manipulating any kind of matter at a distance.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "I have switched on your omni-tool. ^green;The omni-tool enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    } }
 ]

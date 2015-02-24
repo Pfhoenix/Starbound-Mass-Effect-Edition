@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "imperviumcompound", "count" : 4 }
+    { "item" : "imperviumcompound", "count" : 4 },
+	{ "item" : "n7armorIXpants", "count" : 1 }
   ],
   "output" : { "item" : "n7armorXpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

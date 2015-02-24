@@ -1,0 +1,7 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/text",
+    "value" : "My ship has received a distress signal from an Erchius mining facility. ^green;I should talk to E.D.I and check the ^orange;missions tab ^green;to see what's going on."
+  }
+]

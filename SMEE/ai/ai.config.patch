@@ -34,7 +34,7 @@
       } ]
     } },
 	
-	{ 
+  { 
     "op" : "add",
     "path" : "/species/asari",
     "value" : {
@@ -69,7 +69,7 @@
       } ]
     } },
 	
-	{ 
+  { 
     "op" : "add",
     "path" : "/species/turian",
     "value" : {

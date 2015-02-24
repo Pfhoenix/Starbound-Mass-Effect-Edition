@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "titaniumbar", "count" : 4 }
+    { "item" : "titaniumbar", "count" : 4 },
+	{ "item" : "n7armorIIpants", "count" : 1 }
   ],
   "output" : { "item" : "n7armorIIIpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

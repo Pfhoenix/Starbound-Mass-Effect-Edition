@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedaegisalt", "count" : 4 }
+    { "item" : "refinedaegisalt", "count" : 4 },
+	{ "item" : "berserkerarmorIVpants", "count" : 1 }
   ],
   "output" : { "item" : "berserkerarmorVpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

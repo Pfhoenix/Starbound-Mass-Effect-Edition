@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedaegisalt", "count" : 6 }
+    { "item" : "refinedaegisalt", "count" : 6 },
+	{ "item" : "agentarmorIVhead", "count" : 1 }
   ],
   "output" : { "item" : "agentarmorVhead", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

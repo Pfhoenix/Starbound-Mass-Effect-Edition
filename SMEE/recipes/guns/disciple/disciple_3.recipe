@@ -2,11 +2,10 @@
   "input" : [
     { "item" : "money", "count" : 3850 },
     { "item" : "Cerliumbar", "count" : 15 },
-    { "item" : "palladiumbar", "count" : 1 },
     { "item" : "refinedEezo", "count" : 7 },
     { "item" : "disciple_2", "count" : 1 }
   ],
   
   "output" : { "item" : "disciple_3", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }

@@ -2,11 +2,10 @@
   "input" : [
     { "item" : "money", "count" : 3500 },
     { "item" : "feroziumbar", "count" : 15 },
-	{ "item" : "iridiumbar", "count" : 1 },
     { "item" : "refinedEezo", "count" : 6 },
 	{ "item" : "m27scimitar_7", "count" : 1 }
   ],
   
   "output" : { "item" : "m27scimitar_8", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }

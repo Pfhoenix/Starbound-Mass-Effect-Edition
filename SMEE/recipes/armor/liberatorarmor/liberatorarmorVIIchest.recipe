@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "ceruliumcompound", "count" : 10 }
+    { "item" : "ceruliumcompound", "count" : 10 },
+	{ "item" : "liberatorarmorVIchest", "count" : 1 }
   ],
   "output" : { "item" : "liberatorarmorVIIchest", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

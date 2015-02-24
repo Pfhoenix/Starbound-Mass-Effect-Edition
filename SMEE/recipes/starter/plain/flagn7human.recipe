@@ -7,5 +7,5 @@
     "item" : "flagn7human",
     "count" : 1
   },
-  "groups" : [ "mod", "smee", "plain", "objects", "all" ]
+	"groups" : [ "smeemodstation", "mod", "objects", "all" ]
 }

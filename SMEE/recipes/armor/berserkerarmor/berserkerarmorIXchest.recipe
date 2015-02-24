@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedrubium", "count" : 10 }
+    { "item" : "refinedrubium", "count" : 10 },
+	{ "item" : "berserkerarmorVIIIchest", "count" : 1 }
   ],
   "output" : { "item" : "berserkerarmorIXchest", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

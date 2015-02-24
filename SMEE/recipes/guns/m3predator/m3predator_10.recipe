@@ -5,6 +5,7 @@
     { "item" : "refinedEezo", "count" : 2 },
     { "item" : "m3predator_9", "count" : 1 }
   ],
+  
   "output" : { "item" : "m3predator_10", "count" : 1 },
-  "groups" : [ "smeemodstation", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }

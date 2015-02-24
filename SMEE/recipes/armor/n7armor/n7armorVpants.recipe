@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "refinedaegisalt", "count" : 4 }
+    { "item" : "refinedaegisalt", "count" : 4 },
+	{ "item" : "n7armorIVpants", "count" : 1 }
   ],
   "output" : { "item" : "n7armorVpants", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

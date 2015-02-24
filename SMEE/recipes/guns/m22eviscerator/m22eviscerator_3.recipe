@@ -7,5 +7,5 @@
   ],
   
   "output" : { "item" : "m22eviscerator_3", "count" : 1 },
-  "groups" : [ "smee", "mod", "craftingtable", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }

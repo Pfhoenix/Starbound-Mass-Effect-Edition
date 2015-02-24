@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "steelbar", "count" : 6 }
+    { "item" : "steelbar", "count" : 6 },
+	{ "item" : "liberatorarmorIhead", "count" : 1 }
   ],
   "output" : { "item" : "liberatorarmorIIhead", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

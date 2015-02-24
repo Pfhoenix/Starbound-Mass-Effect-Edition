@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "feroziumcompound", "count" : 6 }
+    { "item" : "feroziumcompound", "count" : 6 },
+	{ "item" : "berserkerarmorVhead", "count" : 1 }
   ],
   "output" : { "item" : "berserkerarmorVIhead", "count" : 1 },
   "groups" : [ "smeemodstation", "mod", "armors", "all" ]

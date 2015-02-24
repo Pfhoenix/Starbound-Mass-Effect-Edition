@@ -4,6 +4,7 @@
     { "item" : "ironbar", "count" : 10 },
     { "item" : "refinedEezo", "count" : 1 }
   ],
+  
   "output" : { "item" : "m8avenger_1", "count" : 1 },
-  "groups" : [ "smeemodstation", "weapons", "all" ]
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
 }
