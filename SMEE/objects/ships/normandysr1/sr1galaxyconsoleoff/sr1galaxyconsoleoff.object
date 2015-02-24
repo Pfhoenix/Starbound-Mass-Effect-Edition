@@ -1,0 +1,25 @@
+{
+	"objectName" : "sr1galaxyconsoleoff",
+	"rarity" : "Common",
+	"category" : "decorative",
+	"price" : 1000,
+	"printable" : false,
+
+	"description" : "A holographic view of the galaxy. Used for navigation.",
+	"shortdescription" : "Holographic Galaxy Map",
+	"race" : "generic",
+
+	"inventoryIcon" : "sr1galaxyconsoleofficon.png",
+	"orientations" : [
+		{
+			"dualImage" : "sr1galaxyconsoleoff.png",
+			"imagePosition" : [-11, 0],
+			"frames" : 1,
+			"animationCycle" : 1.0,
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ]
+		}
+	],
+	
+	"unlit" : true
+}

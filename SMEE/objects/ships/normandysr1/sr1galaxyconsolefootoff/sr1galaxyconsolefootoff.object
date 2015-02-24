@@ -1,0 +1,27 @@
+{
+	"objectName" : "sr1galaxyconsolefootoff",
+	"rarity" : "Common",
+	"objectType" : "noisy", 
+	"category" : "furniture",
+	"price" : 1000,
+	"printable" : false,
+	
+	"description" : "Use Me to open the Galaxy Map.",
+	"shortdescription" : "Holographic Galaxy Map",
+	"race" : "generic",
+
+	"inventoryIcon" : "sr1galaxyconsoleofficon.png",
+	"orientations" : [
+		{
+			"dualImage" : "sr1galaxyconsolefootoff.png",
+			"imagePosition" : [0, 0],
+			"frames" : 1,
+			"animationCycle" : 0.5,
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ],
+			"collision" : "solid"
+		}
+	],
+	
+	"sounds" : [ "/sfx/interface/ship_error1.wav" ]
+}
