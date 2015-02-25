@@ -55,11 +55,5 @@
   { "op" : "add", "path" : "/species/-", "value" : "n7human" }, 
   { "op" : "add", "path" : "/species/-", "value" : "asari" },  
   { "op" : "add", "path" : "/species/-", "value" : "turian" }
-  
-  //tools
-  //{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "omnitool1" } },
-  //{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "omnitool2" } },
-  //{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "omnitool3" } },
-  //{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "omnitool4" } }
-  
+
 ]
