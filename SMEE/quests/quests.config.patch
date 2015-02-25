@@ -2,18 +2,24 @@
   {
     "op" : "add",
     "path" : "/initialquests/n7human",
-    "value" : [ "n7humantutorial.gearup" ]
+    "value" : [ "n7humantutorial.gearup",
+                "citadeltech01.codexacquire",
+                "citadelship01.codexacquire" ]
   },
 	
   {
     "op" : "add",
     "path" : "/initialquests/asari",
-    "value" : [ "asaritutorial.gearup" ]
+    "value" : [ "asaritutorial.gearup", 
+                "citadeltech01.codexacquire",
+                "citadelship01.codexacquire" ]
   },
 	
   {
     "op" : "add",
     "path" : "/initialquests/turian",
-    "value" : [ "turiantutorial.gearup" ]
+    "value" : [ "turiantutorial.gearup",
+                "citadeltech01.codexacquire",
+                "citadelship01.codexacquire"]
   }
 ]
