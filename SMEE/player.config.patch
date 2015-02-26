@@ -1,4 +1,7 @@
 [
+  //player matter manipulator when placing objects
+  { "op" : "replace", "path" : "/beamGunConfig/image", "value" : "/humanoid/any/omnitool1.png" },
+  
   //armors
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIhead" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "phoenixarmorIchest" } },
@@ -46,6 +49,7 @@
   
   //objects
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "smeeemodstation" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "eezofurnace" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "sr1shipwall" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "sr1shipdetails" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "sr1bed" } },
