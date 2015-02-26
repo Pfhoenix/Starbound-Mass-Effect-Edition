@@ -4,7 +4,6 @@
   "inventoryIcon" : "/tech/biotic-lift.png",
   "description" : "Press F to Lift enemies into the air!",
   "shortdescription" : "Biotic Power : Lift",
-  "inspectionKind" : "tech",
 
-  "techModule" : "biotic-lift.tech"
+  "techModule" : "biotic-lift"
 }

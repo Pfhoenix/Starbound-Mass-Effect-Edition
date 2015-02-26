@@ -1,50 +1,44 @@
 function init()
-	data.energyUsage = tech.parameter("energyUsage")
-	data.targetYVel = tech.parameter("targetYVel")
-	data.maxAccel = tech.parameter("maxAccel")
-	data.anim = false
+	self.energyUsage = tech.parameter("energyUsage")
+	self.targetYVel = tech.parameter("targetYVel")
+	self.maxAccel = tech.parameter("maxAccel")
+	self.anim = false
 end
 
 function uninit()
 	tech.setAnimationState("active", "off")
-	data.anim = false
+	self.anim = false
 end
 
 function input(args)
-	if not tech.falling then
+	if not mcontroller.falling() then
 		return nil
 	end
-	
+
 	if args.moves["down"] then
 		return "biotic-slow"
 	end
-	
+
 	return nil
 end
 
 function update(args)
 	if args.actions["biotic-slow"] then
-		if args.availableEnergy < data.energyUsage * args.dt then
+		if not tech.consumeTechEnergy(self.energyUsage * args.dt) then
 			tech.setAnimationState("active", "off")
-			data.anim = false
+			self.anim = false
 			return
 		end
-		local pvel = tech.velocity()
-		if pvel[2] < data.targetYVel then
-			pvel[2] = pvel[2] + data.maxAccel * args.dt
-			if (pvel[2] > data.targetYVel) then
-				pvel[2] = data.targetYVel
-			end
-			tech.setYVelocity(pvel[2])
-			-- need to spawn some effect if enough time has passed since the last effect was spawned
-			if not data.anim then
-				tech.setAnimationState("active", "on")
-				data.anim = true
-			end
-			return data.energyUsage * args.dt
+
+		mcontroller.controlApproachYVelocity(self.targetYVel, self.maxAccel, false)
+
+		if not self.anim then
+			tech.setAnimationState("active", "on")
+			self.anim = true
 		end
-	elseif data.anim then
+	elseif self.anim then
+		world.logInfo("Biotic slow turning off")
 		tech.setAnimationState("active", "off")
-		data.anim = false
+		self.anim = false
 	end
 end

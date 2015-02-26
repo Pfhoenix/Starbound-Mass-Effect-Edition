@@ -1,12 +1,12 @@
 function BioticLiftInit()
-	data.liftTime = tech.parameter("liftTime")
-	data.liftVelocity = tech.parameter("liftVelocity")
-	data.liftAcceleration = tech.parameter("liftAcceleration")
-	data.liftIds = {}
+	self.liftTime = tech.parameter("liftTime")
+	self.liftVelocity = tech.parameter("liftVelocity")
+	self.liftAcceleration = tech.parameter("liftAcceleration")
+	self.liftIds = {}
 end
 
 function BioticLiftUninit()
-	data.liftIds = nil
+	self.liftIds = nil
 end
 
 -- takes args from the update function
@@ -17,16 +17,16 @@ function BioticLiftUpdate(args)
 		if tech.parameter("energyUsage") <= args.availableEnergy then
 			local lifted = world.entityQuery(args.aimPosition, 4, { withoutEntityId = tech.parentEntityId(), inSightOf = tech.parentEntityId(), notAnObject = true })
 			if lifted and #lifted > 0 then
-				table.insert(data.liftIds, { lifted = lifted, ttl = data.liftTime, liftvel = data.liftVelocity })
+				table.insert(self.liftIds, { lifted = lifted, ttl = self.liftTime, liftvel = self.liftVelocity })
 				tech.setAnimationState("active", "on")
 				tech.playImmediateSound(tech.parameter("liftsound"))
-				data.updateEnergyUsage = data.updateEnergyUsage + tech.parameter("energyUsage")
+				self.updateEnergyUsage = self.updateEnergyUsage + tech.parameter("energyUsage")
 			end
 		end
 	end
-	
+
 	local cpos
-	for i,lift in ipairs(data.liftIds) do
+	for i,lift in ipairs(self.liftIds) do
 		lift.ttl = lift.ttl - args.dt
 		-- end of effect
 		if lift.ttl <= 0 then
@@ -36,7 +36,7 @@ function BioticLiftUpdate(args)
 					-- do restore stuff here
 				end
 			end
-			table.remove(data.liftIds, i)
+			table.remove(self.liftIds, i)
 		-- continue to affect lifted entities
 		else
 			local stillgood = false
@@ -48,7 +48,7 @@ function BioticLiftUpdate(args)
 				end
 			end
 			if not stillgood then
-				table.remove(data.liftIds, i)
+				table.remove(self.liftIds, i)
 			end
 		end
 	end
@@ -66,14 +66,14 @@ function input(args)
 	if args.moves["special"] == 1 then
 		return "biotic-lift"
 	end
-	
+
 	return nil
 end
 
 function update(args)
-	data.updateEnergyUsage = 0
-	
+	self.updateEnergyUsage = 0
+
 	BioticLiftUpdate(args)
-		
-	return data.updateEnergyUsage
+
+	return self.updateEnergyUsage
 end

@@ -1,4 +1,13 @@
 [
+	{
+		"op" : "add",
+		"path" : "/actions/-",
+		"value" : {
+			"action" : "showTech",
+			"techName" : [ "biotic-lift", "biotic-slow" ]
+		}
+	},
+	
   { 
     "op" : "add",
     "path" : "/speciesText/n7human",

@@ -1,9 +1,12 @@
 {
-  "script" : "biotic-slow.lua",
-  "actions" : [ "biotic-slow" ],
-  "animator" : "biotic-slow.animation",
+	"name" : "biotic-slow",
+	"type" : "legs",
 
-  "energyUsage" : 100,
-  "targetYVel" : -5,
-  "maxAccel" : 50
+	"scripts" : [ "biotic-slow.lua" ],
+	"actions" : [ "biotic-slow" ],
+	"animator" : "biotic-slow.animation",
+
+	"energyUsage" : 100,
+	"targetYVel" : -5,
+	"maxAccel" : 50
 }
