@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "money", "count" : 5000 },
-    { "item" : "imperviumbar", "count" : 15 },
+    { "item" : "imperviumcompound", "count" : 15 },
     { "item" : "refinedEezo", "count" : 10 }
   ],
   

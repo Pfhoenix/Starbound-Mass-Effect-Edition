@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "money", "count" : 7250 },
-    { "item" : "imperviumbar", "count" : 15 },
+    { "item" : "imperviumcompound", "count" : 15 },
     { "item" : "refinedEezo", "count" : 10 },
     { "item" : "m300claymore_9", "count" : 1 }
   ],

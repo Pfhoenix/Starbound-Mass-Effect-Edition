@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "money", "count" : 5725 },
-    { "item" : "Rubiumbar", "count" : 15 },
+    { "item" : "refinedrubium", "count" : 15 },
     { "item" : "refinedEezo", "count" : 9 },
     { "item" : "m11wraith_8", "count" : 1 }
   ],

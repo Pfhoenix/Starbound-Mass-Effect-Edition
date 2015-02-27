@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "money", "count" : 3200 },
-    { "item" : "feroziumbar", "count" : 15 },
+    { "item" : "feroziumcompound", "count" : 15 },
     { "item" : "refinedEezo", "count" : 6 },
 	{ "item" : "m27scimitar_5", "count" : 1 }
   ],

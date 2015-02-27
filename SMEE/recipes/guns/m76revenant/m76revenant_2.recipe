@@ -1,8 +1,7 @@
 {
   "input" : [
     { "item" : "money", "count" : 4200 },
-    { "item" : "Violiumbar", "count" : 15 },
-
+    { "item" : "refinedviolium", "count" : 15 },
     { "item" : "refinedEezo", "count" : 8 },
     { "item" : "m76revenant_1", "count" : 1 }
   ],

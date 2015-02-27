@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "money", "count" : 4200 },
-    { "item" : "Cerliumbar", "count" : 15 },
+    { "item" : "ceruliumcompound", "count" : 15 },
     { "item" : "refinedEezo", "count" : 7 },
     { "item" : "disciple_4", "count" : 1 }
   ],
