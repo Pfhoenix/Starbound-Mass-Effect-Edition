@@ -2,10 +2,12 @@
 	"objectName" : "sr1techstation",
 	"rarity" : "Common",
 
-	"interactAction" : "OpenTech3DPrinterDialog",
+	"interactAction" : "OpenAiInterface",
 
 	"category" : "decorative",
 	"price" : 2500,
+	"lightColor" : [61, 88, 102],
+	"lightPosition" : [-1, 0],
 
 	"description" : "A tech station. For creating awesome tech!",
 	"shortdescription" : "Tech Station",

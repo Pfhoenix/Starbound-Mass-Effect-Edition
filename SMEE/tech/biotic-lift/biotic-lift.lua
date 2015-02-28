@@ -1,17 +1,23 @@
-function BioticLiftInit()
+function init()
 	self.liftTime = tech.parameter("liftTime")
 	self.liftVelocity = tech.parameter("liftVelocity")
 	self.liftAcceleration = tech.parameter("liftAcceleration")
 	self.liftIds = {}
 end
 
-function BioticLiftUninit()
+function uninit()
 	self.liftIds = nil
 end
 
--- takes args from the update function
--- returns energy usage
-function BioticLiftUpdate(args)
+function input(args)
+	if args.moves["special"] == 1 then
+		return "biotic-lift"
+	end
+
+	return nil
+end
+
+function update(args)
 	-- if there's enough energy, fire a projectile
 	if args.actions["biotic-lift"] then
 		if tech.parameter("energyUsage") <= args.availableEnergy then
@@ -52,28 +58,4 @@ function BioticLiftUpdate(args)
 			end
 		end
 	end
-end
-
-function init()
-	BioticLiftInit()
-end
-
-function uninit()
-	BioticLiftUninit()
-end
-
-function input(args)
-	if args.moves["special"] == 1 then
-		return "biotic-lift"
-	end
-
-	return nil
-end
-
-function update(args)
-	self.updateEnergyUsage = 0
-
-	BioticLiftUpdate(args)
-
-	return self.updateEnergyUsage
 end

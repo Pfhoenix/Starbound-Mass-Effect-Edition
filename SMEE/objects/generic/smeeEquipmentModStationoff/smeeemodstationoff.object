@@ -1,0 +1,26 @@
+{
+	"objectName" : "smeeemodstationoff",
+	"rarity" : "Common",
+	"objectType" : "noisy", 
+	"category" : "furniture",
+	"price" : 1000,
+	"printable" : false,
+
+	"description" : "Specialized for working with Element-0",
+	"shortdescription" : "Equipment Mod Station",
+	"inventoryIcon" : "smeeemodstationofficon.png",
+	"orientations" : [
+		{
+			"dualImage" : "smeeemodstationoff.png",
+			"frames" : 25,
+			"animationCycle" : 2.0,
+
+			"imagePosition" : [-8, 0],
+		
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ]
+		}
+	],
+	
+	"sounds" : [ "/sfx/interface/ship_error1.wav" ]
+}

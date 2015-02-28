@@ -1,0 +1,26 @@
+{
+	"objectName" : "sr1shiplockeroff",
+	"rarity" : "Common",
+	"objectType" : "noisy",
+	"category" : "furniture",
+	"price" : 1000,
+	"printable" : false,
+	
+	"description" : "A secure Shiplocker",
+	"shortdescription" : "Shiplocker",
+	"race" : "generic",
+
+	"inventoryIcon" : "sr1shiplockerofficon.png",
+	"orientations" : [
+		{
+			"dualImage" : "sr1shiplockeroff.png",
+			"imagePosition" : [-16, -8],
+			"frames" : 8,
+			"animationCycle" : 1.0,
+			"spaceScan" : 0.1,
+			"anchors" : [ "background" ]
+		}
+	],
+	
+	"sounds" : [ "/sfx/interface/ship_error1.wav" ]
+}
