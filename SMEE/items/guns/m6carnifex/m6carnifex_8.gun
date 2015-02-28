@@ -10,12 +10,12 @@
   "image" : "m6carnifex.png",
   "recoilTime" : 0.1,
   "handPosition" : [-9, 0],
-  "firePosition" : [10, 4],
+  "firePosition" : [38, 4],
   
   "fireTime" : 0.625,
   "twoHanded" : false,
-  "level" : 10,
-  "classMultiplier" : 4.032234,
+  "level" : 3,
+  "classMultiplier" : 2.016117,
   
   "fireOnRelease" : true,
 

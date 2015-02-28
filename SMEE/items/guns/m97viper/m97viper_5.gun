@@ -10,12 +10,12 @@
   "image" : "m97viper.png",
   "recoilTime" : 0.2,
   "handPosition" : [-14, 0],
-  "firePosition" : [25, 4],
+  "firePosition" : [26, 4],
   
   "fireTime" : 0.833333,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 6,
+  "level" : 3,
+  "classMultiplier" : 3,
   
   "fireOnRelease" : true,
 

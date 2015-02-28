@@ -10,12 +10,12 @@
   "image" : "m76revenant.png",
   "recoilTime" : 0.1,
   "handPosition" : [-11, 0],
-  "firePosition" : [20, 4],
+  "firePosition" : [22, 4],
   
   "fireTime" : 0.091,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 1.5625,
+  "level" : 3,
+  "classMultiplier" : 0.78125,
 
   "projectileType" : "bullet-4",
   "projectile" : {

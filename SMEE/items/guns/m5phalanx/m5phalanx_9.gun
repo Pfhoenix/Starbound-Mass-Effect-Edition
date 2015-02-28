@@ -10,12 +10,12 @@
   "image" : "m5phalanx.png",
   "recoilTime" : 0.1,
   "handPosition" : [-9, 0],
-  "firePosition" : [11, 4],
+  "firePosition" : [36, 4],
   
   "fireTime" : 0.25,
   "twoHanded" : false,
-  "level" : 10,
-  "classMultiplier" : 8.980892,
+  "level" : 3,
+  "classMultiplier" : 4.490446,
   
   "fireOnRelease" : true,
 

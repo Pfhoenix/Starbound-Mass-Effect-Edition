@@ -10,12 +10,12 @@
   "image" : "m3predator.png",
   "recoilTime" : 0.1,
   "handPosition" : [-9, 0],
-  "firePosition" : [11, 4],
+  "firePosition" : [36, 4],
   
   "fireTime" : 0.125,
   "twoHanded" : false,
-  "level" : 10,
-  "classMultiplier" : 10.769231,
+  "level" : 3,
+  "classMultiplier" : 5.384616,
   
   "fireOnRelease" : true,
 

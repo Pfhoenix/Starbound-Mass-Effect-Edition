@@ -10,12 +10,12 @@
   "image" : "m300claymore.png",
   "recoilTime" : 0.1,
   "handPosition" : [-15, -4],
-  "firePosition" : [3, 4],
+  "firePosition" : [13, 4],
   
   "fireTime" : 1.0,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 0.539,
+  "level" : 3,
+  "classMultiplier" : 0.2695,
   
   "fireOnRelease" : true,
   "spread" : 1,

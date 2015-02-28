@@ -14,8 +14,8 @@
   
   "fireTime" : 0.6,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 2.781,
+  "level" : 3,
+  "classMultiplier" : 1.3905,
   
   "fireOnRelease" : true,
   "spread" : 8,

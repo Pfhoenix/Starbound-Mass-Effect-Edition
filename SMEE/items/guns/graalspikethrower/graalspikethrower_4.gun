@@ -10,12 +10,12 @@
   "image" : "graalspikethrower.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -2],
-  "firePosition" : [6, 1],
+  "firePosition" : [8, 2],
   
   "fireTime" : 0.7,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 1.352,
+  "level" : 3,
+  "classMultiplier" : 0.676,
   
   "fireOnRelease" : true,
   "spread" : 6,

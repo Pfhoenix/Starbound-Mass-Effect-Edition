@@ -10,12 +10,12 @@
   "image" : "m8avenger.png",
   "recoilTime" : 0.1,
   "handPosition" : [-2, 0],
-  "firePosition" : [18, 5],
+  "firePosition" : [42, 5],
   
   "fireTime" : 0.125,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 9.617486,
+  "level" : 3,
+  "classMultiplier" : 4.808743,
 
   "projectileType" : "energybullet2",
   "projectile" : {

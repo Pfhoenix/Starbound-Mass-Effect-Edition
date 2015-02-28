@@ -10,12 +10,12 @@
   "image" : "m98widow.png",
   "recoilTime" : 0.2,
   "handPosition" : [-13, 0],
-  "firePosition" : [23, 4],
+  "firePosition" : [30, 3],
   
   "fireTime" : 0.909091,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 1.011154,
+  "level" : 3,
+  "classMultiplier" : 0.505577,
   
   "fireOnRelease" : true,
 

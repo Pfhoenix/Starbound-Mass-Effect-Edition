@@ -10,11 +10,11 @@
   "image" : "gethpulserifle.png",
   "recoilTime" : 0.1,
   "handPosition" : [-4, 0],
-  "firePosition" : [20, 3],
+  "firePosition" : [45, 3],
   
   "fireTime" : 0.07692,
   "twoHanded" : true,
-  "level" : 10,
+  "level" : 3,
 
   "projectileType" : "gethbullet",
   "projectile" : {

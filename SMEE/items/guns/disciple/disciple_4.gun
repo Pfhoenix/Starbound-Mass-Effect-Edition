@@ -10,12 +10,12 @@
   "image" : "disciple.png",
   "recoilTime" : 0.1,
   "handPosition" : [-16, -3],
-  "firePosition" : [0, 0],
+  "firePosition" : [10, 0],
   
   "fireTime" : 0.8,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 1.75,
+  "level" : 3,
+  "classMultiplier" : 0.875,
   
   "fireOnRelease" : true,
   "spread" : 1,

@@ -10,12 +10,12 @@
   "image" : "m92mantis.png",
   "recoilTime" : 0.1,
   "handPosition" : [-13, 0],
-  "firePosition" : [20, 4],
+  "firePosition" : [45, 4],
   
   "fireTime" : 0.833333,
   "twoHanded" : true,
-  "level" : 10,
-  "classMultiplier" : 8,
+  "level" : 3,
+  "classMultiplier" : 4,
   
   "fireOnRelease" : true,
 
