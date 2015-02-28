@@ -1,0 +1,13 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/text",
+    "value" : "A visit to the Erchius mining facility might be just what I need to ^green;fix my FTL drive^white;. The distress signal and coordinates have been copied to ^green;E.D.I's mission tab. I'll need to equip the nano suit I was given through the tech menu to survive the atmosphere at the facility."
+  },
+  
+  {
+    "op" : "replace",
+    "path" : "/completionText",
+    "value" : "I've finally got the crystals I need to fix my ship's FTL drive. I should talk to E.D.I."
+  }
+]

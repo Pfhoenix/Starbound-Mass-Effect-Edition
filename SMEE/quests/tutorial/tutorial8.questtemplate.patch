@@ -1,0 +1,13 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/text",
+    "value" : "^green;It's finally time for me to obtain ^orange;20 core fragments.^white; I can obtain them deep underground near the planet's core. ^green;With those E.D.I should be able to fix the ^orange;ship's thrusters."
+  },
+  
+  {
+    "op" : "replace",
+    "path" : "/completionText",
+    "value" : "Awesome, now my ship's E.D.I can repair the ^orange;ship's thrusters^white; and ^green;I can visit other planets in this solar system."
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/completionText",
+    "value" : "Such beautiful kelp! You've outdone yourself. ^green;The ^orange;nanoskin ^green;is yours. Check with your ship's E.D.I to equip it."
+  }
+]
+ 

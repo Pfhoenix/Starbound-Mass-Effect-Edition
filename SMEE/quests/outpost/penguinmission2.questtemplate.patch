@@ -1,0 +1,7 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/text",
+    "value" : "^green;I should go and check out these coordinates at E.D.I. ^white;If I can take down Dreadwing and return with proof ^green;perhaps the outpost penguin will give me something in return."
+  }
+]
