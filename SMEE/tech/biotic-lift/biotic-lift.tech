@@ -2,11 +2,9 @@
 	"name" : "biotic-lift",
 	"type" : "body",
 	
-	"scripts" : ["biotic-lift.lua"],
-	"actions" : [ "biotic lift" ],
-	"animator" : "/animations/bioticuse/bioticuse.animation",
-
-	"liftsound" : "/sfx/tech/biotic-lift.wav",
+	"scripts" : ["biotic-lift.lua", "/scripts/smee/utils.lua"],
+	"actions" : [ "biotic-lift" ],
+	"animator" : "bioticuse.animation",
 
 	"energyUsage" : 50,
 	"liftTime" : 4,

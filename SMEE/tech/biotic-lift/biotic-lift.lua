@@ -1,4 +1,5 @@
 function init()
+	self.energyUsage = tech.parameter("energyUsage")
 	self.liftTime = tech.parameter("liftTime")
 	self.liftVelocity = tech.parameter("liftVelocity")
 	self.liftAcceleration = tech.parameter("liftAcceleration")
@@ -20,13 +21,13 @@ end
 function update(args)
 	-- if there's enough energy, fire a projectile
 	if args.actions["biotic-lift"] then
-		if tech.parameter("energyUsage") <= args.availableEnergy then
-			local lifted = world.entityQuery(args.aimPosition, 4, { withoutEntityId = tech.parentEntityId(), inSightOf = tech.parentEntityId(), notAnObject = true })
+		if tech.consumeTechEnergy(self.energyUsage) then
+			--local lifted = world.entityQuery(tech.aimPosition(), 4, { withoutEntityId = entity.id(), inSightOf = entity.id(), validTargetOf = entity.id(), notAnObject = true })
+			local lifted = world.entityQuery(tech.aimPosition(), 4, { validTargetOf = entity.id(), includedTypes = { "monster", "npc" } } )
 			if lifted and #lifted > 0 then
 				table.insert(self.liftIds, { lifted = lifted, ttl = self.liftTime, liftvel = self.liftVelocity })
 				tech.setAnimationState("active", "on")
-				tech.playImmediateSound(tech.parameter("liftsound"))
-				self.updateEnergyUsage = self.updateEnergyUsage + tech.parameter("energyUsage")
+				tech.playSound("activateSound")
 			end
 		end
 	end
@@ -49,7 +50,7 @@ function update(args)
 			for l,e in ipairs(lift.lifted) do
 				if world.entityExists(e) then
 					stillgood = true
-					world.callScriptedEntity(e, "entity.setVelocity", {0, lift.liftvel})
+					world.callScriptedEntity(e, "mcontroller.setVelocity", {0, lift.liftvel})
 				else table.remove(lift.lifted, l)
 				end
 			end

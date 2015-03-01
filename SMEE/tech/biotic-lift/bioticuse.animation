@@ -35,5 +35,8 @@
         }
       }
     }
+  },
+  "sounds" : {
+  	"activateSound" : [ "/sfx/tech/biotic-lift.wav" ]
   }
 }
