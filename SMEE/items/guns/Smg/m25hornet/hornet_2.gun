@@ -1,0 +1,35 @@
+{
+  "itemName" : "hornet_2",
+  "inventoryIcon" : "horneticon.png",
+  "shortdescription" : "M-25 Hornet II",
+  "description" : "M-25 Hornet II",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "hornet.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-4, -1],
+  "firePosition" : [38, 4],
+  "walkWhileFiring" : true,
+  "weaponType" : "Submachine Gun",
+  
+  "fireTime" : 0.200,
+  "twoHanded" : false,
+  "level" : 1.5,
+
+  "projectileType" : "energybullet",
+  "projectile" : {
+	"power" : 0.75,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m76revenant/m76revenant_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "hornet_3"
+  ]
+}

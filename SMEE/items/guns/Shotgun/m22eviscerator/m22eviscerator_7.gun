@@ -1,0 +1,36 @@
+{
+  "itemName" : "m22eviscerator_7",
+  "inventoryIcon" : "m22evisceratoricon.png",
+  "shortdescription" : "M-22 Eviscerator VII",
+  "description" : "M-22 Eviscerator VII",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "m22eviscerator.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-16, -4],
+  "firePosition" : [8, 0],
+  "walkWhileFiring" : true,
+  "weaponType" : "Shotgun",
+  
+  "fireTime" : 0.525,
+  "twoHanded" : true,
+  "level" : 4,
+
+  "spread" : 8,
+  "projectileType" : "pellet",
+  "projectile" : {
+	"power" : 0.305,
+	"speed" : 85,
+  "color" : [ 64, 64, 64 ]
+  },
+
+  "muzzleEffect" : {
+    "fireSound" : [ { "file" : "/sfx/guns/m22eviscerator/m22eviscerator_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m22eviscerator_8"
+  ]
+}

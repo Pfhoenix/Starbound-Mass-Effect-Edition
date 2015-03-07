@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 2400 },
+    { "item" : "refinedaegisalt", "count" : 21 },
+    { "item" : "refinedEezo", "count" : 8 },
+    { "item" : "m98widow_4", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "m98widow_5", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

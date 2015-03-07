@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 4500 },
+    { "item" : "refinedrubium", "count" : 21 },
+    { "item" : "refinedEezo", "count" : 16 },
+    { "item" : "m6carnifex_8", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "m6carnifex_9", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

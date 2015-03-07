@@ -1,0 +1,37 @@
+{
+  "itemName" : "m97viper_9",
+  "inventoryIcon" : "m97vipericon.png",
+  "shortdescription" : "M-97 Viper IX",
+  "description" : "M-97 Viper IX",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "m97viper.png",
+  "recoilTime" : 0.2,
+  "handPosition" : [-14, 0],
+  "firePosition" : [26, 4],
+  "walkWhileFiring" : false,
+  "weaponType" : "Sniper Rifle",
+  
+  "fireTime" : 0.75,
+  "twoHanded" : true,
+  "level" : 5,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "bullet-3",
+  "projectile" : {
+	"power" : 5.2,
+	"speed" : 120
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m97viper/m97viper_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m97viper_10"
+  ]
+}

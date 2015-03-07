@@ -1,0 +1,35 @@
+{
+  "itemName" : "N7hurricane_2",
+  "inventoryIcon" : "N7hurricaneicon.png",
+  "shortdescription" : "N7 Hurricane II",
+  "description" : "N7 Hurricane II",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "N7hurricane.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-5, 1],
+  "firePosition" : [42, 5],
+  "walkWhileFiring" : true,
+  "weaponType" : "Submachine Gun",
+  
+  "fireTime" : 0.125,
+  "twoHanded" : false,
+  "level" : 1.5,
+
+  "projectileType" : "energybullet",
+  "projectile" : {
+	"power" : 0.475,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m8avenger/m8avenger_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "N7hurricane_3"
+  ]
+}

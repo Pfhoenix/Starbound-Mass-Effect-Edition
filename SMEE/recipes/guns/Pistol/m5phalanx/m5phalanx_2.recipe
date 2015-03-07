@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 100 },
+    { "item" : "steelbar", "count" : 7 },
+    { "item" : "refinedEezo", "count" : 2 },
+    { "item" : "m5phalanx_1", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "m5phalanx_2", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

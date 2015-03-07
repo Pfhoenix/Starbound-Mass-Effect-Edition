@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 2400 },
+    { "item" : "refinedaegisalt", "count" : 19 },
+    { "item" : "refinedEezo", "count" : 8 },
+    { "item" : "graalspikethrower_4", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "graalspikethrower_5", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

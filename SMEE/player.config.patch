@@ -43,6 +43,9 @@
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m92mantis_1" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m97viper_1" } },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "m98widow_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "gethplasmasmg_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "hornet_1" } },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "N7hurricane_1" } },
   
   //materials
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" :{ "item" : "refinedEezo" } },

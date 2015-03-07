@@ -1,0 +1,36 @@
+{
+  "itemName" : "m11wraith_9",
+  "inventoryIcon" : "m11wraithicon.png",
+  "shortdescription" : "M-11 Wraith IX",
+  "description" : "M-11 Wraith IX",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "m11wraith.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-16, -4],
+  "firePosition" : [10, 0],
+  "walkWhileFiring" : true,
+  "weaponType" : "Shotgun",
+  
+  "fireTime" : 0.600,
+  "twoHanded" : true,
+  "level" : 5,
+
+  "spread" : 8,
+  "projectileType" : "pellet",
+  "projectile" : {
+	"power" : 0.35,
+	"speed" : 85,
+  "color" : [ 64, 64, 64 ]
+  },
+
+  "muzzleEffect" : {
+    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m11wraith_10"
+  ]
+}

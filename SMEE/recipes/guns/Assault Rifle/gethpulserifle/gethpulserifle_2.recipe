@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 200 },
+    { "item" : "steelbar", "count" : 11 },
+    { "item" : "refinedEezo", "count" : 2 },
+    { "item" : "gethpulserifle_1", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "gethpulserifle_2", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}
+

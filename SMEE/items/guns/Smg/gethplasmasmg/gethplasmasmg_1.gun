@@ -1,0 +1,35 @@
+{
+  "itemName" : "gethplasmasmg_1",
+  "inventoryIcon" : "gethplasmasmgicon.png",
+  "shortdescription" : "Geth Plasma SMG I",
+  "description" : "Geth Plasma SMG I",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "gethplasmasmg.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-7, -2],
+  "firePosition" : [38, 3],
+  "walkWhileFiring" : true,
+  "weaponType" : "Submachine Gun",
+  
+  "fireTime" : 0.275,
+  "twoHanded" : false,
+  "level" : 1,
+
+  "projectileType" : "gethbullet",
+  "projectile" : {
+	"power" : 1.05,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/gethpulserifle/gethpulserifle_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "gethplasmasmg_2"
+  ]
+}

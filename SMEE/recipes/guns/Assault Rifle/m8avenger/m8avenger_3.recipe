@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 400 },
+    { "item" : "titaniumbar", "count" : 13 },
+    { "item" : "refinedEezo", "count" : 4 },
+    { "item" : "m8avenger_2", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "m8avenger_3", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

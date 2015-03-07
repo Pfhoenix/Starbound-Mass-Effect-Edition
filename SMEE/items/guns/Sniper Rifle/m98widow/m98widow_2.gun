@@ -1,0 +1,37 @@
+{
+  "itemName" : "m98widow_2",
+  "inventoryIcon" : "m98widowicon.png",
+  "shortdescription" : "M-98 Widow II",
+  "description" : "M-98 Widow II",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "m98widow.png",
+  "recoilTime" : 0.2,
+  "handPosition" : [-13, 0],
+  "firePosition" : [30, 3],
+  "walkWhileFiring" : false,
+  "weaponType" : "Sniper Rifle",
+  
+  "fireTime" : 1.50,
+  "twoHanded" : true,
+  "level" : 1.5,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "bullet-1",
+  "projectile" : {
+	"power" : 10.4,
+	"speed" : 120
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m98widow/m98widow_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m98widow_3"
+  ]
+}

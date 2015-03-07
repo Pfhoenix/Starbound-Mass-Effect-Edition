@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 75 },
+    { "item" : "ironbar", "count" : 7 }
+  ],
+  
+  "output" : { "item" : "m22eviscerator_1", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

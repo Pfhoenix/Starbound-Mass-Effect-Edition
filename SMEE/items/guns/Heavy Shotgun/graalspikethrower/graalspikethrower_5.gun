@@ -1,0 +1,38 @@
+{
+  "itemName" : "graalspikethrower_5",
+  "inventoryIcon" : "graalspikethrowericon.png",
+  "shortdescription" : "Spike Thrower V",
+  "description" : "Graal Spike Thrower V",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "graalspikethrower.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-16, -2],
+  "firePosition" : [8, 2],
+  "walkWhileFiring" : false,
+  "weaponType" : "Cannon",
+  
+  "fireTime" : 0.675,
+  "twoHanded" : true,
+  "level" : 3,
+  
+  "fireOnRelease" : true,
+  "spread" : 1,
+
+  "projectileType" : "pellet",  //needs changed
+  "projectile" : {
+	"power" : 4.1,
+	"speed" : 85,
+  "color" : [ 64, 64, 64 ]
+  },
+
+  "muzzleEffect" : {
+    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ] //needs changed
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "graalspikethrower_6"
+  ]
+}

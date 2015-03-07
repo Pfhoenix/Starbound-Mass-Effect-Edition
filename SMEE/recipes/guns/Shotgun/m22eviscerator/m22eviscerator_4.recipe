@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 600 },
+    { "item" : "durasteelbar", "count" : 13 },
+    { "item" : "refinedEezo", "count" : 6 },
+    { "item" : "m22eviscerator_3", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "m22eviscerator_4", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

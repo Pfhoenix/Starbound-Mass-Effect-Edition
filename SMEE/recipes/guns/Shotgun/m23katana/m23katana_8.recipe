@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 3500 },
+    { "item" : "refinedviolium", "count" : 21 },
+    { "item" : "refinedEezo", "count" : 14 },
+    { "item" : "m23katana_7", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "m23katana_8", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

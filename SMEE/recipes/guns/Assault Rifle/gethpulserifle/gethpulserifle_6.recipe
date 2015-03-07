@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 5500 },
+    { "item" : "feroziumcompound", "count" : 19 },
+    { "item" : "refinedEezo", "count" : 10 },
+    { "item" : "gethpulserifle_5", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "gethpulserifle_6", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}
+

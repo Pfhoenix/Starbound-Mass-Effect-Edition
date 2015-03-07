@@ -1,0 +1,38 @@
+{
+  "itemName" : "disciple_1",
+  "inventoryIcon" : "discipleicon.png",
+  "shortdescription" : "Disciple I",
+  "description" : "Disciple I",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "disciple.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-16, -3],
+  "firePosition" : [10, 0],
+  "walkWhileFiring" : false,
+  "weaponType" : "Cannon",
+  
+  "fireTime" : 0.775,
+  "twoHanded" : true,
+  "level" : 1,
+  
+  "fireOnRelease" : true,
+  "spread" : 1,
+
+  "projectileType" : "pellet",
+  "projectile" : {
+	"power" : 4.7,
+	"speed" : 85,
+  "color" : [ 64, 64, 64 ]
+  },
+
+  "muzzleEffect" : {
+    "fireSound" : [ { "file" : "/sfx/guns/disciple/disciple_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "disciple_2"
+  ]
+}

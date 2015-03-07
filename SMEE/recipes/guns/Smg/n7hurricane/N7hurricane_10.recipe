@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 5000 },
+    { "item" : "imperviumcompound", "count" : 21 },
+    { "item" : "refinedEezo", "count" : 20 },
+    { "item" : "N7hurricane_9", "count" : 1 }
+  ],
+  
+  "output" : { "item" : "N7hurricane_10", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}

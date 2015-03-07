@@ -1,0 +1,37 @@
+{
+  "itemName" : "m6carnifex_6",
+  "inventoryIcon" : "m6carnifexicon.png",
+  "shortdescription" : "M-6 Carnifex VI",
+  "description" : "M-6 Carnifex VI",
+  "dropCollision" : [-8.0, -3.0, 8.0, 3.0],
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "gun",
+  "image" : "m6carnifex.png",
+  "recoilTime" : 0.1,
+  "handPosition" : [-9, 0],
+  "firePosition" : [38, 4],
+  "walkWhileFiring" : true,
+  "weaponType" : "Pistol",
+  
+  "fireTime" : 0.300,
+  "twoHanded" : false,
+  "level" : 3.5,
+  
+  "fireOnRelease" : true,
+
+  "projectileType" : "energybullet2",
+  "projectile" : {
+	"power" : 0.95,
+	"speed" : 85
+  },
+
+  "muzzleEffect" : {
+    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "fireSound" : [ { "file" : "/sfx/guns/m6carnifex/m6carnifex_fire1.ogg" } ]
+  },
+  
+  "learnBlueprintsOnPickup" : [
+    "m6carnifex_7"
+  ]
+}

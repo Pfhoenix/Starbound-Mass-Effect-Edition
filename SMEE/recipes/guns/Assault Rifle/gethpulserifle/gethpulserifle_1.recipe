@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 100 },
+    { "item" : "ironbar", "count" : 9 }
+  ],
+  
+  "output" : { "item" : "gethpulserifle_1", "count" : 1 },
+  "groups" : [ "smeemodstation", "mod", "weapons", "all" ]
+}
+
