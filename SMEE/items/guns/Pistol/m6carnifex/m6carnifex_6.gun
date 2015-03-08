@@ -10,7 +10,7 @@
   "image" : "m6carnifex.png",
   "recoilTime" : 0.1,
   "handPosition" : [-9, 0],
-  "firePosition" : [38, 4],
+  "firePosition" : [15, 4],
   "walkWhileFiring" : true,
   "weaponType" : "Pistol",
   

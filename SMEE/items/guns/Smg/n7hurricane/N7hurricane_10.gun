@@ -10,7 +10,7 @@
   "image" : "N7hurricane.png",
   "recoilTime" : 0.1,
   "handPosition" : [-5, 1],
-  "firePosition" : [42, 5],
+  "firePosition" : [17, 5],
   "walkWhileFiring" : true,
   "weaponType" : "Submachine Gun",
   
@@ -18,14 +18,14 @@
   "twoHanded" : false,
   "level" : 6,
 
-  "projectileType" : "energybullet",
+  "projectileType" : "bullet-4",
   "projectile" : {
 	"power" : 0.475,
 	"speed" : 85
   },
 
   "muzzleEffect" : {
-    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
     "fireSound" : [ { "file" : "/sfx/guns/m8avenger/m8avenger_fire1.ogg" } ]
   }
   

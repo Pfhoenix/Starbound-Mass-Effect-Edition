@@ -10,7 +10,7 @@
   "image" : "hornet.png",
   "recoilTime" : 0.1,
   "handPosition" : [-4, -1],
-  "firePosition" : [38, 4],
+  "firePosition" : [15, 4],
   "walkWhileFiring" : true,
   "weaponType" : "Submachine Gun",
   

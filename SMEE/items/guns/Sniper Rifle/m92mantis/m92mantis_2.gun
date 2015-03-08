@@ -10,7 +10,7 @@
   "image" : "m92mantis.png",
   "recoilTime" : 0.1,
   "handPosition" : [-13, 0],
-  "firePosition" : [45, 4],
+  "firePosition" : [22, 4],
   "walkWhileFiring" : false,
   "weaponType" : "Sniper Rifle",
   

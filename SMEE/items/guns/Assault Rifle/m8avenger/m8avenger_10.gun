@@ -10,7 +10,7 @@
   "image" : "m8avenger.png",
   "recoilTime" : 0.1,
   "handPosition" : [-2, 0],
-  "firePosition" : [48, 3],
+  "firePosition" : [25, 3],
   "walkWhileFiring" : false,
   "weaponType" : "Assault Rifle",
   

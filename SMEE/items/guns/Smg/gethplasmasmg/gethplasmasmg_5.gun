@@ -10,7 +10,7 @@
   "image" : "gethplasmasmg.png",
   "recoilTime" : 0.1,
   "handPosition" : [-7, -2],
-  "firePosition" : [38, 3],
+  "firePosition" : [15, 3],
   "walkWhileFiring" : true,
   "weaponType" : "Submachine Gun",
   

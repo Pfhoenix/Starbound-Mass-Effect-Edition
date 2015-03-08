@@ -10,7 +10,7 @@
   "image" : "gethpulserifle.png",
   "recoilTime" : 0.1,
   "handPosition" : [-4, 0],
-  "firePosition" : [45, 3],
+  "firePosition" : [22, 3],
   "walkWhileFiring" : false,
   "weaponType" : "Assault Rifle",
   

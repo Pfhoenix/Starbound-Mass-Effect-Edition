@@ -10,7 +10,7 @@
   "image" : "m5phalanx.png",
   "recoilTime" : 0.1,
   "handPosition" : [-9, 0],
-  "firePosition" : [36, 4],
+  "firePosition" : [11, 4],
   "walkWhileFiring" : true,
   "weaponType" : "Pistol",
   
@@ -20,14 +20,14 @@
   
   "fireOnRelease" : true,
 
-  "projectileType" : "energybullet",
+  "projectileType" : "bullet-4",
   "projectile" : {
 	"power" : 1.45,
 	"speed" : 85
   },
 
   "muzzleEffect" : {
-    "animation" : "/animations/muzzleflash/gethmuzzleflash/gethmuzzle.animation",
+    "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
     "fireSound" : [ { "file" : "/sfx/guns/m5phalanx/m5phalanx_fire1.ogg" },
     				{ "file" : "/sfx/guns/m5phalanx/m5phalanx_fire2.ogg" },
     				{ "file" : "/sfx/guns/m5phalanx/m5phalanx_fire3.ogg" } ]

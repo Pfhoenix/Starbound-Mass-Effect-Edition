@@ -10,7 +10,7 @@
   "image" : "m3predator.png",
   "recoilTime" : 0.1,
   "handPosition" : [-9, 0],
-  "firePosition" : [36, 4],
+  "firePosition" : [13, 4],
   "walkWhileFiring" : true,
   "weaponType" : "Pistol",
   
