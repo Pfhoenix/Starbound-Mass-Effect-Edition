@@ -79,7 +79,7 @@
 	
 	// responsive object parameters	
 	"responsiveObject" : {
-		"detectArea" : [[0, 0], [6, 5]],
+		"detectArea" : [[-3, 0], [6, 5]],
 		"responsiveAnimations" : {
 			"randomize" : true,
 			"idle" : [
