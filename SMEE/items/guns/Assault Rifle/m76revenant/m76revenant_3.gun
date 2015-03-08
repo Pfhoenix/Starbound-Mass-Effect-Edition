@@ -14,13 +14,13 @@
   "walkWhileFiring" : false,
   "weaponType" : "Assault Rifle",
   
-  "fireTime" : 0.375,
+  "fireTime" : 0.187,
   "twoHanded" : true,
   "level" : 2,
 
   "projectileType" : "bullet-4",
   "projectile" : {
-	"power" : 1.84,
+	"power" : 0.92,
 	"speed" : 85
   },
 
