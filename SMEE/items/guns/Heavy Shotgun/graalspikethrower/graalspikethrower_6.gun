@@ -29,7 +29,7 @@
   },
 
   "muzzleEffect" : {
-    "fireSound" : [ { "file" : "/sfx/guns/m23katana/m23katana_fire1.ogg" } ] //needs changed
+    "fireSound" : [ { "file" : "/sfx/guns/graalspikethrower/graalspikethrower_fire1.ogg" } ]
   },
   
   "learnBlueprintsOnPickup" : [

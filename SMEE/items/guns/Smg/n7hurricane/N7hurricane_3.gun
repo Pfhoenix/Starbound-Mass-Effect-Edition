@@ -26,7 +26,11 @@
 
   "muzzleEffect" : {
     "animation" : "/animations/muzzleflash/bulletmuzzle2/bulletmuzzle2.animation",
-    "fireSound" : [ { "file" : "/sfx/guns/m8avenger/m8avenger_fire1.ogg" } ]
+    "fireSound" : [ { "file" : "/sfx/guns/n7hurricane/n7hurricane_fire1.ogg" },
+					{ "file" : "/sfx/guns/n7hurricane/n7hurricane_fire2.ogg" },
+					{ "file" : "/sfx/guns/n7hurricane/n7hurricane_fire1.ogg" },
+					{ "file" : "/sfx/guns/n7hurricane/n7hurricane_fire2.ogg" }
+	]
   },
   
   "learnBlueprintsOnPickup" : [
