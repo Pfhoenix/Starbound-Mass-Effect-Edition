@@ -20,6 +20,8 @@
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "triggerKeys" : [ "durasteelarmor" ],
 
   "statusEffects" : [
     {
