@@ -16,7 +16,7 @@
   "humanDescription" : "Nothing to see here.",
   "hylotlDescription" : "Nothing to see here.",
 
-  "inventoryIcon" : "invisiblelight.png",
+  "inventoryIcon" : "invisibleredlight.png",
   "orientations" : [
     {
       "image" : "invisibleredlight.png:<color>.<frame>",
