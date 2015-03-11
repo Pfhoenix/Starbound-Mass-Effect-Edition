@@ -1,6 +1,6 @@
 {
   "kind" : "asari",
-  "nameGen" : [ "/species/asarinamegenmale.config:names", "/species/asarinamegenfemale.config:names" ],
+  "nameGen" : [ "/species/asarinamegen.config:names", "/species/asarinamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/humanhurt_female2.wav", "/sfx/humanoid/humanhurt_female1.wav" ],
   "gruntNoises" : [ [ "/sfx/humanoid/humangrunt1.wav", "/sfx/humanoid/humangrunt2.wav" ], [ "/sfx/humanoid/humangrunt1.wav", "/sfx/humanoid/humangrunt2.wav" ] ],
   "charGenTextLabels" : [ "SKIN COLOR", "HAIR STYLE", "SHIRT", "PANTS", "EYE COLOR", "HAIR COLOR", "SHIRT COLOR", "PANTS COLOR", "ASARI", "PERSONALITY" ],
