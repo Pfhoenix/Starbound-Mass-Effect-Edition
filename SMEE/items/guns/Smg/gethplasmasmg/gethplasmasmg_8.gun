@@ -9,8 +9,8 @@
   "tooltipKind" : "gun",
   "image" : "gethplasmasmg.png",
   "recoilTime" : 0.1,
-  "handPosition" : [-7, -2],
-  "firePosition" : [15, 3],
+  "handPosition" : [-5, -2],
+  "firePosition" : [14, 3],
   "walkWhileFiring" : true,
   "weaponType" : "Submachine Gun",
   

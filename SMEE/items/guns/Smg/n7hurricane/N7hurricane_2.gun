@@ -9,8 +9,8 @@
   "tooltipKind" : "gun",
   "image" : "N7hurricane.png",
   "recoilTime" : 0.1,
-  "handPosition" : [-5, 1],
-  "firePosition" : [17, 5],
+  "handPosition" : [-4, 0],
+  "firePosition" : [14, 4],
   "walkWhileFiring" : true,
   "weaponType" : "Submachine Gun",
   
