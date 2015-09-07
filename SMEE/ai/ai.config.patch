@@ -4,6 +4,7 @@
     "path" : "/species/n7human",
     "value" : {
       "aiFrames" : "humanAi.png",
+      "portraitFrames" : "portraits/humanportrait.png",
       "staticFrames" : "staticHuman.png",
       "openSpeech" : {
         "0" : [ {
@@ -39,6 +40,7 @@
     "path" : "/species/asari",
     "value" : {
       "aiFrames" : "humanAi.png",
+      "portraitFrames" : "portraits/humanportrait.png",
       "staticFrames" : "staticHuman.png",
       "openSpeech" : {
         "0" : [ {
@@ -74,6 +76,7 @@
     "path" : "/species/turian",
     "value" : {
       "aiFrames" : "humanAi.png",
+      "portraitFrames" : "portraits/humanportrait.png",
       "staticFrames" : "staticHuman.png",
       "openSpeech" : {
         "0" : [ {

@@ -3,14 +3,11 @@
 	"title" : "^#9be3d6;Look for Citadel Codex Tech Entry 01.",
 	"text" : "Interact with ^green;objects or acquire new items^white;, to find ^pink;citadel codex entries^white;.",
 	"completionText" : "Well done you found a Citadel Codex!",
-	"conditions" : [
- 		{ "kind" : "gather", "item" : ["citadeltech01Codex", 1] }
+	"completionConditions" : [
+ 		{ "type" : "gather", "item" : "citadeltech01Codex", "count" : 1, "consume" : false }
 	],
 	"moneyRange" : [15, 15],
 	"rewards" : [
 		[ [ "citadeltech01Codex", 1] ]
-	],
-	"planetMode" : "none",
-	"questDungeons" : [ ],
-	"followUp" : ""
+	]
 }

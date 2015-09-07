@@ -3,12 +3,10 @@
 	"title" : "^#9be3d6;Welcome to Starbound Mass Effect Edition",
 	"text" : "Your ship has run out of fuel in orbit of an unknown planet. Before setting out in search of fuel, you'll need to ^green;repair the ship's thrusters and patch up the hull. \n\nPress ^green;E ^white;to interact with objects.",
 	"completionText" : "The ship has rumbled to life! There's still work to do and I need to fix the FTL drive. But it's a start!",
-	"conditions" : [
-    { "kind" : "trigger", "trigger" : "ai.repairthrusters" }
-  ],
-  "moneyRange" : [500, 500],
-  "planetMode" : "none",
-  "followUp" : "ftlrepairmain.gearup",
-  "questDungeons" : [ ],
-  "canBeAbandoned" : false
+	"completionConditions" : [
+		{ "type" : "shiplevel", "level" : 2 }
+	],
+	"moneyRange" : [500, 500],
+	"followUp" : "ftlrepairmain.gearup",
+	"canBeAbandoned" : false
 }

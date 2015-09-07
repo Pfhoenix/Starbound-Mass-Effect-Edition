@@ -1,9 +1,19 @@
 {
 	"objectName" : "smeeemodstation",
-	"rarity" : "Common",
+	"tags" : [ "crafting" ],
+	"rarity" : "legendary",
 	"interactAction" : "OpenCraftingInterface",
 	"interactData" : {
-		"config" : "/interface/windowconfig/craftingtable.config",
+		"config" : "/interface/windowconfig/crafting.config",
+		"paneLayoutOverride" : {
+			"windowtitle" : {
+				"title" : "  MASS EFFECT CRAFTING STATION",
+				"subtitle" : "  Mass Effect Toys Are Here!"
+				//"icon" : {
+				//	"file" : "/interface/crafting/roboticcraftingtable.png"
+				//}
+			}
+		},
 		"filter" : [ "smeemodstation" ]
 	},
 	

@@ -1,7 +1,7 @@
 {
 	"objectName" : "smeeemodstationoff",
 	"rarity" : "Common",
-	"objectType" : "noisy", 
+	//"objectType" : "noisy", 
 	"category" : "furniture",
 	"price" : 1000,
 	"printable" : false,
@@ -22,5 +22,10 @@
 		}
 	],
 	
+	"animation" : "/objects/noisy/noisy.animation",
+	"scripts" : [
+		"/objects/noisy/noisy.lua"
+	],
+
 	"sounds" : [ "/sfx/interface/ship_error1.wav" ]
 }

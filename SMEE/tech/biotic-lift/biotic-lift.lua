@@ -4,6 +4,7 @@ function init()
 	self.liftVelocity = tech.parameter("liftVelocity")
 	self.liftAcceleration = tech.parameter("liftAcceleration")
 	self.liftIds = {}
+	self.keypressed = false
 end
 
 function uninit()
@@ -11,8 +12,11 @@ function uninit()
 end
 
 function input(args)
-	if args.moves["special"] == 1 then
+	if (args.moves["special"] == 1) and not self.keypressed then
+		self.keypressed = true
 		return "biotic-lift"
+	elseif args.moves["special"] == 0 then
+		self.keypressed = false
 	end
 
 	return nil
